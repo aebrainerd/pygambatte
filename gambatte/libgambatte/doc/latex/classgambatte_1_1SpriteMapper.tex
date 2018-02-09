@@ -1,0 +1,291 @@
+\hypertarget{classgambatte_1_1SpriteMapper}{}\section{gambatte\+:\+:Sprite\+Mapper Class Reference}
+\label{classgambatte_1_1SpriteMapper}\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+
+
+{\ttfamily \#include $<$sprite\+\_\+mapper.\+h$>$}
+
+
+
+Collaboration diagram for gambatte\+:\+:Sprite\+Mapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgambatte_1_1SpriteMapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader}{Oam\+Reader}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1SpriteMapper_afa54d28e21f1ff73031a387fb8aefdce}{Sprite\+Mapper} (\hyperlink{classgambatte_1_1NextM0Time}{Next\+M0\+Time} \&next\+M0\+Time, \hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&ly\+Counter, unsigned char const $\ast$\hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram})
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a30a75a0ef5dcae59f55152515a967843}{reset} (unsigned char const $\ast$\hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram}, bool cgb)
+\item 
+unsigned \hyperlink{classgambatte_1_1SpriteMapper_a1dc90dda342bb3587d91a763a35c9a79}{do\+Event} (unsigned time)
+\item 
+bool \hyperlink{classgambatte_1_1SpriteMapper_ad67ee3b9b5c1f188ba33f5716a3f5853}{large\+Sprites} (unsigned sp\+No) const
+\item 
+unsigned \hyperlink{classgambatte_1_1SpriteMapper_ad44d62550eb865da721b1092539647e8}{num\+Sprites} (unsigned \hyperlink{video_8cpp_ab1c1cf762ec2da5588c30a13cd60af91}{ly}) const
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a899e21a4d6356b9c3587872eb290d035}{oam\+Change} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_aa090796deeec5896abfeb6b5dfc41045}{oam\+Change} (unsigned char const $\ast$\hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram}, unsigned cc)
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram} () const
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1SpriteMapper_a9f316f5fb82169de7855d56d2446b793}{posbuf} () const
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a08aeaf6bb42e440b9f7f4066366b673b}{pre\+Speed\+Change} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a20063931c4c6144769d9ce4c064fb374}{post\+Speed\+Change} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_ad59a63b416f0c800bde4e29a5bf73483}{reset\+Cycle\+Counter} (unsigned old\+Cc, unsigned new\+Cc)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a8b2c5932b622da5cac4293564295c84d}{set\+Large\+Sprites\+Source} (bool src)
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1SpriteMapper_a8db6c630bc151ddc188259a88faa069d}{sprites} (unsigned \hyperlink{video_8cpp_ab1c1cf762ec2da5588c30a13cd60af91}{ly}) const
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a6121ec198af413d2609ef0269f7e1984}{set\+State\+Ptrs} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a4bea9956005c54e0595d2700157a1394}{enable\+Display} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a0bf6bfd50a86c4675d9ef040870dde9c}{save\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) const
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a0d629b8f37f68686b87ccaeb8f62dff1}{load\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}, unsigned char const $\ast$\hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram})
+\item 
+bool \hyperlink{classgambatte_1_1SpriteMapper_abf83b02b1345c60a560c60a119d87117}{inactive\+Period\+After\+Display\+Enable} (unsigned cc) const
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a9bda0d2b7ebd6a884dc5a7aea82f2944}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned \hyperlink{classgambatte_1_1SpriteMapper_afb35f1ed6b01680065e0c9ba7dca73bc}{schedule} (\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&ly\+Counter, unsigned cc)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classgambatte_1_1SpriteMapper_a523804247b052cc0c961255e4dd20ce8af390b53d20749943c37e1f9c84a9a01e}{need\+\_\+sorting\+\_\+mask} = 0x80
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a65e513f3c368d2ba0dac2a9625edc57a}{clear\+Map} ()
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_a98f85e5f98730495f6a1648268f03a2a}{map\+Sprites} ()
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_aeaa3e4b1f02ec1f6a4fc99d0dd44a54b}{sort\+Line} (unsigned \hyperlink{video_8cpp_ab1c1cf762ec2da5588c30a13cd60af91}{ly}) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{classgambatte_1_1SpriteMapper_aaf20b8b09e7eabc2ad3051b4bcbb7470}{spritemap\+\_\+} \mbox{[}144 $\ast$10\mbox{]}
+\item 
+unsigned char \hyperlink{classgambatte_1_1SpriteMapper_a8208222a16c3164b7b8de51cfc0e7727}{num\+\_\+} \mbox{[}144\mbox{]}
+\item 
+\hyperlink{classgambatte_1_1NextM0Time}{Next\+M0\+Time} \& \hyperlink{classgambatte_1_1SpriteMapper_ab953c5641f686e70c1ff6114ed8d12fa}{next\+M0\+Time\+\_\+}
+\item 
+\hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader}{Oam\+Reader} \hyperlink{classgambatte_1_1SpriteMapper_a66612bed9813c478ed12879b6c8afd4a}{oam\+Reader\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a523804247b052cc0c961255e4dd20ce8}\label{classgambatte_1_1SpriteMapper_a523804247b052cc0c961255e4dd20ce8}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{need\+\_\+sorting\+\_\+mask@{need\+\_\+sorting\+\_\+mask}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!need\+\_\+sorting\+\_\+mask@{need\+\_\+sorting\+\_\+mask}}}\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a523804247b052cc0c961255e4dd20ce8af390b53d20749943c37e1f9c84a9a01e}\label{classgambatte_1_1SpriteMapper_a523804247b052cc0c961255e4dd20ce8af390b53d20749943c37e1f9c84a9a01e}} 
+need\+\_\+sorting\+\_\+mask&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_afa54d28e21f1ff73031a387fb8aefdce}\label{classgambatte_1_1SpriteMapper_afa54d28e21f1ff73031a387fb8aefdce}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!Sprite\+Mapper@{Sprite\+Mapper}}
+\index{Sprite\+Mapper@{Sprite\+Mapper}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{Sprite\+Mapper()}{SpriteMapper()}}
+{\footnotesize\ttfamily gambatte\+::\+Sprite\+Mapper\+::\+Sprite\+Mapper (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1NextM0Time}{Next\+M0\+Time} \&}]{next\+M0\+Time,  }\item[{\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&}]{ly\+Counter,  }\item[{unsigned char const $\ast$}]{oamram }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a65e513f3c368d2ba0dac2a9625edc57a}\label{classgambatte_1_1SpriteMapper_a65e513f3c368d2ba0dac2a9625edc57a}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!clear\+Map@{clear\+Map}}
+\index{clear\+Map@{clear\+Map}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{clear\+Map()}{clearMap()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::clear\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a1dc90dda342bb3587d91a763a35c9a79}\label{classgambatte_1_1SpriteMapper_a1dc90dda342bb3587d91a763a35c9a79}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!do\+Event@{do\+Event}}
+\index{do\+Event@{do\+Event}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{do\+Event()}{doEvent()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Sprite\+Mapper\+::do\+Event (\begin{DoxyParamCaption}\item[{unsigned}]{time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a4bea9956005c54e0595d2700157a1394}\label{classgambatte_1_1SpriteMapper_a4bea9956005c54e0595d2700157a1394}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!enable\+Display@{enable\+Display}}
+\index{enable\+Display@{enable\+Display}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{enable\+Display()}{enableDisplay()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::enable\+Display (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_abf83b02b1345c60a560c60a119d87117}\label{classgambatte_1_1SpriteMapper_abf83b02b1345c60a560c60a119d87117}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!inactive\+Period\+After\+Display\+Enable@{inactive\+Period\+After\+Display\+Enable}}
+\index{inactive\+Period\+After\+Display\+Enable@{inactive\+Period\+After\+Display\+Enable}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{inactive\+Period\+After\+Display\+Enable()}{inactivePeriodAfterDisplayEnable()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Sprite\+Mapper\+::inactive\+Period\+After\+Display\+Enable (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_ad67ee3b9b5c1f188ba33f5716a3f5853}\label{classgambatte_1_1SpriteMapper_ad67ee3b9b5c1f188ba33f5716a3f5853}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!large\+Sprites@{large\+Sprites}}
+\index{large\+Sprites@{large\+Sprites}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{large\+Sprites()}{largeSprites()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Sprite\+Mapper\+::large\+Sprites (\begin{DoxyParamCaption}\item[{unsigned}]{sp\+No }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a9bda0d2b7ebd6a884dc5a7aea82f2944}\label{classgambatte_1_1SpriteMapper_a9bda0d2b7ebd6a884dc5a7aea82f2944}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a0d629b8f37f68686b87ccaeb8f62dff1}\label{classgambatte_1_1SpriteMapper_a0d629b8f37f68686b87ccaeb8f62dff1}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&}]{state,  }\item[{unsigned char const $\ast$}]{oamram }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a98f85e5f98730495f6a1648268f03a2a}\label{classgambatte_1_1SpriteMapper_a98f85e5f98730495f6a1648268f03a2a}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!map\+Sprites@{map\+Sprites}}
+\index{map\+Sprites@{map\+Sprites}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{map\+Sprites()}{mapSprites()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::map\+Sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_ad44d62550eb865da721b1092539647e8}\label{classgambatte_1_1SpriteMapper_ad44d62550eb865da721b1092539647e8}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!num\+Sprites@{num\+Sprites}}
+\index{num\+Sprites@{num\+Sprites}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{num\+Sprites()}{numSprites()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Sprite\+Mapper\+::num\+Sprites (\begin{DoxyParamCaption}\item[{unsigned}]{ly }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a899e21a4d6356b9c3587872eb290d035}\label{classgambatte_1_1SpriteMapper_a899e21a4d6356b9c3587872eb290d035}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!oam\+Change@{oam\+Change}}
+\index{oam\+Change@{oam\+Change}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{oam\+Change()}{oamChange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::oam\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_aa090796deeec5896abfeb6b5dfc41045}\label{classgambatte_1_1SpriteMapper_aa090796deeec5896abfeb6b5dfc41045}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!oam\+Change@{oam\+Change}}
+\index{oam\+Change@{oam\+Change}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{oam\+Change()}{oamChange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::oam\+Change (\begin{DoxyParamCaption}\item[{unsigned char const $\ast$}]{oamram,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}\label{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!oamram@{oamram}}
+\index{oamram@{oamram}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{oamram()}{oamram()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Sprite\+Mapper\+::oamram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a9f316f5fb82169de7855d56d2446b793}\label{classgambatte_1_1SpriteMapper_a9f316f5fb82169de7855d56d2446b793}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!posbuf@{posbuf}}
+\index{posbuf@{posbuf}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{posbuf()}{posbuf()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Sprite\+Mapper\+::posbuf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a20063931c4c6144769d9ce4c064fb374}\label{classgambatte_1_1SpriteMapper_a20063931c4c6144769d9ce4c064fb374}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!post\+Speed\+Change@{post\+Speed\+Change}}
+\index{post\+Speed\+Change@{post\+Speed\+Change}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{post\+Speed\+Change()}{postSpeedChange()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::post\+Speed\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a08aeaf6bb42e440b9f7f4066366b673b}\label{classgambatte_1_1SpriteMapper_a08aeaf6bb42e440b9f7f4066366b673b}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!pre\+Speed\+Change@{pre\+Speed\+Change}}
+\index{pre\+Speed\+Change@{pre\+Speed\+Change}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{pre\+Speed\+Change()}{preSpeedChange()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::pre\+Speed\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a30a75a0ef5dcae59f55152515a967843}\label{classgambatte_1_1SpriteMapper_a30a75a0ef5dcae59f55152515a967843}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!reset@{reset}}
+\index{reset@{reset}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::reset (\begin{DoxyParamCaption}\item[{unsigned char const $\ast$}]{oamram,  }\item[{bool}]{cgb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_ad59a63b416f0c800bde4e29a5bf73483}\label{classgambatte_1_1SpriteMapper_ad59a63b416f0c800bde4e29a5bf73483}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!reset\+Cycle\+Counter@{reset\+Cycle\+Counter}}
+\index{reset\+Cycle\+Counter@{reset\+Cycle\+Counter}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{reset\+Cycle\+Counter()}{resetCycleCounter()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::reset\+Cycle\+Counter (\begin{DoxyParamCaption}\item[{unsigned}]{old\+Cc,  }\item[{unsigned}]{new\+Cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a0bf6bfd50a86c4675d9ef040870dde9c}\label{classgambatte_1_1SpriteMapper_a0bf6bfd50a86c4675d9ef040870dde9c}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_afb35f1ed6b01680065e0c9ba7dca73bc}\label{classgambatte_1_1SpriteMapper_afb35f1ed6b01680065e0c9ba7dca73bc}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!schedule@{schedule}}
+\index{schedule@{schedule}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{schedule()}{schedule()}}
+{\footnotesize\ttfamily static unsigned gambatte\+::\+Sprite\+Mapper\+::schedule (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&}]{ly\+Counter,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a8b2c5932b622da5cac4293564295c84d}\label{classgambatte_1_1SpriteMapper_a8b2c5932b622da5cac4293564295c84d}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!set\+Large\+Sprites\+Source@{set\+Large\+Sprites\+Source}}
+\index{set\+Large\+Sprites\+Source@{set\+Large\+Sprites\+Source}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{set\+Large\+Sprites\+Source()}{setLargeSpritesSource()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::set\+Large\+Sprites\+Source (\begin{DoxyParamCaption}\item[{bool}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a6121ec198af413d2609ef0269f7e1984}\label{classgambatte_1_1SpriteMapper_a6121ec198af413d2609ef0269f7e1984}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!set\+State\+Ptrs@{set\+State\+Ptrs}}
+\index{set\+State\+Ptrs@{set\+State\+Ptrs}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{set\+State\+Ptrs()}{setStatePtrs()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::set\+State\+Ptrs (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_aeaa3e4b1f02ec1f6a4fc99d0dd44a54b}\label{classgambatte_1_1SpriteMapper_aeaa3e4b1f02ec1f6a4fc99d0dd44a54b}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!sort\+Line@{sort\+Line}}
+\index{sort\+Line@{sort\+Line}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{sort\+Line()}{sortLine()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::sort\+Line (\begin{DoxyParamCaption}\item[{unsigned}]{ly }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a8db6c630bc151ddc188259a88faa069d}\label{classgambatte_1_1SpriteMapper_a8db6c630bc151ddc188259a88faa069d}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!sprites@{sprites}}
+\index{sprites@{sprites}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{sprites()}{sprites()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Sprite\+Mapper\+::sprites (\begin{DoxyParamCaption}\item[{unsigned}]{ly }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_ab953c5641f686e70c1ff6114ed8d12fa}\label{classgambatte_1_1SpriteMapper_ab953c5641f686e70c1ff6114ed8d12fa}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!next\+M0\+Time\+\_\+@{next\+M0\+Time\+\_\+}}
+\index{next\+M0\+Time\+\_\+@{next\+M0\+Time\+\_\+}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{next\+M0\+Time\+\_\+}{nextM0Time\_}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1NextM0Time}{Next\+M0\+Time}\& gambatte\+::\+Sprite\+Mapper\+::next\+M0\+Time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a8208222a16c3164b7b8de51cfc0e7727}\label{classgambatte_1_1SpriteMapper_a8208222a16c3164b7b8de51cfc0e7727}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!num\+\_\+@{num\+\_\+}}
+\index{num\+\_\+@{num\+\_\+}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{num\+\_\+}{num\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Sprite\+Mapper\+::num\+\_\+\mbox{[}144\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_a66612bed9813c478ed12879b6c8afd4a}\label{classgambatte_1_1SpriteMapper_a66612bed9813c478ed12879b6c8afd4a}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!oam\+Reader\+\_\+@{oam\+Reader\+\_\+}}
+\index{oam\+Reader\+\_\+@{oam\+Reader\+\_\+}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{oam\+Reader\+\_\+}{oamReader\_}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader}{Oam\+Reader} gambatte\+::\+Sprite\+Mapper\+::oam\+Reader\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_aaf20b8b09e7eabc2ad3051b4bcbb7470}\label{classgambatte_1_1SpriteMapper_aaf20b8b09e7eabc2ad3051b4bcbb7470}} 
+\index{gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}!spritemap\+\_\+@{spritemap\+\_\+}}
+\index{spritemap\+\_\+@{spritemap\+\_\+}!gambatte\+::\+Sprite\+Mapper@{gambatte\+::\+Sprite\+Mapper}}
+\subsubsection{\texorpdfstring{spritemap\+\_\+}{spritemap\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Sprite\+Mapper\+::spritemap\+\_\+\mbox{[}144 $\ast$10\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/video/\hyperlink{sprite__mapper_8h}{sprite\+\_\+mapper.\+h}\item 
+src/video/\hyperlink{sprite__mapper_8cpp}{sprite\+\_\+mapper.\+cpp}\end{DoxyCompactItemize}

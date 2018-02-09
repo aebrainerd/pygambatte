@@ -1,0 +1,8 @@
+<map id="src/video/ppu.h" name="src/video/ppu.h">
+<area shape="rect" id="node3" href="$ly__counter_8h.html" title="video/ly_counter.h" alt="" coords="144,155,280,181"/>
+<area shape="rect" id="node4" href="$loadsave_8h.html" title="../loadsave.h" alt="" coords="162,229,262,256"/>
+<area shape="rect" id="node9" href="$sprite__mapper_8h.html" title="video/sprite_mapper.h" alt="" coords="249,80,412,107"/>
+<area shape="rect" id="node13" href="$lcddef_8h.html" title="lcddef.h" alt="" coords="534,80,605,107"/>
+<area shape="rect" id="node14" href="$gbint_8h.html" title="gbint.h" alt="" coords="629,80,691,107"/>
+<area shape="rect" id="node10" href="$savestate_8h.html" title="../savestate.h" alt="" coords="355,155,459,181"/>
+</map>

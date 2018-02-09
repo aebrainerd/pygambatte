@@ -1,0 +1,117 @@
+\hypertarget{classgambatte_1_1PPUFrameBuf}{}\section{gambatte\+:\+:P\+P\+U\+Frame\+Buf Class Reference}
+\label{classgambatte_1_1PPUFrameBuf}\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+
+
+{\ttfamily \#include $<$ppu.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1PPUFrameBuf_aac16035ebd11d4d7c94c4cd3a6c64f76}{P\+P\+U\+Frame\+Buf} ()
+\item 
+\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$ \hyperlink{classgambatte_1_1PPUFrameBuf_a6d6f6dc400fdd3647e402986b7cfe3a7}{fb} () const
+\item 
+\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$ \hyperlink{classgambatte_1_1PPUFrameBuf_a63334566c8b1304cb65bebdb17ab808d}{fbline} () const
+\item 
+std\+::ptrdiff\+\_\+t \hyperlink{classgambatte_1_1PPUFrameBuf_a65a03c7145d081e2d35044e26a1f8816}{pitch} () const
+\item 
+void \hyperlink{classgambatte_1_1PPUFrameBuf_a56d01d25710eb23028ad458e17008419}{set\+Fbline} (unsigned \hyperlink{video_8cpp_ab1c1cf762ec2da5588c30a13cd60af91}{ly})
+\item 
+void \hyperlink{classgambatte_1_1PPUFrameBuf_ae48a732c58c23832d9fa59a53a052d6e}{blit} (\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$const \hyperlink{ioapi_8h_a8ad8a13c88886b9f623034ff88570adb}{buf}, const \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} \hyperlink{classgambatte_1_1PPUFrameBuf_a65a03c7145d081e2d35044e26a1f8816}{pitch}) const
+\item 
+void \hyperlink{classgambatte_1_1PPUFrameBuf_a1428b8c8a842e549798a77e54ed9dd32}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$ \hyperlink{classgambatte_1_1PPUFrameBuf_ad25aa01ec853833310caa7cdab389f7c}{nullfbline} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} \hyperlink{classgambatte_1_1PPUFrameBuf_acecd3ac842c0311c0eb1e4dd4e94d4ec}{buf\+\_\+} \mbox{[}160 $\ast$144\mbox{]}
+\item 
+\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$ \hyperlink{classgambatte_1_1PPUFrameBuf_ab54824a38a8ad536e537642510352cd4}{fbline\+\_\+}
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} \hyperlink{classgambatte_1_1PPUFrameBuf_aa0961f70dd373c63c5c4e95fb14b20e5}{pitch\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_aac16035ebd11d4d7c94c4cd3a6c64f76}\label{classgambatte_1_1PPUFrameBuf_aac16035ebd11d4d7c94c4cd3a6c64f76}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!P\+P\+U\+Frame\+Buf@{P\+P\+U\+Frame\+Buf}}
+\index{P\+P\+U\+Frame\+Buf@{P\+P\+U\+Frame\+Buf}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{P\+P\+U\+Frame\+Buf()}{PPUFrameBuf()}}
+{\footnotesize\ttfamily gambatte\+::\+P\+P\+U\+Frame\+Buf\+::\+P\+P\+U\+Frame\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_ae48a732c58c23832d9fa59a53a052d6e}\label{classgambatte_1_1PPUFrameBuf_ae48a732c58c23832d9fa59a53a052d6e}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!blit@{blit}}
+\index{blit@{blit}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{blit()}{blit()}}
+{\footnotesize\ttfamily void gambatte\+::\+P\+P\+U\+Frame\+Buf\+::blit (\begin{DoxyParamCaption}\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$const}]{buf,  }\item[{const \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int}}]{pitch }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_a6d6f6dc400fdd3647e402986b7cfe3a7}\label{classgambatte_1_1PPUFrameBuf_a6d6f6dc400fdd3647e402986b7cfe3a7}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!fb@{fb}}
+\index{fb@{fb}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{fb()}{fb()}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t}$\ast$ gambatte\+::\+P\+P\+U\+Frame\+Buf\+::fb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_a63334566c8b1304cb65bebdb17ab808d}\label{classgambatte_1_1PPUFrameBuf_a63334566c8b1304cb65bebdb17ab808d}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!fbline@{fbline}}
+\index{fbline@{fbline}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{fbline()}{fbline()}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t}$\ast$ gambatte\+::\+P\+P\+U\+Frame\+Buf\+::fbline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_a1428b8c8a842e549798a77e54ed9dd32}\label{classgambatte_1_1PPUFrameBuf_a1428b8c8a842e549798a77e54ed9dd32}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+P\+P\+U\+Frame\+Buf\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_ad25aa01ec853833310caa7cdab389f7c}\label{classgambatte_1_1PPUFrameBuf_ad25aa01ec853833310caa7cdab389f7c}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!nullfbline@{nullfbline}}
+\index{nullfbline@{nullfbline}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{nullfbline()}{nullfbline()}}
+{\footnotesize\ttfamily static \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t}$\ast$ gambatte\+::\+P\+P\+U\+Frame\+Buf\+::nullfbline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_a65a03c7145d081e2d35044e26a1f8816}\label{classgambatte_1_1PPUFrameBuf_a65a03c7145d081e2d35044e26a1f8816}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!pitch@{pitch}}
+\index{pitch@{pitch}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{pitch()}{pitch()}}
+{\footnotesize\ttfamily std\+::ptrdiff\+\_\+t gambatte\+::\+P\+P\+U\+Frame\+Buf\+::pitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_a56d01d25710eb23028ad458e17008419}\label{classgambatte_1_1PPUFrameBuf_a56d01d25710eb23028ad458e17008419}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!set\+Fbline@{set\+Fbline}}
+\index{set\+Fbline@{set\+Fbline}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{set\+Fbline()}{setFbline()}}
+{\footnotesize\ttfamily void gambatte\+::\+P\+P\+U\+Frame\+Buf\+::set\+Fbline (\begin{DoxyParamCaption}\item[{unsigned}]{ly }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_acecd3ac842c0311c0eb1e4dd4e94d4ec}\label{classgambatte_1_1PPUFrameBuf_acecd3ac842c0311c0eb1e4dd4e94d4ec}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!buf\+\_\+@{buf\+\_\+}}
+\index{buf\+\_\+@{buf\+\_\+}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{buf\+\_\+}{buf\_}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} gambatte\+::\+P\+P\+U\+Frame\+Buf\+::buf\+\_\+\mbox{[}160 $\ast$144\mbox{]}\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_ab54824a38a8ad536e537642510352cd4}\label{classgambatte_1_1PPUFrameBuf_ab54824a38a8ad536e537642510352cd4}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!fbline\+\_\+@{fbline\+\_\+}}
+\index{fbline\+\_\+@{fbline\+\_\+}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{fbline\+\_\+}{fbline\_}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t}$\ast$ gambatte\+::\+P\+P\+U\+Frame\+Buf\+::fbline\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1PPUFrameBuf_aa0961f70dd373c63c5c4e95fb14b20e5}\label{classgambatte_1_1PPUFrameBuf_aa0961f70dd373c63c5c4e95fb14b20e5}} 
+\index{gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}!pitch\+\_\+@{pitch\+\_\+}}
+\index{pitch\+\_\+@{pitch\+\_\+}!gambatte\+::\+P\+P\+U\+Frame\+Buf@{gambatte\+::\+P\+P\+U\+Frame\+Buf}}
+\subsubsection{\texorpdfstring{pitch\+\_\+}{pitch\_}}
+{\footnotesize\ttfamily \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} gambatte\+::\+P\+P\+U\+Frame\+Buf\+::pitch\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/video/\hyperlink{ppu_8h}{ppu.\+h}\end{DoxyCompactItemize}

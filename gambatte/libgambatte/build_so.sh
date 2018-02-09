@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ -fPIC src/bitmap_font.o src/cpu.o src/gambatte.o src/initstate.o src/interrupter.o src/interruptrequester.o src/loadres.o src/memory.o src/sound.o src/state_osd_elements.o src/statesaver.o src/tima.o src/video.o src/mem/cartridge.o src/mem/memptrs.o src/mem/pakinfo.o src/mem/rtc.o src/sound/channel1.o src/sound/channel2.o src/sound/channel3.o src/sound/channel4.o src/sound/duty_unit.o src/sound/envelope_unit.o src/sound/length_counter.o src/video/ly_counter.o src/video/lyc_irq.o src/video/next_m0_time.o src/video/ppu.o src/video/sprite_mapper.o src/file/file_zip.o src/file/unzip/unzip.o src/file/unzip/ioapi.o src/loadsave.o -shared -o libgambatte.so

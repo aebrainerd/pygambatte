@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['h',['h',['../classgambatte_1_1CPU.html#a00ae3d50ec2efbcbfc64626a4f1c0643',1,'gambatte::CPU::h()'],['../structgambatte_1_1SaveState_1_1CPU.html#ad2e3e9aa15bbf00ea6454066bf898f14',1,'gambatte::SaveState::CPU::h()'],['../classgambatte_1_1OsdElement.html#a06b0891145ca9aac2d10cf9646681ce3',1,'gambatte::OsdElement::h()'],['../namespacebitmapfont.html#aa985ecc356f031589865e53b3475a2ddaa3de547822b6dedd0411ceb22c9713d3',1,'bitmapfont::h()'],['../namespacebitmapfont.html#aa985ecc356f031589865e53b3475a2ddabbb56dd59a86d7cbddd701fadc97ca97',1,'bitmapfont::H()']]],
+  ['h144x_5f',['h144x_',['../classgambatte_1_1PakInfo.html#ab8e8ac1b13d11e602d674255ca5af72e',1,'gambatte::PakInfo']]],
+  ['h_5f',['h_',['../classgambatte_1_1OsdElement.html#ad1b57b8c319726dcf85c1ce1a5d5e73b',1,'gambatte::OsdElement']]],
+  ['halt',['halt',['../classgambatte_1_1InterruptRequester.html#ade8e794b316125964403032b0b840140',1,'gambatte::InterruptRequester::halt()'],['../classgambatte_1_1Memory.html#a4a32fa3e44e16368c4a224cb553fa1a3',1,'gambatte::Memory::halt()']]],
+  ['halted',['halted',['../structgambatte_1_1SaveState_1_1Mem.html#a28cc6ab288d5c84e3c4140e3a72f742d',1,'gambatte::SaveState::Mem::halted()'],['../classgambatte_1_1InterruptRequester.html#aedfaf9bf197e7572b68b09d63b76c38f',1,'gambatte::InterruptRequester::halted()'],['../classgambatte_1_1InterruptRequester_1_1IntFlags.html#a8206d665f9772d64144d6be5d8c1a5cb',1,'gambatte::InterruptRequester::IntFlags::halted()'],['../classgambatte_1_1Memory.html#a5026aed969d2b61931cee0ca83198738',1,'gambatte::Memory::halted()']]],
+  ['halttime',['haltTime',['../structgambatte_1_1SaveState_1_1RTC.html#ab1cdcfd9e72a6695e58e202b19b71d3a',1,'gambatte::SaveState::RTC']]],
+  ['halttime_5f',['haltTime_',['../classgambatte_1_1Rtc.html#ac593f4655e2ae70a99951718f39d5c21',1,'gambatte::Rtc']]],
+  ['hdmaisenabled',['hdmaIsEnabled',['../classgambatte_1_1LCD.html#a9eeebbc4225c4fc1b3893d0373d3d315',1,'gambatte::LCD']]],
+  ['hdmareqflagged',['hdmaReqFlagged',['../namespacegambatte.html#ad50312ad0ce301d07f221e2161db6476',1,'gambatte']]],
+  ['hdmatransfer',['hdmaTransfer',['../structgambatte_1_1SaveState_1_1Mem.html#a888b5a886f68c63ddb78ec2c1b95b343',1,'gambatte::SaveState::Mem']]],
+  ['headerchecksumok',['headerChecksumOk',['../classgambatte_1_1PakInfo.html#a653c25580c6c1b6403796f4808bf97f8',1,'gambatte::PakInfo']]],
+  ['height',['HEIGHT',['../namespacebitmapfont.html#adcfe4550c64eee8fa86550505cc2da7ca5a377f274522b368f96f18c7cc4aaabe',1,'bitmapfont']]],
+  ['hf1',['hf1',['../classgambatte_1_1CPU.html#ae3b6398537e00db41d1fc007bf814032',1,'gambatte::CPU']]],
+  ['hf2',['hf2',['../classgambatte_1_1CPU.html#a767fa7cb6570274cdd1cdd2017557d4a',1,'gambatte::CPU']]],
+  ['hf2_5fhcf',['hf2_hcf',['../namespacegambatte.html#aff981a988feab5d1ffdb3602328e28cfaf64f53445c4545c35875e955a3fbad58',1,'gambatte']]],
+  ['hf2_5fincf',['hf2_incf',['../namespacegambatte.html#aff981a988feab5d1ffdb3602328e28cfadcfa3ba9b4d1e002ac71f5c8621c3b0b',1,'gambatte']]],
+  ['hf2_5fsubf',['hf2_subf',['../namespacegambatte.html#aff981a988feab5d1ffdb3602328e28cfadeaa299d1f8db34af642304a214162ce',1,'gambatte']]],
+  ['high_5f',['high_',['../classgambatte_1_1DutyUnit.html#afe7cae5f88b8e9f5402cb7b4970c4a47',1,'gambatte::DutyUnit']]],
+  ['hl',['hl',['../cpu_8cpp.html#aa3302267bcc3a9b13495e449da7d906e',1,'cpu.cpp']]]
+];

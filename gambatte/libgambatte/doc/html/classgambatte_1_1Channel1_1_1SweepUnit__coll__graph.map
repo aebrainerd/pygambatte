@@ -1,0 +1,5 @@
+<map id="gambatte::Channel1::SweepUnit" name="gambatte::Channel1::SweepUnit">
+<area shape="rect" id="node2" href="$classgambatte_1_1SoundUnit.html" title="gambatte::SoundUnit" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node3" href="$classgambatte_1_1DutyUnit.html" title="gambatte::DutyUnit" alt="" coords="83,81,222,108"/>
+<area shape="rect" id="node4" href="$classgambatte_1_1MasterDisabler.html" title="gambatte::MasterDisabler" alt="" coords="246,81,427,108"/>
+</map>

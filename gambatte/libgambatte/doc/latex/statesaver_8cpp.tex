@@ -1,0 +1,111 @@
+\hypertarget{statesaver_8cpp}{}\section{src/statesaver.cpp File Reference}
+\label{statesaver_8cpp}\index{src/statesaver.\+cpp@{src/statesaver.\+cpp}}
+{\ttfamily \#include \char`\"{}statesaver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}savestate.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}array.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+Include dependency graph for statesaver.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{statesaver_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgambatte_1_1SaverList}{gambatte\+::\+Saver\+List}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegambatte}{gambatte}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{statesaver_8cpp_a9a81034e3076ac0242d7bb0837990d3c}{A\+DD}(arg)
+\item 
+\#define \hyperlink{statesaver_8cpp_a16dcc51807d26b9acf13ad8f7434024e}{A\+D\+D\+P\+TR}(arg)
+\item 
+\#define \hyperlink{statesaver_8cpp_a083a64d48511fae28da4750d722c4f35}{A\+D\+D\+A\+R\+R\+AY}(arg)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{statesaver_8cpp_a05437718eedb60ea372e66a9d2ddc989}{Ascii\+Char} 
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{statesaver_8cpp_a9a81034e3076ac0242d7bb0837990d3c}\label{statesaver_8cpp_a9a81034e3076ac0242d7bb0837990d3c}} 
+\index{statesaver.\+cpp@{statesaver.\+cpp}!A\+DD@{A\+DD}}
+\index{A\+DD@{A\+DD}!statesaver.\+cpp@{statesaver.\+cpp}}
+\subsubsection{\texorpdfstring{A\+DD}{ADD}}
+{\footnotesize\ttfamily \#define A\+DD(\begin{DoxyParamCaption}\item[{}]{arg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    struct Func \{ \(\backslash\)
+        static \textcolor{keywordtype}{void} save(std::ofstream &file, \hyperlink{structgambatte_1_1SaveState}{SaveState} \textcolor{keyword}{const} &\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) \{ write(file, state.arg
+      ); \} \(\backslash\)
+        static \textcolor{keywordtype}{void} load(std::ifstream &file, \hyperlink{structgambatte_1_1SaveState}{SaveState} &\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) \{ read(file, state.arg); \} \(\backslash\)
+    \}; \(\backslash\)
+    pushSaver(list, label, Func::save, Func::load, \textcolor{keyword}{sizeof} label); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{statesaver_8cpp_a083a64d48511fae28da4750d722c4f35}\label{statesaver_8cpp_a083a64d48511fae28da4750d722c4f35}} 
+\index{statesaver.\+cpp@{statesaver.\+cpp}!A\+D\+D\+A\+R\+R\+AY@{A\+D\+D\+A\+R\+R\+AY}}
+\index{A\+D\+D\+A\+R\+R\+AY@{A\+D\+D\+A\+R\+R\+AY}!statesaver.\+cpp@{statesaver.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+D\+A\+R\+R\+AY}{ADDARRAY}}
+{\footnotesize\ttfamily \#define A\+D\+D\+A\+R\+R\+AY(\begin{DoxyParamCaption}\item[{}]{arg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    struct Func \{ \(\backslash\)
+        static \textcolor{keywordtype}{void} save(std::ofstream &file, \hyperlink{structgambatte_1_1SaveState}{SaveState} \textcolor{keyword}{const} &\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) \{ \(\backslash\)
+            write(file, state.arg, \textcolor{keyword}{sizeof} state.arg); \(\backslash\)
+        \} \(\backslash\)
+        static \textcolor{keywordtype}{void} load(std::ifstream &file, \hyperlink{structgambatte_1_1SaveState}{SaveState} &\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) \{ \(\backslash\)
+            read(file, state.arg, \textcolor{keyword}{sizeof} state.arg); \(\backslash\)
+        \} \(\backslash\)
+    \}; \(\backslash\)
+    pushSaver(list, label, Func::save, Func::load, \textcolor{keyword}{sizeof} label); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{statesaver_8cpp_a16dcc51807d26b9acf13ad8f7434024e}\label{statesaver_8cpp_a16dcc51807d26b9acf13ad8f7434024e}} 
+\index{statesaver.\+cpp@{statesaver.\+cpp}!A\+D\+D\+P\+TR@{A\+D\+D\+P\+TR}}
+\index{A\+D\+D\+P\+TR@{A\+D\+D\+P\+TR}!statesaver.\+cpp@{statesaver.\+cpp}}
+\subsubsection{\texorpdfstring{A\+D\+D\+P\+TR}{ADDPTR}}
+{\footnotesize\ttfamily \#define A\+D\+D\+P\+TR(\begin{DoxyParamCaption}\item[{}]{arg }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    struct Func \{ \(\backslash\)
+        static \textcolor{keywordtype}{void} save(std::ofstream &file, \hyperlink{structgambatte_1_1SaveState}{SaveState} \textcolor{keyword}{const} &\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) \{ \(\backslash\)
+            write(file, state.arg.get(), state.arg.size()); \(\backslash\)
+        \} \(\backslash\)
+        static \textcolor{keywordtype}{void} load(std::ifstream &file, \hyperlink{structgambatte_1_1SaveState}{SaveState} &state) \{ \(\backslash\)
+            read(file, state.arg.ptr, state.arg.size()); \(\backslash\)
+        \} \(\backslash\)
+    \}; \(\backslash\)
+    pushSaver(list, label, Func::save, Func::load, \textcolor{keyword}{sizeof} label); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{statesaver_8cpp_a05437718eedb60ea372e66a9d2ddc989}\label{statesaver_8cpp_a05437718eedb60ea372e66a9d2ddc989}} 
+\index{statesaver.\+cpp@{statesaver.\+cpp}!Ascii\+Char@{Ascii\+Char}}
+\index{Ascii\+Char@{Ascii\+Char}!statesaver.\+cpp@{statesaver.\+cpp}}
+\subsubsection{\texorpdfstring{Ascii\+Char}{AsciiChar}}
+{\footnotesize\ttfamily enum \hyperlink{statesaver_8cpp_a05437718eedb60ea372e66a9d2ddc989}{Ascii\+Char}}
+

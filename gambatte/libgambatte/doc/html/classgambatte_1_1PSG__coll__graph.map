@@ -1,0 +1,20 @@
+<map id="gambatte::PSG" name="gambatte::PSG">
+<area shape="rect" id="node2" href="$classgambatte_1_1Channel4.html" title="gambatte::Channel4" alt="" coords="899,121,1045,148"/>
+<area shape="rect" id="node8" href="$classgambatte_1_1StaticOutputTester.html" title="gambatte::StaticOutputTester\l\&lt; gambatte::Channel4, gambatte\l::Channel4::Lfsr \&gt;" alt="" coords="1208,65,1432,121"/>
+<area shape="rect" id="node3" href="$classgambatte_1_1SoundUnit.html" title="gambatte::SoundUnit" alt="" coords="5,592,156,619"/>
+<area shape="rect" id="node4" href="$classgambatte_1_1LengthCounter.html" title="gambatte::LengthCounter" alt="" coords="555,511,735,537"/>
+<area shape="rect" id="node7" href="$classgambatte_1_1Channel4_1_1Lfsr.html" title="gambatte::Channel4\l::Lfsr" alt="" coords="223,26,369,67"/>
+<area shape="rect" id="node10" href="$classgambatte_1_1EnvelopeUnit.html" title="gambatte::EnvelopeUnit" alt="" coords="559,445,730,472"/>
+<area shape="rect" id="node11" href="$classgambatte_1_1Channel1.html" title="gambatte::Channel1" alt="" coords="899,565,1045,592"/>
+<area shape="rect" id="node12" href="$classgambatte_1_1DutyUnit.html" title="gambatte::DutyUnit" alt="" coords="227,761,365,788"/>
+<area shape="rect" id="node14" href="$classgambatte_1_1Channel1_1_1SweepUnit.html" title="gambatte::Channel1\l::SweepUnit" alt="" coords="571,613,718,654"/>
+<area shape="rect" id="node16" href="$classgambatte_1_1Channel2.html" title="gambatte::Channel2" alt="" coords="899,857,1045,884"/>
+<area shape="rect" id="node18" href="$classgambatte_1_1Channel3.html" title="gambatte::Channel3" alt="" coords="899,421,1045,448"/>
+<area shape="rect" id="node5" href="$classgambatte_1_1MasterDisabler.html" title="gambatte::MasterDisabler" alt="" coords="205,496,387,523"/>
+<area shape="rect" id="node6" href="$classgambatte_1_1Channel4_1_1Ch4MasterDisabler.html" title="gambatte::Channel4\l::Ch4MasterDisabler" alt="" coords="570,75,719,117"/>
+<area shape="rect" id="node13" href="$classgambatte_1_1DutyMasterDisabler.html" title="gambatte::DutyMasterDisabler" alt="" coords="540,689,749,716"/>
+<area shape="rect" id="node19" href="$classgambatte_1_1Channel3_1_1Ch3MasterDisabler.html" title="gambatte::Channel3\l::Ch3MasterDisabler" alt="" coords="570,379,719,421"/>
+<area shape="rect" id="node9" href="$structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent.html" title="gambatte::EnvelopeUnit\l::VolOnOffEvent" alt="" coords="211,274,381,315"/>
+<area shape="rect" id="node15" href="$classgambatte_1_1StaticOutputTester.html" title="gambatte::StaticOutputTester\l\&lt; gambatte::Channel1, gambatte\l::DutyUnit \&gt;" alt="" coords="1208,513,1432,569"/>
+<area shape="rect" id="node17" href="$classgambatte_1_1StaticOutputTester.html" title="gambatte::StaticOutputTester\l\&lt; gambatte::Channel2, gambatte\l::DutyUnit \&gt;" alt="" coords="1208,956,1432,1012"/>
+</map>

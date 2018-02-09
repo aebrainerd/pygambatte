@@ -1,0 +1,10 @@
+<map id="gambatte::Channel4" name="gambatte::Channel4">
+<area shape="rect" id="node7" href="$classgambatte_1_1StaticOutputTester.html" title="gambatte::StaticOutputTester\l\&lt; gambatte::Channel4, gambatte\l::Channel4::Lfsr \&gt;" alt="" coords="1179,148,1403,204"/>
+<area shape="rect" id="node2" href="$classgambatte_1_1SoundUnit.html" title="gambatte::SoundUnit" alt="" coords="5,164,156,191"/>
+<area shape="rect" id="node3" href="$classgambatte_1_1LengthCounter.html" title="gambatte::LengthCounter" alt="" coords="540,222,720,248"/>
+<area shape="rect" id="node6" href="$classgambatte_1_1Channel4_1_1Lfsr.html" title="gambatte::Channel4\l::Lfsr" alt="" coords="223,28,369,69"/>
+<area shape="rect" id="node9" href="$classgambatte_1_1EnvelopeUnit.html" title="gambatte::EnvelopeUnit" alt="" coords="545,275,715,302"/>
+<area shape="rect" id="node4" href="$classgambatte_1_1MasterDisabler.html" title="gambatte::MasterDisabler" alt="" coords="205,164,387,191"/>
+<area shape="rect" id="node5" href="$classgambatte_1_1Channel4_1_1Ch4MasterDisabler.html" title="gambatte::Channel4\l::Ch4MasterDisabler" alt="" coords="555,156,705,197"/>
+<area shape="rect" id="node8" href="$structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent.html" title="gambatte::EnvelopeUnit\l::VolOnOffEvent" alt="" coords="211,344,381,385"/>
+</map>

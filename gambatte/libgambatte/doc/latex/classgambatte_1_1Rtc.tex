@@ -1,0 +1,278 @@
+\hypertarget{classgambatte_1_1Rtc}{}\section{gambatte\+:\+:Rtc Class Reference}
+\label{classgambatte_1_1Rtc}\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+
+
+{\ttfamily \#include $<$rtc.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1Rtc_a973c37737e42cc8240ab6e72c5e54ad7}{Rtc} (time\+\_\+t($\ast$$\ast$\+\_\+get\+Current\+Time)())
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1Rtc_af8583ee3e0f695e1767684e2aabb3230}{active\+Data} () const
+\item 
+std\+::time\+\_\+t \hyperlink{classgambatte_1_1Rtc_a3426823fab7fa783811c74defd0d9f69}{base\+Time} () const
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a8f6a66da2950e4acf0b2864cd06d3e46}{set\+Base\+Time} (std\+::time\+\_\+t \hyperlink{classgambatte_1_1Rtc_a3426823fab7fa783811c74defd0d9f69}{base\+Time})
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a0986e93dac2d0591c2360c06adcf6ae7}{latch} (unsigned data)
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a15dc530ecbc4a08b87cccbbef7edf236}{save\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) const
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a00b679656de31227d310103c2fbc6dda}{load\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1Rtc_ae920c8c9653060f77518ebc8ef9b2369}{set} (bool enabled, unsigned bank)
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a556546e7742058b49770da5c8012a62f}{write} (unsigned data)
+\item 
+std\+::time\+\_\+t \hyperlink{classgambatte_1_1Rtc_ac205e0c579b109da6d618267aebc60bf}{get\+Base\+Time} () const
+\item 
+void \hyperlink{classgambatte_1_1Rtc_ac38be521ff567763689059ce538bd320}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1Rtc_af417d2ec560735dbd6a5f84a47aaec91}{do\+Latch} ()
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a592f5fad483586ce3ecd1ae8bb4a0c87}{do\+Swap\+Active} ()
+\item 
+void \hyperlink{classgambatte_1_1Rtc_aadf610fa1853ec265998f35d6f45dd33}{set\+Dh} (unsigned new\+Dh)
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a7de1f17bf962fa4fde5de485d97c98f1}{set\+Dl} (unsigned new\+Lowdays)
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a5c25869bfe3b68d55fe17368b248689b}{setH} (unsigned new\+Hours)
+\item 
+void \hyperlink{classgambatte_1_1Rtc_a25b387d4b43ab3fd98d236d4e1e7ddd3}{setM} (unsigned new\+Minutes)
+\item 
+void \hyperlink{classgambatte_1_1Rtc_ab12534239b606a886e7eada91c107293}{setS} (unsigned new\+Seconds)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1Rtc_a530d1274a2b8fcdbf706dc07854367eb}{active\+Data\+\_\+}
+\item 
+void(Rtc\+::$\ast$ \hyperlink{classgambatte_1_1Rtc_ae2993dd73fe23f156923337fff5097ce}{active\+Set\+\_\+} )(unsigned)
+\item 
+std\+::time\+\_\+t \hyperlink{classgambatte_1_1Rtc_a3281dc917dcdedd2097cc61fb8c3b509}{base\+Time\+\_\+}
+\item 
+std\+::time\+\_\+t \hyperlink{classgambatte_1_1Rtc_ac593f4655e2ae70a99951718f39d5c21}{halt\+Time\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Rtc_af578e2d9c80922c5d75cc4f059331e35}{index\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Rtc_afc1b7eb23f04d457468c4c417f084a1f}{data\+Dh\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Rtc_ad0f8d812f4c73c2e234a0993e8e394a8}{data\+Dl\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Rtc_a17d6c3ad34e81ce22dfbe4ab8f9d6765}{data\+H\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Rtc_a3c97c47589a49a99e9a4b79209025c59}{data\+M\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Rtc_aae9b98f609c66b68f063f71453bc1d34}{data\+S\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1Rtc_a7d1f101afca4380423eec5bb61abc9e2}{enabled\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1Rtc_a83aa7c62a3713978fdf3969f7cd60977}{last\+Latch\+Data\+\_\+}
+\item 
+time\+\_\+t($\ast$$\ast$ \hyperlink{classgambatte_1_1Rtc_a18030c75a27253b66c3c0c04eff43aa0}{get\+Current\+Time} )()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a973c37737e42cc8240ab6e72c5e54ad7}\label{classgambatte_1_1Rtc_a973c37737e42cc8240ab6e72c5e54ad7}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!Rtc@{Rtc}}
+\index{Rtc@{Rtc}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{Rtc()}{Rtc()}}
+{\footnotesize\ttfamily gambatte\+::\+Rtc\+::\+Rtc (\begin{DoxyParamCaption}\item[{time\+\_\+t($\ast$$\ast$)()}]{\+\_\+get\+Current\+Time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1Rtc_af8583ee3e0f695e1767684e2aabb3230}\label{classgambatte_1_1Rtc_af8583ee3e0f695e1767684e2aabb3230}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!active\+Data@{active\+Data}}
+\index{active\+Data@{active\+Data}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{active\+Data()}{activeData()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Rtc\+::active\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a3426823fab7fa783811c74defd0d9f69}\label{classgambatte_1_1Rtc_a3426823fab7fa783811c74defd0d9f69}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!base\+Time@{base\+Time}}
+\index{base\+Time@{base\+Time}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{base\+Time()}{baseTime()}}
+{\footnotesize\ttfamily std\+::time\+\_\+t gambatte\+::\+Rtc\+::base\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_af417d2ec560735dbd6a5f84a47aaec91}\label{classgambatte_1_1Rtc_af417d2ec560735dbd6a5f84a47aaec91}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!do\+Latch@{do\+Latch}}
+\index{do\+Latch@{do\+Latch}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{do\+Latch()}{doLatch()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::do\+Latch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a592f5fad483586ce3ecd1ae8bb4a0c87}\label{classgambatte_1_1Rtc_a592f5fad483586ce3ecd1ae8bb4a0c87}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!do\+Swap\+Active@{do\+Swap\+Active}}
+\index{do\+Swap\+Active@{do\+Swap\+Active}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{do\+Swap\+Active()}{doSwapActive()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::do\+Swap\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_ac205e0c579b109da6d618267aebc60bf}\label{classgambatte_1_1Rtc_ac205e0c579b109da6d618267aebc60bf}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!get\+Base\+Time@{get\+Base\+Time}}
+\index{get\+Base\+Time@{get\+Base\+Time}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{get\+Base\+Time()}{getBaseTime()}}
+{\footnotesize\ttfamily std\+::time\+\_\+t gambatte\+::\+Rtc\+::get\+Base\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a0986e93dac2d0591c2360c06adcf6ae7}\label{classgambatte_1_1Rtc_a0986e93dac2d0591c2360c06adcf6ae7}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!latch@{latch}}
+\index{latch@{latch}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{latch()}{latch()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::latch (\begin{DoxyParamCaption}\item[{unsigned}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_ac38be521ff567763689059ce538bd320}\label{classgambatte_1_1Rtc_ac38be521ff567763689059ce538bd320}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a00b679656de31227d310103c2fbc6dda}\label{classgambatte_1_1Rtc_a00b679656de31227d310103c2fbc6dda}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a15dc530ecbc4a08b87cccbbef7edf236}\label{classgambatte_1_1Rtc_a15dc530ecbc4a08b87cccbbef7edf236}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_ae920c8c9653060f77518ebc8ef9b2369}\label{classgambatte_1_1Rtc_ae920c8c9653060f77518ebc8ef9b2369}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!set@{set}}
+\index{set@{set}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::set (\begin{DoxyParamCaption}\item[{bool}]{enabled,  }\item[{unsigned}]{bank }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a8f6a66da2950e4acf0b2864cd06d3e46}\label{classgambatte_1_1Rtc_a8f6a66da2950e4acf0b2864cd06d3e46}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!set\+Base\+Time@{set\+Base\+Time}}
+\index{set\+Base\+Time@{set\+Base\+Time}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{set\+Base\+Time()}{setBaseTime()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::set\+Base\+Time (\begin{DoxyParamCaption}\item[{std\+::time\+\_\+t}]{base\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_aadf610fa1853ec265998f35d6f45dd33}\label{classgambatte_1_1Rtc_aadf610fa1853ec265998f35d6f45dd33}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!set\+Dh@{set\+Dh}}
+\index{set\+Dh@{set\+Dh}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{set\+Dh()}{setDh()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::set\+Dh (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Dh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a7de1f17bf962fa4fde5de485d97c98f1}\label{classgambatte_1_1Rtc_a7de1f17bf962fa4fde5de485d97c98f1}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!set\+Dl@{set\+Dl}}
+\index{set\+Dl@{set\+Dl}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{set\+Dl()}{setDl()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::set\+Dl (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Lowdays }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a5c25869bfe3b68d55fe17368b248689b}\label{classgambatte_1_1Rtc_a5c25869bfe3b68d55fe17368b248689b}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!setH@{setH}}
+\index{setH@{setH}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{set\+H()}{setH()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::setH (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Hours }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a25b387d4b43ab3fd98d236d4e1e7ddd3}\label{classgambatte_1_1Rtc_a25b387d4b43ab3fd98d236d4e1e7ddd3}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!setM@{setM}}
+\index{setM@{setM}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{set\+M()}{setM()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::setM (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Minutes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_ab12534239b606a886e7eada91c107293}\label{classgambatte_1_1Rtc_ab12534239b606a886e7eada91c107293}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!setS@{setS}}
+\index{setS@{setS}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{set\+S()}{setS()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::setS (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a556546e7742058b49770da5c8012a62f}\label{classgambatte_1_1Rtc_a556546e7742058b49770da5c8012a62f}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!write@{write}}
+\index{write@{write}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void gambatte\+::\+Rtc\+::write (\begin{DoxyParamCaption}\item[{unsigned}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a530d1274a2b8fcdbf706dc07854367eb}\label{classgambatte_1_1Rtc_a530d1274a2b8fcdbf706dc07854367eb}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!active\+Data\+\_\+@{active\+Data\+\_\+}}
+\index{active\+Data\+\_\+@{active\+Data\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{active\+Data\+\_\+}{activeData\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Rtc\+::active\+Data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_ae2993dd73fe23f156923337fff5097ce}\label{classgambatte_1_1Rtc_ae2993dd73fe23f156923337fff5097ce}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!active\+Set\+\_\+@{active\+Set\+\_\+}}
+\index{active\+Set\+\_\+@{active\+Set\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{active\+Set\+\_\+}{activeSet\_}}
+{\footnotesize\ttfamily void(Rtc\+::$\ast$ gambatte\+::\+Rtc\+::active\+Set\+\_\+) (unsigned)\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a3281dc917dcdedd2097cc61fb8c3b509}\label{classgambatte_1_1Rtc_a3281dc917dcdedd2097cc61fb8c3b509}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!base\+Time\+\_\+@{base\+Time\+\_\+}}
+\index{base\+Time\+\_\+@{base\+Time\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{base\+Time\+\_\+}{baseTime\_}}
+{\footnotesize\ttfamily std\+::time\+\_\+t gambatte\+::\+Rtc\+::base\+Time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_afc1b7eb23f04d457468c4c417f084a1f}\label{classgambatte_1_1Rtc_afc1b7eb23f04d457468c4c417f084a1f}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!data\+Dh\+\_\+@{data\+Dh\+\_\+}}
+\index{data\+Dh\+\_\+@{data\+Dh\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{data\+Dh\+\_\+}{dataDh\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Rtc\+::data\+Dh\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_ad0f8d812f4c73c2e234a0993e8e394a8}\label{classgambatte_1_1Rtc_ad0f8d812f4c73c2e234a0993e8e394a8}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!data\+Dl\+\_\+@{data\+Dl\+\_\+}}
+\index{data\+Dl\+\_\+@{data\+Dl\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{data\+Dl\+\_\+}{dataDl\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Rtc\+::data\+Dl\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a17d6c3ad34e81ce22dfbe4ab8f9d6765}\label{classgambatte_1_1Rtc_a17d6c3ad34e81ce22dfbe4ab8f9d6765}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!data\+H\+\_\+@{data\+H\+\_\+}}
+\index{data\+H\+\_\+@{data\+H\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{data\+H\+\_\+}{dataH\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Rtc\+::data\+H\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a3c97c47589a49a99e9a4b79209025c59}\label{classgambatte_1_1Rtc_a3c97c47589a49a99e9a4b79209025c59}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!data\+M\+\_\+@{data\+M\+\_\+}}
+\index{data\+M\+\_\+@{data\+M\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{data\+M\+\_\+}{dataM\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Rtc\+::data\+M\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_aae9b98f609c66b68f063f71453bc1d34}\label{classgambatte_1_1Rtc_aae9b98f609c66b68f063f71453bc1d34}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!data\+S\+\_\+@{data\+S\+\_\+}}
+\index{data\+S\+\_\+@{data\+S\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{data\+S\+\_\+}{dataS\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Rtc\+::data\+S\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a7d1f101afca4380423eec5bb61abc9e2}\label{classgambatte_1_1Rtc_a7d1f101afca4380423eec5bb61abc9e2}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!enabled\+\_\+@{enabled\+\_\+}}
+\index{enabled\+\_\+@{enabled\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{enabled\+\_\+}{enabled\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Rtc\+::enabled\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a18030c75a27253b66c3c0c04eff43aa0}\label{classgambatte_1_1Rtc_a18030c75a27253b66c3c0c04eff43aa0}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!get\+Current\+Time@{get\+Current\+Time}}
+\index{get\+Current\+Time@{get\+Current\+Time}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{get\+Current\+Time}{getCurrentTime}}
+{\footnotesize\ttfamily time\+\_\+t($\ast$$\ast$ gambatte\+::\+Rtc\+::get\+Current\+Time) ()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_ac593f4655e2ae70a99951718f39d5c21}\label{classgambatte_1_1Rtc_ac593f4655e2ae70a99951718f39d5c21}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!halt\+Time\+\_\+@{halt\+Time\+\_\+}}
+\index{halt\+Time\+\_\+@{halt\+Time\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{halt\+Time\+\_\+}{haltTime\_}}
+{\footnotesize\ttfamily std\+::time\+\_\+t gambatte\+::\+Rtc\+::halt\+Time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_af578e2d9c80922c5d75cc4f059331e35}\label{classgambatte_1_1Rtc_af578e2d9c80922c5d75cc4f059331e35}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!index\+\_\+@{index\+\_\+}}
+\index{index\+\_\+@{index\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{index\+\_\+}{index\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Rtc\+::index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Rtc_a83aa7c62a3713978fdf3969f7cd60977}\label{classgambatte_1_1Rtc_a83aa7c62a3713978fdf3969f7cd60977}} 
+\index{gambatte\+::\+Rtc@{gambatte\+::\+Rtc}!last\+Latch\+Data\+\_\+@{last\+Latch\+Data\+\_\+}}
+\index{last\+Latch\+Data\+\_\+@{last\+Latch\+Data\+\_\+}!gambatte\+::\+Rtc@{gambatte\+::\+Rtc}}
+\subsubsection{\texorpdfstring{last\+Latch\+Data\+\_\+}{lastLatchData\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Rtc\+::last\+Latch\+Data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/mem/\hyperlink{rtc_8h}{rtc.\+h}\item 
+src/mem/\hyperlink{rtc_8cpp}{rtc.\+cpp}\end{DoxyCompactItemize}

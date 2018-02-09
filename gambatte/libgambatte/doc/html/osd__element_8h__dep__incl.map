@@ -1,0 +1,12 @@
+<map id="src/osd_element.h" name="src/osd_element.h">
+<area shape="rect" id="node2" href="$video_8h.html" title="src/video.h" alt="" coords="267,80,357,107"/>
+<area shape="rect" id="node10" href="$state__osd__elements_8h.html" title="src/state_osd_elements.h" alt="" coords="393,80,575,107"/>
+<area shape="rect" id="node3" href="$memory_8h.html" title="src/memory.h" alt="" coords="159,155,265,181"/>
+<area shape="rect" id="node8" href="$memory_8cpp.html" title="src/memory.cpp" alt="" coords="315,229,437,256"/>
+<area shape="rect" id="node9" href="$video_8cpp.html" title="src/video.cpp" alt="" coords="341,155,446,181"/>
+<area shape="rect" id="node4" href="$cpu_8h.html" title="src/cpu.h" alt="" coords="51,229,130,256"/>
+<area shape="rect" id="node5" href="$cpu_8cpp.html" title="src/cpu.cpp" alt="" coords="5,304,99,331"/>
+<area shape="rect" id="node7" href="$interrupter_8cpp.html" title="src/interrupter.cpp" alt="" coords="155,229,291,256"/>
+<area shape="rect" id="node6" href="$gambatte_8cpp.html" title="src/gambatte.cpp" alt="" coords="271,304,401,331"/>
+<area shape="rect" id="node11" href="$state__osd__elements_8cpp.html" title="src/state_osd_elements.cpp" alt="" coords="521,155,719,181"/>
+</map>

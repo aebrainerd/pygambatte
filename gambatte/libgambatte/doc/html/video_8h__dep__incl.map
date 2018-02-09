@@ -1,0 +1,9 @@
+<map id="src/video.h" name="src/video.h">
+<area shape="rect" id="node2" href="$memory_8h.html" title="src/memory.h" alt="" coords="208,80,315,107"/>
+<area shape="rect" id="node7" href="$memory_8cpp.html" title="src/memory.cpp" alt="" coords="354,155,475,181"/>
+<area shape="rect" id="node8" href="$video_8cpp.html" title="src/video.cpp" alt="" coords="421,80,526,107"/>
+<area shape="rect" id="node3" href="$cpu_8h.html" title="src/cpu.h" alt="" coords="90,155,169,181"/>
+<area shape="rect" id="node4" href="$cpu_8cpp.html" title="src/cpu.cpp" alt="" coords="5,229,99,256"/>
+<area shape="rect" id="node6" href="$interrupter_8cpp.html" title="src/interrupter.cpp" alt="" coords="193,155,329,181"/>
+<area shape="rect" id="node5" href="$gambatte_8cpp.html" title="src/gambatte.cpp" alt="" coords="123,229,253,256"/>
+</map>

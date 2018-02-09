@@ -1,0 +1,491 @@
+\hypertarget{classgambatte_1_1CPU}{}\section{gambatte\+:\+:C\+PU Class Reference}
+\label{classgambatte_1_1CPU}\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+
+
+{\ttfamily \#include $<$cpu.\+h$>$}
+
+
+
+Collaboration diagram for gambatte\+:\+:C\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgambatte_1_1CPU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1CPU_ad2f22383ec6a786778ceb7f834871714}{C\+PU} (time\+\_\+t($\ast$$\ast$\+\_\+get\+Current\+Time)())
+\item 
+signed \hyperlink{classgambatte_1_1CPU_a578dc9523b8c4fd01b65bac8ab66f3dd}{run\+For} (unsigned cycles)
+\item 
+void \hyperlink{classgambatte_1_1CPU_ad3536333dfdf2152288d68cd6a0f85f6}{set\+State\+Ptrs} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1CPU_ad18d4bce08093c8c927b68cc2f3339bb}{save\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1CPU_a8e6bb830ddf5af65d28cf3ebfcbddf02}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1CPU_a92e34858fac97ce269cf72ff114d3e7e}{load\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1CPU_a8b03ef8733dc634d39998d80c3a75be5}{load\+Savedata} ()
+\item 
+void \hyperlink{classgambatte_1_1CPU_a4ece2687dec833880531bfaf010e63a6}{save\+Savedata} ()
+\item 
+void \hyperlink{classgambatte_1_1CPU_a7e12310942f8986295086a9f9c5217ba}{set\+Video\+Buffer} (\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$video\+Buf, std\+::ptrdiff\+\_\+t pitch)
+\item 
+void \hyperlink{classgambatte_1_1CPU_a7e9b00d6068a5d4b3b1f3467c6fda8ca}{set\+Input\+Getter} (\hyperlink{classgambatte_1_1InputGetter}{Input\+Getter} $\ast$get\+Input)
+\item 
+void \hyperlink{classgambatte_1_1CPU_a9c882b42b4e426ae9368a181108f6e92}{set\+Save\+Dir} (std\+::string const \&sdir)
+\item 
+void \hyperlink{classgambatte_1_1CPU_a3c14c0089808692b7e26033bcc6ad4c9}{set\+\_\+debug\+\_\+buffer} (\hyperlink{structgambatte_1_1debugbuffer}{debugbuffer} \&dbgbuf)
+\item 
+std\+::string const \hyperlink{classgambatte_1_1CPU_a8eb13a942b95e3b97fe21ac17be82715}{save\+Base\+Path} () const
+\item 
+void \hyperlink{classgambatte_1_1CPU_a2d58f9e07dde04c2b6000c0c56c05bba}{set\+Osd\+Element} (transfer\+\_\+ptr$<$ \hyperlink{classgambatte_1_1OsdElement}{Osd\+Element} $>$ osd\+Element)
+\item 
+\hyperlink{namespacegambatte_a42606f494711d2e2870a5f5cdf69e468}{Load\+Res} \hyperlink{classgambatte_1_1CPU_a4aa60bdec265f00ab5f30a2b3498995d}{load} (std\+::string const \&romfile, bool force\+Dmg, bool multicart\+Compat)
+\item 
+\hyperlink{namespacegambatte_a42606f494711d2e2870a5f5cdf69e468}{Load\+Res} \hyperlink{classgambatte_1_1CPU_a722954e3155c839f2a63532f8c553540}{load} (const unsigned char $\ast$image, size\+\_\+t isize, bool force\+Dmg, bool multicart\+Compat)
+\item 
+bool \hyperlink{classgambatte_1_1CPU_a20581262d956fd83bc9ff2ec7bf5f8c3}{loaded} () const
+\item 
+char const  $\ast$ \hyperlink{classgambatte_1_1CPU_a80720dbddb6782b9472186935815d2c3}{rom\+Title} () const
+\item 
+\hyperlink{classgambatte_1_1PakInfo}{Pak\+Info} const \hyperlink{classgambatte_1_1CPU_afa8d54bb7dbcd31d7b6046c1ba1d4af3}{pak\+Info} (bool multicart\+Compat) const
+\item 
+void \hyperlink{classgambatte_1_1CPU_ae278996f1f2e328a0340737f856d29c2}{set\+Sound\+Buffer} (\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$\hyperlink{ioapi_8h_a8ad8a13c88886b9f623034ff88570adb}{buf})
+\item 
+std\+::size\+\_\+t \hyperlink{classgambatte_1_1CPU_a42bcefacaf365386e39b6c446f1d98c6}{fill\+Sound\+Buffer} ()
+\item 
+bool \hyperlink{classgambatte_1_1CPU_aca376b5dfd036aaf0f28f92f7ea357ed}{is\+Cgb} () const
+\item 
+void \hyperlink{classgambatte_1_1CPU_a4453327ee201a535a33ec761d77f686e}{set\+Dmg\+Palette\+Color} (\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} pal\+Num, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} color\+Num, \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} rgb32)
+\item 
+void \hyperlink{classgambatte_1_1CPU_a728f7e9b1dadc78125ddfae49c62e24c}{set\+Game\+Genie} (std\+::string const \&codes)
+\item 
+void \hyperlink{classgambatte_1_1CPU_a075af7ec08cc0ab12857c09e454a21c3}{set\+Game\+Shark} (std\+::string const \&codes)
+\item 
+void \hyperlink{classgambatte_1_1CPU_ae6be31f4b526e4ce812c5347056612a4}{set\+Rtc\+Base} (time\+\_\+t time)
+\item 
+time\+\_\+t \hyperlink{classgambatte_1_1CPU_a2ffcbd8979bcd8af1ab8b29d936ceccc}{get\+Rtc\+Base} ()
+\item 
+std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ \hyperlink{classgambatte_1_1CPU_a0d4ad54e736b068f982d0d0f336329ff}{get\+Work\+Ram} ()
+\item 
+std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ \hyperlink{classgambatte_1_1CPU_a27c3482fb9609dca9eed13743d19640e}{get\+Save\+Ram} ()
+\item 
+std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ \hyperlink{classgambatte_1_1CPU_a7ab67e5e49e61977e75c49d19772bc7e}{get\+Io\+Ram} ()
+\item 
+std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ \hyperlink{classgambatte_1_1CPU_ae93bfff01490d8a4c4759f3065e1a989}{get\+Video\+Ram} ()
+\item 
+uint8\+\_\+t \hyperlink{classgambatte_1_1CPU_aa89004927dd05645edf880507c440442}{bus\+\_\+read} (unsigned addr)
+\item 
+void \hyperlink{classgambatte_1_1CPU_adbddaedaf0abab71318f0aa7d3df7f3c}{bus\+\_\+write} (unsigned addr, uint8\+\_\+t val)
+\item 
+void \hyperlink{classgambatte_1_1CPU_aae4d07c6696892ddcb165132783270ae}{set\+\_\+emuflags} (unsigned flags)
+\item 
+void \hyperlink{classgambatte_1_1CPU_a0f205d9d1c9fa7ce7a07a4402ed8ac92}{print\+\_\+interrupt\+\_\+timing} (void)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classgambatte_1_1CPU_a63875d3faf72d71639da644a3fdbabe2}{cycle\+Counter\+\_\+}
+\item 
+unsigned short \hyperlink{classgambatte_1_1CPU_a162b1b47d04dd8521353d3c2f86fbaed}{pc\+\_\+}
+\item 
+unsigned short \hyperlink{classgambatte_1_1CPU_a518896e2142a44b6c2be55e4be2d1c47}{sp}
+\item 
+unsigned \hyperlink{classgambatte_1_1CPU_ae3b6398537e00db41d1fc007bf814032}{hf1}
+\item 
+unsigned \hyperlink{classgambatte_1_1CPU_a767fa7cb6570274cdd1cdd2017557d4a}{hf2}
+\item 
+unsigned \hyperlink{classgambatte_1_1CPU_a720d6cffbef783bffb05b52e6d220cc8}{zf}
+\item 
+unsigned \hyperlink{classgambatte_1_1CPU_af22b6ed5e4abe327d5c1fda37a5592e4}{cf}
+\item 
+unsigned char \hyperlink{classgambatte_1_1CPU_a901efef7987513500fa7343c460a0c57}{a\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1CPU_a67c289f70c04730082c65b31bf4cb539}{b}
+\item 
+unsigned char \hyperlink{classgambatte_1_1CPU_ae0169f1c4073ae7935a9b7f3240746cb}{c}
+\item 
+unsigned char \hyperlink{classgambatte_1_1CPU_a1aa5ba5b3e842ecf507aab3e1124bd70}{d}
+\item 
+unsigned char \hyperlink{classgambatte_1_1CPU_a9ea5d749b2223a01b627e4241eeb36bf}{e}
+\item 
+unsigned char \hyperlink{classgambatte_1_1CPU_a00ae3d50ec2efbcbfc64626a4f1c0643}{h}
+\item 
+unsigned char \hyperlink{classgambatte_1_1CPU_aacbce3359a278632fc12e770766bafe8}{l}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1CPU_ad512e0efcb4a8626891e1bc7ece21299}{aptr}
+\item 
+unsigned short $\ast$ \hyperlink{classgambatte_1_1CPU_ac751baf8d8b71f3c98419dd4446b4771}{pcptr}
+\item 
+unsigned $\ast$ \hyperlink{classgambatte_1_1CPU_a1fb3ea4d34a5288044f67002b8f76cd8}{cyclecountptr}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1CPU_a63b5d72cc327137ab5f044f37e9f34d8}{process} (unsigned cycles)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1Memory}{Memory} \hyperlink{classgambatte_1_1CPU_aa862b7f29fdadacb7e9c7f5bad5378dd}{mem\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1CPU_ab23de2b8a001515be3cea35c8b2b7ae9}{skip\+\_\+}
+\item 
+unsigned \hyperlink{classgambatte_1_1CPU_a18ef95586d1819ebf05245c119afa48b}{emuflags}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1CPU_ad2f22383ec6a786778ceb7f834871714}\label{classgambatte_1_1CPU_ad2f22383ec6a786778ceb7f834871714}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!C\+PU@{C\+PU}}
+\index{C\+PU@{C\+PU}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{C\+P\+U()}{CPU()}}
+{\footnotesize\ttfamily gambatte\+::\+C\+P\+U\+::\+C\+PU (\begin{DoxyParamCaption}\item[{time\+\_\+t($\ast$$\ast$)()}]{\+\_\+get\+Current\+Time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1CPU_aa89004927dd05645edf880507c440442}\label{classgambatte_1_1CPU_aa89004927dd05645edf880507c440442}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!bus\+\_\+read@{bus\+\_\+read}}
+\index{bus\+\_\+read@{bus\+\_\+read}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{bus\+\_\+read()}{bus\_read()}}
+{\footnotesize\ttfamily uint8\+\_\+t gambatte\+::\+C\+P\+U\+::bus\+\_\+read (\begin{DoxyParamCaption}\item[{unsigned}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_adbddaedaf0abab71318f0aa7d3df7f3c}\label{classgambatte_1_1CPU_adbddaedaf0abab71318f0aa7d3df7f3c}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!bus\+\_\+write@{bus\+\_\+write}}
+\index{bus\+\_\+write@{bus\+\_\+write}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{bus\+\_\+write()}{bus\_write()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::bus\+\_\+write (\begin{DoxyParamCaption}\item[{unsigned}]{addr,  }\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a42bcefacaf365386e39b6c446f1d98c6}\label{classgambatte_1_1CPU_a42bcefacaf365386e39b6c446f1d98c6}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!fill\+Sound\+Buffer@{fill\+Sound\+Buffer}}
+\index{fill\+Sound\+Buffer@{fill\+Sound\+Buffer}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{fill\+Sound\+Buffer()}{fillSoundBuffer()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t gambatte\+::\+C\+P\+U\+::fill\+Sound\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a7ab67e5e49e61977e75c49d19772bc7e}\label{classgambatte_1_1CPU_a7ab67e5e49e61977e75c49d19772bc7e}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!get\+Io\+Ram@{get\+Io\+Ram}}
+\index{get\+Io\+Ram@{get\+Io\+Ram}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{get\+Io\+Ram()}{getIoRam()}}
+{\footnotesize\ttfamily std\+::pair$<$unsigned char$\ast$, size\+\_\+t$>$ gambatte\+::\+C\+P\+U\+::get\+Io\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a2ffcbd8979bcd8af1ab8b29d936ceccc}\label{classgambatte_1_1CPU_a2ffcbd8979bcd8af1ab8b29d936ceccc}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!get\+Rtc\+Base@{get\+Rtc\+Base}}
+\index{get\+Rtc\+Base@{get\+Rtc\+Base}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{get\+Rtc\+Base()}{getRtcBase()}}
+{\footnotesize\ttfamily time\+\_\+t gambatte\+::\+C\+P\+U\+::get\+Rtc\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a27c3482fb9609dca9eed13743d19640e}\label{classgambatte_1_1CPU_a27c3482fb9609dca9eed13743d19640e}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!get\+Save\+Ram@{get\+Save\+Ram}}
+\index{get\+Save\+Ram@{get\+Save\+Ram}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{get\+Save\+Ram()}{getSaveRam()}}
+{\footnotesize\ttfamily std\+::pair$<$unsigned char$\ast$, size\+\_\+t$>$ gambatte\+::\+C\+P\+U\+::get\+Save\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ae93bfff01490d8a4c4759f3065e1a989}\label{classgambatte_1_1CPU_ae93bfff01490d8a4c4759f3065e1a989}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!get\+Video\+Ram@{get\+Video\+Ram}}
+\index{get\+Video\+Ram@{get\+Video\+Ram}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{get\+Video\+Ram()}{getVideoRam()}}
+{\footnotesize\ttfamily std\+::pair$<$unsigned char$\ast$, size\+\_\+t$>$ gambatte\+::\+C\+P\+U\+::get\+Video\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a0d4ad54e736b068f982d0d0f336329ff}\label{classgambatte_1_1CPU_a0d4ad54e736b068f982d0d0f336329ff}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!get\+Work\+Ram@{get\+Work\+Ram}}
+\index{get\+Work\+Ram@{get\+Work\+Ram}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{get\+Work\+Ram()}{getWorkRam()}}
+{\footnotesize\ttfamily std\+::pair$<$unsigned char$\ast$, size\+\_\+t$>$ gambatte\+::\+C\+P\+U\+::get\+Work\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_aca376b5dfd036aaf0f28f92f7ea357ed}\label{classgambatte_1_1CPU_aca376b5dfd036aaf0f28f92f7ea357ed}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!is\+Cgb@{is\+Cgb}}
+\index{is\+Cgb@{is\+Cgb}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{is\+Cgb()}{isCgb()}}
+{\footnotesize\ttfamily bool gambatte\+::\+C\+P\+U\+::is\+Cgb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a4aa60bdec265f00ab5f30a2b3498995d}\label{classgambatte_1_1CPU_a4aa60bdec265f00ab5f30a2b3498995d}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!load@{load}}
+\index{load@{load}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a42606f494711d2e2870a5f5cdf69e468}{Load\+Res} gambatte\+::\+C\+P\+U\+::load (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{romfile,  }\item[{bool}]{force\+Dmg,  }\item[{bool}]{multicart\+Compat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a722954e3155c839f2a63532f8c553540}\label{classgambatte_1_1CPU_a722954e3155c839f2a63532f8c553540}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!load@{load}}
+\index{load@{load}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a42606f494711d2e2870a5f5cdf69e468}{Load\+Res} gambatte\+::\+C\+P\+U\+::load (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{image,  }\item[{size\+\_\+t}]{isize,  }\item[{bool}]{force\+Dmg,  }\item[{bool}]{multicart\+Compat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a20581262d956fd83bc9ff2ec7bf5f8c3}\label{classgambatte_1_1CPU_a20581262d956fd83bc9ff2ec7bf5f8c3}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!loaded@{loaded}}
+\index{loaded@{loaded}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{loaded()}{loaded()}}
+{\footnotesize\ttfamily bool gambatte\+::\+C\+P\+U\+::loaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a8e6bb830ddf5af65d28cf3ebfcbddf02}\label{classgambatte_1_1CPU_a8e6bb830ddf5af65d28cf3ebfcbddf02}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a8b03ef8733dc634d39998d80c3a75be5}\label{classgambatte_1_1CPU_a8b03ef8733dc634d39998d80c3a75be5}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!load\+Savedata@{load\+Savedata}}
+\index{load\+Savedata@{load\+Savedata}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{load\+Savedata()}{loadSavedata()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::load\+Savedata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a92e34858fac97ce269cf72ff114d3e7e}\label{classgambatte_1_1CPU_a92e34858fac97ce269cf72ff114d3e7e}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_afa8d54bb7dbcd31d7b6046c1ba1d4af3}\label{classgambatte_1_1CPU_afa8d54bb7dbcd31d7b6046c1ba1d4af3}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!pak\+Info@{pak\+Info}}
+\index{pak\+Info@{pak\+Info}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{pak\+Info()}{pakInfo()}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1PakInfo}{Pak\+Info} const gambatte\+::\+C\+P\+U\+::pak\+Info (\begin{DoxyParamCaption}\item[{bool}]{multicart\+Compat }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a0f205d9d1c9fa7ce7a07a4402ed8ac92}\label{classgambatte_1_1CPU_a0f205d9d1c9fa7ce7a07a4402ed8ac92}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!print\+\_\+interrupt\+\_\+timing@{print\+\_\+interrupt\+\_\+timing}}
+\index{print\+\_\+interrupt\+\_\+timing@{print\+\_\+interrupt\+\_\+timing}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{print\+\_\+interrupt\+\_\+timing()}{print\_interrupt\_timing()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::print\+\_\+interrupt\+\_\+timing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a63b5d72cc327137ab5f044f37e9f34d8}\label{classgambatte_1_1CPU_a63b5d72cc327137ab5f044f37e9f34d8}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!process@{process}}
+\index{process@{process}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::process (\begin{DoxyParamCaption}\item[{unsigned}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a80720dbddb6782b9472186935815d2c3}\label{classgambatte_1_1CPU_a80720dbddb6782b9472186935815d2c3}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!rom\+Title@{rom\+Title}}
+\index{rom\+Title@{rom\+Title}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{rom\+Title()}{romTitle()}}
+{\footnotesize\ttfamily char const$\ast$ gambatte\+::\+C\+P\+U\+::rom\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a578dc9523b8c4fd01b65bac8ab66f3dd}\label{classgambatte_1_1CPU_a578dc9523b8c4fd01b65bac8ab66f3dd}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!run\+For@{run\+For}}
+\index{run\+For@{run\+For}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{run\+For()}{runFor()}}
+{\footnotesize\ttfamily signed gambatte\+::\+C\+P\+U\+::run\+For (\begin{DoxyParamCaption}\item[{unsigned}]{cycles }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a8eb13a942b95e3b97fe21ac17be82715}\label{classgambatte_1_1CPU_a8eb13a942b95e3b97fe21ac17be82715}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!save\+Base\+Path@{save\+Base\+Path}}
+\index{save\+Base\+Path@{save\+Base\+Path}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{save\+Base\+Path()}{saveBasePath()}}
+{\footnotesize\ttfamily std\+::string const gambatte\+::\+C\+P\+U\+::save\+Base\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a4ece2687dec833880531bfaf010e63a6}\label{classgambatte_1_1CPU_a4ece2687dec833880531bfaf010e63a6}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!save\+Savedata@{save\+Savedata}}
+\index{save\+Savedata@{save\+Savedata}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{save\+Savedata()}{saveSavedata()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::save\+Savedata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ad18d4bce08093c8c927b68cc2f3339bb}\label{classgambatte_1_1CPU_ad18d4bce08093c8c927b68cc2f3339bb}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a3c14c0089808692b7e26033bcc6ad4c9}\label{classgambatte_1_1CPU_a3c14c0089808692b7e26033bcc6ad4c9}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+\_\+debug\+\_\+buffer@{set\+\_\+debug\+\_\+buffer}}
+\index{set\+\_\+debug\+\_\+buffer@{set\+\_\+debug\+\_\+buffer}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+\_\+debug\+\_\+buffer()}{set\_debug\_buffer()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+\_\+debug\+\_\+buffer (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1debugbuffer}{debugbuffer} \&}]{dbgbuf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_aae4d07c6696892ddcb165132783270ae}\label{classgambatte_1_1CPU_aae4d07c6696892ddcb165132783270ae}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+\_\+emuflags@{set\+\_\+emuflags}}
+\index{set\+\_\+emuflags@{set\+\_\+emuflags}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+\_\+emuflags()}{set\_emuflags()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+\_\+emuflags (\begin{DoxyParamCaption}\item[{unsigned}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a4453327ee201a535a33ec761d77f686e}\label{classgambatte_1_1CPU_a4453327ee201a535a33ec761d77f686e}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Dmg\+Palette\+Color@{set\+Dmg\+Palette\+Color}}
+\index{set\+Dmg\+Palette\+Color@{set\+Dmg\+Palette\+Color}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Dmg\+Palette\+Color()}{setDmgPaletteColor()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Dmg\+Palette\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int}}]{pal\+Num,  }\item[{\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int}}]{color\+Num,  }\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t}}]{rgb32 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a728f7e9b1dadc78125ddfae49c62e24c}\label{classgambatte_1_1CPU_a728f7e9b1dadc78125ddfae49c62e24c}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Game\+Genie@{set\+Game\+Genie}}
+\index{set\+Game\+Genie@{set\+Game\+Genie}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Game\+Genie()}{setGameGenie()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Game\+Genie (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{codes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a075af7ec08cc0ab12857c09e454a21c3}\label{classgambatte_1_1CPU_a075af7ec08cc0ab12857c09e454a21c3}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Game\+Shark@{set\+Game\+Shark}}
+\index{set\+Game\+Shark@{set\+Game\+Shark}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Game\+Shark()}{setGameShark()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Game\+Shark (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{codes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a7e9b00d6068a5d4b3b1f3467c6fda8ca}\label{classgambatte_1_1CPU_a7e9b00d6068a5d4b3b1f3467c6fda8ca}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Input\+Getter@{set\+Input\+Getter}}
+\index{set\+Input\+Getter@{set\+Input\+Getter}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Input\+Getter()}{setInputGetter()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Input\+Getter (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1InputGetter}{Input\+Getter} $\ast$}]{get\+Input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a2d58f9e07dde04c2b6000c0c56c05bba}\label{classgambatte_1_1CPU_a2d58f9e07dde04c2b6000c0c56c05bba}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Osd\+Element@{set\+Osd\+Element}}
+\index{set\+Osd\+Element@{set\+Osd\+Element}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Osd\+Element()}{setOsdElement()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Osd\+Element (\begin{DoxyParamCaption}\item[{transfer\+\_\+ptr$<$ \hyperlink{classgambatte_1_1OsdElement}{Osd\+Element} $>$}]{osd\+Element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ae6be31f4b526e4ce812c5347056612a4}\label{classgambatte_1_1CPU_ae6be31f4b526e4ce812c5347056612a4}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Rtc\+Base@{set\+Rtc\+Base}}
+\index{set\+Rtc\+Base@{set\+Rtc\+Base}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Rtc\+Base()}{setRtcBase()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Rtc\+Base (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a9c882b42b4e426ae9368a181108f6e92}\label{classgambatte_1_1CPU_a9c882b42b4e426ae9368a181108f6e92}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Save\+Dir@{set\+Save\+Dir}}
+\index{set\+Save\+Dir@{set\+Save\+Dir}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Save\+Dir()}{setSaveDir()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Save\+Dir (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{sdir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ae278996f1f2e328a0340737f856d29c2}\label{classgambatte_1_1CPU_ae278996f1f2e328a0340737f856d29c2}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Sound\+Buffer@{set\+Sound\+Buffer}}
+\index{set\+Sound\+Buffer@{set\+Sound\+Buffer}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Sound\+Buffer()}{setSoundBuffer()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Sound\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ad3536333dfdf2152288d68cd6a0f85f6}\label{classgambatte_1_1CPU_ad3536333dfdf2152288d68cd6a0f85f6}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+State\+Ptrs@{set\+State\+Ptrs}}
+\index{set\+State\+Ptrs@{set\+State\+Ptrs}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+State\+Ptrs()}{setStatePtrs()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+State\+Ptrs (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a7e12310942f8986295086a9f9c5217ba}\label{classgambatte_1_1CPU_a7e12310942f8986295086a9f9c5217ba}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!set\+Video\+Buffer@{set\+Video\+Buffer}}
+\index{set\+Video\+Buffer@{set\+Video\+Buffer}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{set\+Video\+Buffer()}{setVideoBuffer()}}
+{\footnotesize\ttfamily void gambatte\+::\+C\+P\+U\+::set\+Video\+Buffer (\begin{DoxyParamCaption}\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} $\ast$}]{video\+Buf,  }\item[{std\+::ptrdiff\+\_\+t}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1CPU_a901efef7987513500fa7343c460a0c57}\label{classgambatte_1_1CPU_a901efef7987513500fa7343c460a0c57}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!a\+\_\+@{a\+\_\+}}
+\index{a\+\_\+@{a\+\_\+}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{a\+\_\+}{a\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+C\+P\+U\+::a\+\_\+}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ad512e0efcb4a8626891e1bc7ece21299}\label{classgambatte_1_1CPU_ad512e0efcb4a8626891e1bc7ece21299}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!aptr@{aptr}}
+\index{aptr@{aptr}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{aptr}{aptr}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+C\+P\+U\+::aptr}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a67c289f70c04730082c65b31bf4cb539}\label{classgambatte_1_1CPU_a67c289f70c04730082c65b31bf4cb539}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!b@{b}}
+\index{b@{b}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+C\+P\+U\+::b}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ae0169f1c4073ae7935a9b7f3240746cb}\label{classgambatte_1_1CPU_ae0169f1c4073ae7935a9b7f3240746cb}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!c@{c}}
+\index{c@{c}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+C\+P\+U\+::c}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_af22b6ed5e4abe327d5c1fda37a5592e4}\label{classgambatte_1_1CPU_af22b6ed5e4abe327d5c1fda37a5592e4}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!cf@{cf}}
+\index{cf@{cf}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{cf}{cf}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+C\+P\+U\+::cf}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a63875d3faf72d71639da644a3fdbabe2}\label{classgambatte_1_1CPU_a63875d3faf72d71639da644a3fdbabe2}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!cycle\+Counter\+\_\+@{cycle\+Counter\+\_\+}}
+\index{cycle\+Counter\+\_\+@{cycle\+Counter\+\_\+}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{cycle\+Counter\+\_\+}{cycleCounter\_}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+C\+P\+U\+::cycle\+Counter\+\_\+}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a1fb3ea4d34a5288044f67002b8f76cd8}\label{classgambatte_1_1CPU_a1fb3ea4d34a5288044f67002b8f76cd8}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!cyclecountptr@{cyclecountptr}}
+\index{cyclecountptr@{cyclecountptr}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{cyclecountptr}{cyclecountptr}}
+{\footnotesize\ttfamily unsigned$\ast$ gambatte\+::\+C\+P\+U\+::cyclecountptr}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a1aa5ba5b3e842ecf507aab3e1124bd70}\label{classgambatte_1_1CPU_a1aa5ba5b3e842ecf507aab3e1124bd70}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!d@{d}}
+\index{d@{d}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+C\+P\+U\+::d}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a9ea5d749b2223a01b627e4241eeb36bf}\label{classgambatte_1_1CPU_a9ea5d749b2223a01b627e4241eeb36bf}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!e@{e}}
+\index{e@{e}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+C\+P\+U\+::e}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a18ef95586d1819ebf05245c119afa48b}\label{classgambatte_1_1CPU_a18ef95586d1819ebf05245c119afa48b}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!emuflags@{emuflags}}
+\index{emuflags@{emuflags}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{emuflags}{emuflags}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+C\+P\+U\+::emuflags\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a00ae3d50ec2efbcbfc64626a4f1c0643}\label{classgambatte_1_1CPU_a00ae3d50ec2efbcbfc64626a4f1c0643}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!h@{h}}
+\index{h@{h}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+C\+P\+U\+::h}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ae3b6398537e00db41d1fc007bf814032}\label{classgambatte_1_1CPU_ae3b6398537e00db41d1fc007bf814032}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!hf1@{hf1}}
+\index{hf1@{hf1}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{hf1}{hf1}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+C\+P\+U\+::hf1}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a767fa7cb6570274cdd1cdd2017557d4a}\label{classgambatte_1_1CPU_a767fa7cb6570274cdd1cdd2017557d4a}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!hf2@{hf2}}
+\index{hf2@{hf2}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{hf2}{hf2}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+C\+P\+U\+::hf2}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_aacbce3359a278632fc12e770766bafe8}\label{classgambatte_1_1CPU_aacbce3359a278632fc12e770766bafe8}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!l@{l}}
+\index{l@{l}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{l}{l}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+C\+P\+U\+::l}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_aa862b7f29fdadacb7e9c7f5bad5378dd}\label{classgambatte_1_1CPU_aa862b7f29fdadacb7e9c7f5bad5378dd}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!mem\+\_\+@{mem\+\_\+}}
+\index{mem\+\_\+@{mem\+\_\+}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{mem\+\_\+}{mem\_}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1Memory}{Memory} gambatte\+::\+C\+P\+U\+::mem\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a162b1b47d04dd8521353d3c2f86fbaed}\label{classgambatte_1_1CPU_a162b1b47d04dd8521353d3c2f86fbaed}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!pc\+\_\+@{pc\+\_\+}}
+\index{pc\+\_\+@{pc\+\_\+}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{pc\+\_\+}{pc\_}}
+{\footnotesize\ttfamily unsigned short gambatte\+::\+C\+P\+U\+::pc\+\_\+}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ac751baf8d8b71f3c98419dd4446b4771}\label{classgambatte_1_1CPU_ac751baf8d8b71f3c98419dd4446b4771}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!pcptr@{pcptr}}
+\index{pcptr@{pcptr}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{pcptr}{pcptr}}
+{\footnotesize\ttfamily unsigned short$\ast$ gambatte\+::\+C\+P\+U\+::pcptr}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_ab23de2b8a001515be3cea35c8b2b7ae9}\label{classgambatte_1_1CPU_ab23de2b8a001515be3cea35c8b2b7ae9}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!skip\+\_\+@{skip\+\_\+}}
+\index{skip\+\_\+@{skip\+\_\+}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{skip\+\_\+}{skip\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+C\+P\+U\+::skip\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a518896e2142a44b6c2be55e4be2d1c47}\label{classgambatte_1_1CPU_a518896e2142a44b6c2be55e4be2d1c47}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!sp@{sp}}
+\index{sp@{sp}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{sp}{sp}}
+{\footnotesize\ttfamily unsigned short gambatte\+::\+C\+P\+U\+::sp}
+
+\mbox{\Hypertarget{classgambatte_1_1CPU_a720d6cffbef783bffb05b52e6d220cc8}\label{classgambatte_1_1CPU_a720d6cffbef783bffb05b52e6d220cc8}} 
+\index{gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}!zf@{zf}}
+\index{zf@{zf}!gambatte\+::\+C\+PU@{gambatte\+::\+C\+PU}}
+\subsubsection{\texorpdfstring{zf}{zf}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+C\+P\+U\+::zf}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{cpu_8h}{cpu.\+h}\item 
+src/\hyperlink{cpu_8cpp}{cpu.\+cpp}\end{DoxyCompactItemize}

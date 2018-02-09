@@ -1,0 +1,182 @@
+\hypertarget{classgambatte_1_1LycIrq}{}\section{gambatte\+:\+:Lyc\+Irq Class Reference}
+\label{classgambatte_1_1LycIrq}\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+
+
+{\ttfamily \#include $<$lyc\+\_\+irq.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1LycIrq_aad94ac6413d3f849b688636273420fff}{Lyc\+Irq} ()
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_aa89cc468ccee7c8c9012f7ec31b2b900}{do\+Event} (unsigned char $\ast$ifreg, \hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&ly\+Counter)
+\item 
+unsigned \hyperlink{classgambatte_1_1LycIrq_aa0c87be5b827d0a1bf9ed54e5e8e0786}{lyc\+Reg} () const
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_a3dbcaa80af33a03f83be90bfb8d9c63d}{load\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_ad0e92af711e022f3d04f26849ca5210b}{save\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) const
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_add90bd20cfb838f5fa3ad17bb11af885}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+unsigned \hyperlink{classgambatte_1_1LycIrq_a14583cea042d0c5e4533a53553a1a5a4}{time} () const
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_a791ca3897dd6ca732133dd355c6b6320}{set\+Cgb} (bool cgb)
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_a321338c36a2b5f6b2a24092134cc7b86}{lcd\+Reset} ()
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_ab692c00c8c9083c651302b3a78146530}{reschedule} (\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&ly\+Counter, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_a13ff1c934bb2c3ecf96777837648913e}{stat\+Reg\+Change} (unsigned stat\+Reg, \hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&ly\+Counter, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_a5c8dd6fee0a1ce846964d06a08a06dec}{lyc\+Reg\+Change} (unsigned \hyperlink{classgambatte_1_1LycIrq_aa0c87be5b827d0a1bf9ed54e5e8e0786}{lyc\+Reg}, \hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&ly\+Counter, unsigned cc)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1LycIrq_a1c55846be851069006470cf938d55af5}{reg\+Change} (unsigned stat\+Reg, unsigned \hyperlink{classgambatte_1_1LycIrq_aa0c87be5b827d0a1bf9ed54e5e8e0786}{lyc\+Reg}, \hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&ly\+Counter, unsigned cc)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classgambatte_1_1LycIrq_a7d1f9705467f2bd76cd1cb03d1dcdae7}{time\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1LycIrq_ad6b42e2bee684f6530eb6b35f3aa4fd6}{lyc\+Reg\+Src\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1LycIrq_a55a0557978976b6ae82c0de34f99f544}{stat\+Reg\+Src\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1LycIrq_a370d3e2248391d59eb72d7bb9aba2703}{lyc\+Reg\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1LycIrq_aba273c6daaa946a6afeadbe3d0f65bb2}{stat\+Reg\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1LycIrq_a81fb1d26e2da3aa1a2feaee9b66acd49}{cgb\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_aad94ac6413d3f849b688636273420fff}\label{classgambatte_1_1LycIrq_aad94ac6413d3f849b688636273420fff}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!Lyc\+Irq@{Lyc\+Irq}}
+\index{Lyc\+Irq@{Lyc\+Irq}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{Lyc\+Irq()}{LycIrq()}}
+{\footnotesize\ttfamily gambatte\+::\+Lyc\+Irq\+::\+Lyc\+Irq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_aa89cc468ccee7c8c9012f7ec31b2b900}\label{classgambatte_1_1LycIrq_aa89cc468ccee7c8c9012f7ec31b2b900}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!do\+Event@{do\+Event}}
+\index{do\+Event@{do\+Event}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{do\+Event()}{doEvent()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::do\+Event (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{ifreg,  }\item[{\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&}]{ly\+Counter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a321338c36a2b5f6b2a24092134cc7b86}\label{classgambatte_1_1LycIrq_a321338c36a2b5f6b2a24092134cc7b86}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!lcd\+Reset@{lcd\+Reset}}
+\index{lcd\+Reset@{lcd\+Reset}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{lcd\+Reset()}{lcdReset()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::lcd\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_add90bd20cfb838f5fa3ad17bb11af885}\label{classgambatte_1_1LycIrq_add90bd20cfb838f5fa3ad17bb11af885}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a3dbcaa80af33a03f83be90bfb8d9c63d}\label{classgambatte_1_1LycIrq_a3dbcaa80af33a03f83be90bfb8d9c63d}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_aa0c87be5b827d0a1bf9ed54e5e8e0786}\label{classgambatte_1_1LycIrq_aa0c87be5b827d0a1bf9ed54e5e8e0786}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!lyc\+Reg@{lyc\+Reg}}
+\index{lyc\+Reg@{lyc\+Reg}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{lyc\+Reg()}{lycReg()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Lyc\+Irq\+::lyc\+Reg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a5c8dd6fee0a1ce846964d06a08a06dec}\label{classgambatte_1_1LycIrq_a5c8dd6fee0a1ce846964d06a08a06dec}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!lyc\+Reg\+Change@{lyc\+Reg\+Change}}
+\index{lyc\+Reg\+Change@{lyc\+Reg\+Change}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{lyc\+Reg\+Change()}{lycRegChange()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::lyc\+Reg\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{lyc\+Reg,  }\item[{\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&}]{ly\+Counter,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a1c55846be851069006470cf938d55af5}\label{classgambatte_1_1LycIrq_a1c55846be851069006470cf938d55af5}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!reg\+Change@{reg\+Change}}
+\index{reg\+Change@{reg\+Change}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{reg\+Change()}{regChange()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::reg\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{stat\+Reg,  }\item[{unsigned}]{lyc\+Reg,  }\item[{\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&}]{ly\+Counter,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_ab692c00c8c9083c651302b3a78146530}\label{classgambatte_1_1LycIrq_ab692c00c8c9083c651302b3a78146530}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!reschedule@{reschedule}}
+\index{reschedule@{reschedule}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{reschedule()}{reschedule()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::reschedule (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&}]{ly\+Counter,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_ad0e92af711e022f3d04f26849ca5210b}\label{classgambatte_1_1LycIrq_ad0e92af711e022f3d04f26849ca5210b}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a791ca3897dd6ca732133dd355c6b6320}\label{classgambatte_1_1LycIrq_a791ca3897dd6ca732133dd355c6b6320}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!set\+Cgb@{set\+Cgb}}
+\index{set\+Cgb@{set\+Cgb}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{set\+Cgb()}{setCgb()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::set\+Cgb (\begin{DoxyParamCaption}\item[{bool}]{cgb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a13ff1c934bb2c3ecf96777837648913e}\label{classgambatte_1_1LycIrq_a13ff1c934bb2c3ecf96777837648913e}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!stat\+Reg\+Change@{stat\+Reg\+Change}}
+\index{stat\+Reg\+Change@{stat\+Reg\+Change}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{stat\+Reg\+Change()}{statRegChange()}}
+{\footnotesize\ttfamily void gambatte\+::\+Lyc\+Irq\+::stat\+Reg\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{stat\+Reg,  }\item[{\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&}]{ly\+Counter,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a14583cea042d0c5e4533a53553a1a5a4}\label{classgambatte_1_1LycIrq_a14583cea042d0c5e4533a53553a1a5a4}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!time@{time}}
+\index{time@{time}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Lyc\+Irq\+::time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a81fb1d26e2da3aa1a2feaee9b66acd49}\label{classgambatte_1_1LycIrq_a81fb1d26e2da3aa1a2feaee9b66acd49}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!cgb\+\_\+@{cgb\+\_\+}}
+\index{cgb\+\_\+@{cgb\+\_\+}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{cgb\+\_\+}{cgb\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Lyc\+Irq\+::cgb\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a370d3e2248391d59eb72d7bb9aba2703}\label{classgambatte_1_1LycIrq_a370d3e2248391d59eb72d7bb9aba2703}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!lyc\+Reg\+\_\+@{lyc\+Reg\+\_\+}}
+\index{lyc\+Reg\+\_\+@{lyc\+Reg\+\_\+}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{lyc\+Reg\+\_\+}{lycReg\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Lyc\+Irq\+::lyc\+Reg\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_ad6b42e2bee684f6530eb6b35f3aa4fd6}\label{classgambatte_1_1LycIrq_ad6b42e2bee684f6530eb6b35f3aa4fd6}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!lyc\+Reg\+Src\+\_\+@{lyc\+Reg\+Src\+\_\+}}
+\index{lyc\+Reg\+Src\+\_\+@{lyc\+Reg\+Src\+\_\+}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{lyc\+Reg\+Src\+\_\+}{lycRegSrc\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Lyc\+Irq\+::lyc\+Reg\+Src\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_aba273c6daaa946a6afeadbe3d0f65bb2}\label{classgambatte_1_1LycIrq_aba273c6daaa946a6afeadbe3d0f65bb2}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!stat\+Reg\+\_\+@{stat\+Reg\+\_\+}}
+\index{stat\+Reg\+\_\+@{stat\+Reg\+\_\+}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{stat\+Reg\+\_\+}{statReg\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Lyc\+Irq\+::stat\+Reg\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a55a0557978976b6ae82c0de34f99f544}\label{classgambatte_1_1LycIrq_a55a0557978976b6ae82c0de34f99f544}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!stat\+Reg\+Src\+\_\+@{stat\+Reg\+Src\+\_\+}}
+\index{stat\+Reg\+Src\+\_\+@{stat\+Reg\+Src\+\_\+}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{stat\+Reg\+Src\+\_\+}{statRegSrc\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Lyc\+Irq\+::stat\+Reg\+Src\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LycIrq_a7d1f9705467f2bd76cd1cb03d1dcdae7}\label{classgambatte_1_1LycIrq_a7d1f9705467f2bd76cd1cb03d1dcdae7}} 
+\index{gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}!time\+\_\+@{time\+\_\+}}
+\index{time\+\_\+@{time\+\_\+}!gambatte\+::\+Lyc\+Irq@{gambatte\+::\+Lyc\+Irq}}
+\subsubsection{\texorpdfstring{time\+\_\+}{time\_}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Lyc\+Irq\+::time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/video/\hyperlink{lyc__irq_8h}{lyc\+\_\+irq.\+h}\item 
+src/video/\hyperlink{lyc__irq_8cpp}{lyc\+\_\+irq.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="src/mem/cartridge.h" name="src/mem/cartridge.h">
+<area shape="rect" id="node2" href="$loadres_8h.html" title="loadres.h" alt="" coords="5,80,85,107"/>
+<area shape="rect" id="node4" href="$memptrs_8h.html" title="memptrs.h" alt="" coords="161,80,247,107"/>
+<area shape="rect" id="node5" href="$loadsave_8h.html" title="../loadsave.h" alt="" coords="221,155,321,181"/>
+<area shape="rect" id="node10" href="$rtc_8h.html" title="rtc.h" alt="" coords="323,80,373,107"/>
+<area shape="rect" id="node12" href="$savestate_8h.html" title="savestate.h" alt="" coords="397,80,491,107"/>
+</map>

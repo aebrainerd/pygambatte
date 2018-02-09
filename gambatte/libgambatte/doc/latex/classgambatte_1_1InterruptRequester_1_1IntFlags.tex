@@ -1,0 +1,134 @@
+\hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags}{}\section{gambatte\+:\+:Interrupt\+Requester\+:\+:Int\+Flags Class Reference}
+\label{classgambatte_1_1InterruptRequester_1_1IntFlags}\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_ade4bb1590cd0d09681771bfd5c14162c}{Int\+Flags} ()
+\item 
+bool \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a1d2013209732079b1808306088d931ff}{ime} () const
+\item 
+bool \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a8206d665f9772d64144d6be5d8c1a5cb}{halted} () const
+\item 
+bool \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a8fa10e667caf8ee75e4160831b408e5f}{ime\+Or\+Halted} () const
+\item 
+void \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a7ba10cdfb4510071d25d34f156f0d340}{set\+Ime} ()
+\item 
+void \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a200fcbd2f4aafc8d1270f127f6b73605}{unset\+Ime} ()
+\item 
+void \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a1165e408af70f4c57bad2624aca64c91}{set\+Halted} ()
+\item 
+void \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_ab8a9985dc5e4319aae2604e82948f2ed}{unset\+Halted} ()
+\item 
+void \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a39bae600579578159fd4479a7db8bffd}{set} (bool \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a1d2013209732079b1808306088d931ff}{ime}, bool \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a8206d665f9772d64144d6be5d8c1a5cb}{halted})
+\item 
+void \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_a67e0b21fe08af2364e644b6240fe28d3}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_ac12aff71731b6bee64b7d9904eab9d61ac0e5e5336630c11283f53c3b62456b10}{flag\+\_\+ime} = 1, 
+\hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_ac12aff71731b6bee64b7d9904eab9d61a6a6552113ff0fc08e8a0d684d1c2e920}{flag\+\_\+halted} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags_ada70b74691d5e79f664bf956dc1eeadc}{flags\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_ac12aff71731b6bee64b7d9904eab9d61}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_ac12aff71731b6bee64b7d9904eab9d61}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{flag\+\_\+ime@{flag\+\_\+ime}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!flag\+\_\+ime@{flag\+\_\+ime}}}\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_ac12aff71731b6bee64b7d9904eab9d61ac0e5e5336630c11283f53c3b62456b10}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_ac12aff71731b6bee64b7d9904eab9d61ac0e5e5336630c11283f53c3b62456b10}} 
+flag\+\_\+ime&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{flag\+\_\+halted@{flag\+\_\+halted}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!flag\+\_\+halted@{flag\+\_\+halted}}}\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_ac12aff71731b6bee64b7d9904eab9d61a6a6552113ff0fc08e8a0d684d1c2e920}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_ac12aff71731b6bee64b7d9904eab9d61a6a6552113ff0fc08e8a0d684d1c2e920}} 
+flag\+\_\+halted&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_ade4bb1590cd0d09681771bfd5c14162c}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_ade4bb1590cd0d09681771bfd5c14162c}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!Int\+Flags@{Int\+Flags}}
+\index{Int\+Flags@{Int\+Flags}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{Int\+Flags()}{IntFlags()}}
+{\footnotesize\ttfamily gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::\+Int\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_a8206d665f9772d64144d6be5d8c1a5cb}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_a8206d665f9772d64144d6be5d8c1a5cb}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!halted@{halted}}
+\index{halted@{halted}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{halted()}{halted()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::halted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_a1d2013209732079b1808306088d931ff}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_a1d2013209732079b1808306088d931ff}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!ime@{ime}}
+\index{ime@{ime}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{ime()}{ime()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::ime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_a8fa10e667caf8ee75e4160831b408e5f}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_a8fa10e667caf8ee75e4160831b408e5f}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!ime\+Or\+Halted@{ime\+Or\+Halted}}
+\index{ime\+Or\+Halted@{ime\+Or\+Halted}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{ime\+Or\+Halted()}{imeOrHalted()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::ime\+Or\+Halted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_a67e0b21fe08af2364e644b6240fe28d3}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_a67e0b21fe08af2364e644b6240fe28d3}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_a39bae600579578159fd4479a7db8bffd}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_a39bae600579578159fd4479a7db8bffd}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!set@{set}}
+\index{set@{set}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::set (\begin{DoxyParamCaption}\item[{bool}]{ime,  }\item[{bool}]{halted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_a1165e408af70f4c57bad2624aca64c91}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_a1165e408af70f4c57bad2624aca64c91}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!set\+Halted@{set\+Halted}}
+\index{set\+Halted@{set\+Halted}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{set\+Halted()}{setHalted()}}
+{\footnotesize\ttfamily void gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::set\+Halted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_a7ba10cdfb4510071d25d34f156f0d340}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_a7ba10cdfb4510071d25d34f156f0d340}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!set\+Ime@{set\+Ime}}
+\index{set\+Ime@{set\+Ime}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{set\+Ime()}{setIme()}}
+{\footnotesize\ttfamily void gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::set\+Ime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_ab8a9985dc5e4319aae2604e82948f2ed}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_ab8a9985dc5e4319aae2604e82948f2ed}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!unset\+Halted@{unset\+Halted}}
+\index{unset\+Halted@{unset\+Halted}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{unset\+Halted()}{unsetHalted()}}
+{\footnotesize\ttfamily void gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::unset\+Halted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_a200fcbd2f4aafc8d1270f127f6b73605}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_a200fcbd2f4aafc8d1270f127f6b73605}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!unset\+Ime@{unset\+Ime}}
+\index{unset\+Ime@{unset\+Ime}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{unset\+Ime()}{unsetIme()}}
+{\footnotesize\ttfamily void gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::unset\+Ime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1InterruptRequester_1_1IntFlags_ada70b74691d5e79f664bf956dc1eeadc}\label{classgambatte_1_1InterruptRequester_1_1IntFlags_ada70b74691d5e79f664bf956dc1eeadc}} 
+\index{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}!flags\+\_\+@{flags\+\_\+}}
+\index{flags\+\_\+@{flags\+\_\+}!gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags@{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}}
+\subsubsection{\texorpdfstring{flags\+\_\+}{flags\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags\+::flags\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{interruptrequester_8h}{interruptrequester.\+h}\end{DoxyCompactItemize}

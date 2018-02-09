@@ -1,0 +1,194 @@
+\hypertarget{structgambatte_1_1SaveState_1_1Mem}{}\section{gambatte\+:\+:Save\+State\+:\+:Mem Struct Reference}
+\label{structgambatte_1_1SaveState_1_1Mem}\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+
+
+{\ttfamily \#include $<$savestate.\+h$>$}
+
+
+
+Collaboration diagram for gambatte\+:\+:Save\+State\+:\+:Mem\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{structgambatte_1_1SaveState_1_1Mem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1SaveState_1_1Ptr}{Ptr}$<$ unsigned char $>$ \hyperlink{structgambatte_1_1SaveState_1_1Mem_a17be66d9d55708247cb6ea661163d433}{vram}
+\item 
+\hyperlink{classgambatte_1_1SaveState_1_1Ptr}{Ptr}$<$ unsigned char $>$ \hyperlink{structgambatte_1_1SaveState_1_1Mem_aa0d8ef750665ad81ec84ba8335af5800}{sram}
+\item 
+\hyperlink{classgambatte_1_1SaveState_1_1Ptr}{Ptr}$<$ unsigned char $>$ \hyperlink{structgambatte_1_1SaveState_1_1Mem_a61d6a15a5e1ac0253bf3a7ad26993619}{wram}
+\item 
+\hyperlink{classgambatte_1_1SaveState_1_1Ptr}{Ptr}$<$ unsigned char $>$ \hyperlink{structgambatte_1_1SaveState_1_1Mem_a7773fc635ffeec5c35ee65c8f2f55710}{ioamhram}
+\item 
+unsigned \hyperlink{structgambatte_1_1SaveState_1_1Mem_adfc72668409f448501f371c52c01d060}{div\+Last\+Update}
+\item 
+unsigned \hyperlink{structgambatte_1_1SaveState_1_1Mem_ac5f805a2892a39121abed21579e6a44a}{tima\+Last\+Update}
+\item 
+unsigned \hyperlink{structgambatte_1_1SaveState_1_1Mem_a29e42adc04bc7397724ea482ef9f14d1}{tmatime}
+\item 
+unsigned \hyperlink{structgambatte_1_1SaveState_1_1Mem_a53fc64a87f256305e03d64cbc9381a27}{next\+Serialtime}
+\item 
+unsigned \hyperlink{structgambatte_1_1SaveState_1_1Mem_a420d6b2a084c5e27c345c9b7a022c229}{last\+Oam\+Dma\+Update}
+\item 
+unsigned \hyperlink{structgambatte_1_1SaveState_1_1Mem_aaee943320e1021ea6b45a2286076b1fc}{min\+Int\+Time}
+\item 
+unsigned \hyperlink{structgambatte_1_1SaveState_1_1Mem_accd32508acb68a0119b91f27e17de6be}{unhalt\+Time}
+\item 
+unsigned short \hyperlink{structgambatte_1_1SaveState_1_1Mem_af1513cc3d50c10b4290221cdbe4be847}{rombank}
+\item 
+unsigned short \hyperlink{structgambatte_1_1SaveState_1_1Mem_a25213cf5ac03caf9500799a9804b7e77}{dma\+Source}
+\item 
+unsigned short \hyperlink{structgambatte_1_1SaveState_1_1Mem_ab74c2e63ce1d0eec213133583e7d55f7}{dma\+Destination}
+\item 
+unsigned char \hyperlink{structgambatte_1_1SaveState_1_1Mem_ac46eb550a4acc2aabef2ffe323a6cd24}{rambank}
+\item 
+unsigned char \hyperlink{structgambatte_1_1SaveState_1_1Mem_ad812f46789a25f4e39ae31dd0cdc1236}{oam\+Dma\+Pos}
+\item 
+bool \hyperlink{structgambatte_1_1SaveState_1_1Mem_af09eedb50f5dd691378612fd20fa4b39}{I\+ME}
+\item 
+bool \hyperlink{structgambatte_1_1SaveState_1_1Mem_a28cc6ab288d5c84e3c4140e3a72f742d}{halted}
+\item 
+bool \hyperlink{structgambatte_1_1SaveState_1_1Mem_a7f01ccf9678dc61ca5b1db4e3733e6c6}{enable\+Ram}
+\item 
+bool \hyperlink{structgambatte_1_1SaveState_1_1Mem_adee0625c6943456a851d73eb3aed4245}{rambank\+Mode}
+\item 
+bool \hyperlink{structgambatte_1_1SaveState_1_1Mem_a888b5a886f68c63ddb78ec2c1b95b343}{hdma\+Transfer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_adfc72668409f448501f371c52c01d060}\label{structgambatte_1_1SaveState_1_1Mem_adfc72668409f448501f371c52c01d060}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!div\+Last\+Update@{div\+Last\+Update}}
+\index{div\+Last\+Update@{div\+Last\+Update}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{div\+Last\+Update}{divLastUpdate}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Save\+State\+::\+Mem\+::div\+Last\+Update}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_ab74c2e63ce1d0eec213133583e7d55f7}\label{structgambatte_1_1SaveState_1_1Mem_ab74c2e63ce1d0eec213133583e7d55f7}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!dma\+Destination@{dma\+Destination}}
+\index{dma\+Destination@{dma\+Destination}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{dma\+Destination}{dmaDestination}}
+{\footnotesize\ttfamily unsigned short gambatte\+::\+Save\+State\+::\+Mem\+::dma\+Destination}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a25213cf5ac03caf9500799a9804b7e77}\label{structgambatte_1_1SaveState_1_1Mem_a25213cf5ac03caf9500799a9804b7e77}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!dma\+Source@{dma\+Source}}
+\index{dma\+Source@{dma\+Source}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{dma\+Source}{dmaSource}}
+{\footnotesize\ttfamily unsigned short gambatte\+::\+Save\+State\+::\+Mem\+::dma\+Source}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a7f01ccf9678dc61ca5b1db4e3733e6c6}\label{structgambatte_1_1SaveState_1_1Mem_a7f01ccf9678dc61ca5b1db4e3733e6c6}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!enable\+Ram@{enable\+Ram}}
+\index{enable\+Ram@{enable\+Ram}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{enable\+Ram}{enableRam}}
+{\footnotesize\ttfamily bool gambatte\+::\+Save\+State\+::\+Mem\+::enable\+Ram}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a28cc6ab288d5c84e3c4140e3a72f742d}\label{structgambatte_1_1SaveState_1_1Mem_a28cc6ab288d5c84e3c4140e3a72f742d}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!halted@{halted}}
+\index{halted@{halted}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{halted}{halted}}
+{\footnotesize\ttfamily bool gambatte\+::\+Save\+State\+::\+Mem\+::halted}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a888b5a886f68c63ddb78ec2c1b95b343}\label{structgambatte_1_1SaveState_1_1Mem_a888b5a886f68c63ddb78ec2c1b95b343}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!hdma\+Transfer@{hdma\+Transfer}}
+\index{hdma\+Transfer@{hdma\+Transfer}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{hdma\+Transfer}{hdmaTransfer}}
+{\footnotesize\ttfamily bool gambatte\+::\+Save\+State\+::\+Mem\+::hdma\+Transfer}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_af09eedb50f5dd691378612fd20fa4b39}\label{structgambatte_1_1SaveState_1_1Mem_af09eedb50f5dd691378612fd20fa4b39}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!I\+ME@{I\+ME}}
+\index{I\+ME@{I\+ME}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{I\+ME}{IME}}
+{\footnotesize\ttfamily bool gambatte\+::\+Save\+State\+::\+Mem\+::\+I\+ME}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a7773fc635ffeec5c35ee65c8f2f55710}\label{structgambatte_1_1SaveState_1_1Mem_a7773fc635ffeec5c35ee65c8f2f55710}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!ioamhram@{ioamhram}}
+\index{ioamhram@{ioamhram}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{ioamhram}{ioamhram}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1SaveState_1_1Ptr}{Ptr}$<$unsigned char$>$ gambatte\+::\+Save\+State\+::\+Mem\+::ioamhram}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a420d6b2a084c5e27c345c9b7a022c229}\label{structgambatte_1_1SaveState_1_1Mem_a420d6b2a084c5e27c345c9b7a022c229}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!last\+Oam\+Dma\+Update@{last\+Oam\+Dma\+Update}}
+\index{last\+Oam\+Dma\+Update@{last\+Oam\+Dma\+Update}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{last\+Oam\+Dma\+Update}{lastOamDmaUpdate}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Save\+State\+::\+Mem\+::last\+Oam\+Dma\+Update}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_aaee943320e1021ea6b45a2286076b1fc}\label{structgambatte_1_1SaveState_1_1Mem_aaee943320e1021ea6b45a2286076b1fc}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!min\+Int\+Time@{min\+Int\+Time}}
+\index{min\+Int\+Time@{min\+Int\+Time}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{min\+Int\+Time}{minIntTime}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Save\+State\+::\+Mem\+::min\+Int\+Time}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a53fc64a87f256305e03d64cbc9381a27}\label{structgambatte_1_1SaveState_1_1Mem_a53fc64a87f256305e03d64cbc9381a27}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!next\+Serialtime@{next\+Serialtime}}
+\index{next\+Serialtime@{next\+Serialtime}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{next\+Serialtime}{nextSerialtime}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Save\+State\+::\+Mem\+::next\+Serialtime}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_ad812f46789a25f4e39ae31dd0cdc1236}\label{structgambatte_1_1SaveState_1_1Mem_ad812f46789a25f4e39ae31dd0cdc1236}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!oam\+Dma\+Pos@{oam\+Dma\+Pos}}
+\index{oam\+Dma\+Pos@{oam\+Dma\+Pos}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{oam\+Dma\+Pos}{oamDmaPos}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Save\+State\+::\+Mem\+::oam\+Dma\+Pos}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_ac46eb550a4acc2aabef2ffe323a6cd24}\label{structgambatte_1_1SaveState_1_1Mem_ac46eb550a4acc2aabef2ffe323a6cd24}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!rambank@{rambank}}
+\index{rambank@{rambank}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{rambank}{rambank}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Save\+State\+::\+Mem\+::rambank}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_adee0625c6943456a851d73eb3aed4245}\label{structgambatte_1_1SaveState_1_1Mem_adee0625c6943456a851d73eb3aed4245}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!rambank\+Mode@{rambank\+Mode}}
+\index{rambank\+Mode@{rambank\+Mode}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{rambank\+Mode}{rambankMode}}
+{\footnotesize\ttfamily bool gambatte\+::\+Save\+State\+::\+Mem\+::rambank\+Mode}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_af1513cc3d50c10b4290221cdbe4be847}\label{structgambatte_1_1SaveState_1_1Mem_af1513cc3d50c10b4290221cdbe4be847}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!rombank@{rombank}}
+\index{rombank@{rombank}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{rombank}{rombank}}
+{\footnotesize\ttfamily unsigned short gambatte\+::\+Save\+State\+::\+Mem\+::rombank}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_aa0d8ef750665ad81ec84ba8335af5800}\label{structgambatte_1_1SaveState_1_1Mem_aa0d8ef750665ad81ec84ba8335af5800}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!sram@{sram}}
+\index{sram@{sram}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{sram}{sram}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1SaveState_1_1Ptr}{Ptr}$<$unsigned char$>$ gambatte\+::\+Save\+State\+::\+Mem\+::sram}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_ac5f805a2892a39121abed21579e6a44a}\label{structgambatte_1_1SaveState_1_1Mem_ac5f805a2892a39121abed21579e6a44a}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!tima\+Last\+Update@{tima\+Last\+Update}}
+\index{tima\+Last\+Update@{tima\+Last\+Update}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{tima\+Last\+Update}{timaLastUpdate}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Save\+State\+::\+Mem\+::tima\+Last\+Update}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a29e42adc04bc7397724ea482ef9f14d1}\label{structgambatte_1_1SaveState_1_1Mem_a29e42adc04bc7397724ea482ef9f14d1}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!tmatime@{tmatime}}
+\index{tmatime@{tmatime}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{tmatime}{tmatime}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Save\+State\+::\+Mem\+::tmatime}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_accd32508acb68a0119b91f27e17de6be}\label{structgambatte_1_1SaveState_1_1Mem_accd32508acb68a0119b91f27e17de6be}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!unhalt\+Time@{unhalt\+Time}}
+\index{unhalt\+Time@{unhalt\+Time}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{unhalt\+Time}{unhaltTime}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Save\+State\+::\+Mem\+::unhalt\+Time}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a17be66d9d55708247cb6ea661163d433}\label{structgambatte_1_1SaveState_1_1Mem_a17be66d9d55708247cb6ea661163d433}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!vram@{vram}}
+\index{vram@{vram}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{vram}{vram}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1SaveState_1_1Ptr}{Ptr}$<$unsigned char$>$ gambatte\+::\+Save\+State\+::\+Mem\+::vram}
+
+\mbox{\Hypertarget{structgambatte_1_1SaveState_1_1Mem_a61d6a15a5e1ac0253bf3a7ad26993619}\label{structgambatte_1_1SaveState_1_1Mem_a61d6a15a5e1ac0253bf3a7ad26993619}} 
+\index{gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}!wram@{wram}}
+\index{wram@{wram}!gambatte\+::\+Save\+State\+::\+Mem@{gambatte\+::\+Save\+State\+::\+Mem}}
+\subsubsection{\texorpdfstring{wram}{wram}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1SaveState_1_1Ptr}{Ptr}$<$unsigned char$>$ gambatte\+::\+Save\+State\+::\+Mem\+::wram}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{savestate_8h}{savestate.\+h}\end{DoxyCompactItemize}

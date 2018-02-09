@@ -1,0 +1,147 @@
+\hypertarget{classgambatte_1_1LengthCounter}{}\section{gambatte\+:\+:Length\+Counter Class Reference}
+\label{classgambatte_1_1LengthCounter}\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+
+
+{\ttfamily \#include $<$length\+\_\+counter.\+h$>$}
+
+
+
+Inheritance diagram for gambatte\+:\+:Length\+Counter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classgambatte_1_1LengthCounter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gambatte\+:\+:Length\+Counter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classgambatte_1_1LengthCounter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1LengthCounter_aa654f8aecadd8f7f6c1896cc0fa23592}{Length\+Counter} (\hyperlink{classgambatte_1_1MasterDisabler}{Master\+Disabler} \&disabler, unsigned length\+Mask)
+\item 
+void \hyperlink{classgambatte_1_1LengthCounter_ad766b7f12bd30af4222cc9da435982b4}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+virtual void \hyperlink{classgambatte_1_1LengthCounter_ab0d3eda374d487f8a0b79ea447cca91a}{event} ()
+\item 
+void \hyperlink{classgambatte_1_1LengthCounter_a6b639f057dab0919908784e350b80228}{nr1\+Change} (unsigned new\+Nr1, unsigned nr4, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1LengthCounter_a30e1eb09f738c51a75fa5ddd8bf41457}{nr4\+Change} (unsigned old\+Nr4, unsigned new\+Nr4, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1LengthCounter_aa04df35be4639e81df42171dce3d1934}{init} (bool cgb)
+\item 
+void \hyperlink{classgambatte_1_1LengthCounter_a161626ce1c41fe0dc53dfdb40f5644ce}{save\+State} (\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1LCounter}{Save\+State\+::\+S\+P\+U\+::\+L\+Counter} \&lstate) const
+\item 
+void \hyperlink{classgambatte_1_1LengthCounter_ae49c50bda45d0d4056f31a3968294930}{load\+State} (\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1LCounter}{Save\+State\+::\+S\+P\+U\+::\+L\+Counter} const \&lstate, unsigned cc)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1MasterDisabler}{Master\+Disabler} \& \hyperlink{classgambatte_1_1LengthCounter_acad0b5c512a481252e37952e6a98888b}{disable\+Master\+\_\+}
+\item 
+unsigned short \hyperlink{classgambatte_1_1LengthCounter_abe18ec36f5b6989a094f681b7fb43a10}{length\+Counter\+\_\+}
+\item 
+unsigned char const \hyperlink{classgambatte_1_1LengthCounter_a48c36b01e764cde4ff589c1618422475}{length\+Mask\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1LengthCounter_af5baee85c0c722bc5a192f1200969f70}{cgb\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_aa654f8aecadd8f7f6c1896cc0fa23592}\label{classgambatte_1_1LengthCounter_aa654f8aecadd8f7f6c1896cc0fa23592}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!Length\+Counter@{Length\+Counter}}
+\index{Length\+Counter@{Length\+Counter}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{Length\+Counter()}{LengthCounter()}}
+{\footnotesize\ttfamily gambatte\+::\+Length\+Counter\+::\+Length\+Counter (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1MasterDisabler}{Master\+Disabler} \&}]{disabler,  }\item[{unsigned}]{length\+Mask }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_ab0d3eda374d487f8a0b79ea447cca91a}\label{classgambatte_1_1LengthCounter_ab0d3eda374d487f8a0b79ea447cca91a}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!event@{event}}
+\index{event@{event}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{event()}{event()}}
+{\footnotesize\ttfamily void gambatte\+::\+Length\+Counter\+::event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classgambatte_1_1SoundUnit_a8ad6df87fc3700d9d3bee470383197b4}{gambatte\+::\+Sound\+Unit}.
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_aa04df35be4639e81df42171dce3d1934}\label{classgambatte_1_1LengthCounter_aa04df35be4639e81df42171dce3d1934}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!init@{init}}
+\index{init@{init}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void gambatte\+::\+Length\+Counter\+::init (\begin{DoxyParamCaption}\item[{bool}]{cgb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_ad766b7f12bd30af4222cc9da435982b4}\label{classgambatte_1_1LengthCounter_ad766b7f12bd30af4222cc9da435982b4}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Length\+Counter\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_ae49c50bda45d0d4056f31a3968294930}\label{classgambatte_1_1LengthCounter_ae49c50bda45d0d4056f31a3968294930}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Length\+Counter\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1LCounter}{Save\+State\+::\+S\+P\+U\+::\+L\+Counter} const \&}]{lstate,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_a6b639f057dab0919908784e350b80228}\label{classgambatte_1_1LengthCounter_a6b639f057dab0919908784e350b80228}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!nr1\+Change@{nr1\+Change}}
+\index{nr1\+Change@{nr1\+Change}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{nr1\+Change()}{nr1Change()}}
+{\footnotesize\ttfamily void gambatte\+::\+Length\+Counter\+::nr1\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Nr1,  }\item[{unsigned}]{nr4,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_a30e1eb09f738c51a75fa5ddd8bf41457}\label{classgambatte_1_1LengthCounter_a30e1eb09f738c51a75fa5ddd8bf41457}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!nr4\+Change@{nr4\+Change}}
+\index{nr4\+Change@{nr4\+Change}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{nr4\+Change()}{nr4Change()}}
+{\footnotesize\ttfamily void gambatte\+::\+Length\+Counter\+::nr4\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{old\+Nr4,  }\item[{unsigned}]{new\+Nr4,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_a161626ce1c41fe0dc53dfdb40f5644ce}\label{classgambatte_1_1LengthCounter_a161626ce1c41fe0dc53dfdb40f5644ce}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Length\+Counter\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1LCounter}{Save\+State\+::\+S\+P\+U\+::\+L\+Counter} \&}]{lstate }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_af5baee85c0c722bc5a192f1200969f70}\label{classgambatte_1_1LengthCounter_af5baee85c0c722bc5a192f1200969f70}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!cgb\+\_\+@{cgb\+\_\+}}
+\index{cgb\+\_\+@{cgb\+\_\+}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{cgb\+\_\+}{cgb\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Length\+Counter\+::cgb\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_acad0b5c512a481252e37952e6a98888b}\label{classgambatte_1_1LengthCounter_acad0b5c512a481252e37952e6a98888b}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!disable\+Master\+\_\+@{disable\+Master\+\_\+}}
+\index{disable\+Master\+\_\+@{disable\+Master\+\_\+}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{disable\+Master\+\_\+}{disableMaster\_}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1MasterDisabler}{Master\+Disabler}\& gambatte\+::\+Length\+Counter\+::disable\+Master\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_abe18ec36f5b6989a094f681b7fb43a10}\label{classgambatte_1_1LengthCounter_abe18ec36f5b6989a094f681b7fb43a10}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!length\+Counter\+\_\+@{length\+Counter\+\_\+}}
+\index{length\+Counter\+\_\+@{length\+Counter\+\_\+}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{length\+Counter\+\_\+}{lengthCounter\_}}
+{\footnotesize\ttfamily unsigned short gambatte\+::\+Length\+Counter\+::length\+Counter\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LengthCounter_a48c36b01e764cde4ff589c1618422475}\label{classgambatte_1_1LengthCounter_a48c36b01e764cde4ff589c1618422475}} 
+\index{gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}!length\+Mask\+\_\+@{length\+Mask\+\_\+}}
+\index{length\+Mask\+\_\+@{length\+Mask\+\_\+}!gambatte\+::\+Length\+Counter@{gambatte\+::\+Length\+Counter}}
+\subsubsection{\texorpdfstring{length\+Mask\+\_\+}{lengthMask\_}}
+{\footnotesize\ttfamily unsigned char const gambatte\+::\+Length\+Counter\+::length\+Mask\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/sound/\hyperlink{length__counter_8h}{length\+\_\+counter.\+h}\item 
+src/sound/\hyperlink{length__counter_8cpp}{length\+\_\+counter.\+cpp}\end{DoxyCompactItemize}

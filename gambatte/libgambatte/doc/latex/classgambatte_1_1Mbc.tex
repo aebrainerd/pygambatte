@@ -1,0 +1,68 @@
+\hypertarget{classgambatte_1_1Mbc}{}\section{gambatte\+:\+:Mbc Class Reference}
+\label{classgambatte_1_1Mbc}\index{gambatte\+::\+Mbc@{gambatte\+::\+Mbc}}
+
+
+{\ttfamily \#include $<$cartridge.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgambatte_1_1Mbc_a518adcdff389a3e92774e683f1af6059}{$\sim$\+Mbc} ()
+\item 
+virtual void \hyperlink{classgambatte_1_1Mbc_a0c05b231bad52fb08784074ddfd2e878}{rom\+Write} (unsigned P, unsigned data)=0
+\item 
+virtual void \hyperlink{classgambatte_1_1Mbc_a255f6aa48eb21c8b95b23d978b1f4d21}{save\+State} (\hyperlink{structgambatte_1_1SaveState_1_1Mem}{Save\+State\+::\+Mem} \&ss) const =0
+\item 
+virtual void \hyperlink{classgambatte_1_1Mbc_a894d6ad53d017b25a03bf45f7b910f6d}{load\+State} (\hyperlink{structgambatte_1_1SaveState_1_1Mem}{Save\+State\+::\+Mem} const \&ss)=0
+\item 
+virtual bool \hyperlink{classgambatte_1_1Mbc_add5e1e03b46b35d6ca593e46dba50477}{is\+Address\+Within\+Area\+Rombank\+Can\+Be\+Mapped\+To} (unsigned address, unsigned rombank) const =0
+\item 
+virtual void \hyperlink{classgambatte_1_1Mbc_aca51cb12ec7840299efd24e5fb5359df}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1Mbc_a518adcdff389a3e92774e683f1af6059}\label{classgambatte_1_1Mbc_a518adcdff389a3e92774e683f1af6059}} 
+\index{gambatte\+::\+Mbc@{gambatte\+::\+Mbc}!````~Mbc@{$\sim$\+Mbc}}
+\index{````~Mbc@{$\sim$\+Mbc}!gambatte\+::\+Mbc@{gambatte\+::\+Mbc}}
+\subsubsection{\texorpdfstring{$\sim$\+Mbc()}{~Mbc()}}
+{\footnotesize\ttfamily virtual gambatte\+::\+Mbc\+::$\sim$\+Mbc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1Mbc_add5e1e03b46b35d6ca593e46dba50477}\label{classgambatte_1_1Mbc_add5e1e03b46b35d6ca593e46dba50477}} 
+\index{gambatte\+::\+Mbc@{gambatte\+::\+Mbc}!is\+Address\+Within\+Area\+Rombank\+Can\+Be\+Mapped\+To@{is\+Address\+Within\+Area\+Rombank\+Can\+Be\+Mapped\+To}}
+\index{is\+Address\+Within\+Area\+Rombank\+Can\+Be\+Mapped\+To@{is\+Address\+Within\+Area\+Rombank\+Can\+Be\+Mapped\+To}!gambatte\+::\+Mbc@{gambatte\+::\+Mbc}}
+\subsubsection{\texorpdfstring{is\+Address\+Within\+Area\+Rombank\+Can\+Be\+Mapped\+To()}{isAddressWithinAreaRombankCanBeMappedTo()}}
+{\footnotesize\ttfamily virtual bool gambatte\+::\+Mbc\+::is\+Address\+Within\+Area\+Rombank\+Can\+Be\+Mapped\+To (\begin{DoxyParamCaption}\item[{unsigned}]{address,  }\item[{unsigned}]{rombank }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Mbc_aca51cb12ec7840299efd24e5fb5359df}\label{classgambatte_1_1Mbc_aca51cb12ec7840299efd24e5fb5359df}} 
+\index{gambatte\+::\+Mbc@{gambatte\+::\+Mbc}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Mbc@{gambatte\+::\+Mbc}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily virtual void gambatte\+::\+Mbc\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Mbc_a894d6ad53d017b25a03bf45f7b910f6d}\label{classgambatte_1_1Mbc_a894d6ad53d017b25a03bf45f7b910f6d}} 
+\index{gambatte\+::\+Mbc@{gambatte\+::\+Mbc}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Mbc@{gambatte\+::\+Mbc}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily virtual void gambatte\+::\+Mbc\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState_1_1Mem}{Save\+State\+::\+Mem} const \&}]{ss }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Mbc_a0c05b231bad52fb08784074ddfd2e878}\label{classgambatte_1_1Mbc_a0c05b231bad52fb08784074ddfd2e878}} 
+\index{gambatte\+::\+Mbc@{gambatte\+::\+Mbc}!rom\+Write@{rom\+Write}}
+\index{rom\+Write@{rom\+Write}!gambatte\+::\+Mbc@{gambatte\+::\+Mbc}}
+\subsubsection{\texorpdfstring{rom\+Write()}{romWrite()}}
+{\footnotesize\ttfamily virtual void gambatte\+::\+Mbc\+::rom\+Write (\begin{DoxyParamCaption}\item[{unsigned}]{P,  }\item[{unsigned}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Mbc_a255f6aa48eb21c8b95b23d978b1f4d21}\label{classgambatte_1_1Mbc_a255f6aa48eb21c8b95b23d978b1f4d21}} 
+\index{gambatte\+::\+Mbc@{gambatte\+::\+Mbc}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Mbc@{gambatte\+::\+Mbc}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily virtual void gambatte\+::\+Mbc\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState_1_1Mem}{Save\+State\+::\+Mem} \&}]{ss }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/mem/\hyperlink{cartridge_8h}{cartridge.\+h}\end{DoxyCompactItemize}

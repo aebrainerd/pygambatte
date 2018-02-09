@@ -1,0 +1,65 @@
+\hypertarget{interruptrequester_8h}{}\section{src/interruptrequester.h File Reference}
+\label{interruptrequester_8h}\index{src/interruptrequester.\+h@{src/interruptrequester.\+h}}
+{\ttfamily \#include \char`\"{}counterdef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}minkeeper.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}loadsave.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for interruptrequester.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interruptrequester_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interruptrequester_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgambatte_1_1InterruptRequester}{gambatte\+::\+Interrupt\+Requester}
+\item 
+class \hyperlink{classgambatte_1_1InterruptRequester_1_1IntFlags}{gambatte\+::\+Interrupt\+Requester\+::\+Int\+Flags}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegambatte}{gambatte}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9}{gambatte\+::\+Int\+Event\+Id} \{ \newline
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9aee4eba72d2ead7e55c97aac6a3d0920e}{gambatte\+::intevent\+\_\+unhalt}, 
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9a205308a3c7e599a794725275b32d4499}{gambatte\+::intevent\+\_\+end}, 
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9a8ccc302496887652daf8e373928a0cbb}{gambatte\+::intevent\+\_\+blit}, 
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9a353d5fee8512546be74cb366d8043694}{gambatte\+::intevent\+\_\+serial}, 
+\newline
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9a7254c3c608467330e53e9fe5249b9ed5}{gambatte\+::intevent\+\_\+oam}, 
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9a75b88b3b1af73e7da5dab95870d2da1c}{gambatte\+::intevent\+\_\+dma}, 
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9aa9fa0b725d6c43a594c71c34d934e085}{gambatte\+::intevent\+\_\+tima}, 
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9ac3a2087dbe913fa830c12fcbdd743183}{gambatte\+::intevent\+\_\+video}, 
+\newline
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9a2190cc330df13dfc2fc31778ee86ab7d}{gambatte\+::intevent\+\_\+interrupts}, 
+\hyperlink{namespacegambatte_a0cc3dd7d4d26f0466e9eeda6242755d9af6db597bb27febfcaf18fcf03e337906}{gambatte\+::intevent\+\_\+last} = intevent\+\_\+interrupts
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacegambatte_a76b56771c7cc51d5a2a9d5158512becc}{gambatte\+::flag\+Hdma\+Req} (Interrupt\+Requester \&intreq)
+\item 
+void \hyperlink{namespacegambatte_abe41c47543f1ab3aafbee53c0ef50eb6}{gambatte\+::flag\+Gdma\+Req} (Interrupt\+Requester \&intreq)
+\item 
+void \hyperlink{namespacegambatte_ab20962387ab0fea218f5630b620560c2}{gambatte\+::ack\+Dma\+Req} (Interrupt\+Requester \&intreq)
+\item 
+bool \hyperlink{namespacegambatte_ad50312ad0ce301d07f221e2161db6476}{gambatte\+::hdma\+Req\+Flagged} (Interrupt\+Requester const \&intreq)
+\item 
+bool \hyperlink{namespacegambatte_a9ad0a8b7b8c1a34bfc2525dece4a0404}{gambatte\+::gdma\+Req\+Flagged} (Interrupt\+Requester const \&intreq)
+\end{DoxyCompactItemize}

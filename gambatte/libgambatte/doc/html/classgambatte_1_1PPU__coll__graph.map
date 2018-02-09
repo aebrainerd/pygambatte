@@ -1,0 +1,10 @@
+<map id="gambatte::PPU" name="gambatte::PPU">
+<area shape="rect" id="node2" href="$structgambatte_1_1PPUPriv.html" title="gambatte::PPUPriv" alt="" coords="900,125,1039,151"/>
+<area shape="rect" id="node3" href="$structgambatte_1_1PPUPriv_1_1Sprite.html" title="gambatte::PPUPriv::\lSprite" alt="" coords="603,5,747,47"/>
+<area shape="rect" id="node4" href="$classgambatte_1_1LyCounter.html" title="gambatte::LyCounter" alt="" coords="5,95,156,122"/>
+<area shape="rect" id="node8" href="$classgambatte_1_1SpriteMapper_1_1OamReader.html" title="gambatte::SpriteMapper\l::OamReader" alt="" coords="277,123,449,164"/>
+<area shape="rect" id="node5" href="$classgambatte_1_1PPUFrameBuf.html" title="gambatte::PPUFrameBuf" alt="" coords="588,175,763,202"/>
+<area shape="rect" id="node6" href="$classgambatte_1_1SpriteMapper.html" title="gambatte::SpriteMapper" alt="" coords="589,125,761,151"/>
+<area shape="rect" id="node7" href="$classgambatte_1_1NextM0Time.html" title="gambatte::NextM0Time" alt="" coords="280,189,447,215"/>
+<area shape="rect" id="node9" href="$structgambatte_1_1PPUState.html" title="gambatte::PPUState" alt="" coords="602,226,749,253"/>
+</map>

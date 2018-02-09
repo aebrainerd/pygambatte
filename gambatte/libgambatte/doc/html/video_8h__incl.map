@@ -1,0 +1,16 @@
+<map id="src/video.h" name="src/video.h">
+<area shape="rect" id="node2" href="$ppu_8h.html" title="video/ppu.h" alt="" coords="371,80,466,107"/>
+<area shape="rect" id="node16" href="$lyc__irq_8h.html" title="video/lyc_irq.h" alt="" coords="557,229,669,256"/>
+<area shape="rect" id="node17" href="$next__m0__time_8h.html" title="video/next_m0_time.h" alt="" coords="978,229,1137,256"/>
+<area shape="rect" id="node18" href="$interruptrequester_8h.html" title="interruptrequester.h" alt="" coords="787,80,933,107"/>
+<area shape="rect" id="node20" href="$minkeeper_8h.html" title="minkeeper.h" alt="" coords="724,155,823,181"/>
+<area shape="rect" id="node23" href="$osd__element_8h.html" title="osd_element.h" alt="" coords="535,80,649,107"/>
+<area shape="rect" id="node25" href="$m0__irq_8h.html" title="video/m0_irq.h" alt="" coords="16,80,131,107"/>
+<area shape="rect" id="node4" href="$ly__counter_8h.html" title="video/ly_counter.h" alt="" coords="316,229,452,256"/>
+<area shape="rect" id="node5" href="$loadsave_8h.html" title="../loadsave.h" alt="" coords="563,304,663,331"/>
+<area shape="rect" id="node10" href="$sprite__mapper_8h.html" title="video/sprite_mapper.h" alt="" coords="184,155,347,181"/>
+<area shape="rect" id="node14" href="$lcddef_8h.html" title="lcddef.h" alt="" coords="38,155,109,181"/>
+<area shape="rect" id="node15" href="$gbint_8h.html" title="gbint.h" alt="" coords="561,155,623,181"/>
+<area shape="rect" id="node11" href="$savestate_8h.html" title="../savestate.h" alt="" coords="5,229,109,256"/>
+<area shape="rect" id="node19" href="$counterdef_8h.html" title="counterdef.h" alt="" coords="998,155,1098,181"/>
+</map>

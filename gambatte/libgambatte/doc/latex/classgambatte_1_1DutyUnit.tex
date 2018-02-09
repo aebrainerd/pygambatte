@@ -1,0 +1,249 @@
+\hypertarget{classgambatte_1_1DutyUnit}{}\section{gambatte\+:\+:Duty\+Unit Class Reference}
+\label{classgambatte_1_1DutyUnit}\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+
+
+{\ttfamily \#include $<$duty\+\_\+unit.\+h$>$}
+
+
+
+Inheritance diagram for gambatte\+:\+:Duty\+Unit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classgambatte_1_1DutyUnit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gambatte\+:\+:Duty\+Unit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classgambatte_1_1DutyUnit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1DutyUnit_a4313410af8c15cb68eb276df92639b86}{Duty\+Unit} ()
+\item 
+virtual void \hyperlink{classgambatte_1_1DutyUnit_a2f051bb4772d30c58f2e88b85e947e61}{event} ()
+\item 
+virtual void \hyperlink{classgambatte_1_1DutyUnit_a69b982611026639129fda42e637e7b12}{reset\+Counters} (unsigned old\+Cc)
+\item 
+bool \hyperlink{classgambatte_1_1DutyUnit_a8c1e7cb1c7de208555b585e565b134c9}{is\+High\+State} () const
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_a5ba57779a4204bfc729b69f4d4304597}{nr1\+Change} (unsigned new\+Nr1, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_a6ef2e5973a348588ab05f78f93de6295}{nr3\+Change} (unsigned new\+Nr3, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_aa7e53abb8b26dca277a0447da8dad150}{nr4\+Change} (unsigned new\+Nr4, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_a0062af72b8d6b7220e82109b53f5e250}{reset} ()
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_a2326dd372384fb52466e307946717f65}{save\+State} (\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1Duty}{Save\+State\+::\+S\+P\+U\+::\+Duty} \&dstate, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_a64f049070cbd7ba7157410953186312b}{load\+State} (\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1Duty}{Save\+State\+::\+S\+P\+U\+::\+Duty} const \&dstate, unsigned nr1, unsigned nr4, unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_a9def301fa5ff4359c4793a5fda3eb09c}{kill\+Counter} ()
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_a80e058f8c2210c9e7a52cceecaac4cde}{revive\+Counter} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_adfb8ad7e89551ee6c384e010fa51fba6}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+unsigned \hyperlink{classgambatte_1_1DutyUnit_a2533194e4d5e582e962fe19b84377b70}{freq} () const
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_ac852c8510e1b1c8c0d7e8a63270167bf}{set\+Freq} (unsigned new\+Freq, unsigned cc)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_ac47abbcf178693d44cf747459afaebf2}{set\+Counter} ()
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_a1cc5dd0b49b65816128ee3d52303c27d}{set\+Duty} (unsigned nr1)
+\item 
+void \hyperlink{classgambatte_1_1DutyUnit_ad972c3aa4b864ef85abc3c84ef1a24dd}{update\+Pos} (unsigned cc)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classgambatte_1_1DutyUnit_a79613bf1e29067922acc8404aa965cc5}{next\+Pos\+Update\+\_\+}
+\item 
+unsigned short \hyperlink{classgambatte_1_1DutyUnit_ab7744a1a9d16bb7226a401e5e02452fe}{period\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1DutyUnit_a357ce9a2491fe91fa402d21b1ca7805e}{pos\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1DutyUnit_a35b7a7b47842abd813f91ab73cbe1dd2}{duty\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1DutyUnit_afe7cae5f88b8e9f5402cb7b4970c4a47}{high\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1DutyUnit_a9f7634538a43cd88af58f406b92f55d7}{enable\+Events\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a4313410af8c15cb68eb276df92639b86}\label{classgambatte_1_1DutyUnit_a4313410af8c15cb68eb276df92639b86}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!Duty\+Unit@{Duty\+Unit}}
+\index{Duty\+Unit@{Duty\+Unit}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{Duty\+Unit()}{DutyUnit()}}
+{\footnotesize\ttfamily gambatte\+::\+Duty\+Unit\+::\+Duty\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a2f051bb4772d30c58f2e88b85e947e61}\label{classgambatte_1_1DutyUnit_a2f051bb4772d30c58f2e88b85e947e61}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!event@{event}}
+\index{event@{event}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{event()}{event()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classgambatte_1_1SoundUnit_a8ad6df87fc3700d9d3bee470383197b4}{gambatte\+::\+Sound\+Unit}.
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a2533194e4d5e582e962fe19b84377b70}\label{classgambatte_1_1DutyUnit_a2533194e4d5e582e962fe19b84377b70}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!freq@{freq}}
+\index{freq@{freq}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{freq()}{freq()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Duty\+Unit\+::freq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a8c1e7cb1c7de208555b585e565b134c9}\label{classgambatte_1_1DutyUnit_a8c1e7cb1c7de208555b585e565b134c9}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!is\+High\+State@{is\+High\+State}}
+\index{is\+High\+State@{is\+High\+State}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{is\+High\+State()}{isHighState()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Duty\+Unit\+::is\+High\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a9def301fa5ff4359c4793a5fda3eb09c}\label{classgambatte_1_1DutyUnit_a9def301fa5ff4359c4793a5fda3eb09c}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!kill\+Counter@{kill\+Counter}}
+\index{kill\+Counter@{kill\+Counter}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{kill\+Counter()}{killCounter()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::kill\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_adfb8ad7e89551ee6c384e010fa51fba6}\label{classgambatte_1_1DutyUnit_adfb8ad7e89551ee6c384e010fa51fba6}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a64f049070cbd7ba7157410953186312b}\label{classgambatte_1_1DutyUnit_a64f049070cbd7ba7157410953186312b}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1Duty}{Save\+State\+::\+S\+P\+U\+::\+Duty} const \&}]{dstate,  }\item[{unsigned}]{nr1,  }\item[{unsigned}]{nr4,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a5ba57779a4204bfc729b69f4d4304597}\label{classgambatte_1_1DutyUnit_a5ba57779a4204bfc729b69f4d4304597}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!nr1\+Change@{nr1\+Change}}
+\index{nr1\+Change@{nr1\+Change}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{nr1\+Change()}{nr1Change()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::nr1\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Nr1,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a6ef2e5973a348588ab05f78f93de6295}\label{classgambatte_1_1DutyUnit_a6ef2e5973a348588ab05f78f93de6295}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!nr3\+Change@{nr3\+Change}}
+\index{nr3\+Change@{nr3\+Change}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{nr3\+Change()}{nr3Change()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::nr3\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Nr3,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_aa7e53abb8b26dca277a0447da8dad150}\label{classgambatte_1_1DutyUnit_aa7e53abb8b26dca277a0447da8dad150}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!nr4\+Change@{nr4\+Change}}
+\index{nr4\+Change@{nr4\+Change}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{nr4\+Change()}{nr4Change()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::nr4\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Nr4,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a0062af72b8d6b7220e82109b53f5e250}\label{classgambatte_1_1DutyUnit_a0062af72b8d6b7220e82109b53f5e250}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!reset@{reset}}
+\index{reset@{reset}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a69b982611026639129fda42e637e7b12}\label{classgambatte_1_1DutyUnit_a69b982611026639129fda42e637e7b12}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!reset\+Counters@{reset\+Counters}}
+\index{reset\+Counters@{reset\+Counters}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{reset\+Counters()}{resetCounters()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::reset\+Counters (\begin{DoxyParamCaption}\item[{unsigned}]{old\+Cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classgambatte_1_1SoundUnit_a3baa270f75463b24cd79fe5970103d4f}{gambatte\+::\+Sound\+Unit}.
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a80e058f8c2210c9e7a52cceecaac4cde}\label{classgambatte_1_1DutyUnit_a80e058f8c2210c9e7a52cceecaac4cde}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!revive\+Counter@{revive\+Counter}}
+\index{revive\+Counter@{revive\+Counter}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{revive\+Counter()}{reviveCounter()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::revive\+Counter (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a2326dd372384fb52466e307946717f65}\label{classgambatte_1_1DutyUnit_a2326dd372384fb52466e307946717f65}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1Duty}{Save\+State\+::\+S\+P\+U\+::\+Duty} \&}]{dstate,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_ac47abbcf178693d44cf747459afaebf2}\label{classgambatte_1_1DutyUnit_ac47abbcf178693d44cf747459afaebf2}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!set\+Counter@{set\+Counter}}
+\index{set\+Counter@{set\+Counter}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{set\+Counter()}{setCounter()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::set\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a1cc5dd0b49b65816128ee3d52303c27d}\label{classgambatte_1_1DutyUnit_a1cc5dd0b49b65816128ee3d52303c27d}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!set\+Duty@{set\+Duty}}
+\index{set\+Duty@{set\+Duty}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{set\+Duty()}{setDuty()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::set\+Duty (\begin{DoxyParamCaption}\item[{unsigned}]{nr1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_ac852c8510e1b1c8c0d7e8a63270167bf}\label{classgambatte_1_1DutyUnit_ac852c8510e1b1c8c0d7e8a63270167bf}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!set\+Freq@{set\+Freq}}
+\index{set\+Freq@{set\+Freq}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{set\+Freq()}{setFreq()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::set\+Freq (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Freq,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_ad972c3aa4b864ef85abc3c84ef1a24dd}\label{classgambatte_1_1DutyUnit_ad972c3aa4b864ef85abc3c84ef1a24dd}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!update\+Pos@{update\+Pos}}
+\index{update\+Pos@{update\+Pos}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{update\+Pos()}{updatePos()}}
+{\footnotesize\ttfamily void gambatte\+::\+Duty\+Unit\+::update\+Pos (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a35b7a7b47842abd813f91ab73cbe1dd2}\label{classgambatte_1_1DutyUnit_a35b7a7b47842abd813f91ab73cbe1dd2}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!duty\+\_\+@{duty\+\_\+}}
+\index{duty\+\_\+@{duty\+\_\+}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{duty\+\_\+}{duty\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Duty\+Unit\+::duty\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a9f7634538a43cd88af58f406b92f55d7}\label{classgambatte_1_1DutyUnit_a9f7634538a43cd88af58f406b92f55d7}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!enable\+Events\+\_\+@{enable\+Events\+\_\+}}
+\index{enable\+Events\+\_\+@{enable\+Events\+\_\+}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{enable\+Events\+\_\+}{enableEvents\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Duty\+Unit\+::enable\+Events\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_afe7cae5f88b8e9f5402cb7b4970c4a47}\label{classgambatte_1_1DutyUnit_afe7cae5f88b8e9f5402cb7b4970c4a47}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!high\+\_\+@{high\+\_\+}}
+\index{high\+\_\+@{high\+\_\+}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{high\+\_\+}{high\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Duty\+Unit\+::high\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a79613bf1e29067922acc8404aa965cc5}\label{classgambatte_1_1DutyUnit_a79613bf1e29067922acc8404aa965cc5}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!next\+Pos\+Update\+\_\+@{next\+Pos\+Update\+\_\+}}
+\index{next\+Pos\+Update\+\_\+@{next\+Pos\+Update\+\_\+}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{next\+Pos\+Update\+\_\+}{nextPosUpdate\_}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Duty\+Unit\+::next\+Pos\+Update\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_ab7744a1a9d16bb7226a401e5e02452fe}\label{classgambatte_1_1DutyUnit_ab7744a1a9d16bb7226a401e5e02452fe}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!period\+\_\+@{period\+\_\+}}
+\index{period\+\_\+@{period\+\_\+}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{period\+\_\+}{period\_}}
+{\footnotesize\ttfamily unsigned short gambatte\+::\+Duty\+Unit\+::period\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1DutyUnit_a357ce9a2491fe91fa402d21b1ca7805e}\label{classgambatte_1_1DutyUnit_a357ce9a2491fe91fa402d21b1ca7805e}} 
+\index{gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}!pos\+\_\+@{pos\+\_\+}}
+\index{pos\+\_\+@{pos\+\_\+}!gambatte\+::\+Duty\+Unit@{gambatte\+::\+Duty\+Unit}}
+\subsubsection{\texorpdfstring{pos\+\_\+}{pos\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Duty\+Unit\+::pos\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/sound/\hyperlink{duty__unit_8h}{duty\+\_\+unit.\+h}\item 
+src/sound/\hyperlink{duty__unit_8cpp}{duty\+\_\+unit.\+cpp}\end{DoxyCompactItemize}

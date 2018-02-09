@@ -1,0 +1,66 @@
+\hypertarget{cartridge_8cpp}{}\section{src/mem/cartridge.cpp File Reference}
+\label{cartridge_8cpp}\index{src/mem/cartridge.\+cpp@{src/mem/cartridge.\+cpp}}
+{\ttfamily \#include \char`\"{}cartridge.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}file/file.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../savestate.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pakinfo\+\_\+internal.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Include dependency graph for cartridge.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cartridge_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegambatte}{gambatte}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{cartridge_8cpp_ae459c6990e562c369a88f97c0200896f}\label{cartridge_8cpp_ae459c6990e562c369a88f97c0200896f}} 
+\index{cartridge.\+cpp@{cartridge.\+cpp}!enable\+Ram\+\_\+@{enable\+Ram\+\_\+}}
+\index{enable\+Ram\+\_\+@{enable\+Ram\+\_\+}!cartridge.\+cpp@{cartridge.\+cpp}}
+\subsubsection{\texorpdfstring{enable\+Ram\+\_\+}{enableRam\_}}
+{\footnotesize\ttfamily bool enable\+Ram\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{cartridge_8cpp_ab8623f95cf8a51730df6008ad2bb2773}\label{cartridge_8cpp_ab8623f95cf8a51730df6008ad2bb2773}} 
+\index{cartridge.\+cpp@{cartridge.\+cpp}!memptrs\+\_\+@{memptrs\+\_\+}}
+\index{memptrs\+\_\+@{memptrs\+\_\+}!cartridge.\+cpp@{cartridge.\+cpp}}
+\subsubsection{\texorpdfstring{memptrs\+\_\+}{memptrs\_}}
+{\footnotesize\ttfamily Mem\+Ptrs\& memptrs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{cartridge_8cpp_a9b912e83de3d0793cbcbc177d020a267}\label{cartridge_8cpp_a9b912e83de3d0793cbcbc177d020a267}} 
+\index{cartridge.\+cpp@{cartridge.\+cpp}!rambank\+\_\+@{rambank\+\_\+}}
+\index{rambank\+\_\+@{rambank\+\_\+}!cartridge.\+cpp@{cartridge.\+cpp}}
+\subsubsection{\texorpdfstring{rambank\+\_\+}{rambank\_}}
+{\footnotesize\ttfamily unsigned char rambank\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{cartridge_8cpp_a7e6443f90a4df4c776836dbbfc9d969c}\label{cartridge_8cpp_a7e6443f90a4df4c776836dbbfc9d969c}} 
+\index{cartridge.\+cpp@{cartridge.\+cpp}!rambank\+Mode\+\_\+@{rambank\+Mode\+\_\+}}
+\index{rambank\+Mode\+\_\+@{rambank\+Mode\+\_\+}!cartridge.\+cpp@{cartridge.\+cpp}}
+\subsubsection{\texorpdfstring{rambank\+Mode\+\_\+}{rambankMode\_}}
+{\footnotesize\ttfamily bool rambank\+Mode\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{cartridge_8cpp_a5bc495b76f9f2483543ae57df5f7e74f}\label{cartridge_8cpp_a5bc495b76f9f2483543ae57df5f7e74f}} 
+\index{cartridge.\+cpp@{cartridge.\+cpp}!rombank0\+Mode\+\_\+@{rombank0\+Mode\+\_\+}}
+\index{rombank0\+Mode\+\_\+@{rombank0\+Mode\+\_\+}!cartridge.\+cpp@{cartridge.\+cpp}}
+\subsubsection{\texorpdfstring{rombank0\+Mode\+\_\+}{rombank0Mode\_}}
+{\footnotesize\ttfamily bool rombank0\+Mode\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{cartridge_8cpp_a2675d28ccd1f42ca2d68e5bc4080d47f}\label{cartridge_8cpp_a2675d28ccd1f42ca2d68e5bc4080d47f}} 
+\index{cartridge.\+cpp@{cartridge.\+cpp}!rombank\+\_\+@{rombank\+\_\+}}
+\index{rombank\+\_\+@{rombank\+\_\+}!cartridge.\+cpp@{cartridge.\+cpp}}
+\subsubsection{\texorpdfstring{rombank\+\_\+}{rombank\_}}
+{\footnotesize\ttfamily unsigned short rombank\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{cartridge_8cpp_ab8215b53c03c0cf1b40943cb7bdabf7f}\label{cartridge_8cpp_ab8215b53c03c0cf1b40943cb7bdabf7f}} 
+\index{cartridge.\+cpp@{cartridge.\+cpp}!rtc\+\_\+@{rtc\+\_\+}}
+\index{rtc\+\_\+@{rtc\+\_\+}!cartridge.\+cpp@{cartridge.\+cpp}}
+\subsubsection{\texorpdfstring{rtc\+\_\+}{rtc\_}}
+{\footnotesize\ttfamily Rtc$\ast$ const rtc\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['dacison',['dacIsOn',['../classgambatte_1_1EnvelopeUnit.html#a506dc8beed37a81428113f501192e199',1,'gambatte::EnvelopeUnit']]],
+  ['deceventcycles',['decEventCycles',['../classgambatte_1_1Memory.html#a2ea1cb0bdcc6e3e7124be5a938a57ac6',1,'gambatte::Memory']]],
+  ['di',['di',['../classgambatte_1_1InterruptRequester.html#a25348c898ee8ed469bb3c20046ac1358',1,'gambatte::InterruptRequester::di()'],['../classgambatte_1_1Memory.html#a6ffc8cfb0c4dbd5ca3f92c4c7bbda0a4',1,'gambatte::Memory::di()']]],
+  ['disablehdma',['disableHdma',['../classgambatte_1_1LCD.html#a2e786aa0588f0a1ce49aa602c07a61e3',1,'gambatte::LCD']]],
+  ['disablemaster',['disableMaster',['../classgambatte_1_1Channel4_1_1Lfsr.html#a9853ba5c6b10344cea14208f3c5a5558',1,'gambatte::Channel4::Lfsr']]],
+  ['disconnectoamdmaareas',['disconnectOamDmaAreas',['../classgambatte_1_1MemPtrs.html#a5252899528351e3b65b4dbd0ab602cd4',1,'gambatte::MemPtrs']]],
+  ['dmgbgpalettechange',['dmgBgPaletteChange',['../classgambatte_1_1LCD.html#a318d43c9f52b40ee4201fc2838c3661e',1,'gambatte::LCD']]],
+  ['dmgsppalette1change',['dmgSpPalette1Change',['../classgambatte_1_1LCD.html#a3f6a486f4432e89a8a30ac819c0fa437',1,'gambatte::LCD']]],
+  ['dmgsppalette2change',['dmgSpPalette2Change',['../classgambatte_1_1LCD.html#a2d6e69c85960561020bac66118bad859',1,'gambatte::LCD']]],
+  ['do_5fop',['do_op',['../classgambatte_1_1loadsave__load.html#a45e10c2b20eea19e3b92fe0560c5e107',1,'gambatte::loadsave_load::do_op(T &amp;x)'],['../classgambatte_1_1loadsave__load.html#adff7d2df0225532d464ea7d9f9d1458a',1,'gambatte::loadsave_load::do_op(T &amp;x, unsigned char _tag)'],['../classgambatte_1_1loadsave__load.html#a9f958d9dff1f36f82b393c8cf4c734cb',1,'gambatte::loadsave_load::do_op(T *x, size_t s, unsigned char _tag)'],['../classgambatte_1_1loadsave__save.html#a73997ef40fbe10d5bcdbb1a2cb49841c',1,'gambatte::loadsave_save::do_op(T &amp;x)'],['../classgambatte_1_1loadsave__save.html#ad41375ee1f0a3f60004868678227c23b',1,'gambatte::loadsave_save::do_op(T &amp;x, unsigned char _tag)'],['../classgambatte_1_1loadsave__save.html#a454e46b0fb18f61513f1632afa2db806',1,'gambatte::loadsave_save::do_op(T *x, size_t s, unsigned char _tag)']]],
+  ['do_5fread_5ftrap',['do_read_trap',['../classgambatte_1_1Memory.html#a35243d758e0bd8bc6b33162a58384d5b',1,'gambatte::Memory']]],
+  ['do_5fwrite_5ftrap',['do_write_trap',['../classgambatte_1_1Memory.html#a8fe0102b1325cd50a8cb133a02ceb77e',1,'gambatte::Memory']]],
+  ['docgbbgcolorchange',['doCgbBgColorChange',['../classgambatte_1_1LCD.html#a0cc9f0c0725e4c41d5e5ce9d469834f6',1,'gambatte::LCD']]],
+  ['docgbspcolorchange',['doCgbSpColorChange',['../classgambatte_1_1LCD.html#af50eb0c94357f902f2141e9ca3bba2ba',1,'gambatte::LCD']]],
+  ['doevent',['doEvent',['../classgambatte_1_1LyCounter.html#a2a1aad7968d8da16c73986d6d9ddc52a',1,'gambatte::LyCounter::doEvent()'],['../classgambatte_1_1LycIrq.html#aa89cc468ccee7c8c9012f7ec31b2b900',1,'gambatte::LycIrq::doEvent()'],['../classgambatte_1_1M0Irq.html#af973cffcea506772d502c1286161a668',1,'gambatte::M0Irq::doEvent()'],['../classgambatte_1_1SpriteMapper.html#a1dc90dda342bb3587d91a763a35c9a79',1,'gambatte::SpriteMapper::doEvent()']]],
+  ['doirqevent',['doIrqEvent',['../classgambatte_1_1Tima.html#a9bf4e6fead69bda13cab7e7565d1c414',1,'gambatte::Tima']]],
+  ['dolatch',['doLatch',['../classgambatte_1_1Rtc.html#af417d2ec560735dbd6a5f84a47aaec91',1,'gambatte::Rtc']]],
+  ['dolycountevent',['doLyCountEvent',['../classgambatte_1_1PPU.html#a283036ab67e35f5687410f131d5170e8',1,'gambatte::PPU']]],
+  ['domode2irqevent',['doMode2IrqEvent',['../classgambatte_1_1LCD.html#a5302f917f27bf309e8b97c58b8650560',1,'gambatte::LCD']]],
+  ['dospritemapevent',['doSpriteMapEvent',['../classgambatte_1_1PPU.html#a415ef4d53cac6e35dfa9d45650d7ddd0',1,'gambatte::PPU']]],
+  ['doswapactive',['doSwapActive',['../classgambatte_1_1Rtc.html#a592f5fad483586ce3ecd1ae8bb4a0c87',1,'gambatte::Rtc']]],
+  ['dutymasterdisabler',['DutyMasterDisabler',['../classgambatte_1_1DutyMasterDisabler.html#ab529f2ecc1ead79810197e3d786894e2',1,'gambatte::DutyMasterDisabler']]],
+  ['dutyunit',['DutyUnit',['../classgambatte_1_1DutyUnit.html#a4313410af8c15cb68eb276df92639b86',1,'gambatte::DutyUnit']]]
+];

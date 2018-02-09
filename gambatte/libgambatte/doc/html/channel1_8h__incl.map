@@ -1,0 +1,11 @@
+<map id="src/sound/channel1.h" name="src/sound/channel1.h">
+<area shape="rect" id="node2" href="$gbint_8h.html" title="gbint.h" alt="" coords="5,80,68,107"/>
+<area shape="rect" id="node3" href="$master__disabler_8h.html" title="master_disabler.h" alt="" coords="143,229,277,256"/>
+<area shape="rect" id="node4" href="$length__counter_8h.html" title="length_counter.h" alt="" coords="368,155,495,181"/>
+<area shape="rect" id="node6" href="$loadsave_8h.html" title="../loadsave.h" alt="" coords="352,304,452,331"/>
+<area shape="rect" id="node14" href="$duty__unit_8h.html" title="duty_unit.h" alt="" coords="255,155,344,181"/>
+<area shape="rect" id="node15" href="$envelope__unit_8h.html" title="envelope_unit.h" alt="" coords="519,155,640,181"/>
+<area shape="rect" id="node16" href="$static__output__tester_8h.html" title="static_output_tester.h" alt="" coords="385,80,541,107"/>
+<area shape="rect" id="node5" href="$sound__unit_8h.html" title="sound_unit.h" alt="" coords="351,229,453,256"/>
+<area shape="rect" id="node11" href="$savestate_8h.html" title="../savestate.h" alt="" coords="527,229,631,256"/>
+</map>

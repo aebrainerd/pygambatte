@@ -1,0 +1,9 @@
+<map id="gambatte::LCD::EventTimes" name="gambatte::LCD::EventTimes">
+<area shape="rect" id="node2" href="$classMinKeeper.html" title="MinKeeper\&lt; num_memevents \&gt;" alt="" coords="568,5,789,32"/>
+<area shape="rect" id="node3" href="$classMinKeeper_1_1UpdateValueLut.html" title="MinKeeper\&lt; ids \&gt;::Update\lValueLut" alt="" coords="5,50,191,91"/>
+<area shape="rect" id="node4" href="$classMinKeeper.html" title="MinKeeper\&lt; num_events \&gt;" alt="" coords="1041,57,1232,84"/>
+<area shape="rect" id="node7" href="$classMinKeeper.html" title="MinKeeper\&lt; intevent\l_last+1 \&gt;" alt="" coords="365,119,519,161"/>
+<area shape="rect" id="node5" href="$classgambatte_1_1VideoInterruptRequester.html" title="gambatte::VideoInterrupt\lRequester" alt="" coords="1256,119,1431,161"/>
+<area shape="rect" id="node6" href="$classgambatte_1_1InterruptRequester.html" title="gambatte::InterruptRequester" alt="" coords="813,127,1017,153"/>
+<area shape="rect" id="node8" href="$classgambatte_1_1InterruptRequester_1_1IntFlags.html" title="gambatte::InterruptRequester\l::IntFlags" alt="" coords="340,185,544,226"/>
+</map>

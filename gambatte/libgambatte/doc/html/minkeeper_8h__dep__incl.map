@@ -1,0 +1,14 @@
+<map id="src/minkeeper.h" name="src/minkeeper.h">
+<area shape="rect" id="node2" href="$interruptrequester_8h.html" title="src/interruptrequester.h" alt="" coords="188,80,356,107"/>
+<area shape="rect" id="node11" href="$video_8h.html" title="src/video.h" alt="" coords="379,155,469,181"/>
+<area shape="rect" id="node3" href="$tima_8h.html" title="src/tima.h" alt="" coords="64,155,147,181"/>
+<area shape="rect" id="node13" href="$interruptrequester_8cpp.html" title="src/interruptrequester.cpp" alt="" coords="171,155,354,181"/>
+<area shape="rect" id="node4" href="$memory_8h.html" title="src/memory.h" alt="" coords="197,229,304,256"/>
+<area shape="rect" id="node10" href="$tima_8cpp.html" title="src/tima.cpp" alt="" coords="57,229,154,256"/>
+<area shape="rect" id="node5" href="$cpu_8h.html" title="src/cpu.h" alt="" coords="90,304,169,331"/>
+<area shape="rect" id="node6" href="$cpu_8cpp.html" title="src/cpu.cpp" alt="" coords="5,379,99,405"/>
+<area shape="rect" id="node8" href="$interrupter_8cpp.html" title="src/interrupter.cpp" alt="" coords="193,304,329,331"/>
+<area shape="rect" id="node9" href="$memory_8cpp.html" title="src/memory.cpp" alt="" coords="354,304,475,331"/>
+<area shape="rect" id="node7" href="$gambatte_8cpp.html" title="src/gambatte.cpp" alt="" coords="123,379,253,405"/>
+<area shape="rect" id="node12" href="$video_8cpp.html" title="src/video.cpp" alt="" coords="453,229,558,256"/>
+</map>

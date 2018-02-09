@@ -1,0 +1,7 @@
+<map id="gambatte::SoundUnit" name="gambatte::SoundUnit">
+<area shape="rect" id="node2" href="$classgambatte_1_1Channel1_1_1SweepUnit.html" title="gambatte::Channel1\l::SweepUnit" alt="" coords="221,5,367,47"/>
+<area shape="rect" id="node3" href="$classgambatte_1_1Channel4_1_1Lfsr.html" title="gambatte::Channel4\l::Lfsr" alt="" coords="221,71,367,112"/>
+<area shape="rect" id="node4" href="$classgambatte_1_1DutyUnit.html" title="gambatte::DutyUnit" alt="" coords="225,137,363,163"/>
+<area shape="rect" id="node5" href="$classgambatte_1_1EnvelopeUnit.html" title="gambatte::EnvelopeUnit" alt="" coords="209,187,379,214"/>
+<area shape="rect" id="node6" href="$classgambatte_1_1LengthCounter.html" title="gambatte::LengthCounter" alt="" coords="204,238,384,265"/>
+</map>

@@ -1,0 +1,37 @@
+<map id="src/memory.h" name="src/memory.h">
+<area shape="rect" id="node2" href="$gambatte_8h.html" title="gambatte.h" alt="" coords="451,229,542,256"/>
+<area shape="rect" id="node11" href="$cartridge_8h.html" title="mem/cartridge.h" alt="" coords="726,304,849,331"/>
+<area shape="rect" id="node21" href="$interrupter_8h.html" title="interrupter.h" alt="" coords="78,379,177,405"/>
+<area shape="rect" id="node22" href="$pakinfo_8h.html" title="pakinfo.h" alt="" coords="5,80,84,107"/>
+<area shape="rect" id="node23" href="$sound_8h.html" title="sound.h" alt="" coords="2540,80,2611,107"/>
+<area shape="rect" id="node34" href="$tima_8h.html" title="tima.h" alt="" coords="1363,80,1422,107"/>
+<area shape="rect" id="node40" href="$video_8h.html" title="video.h" alt="" coords="1250,155,1317,181"/>
+<area shape="rect" id="node3" href="$gbint_8h.html" title="gbint.h" alt="" coords="2065,304,2128,331"/>
+<area shape="rect" id="node4" href="$inputgetter_8h.html" title="inputgetter.h" alt="" coords="447,304,547,331"/>
+<area shape="rect" id="node5" href="$loadres_8h.html" title="loadres.h" alt="" coords="251,379,331,405"/>
+<area shape="rect" id="node12" href="$memptrs_8h.html" title="memptrs.h" alt="" coords="771,379,857,405"/>
+<area shape="rect" id="node13" href="$loadsave_8h.html" title="../loadsave.h" alt="" coords="1651,453,1751,480"/>
+<area shape="rect" id="node17" href="$rtc_8h.html" title="rtc.h" alt="" coords="697,379,747,405"/>
+<area shape="rect" id="node19" href="$savestate_8h.html" title="savestate.h" alt="" coords="1459,379,1553,405"/>
+<area shape="rect" id="node24" href="$channel1_8h.html" title="sound/channel1.h" alt="" coords="2290,155,2423,181"/>
+<area shape="rect" id="node31" href="$channel2_8h.html" title="sound/channel2.h" alt="" coords="2574,155,2707,181"/>
+<area shape="rect" id="node32" href="$channel3_8h.html" title="sound/channel3.h" alt="" coords="2369,229,2502,256"/>
+<area shape="rect" id="node33" href="$channel4_8h.html" title="sound/channel4.h" alt="" coords="2907,155,3041,181"/>
+<area shape="rect" id="node25" href="$master__disabler_8h.html" title="master_disabler.h" alt="" coords="2355,304,2489,331"/>
+<area shape="rect" id="node26" href="$length__counter_8h.html" title="length_counter.h" alt="" coords="2564,304,2691,331"/>
+<area shape="rect" id="node28" href="$duty__unit_8h.html" title="duty_unit.h" alt="" coords="2204,229,2293,256"/>
+<area shape="rect" id="node29" href="$envelope__unit_8h.html" title="envelope_unit.h" alt="" coords="2767,304,2888,331"/>
+<area shape="rect" id="node30" href="$static__output__tester_8h.html" title="static_output_tester.h" alt="" coords="2729,229,2885,256"/>
+<area shape="rect" id="node27" href="$sound__unit_8h.html" title="sound_unit.h" alt="" coords="2539,379,2641,405"/>
+<area shape="rect" id="node35" href="$interruptrequester_8h.html" title="interruptrequester.h" alt="" coords="1668,229,1813,256"/>
+<area shape="rect" id="node36" href="$counterdef_8h.html" title="counterdef.h" alt="" coords="1789,304,1889,331"/>
+<area shape="rect" id="node37" href="$minkeeper_8h.html" title="minkeeper.h" alt="" coords="1666,304,1765,331"/>
+<area shape="rect" id="node41" href="$ppu_8h.html" title="video/ppu.h" alt="" coords="1371,229,1465,256"/>
+<area shape="rect" id="node46" href="$lyc__irq_8h.html" title="video/lyc_irq.h" alt="" coords="1061,379,1173,405"/>
+<area shape="rect" id="node47" href="$next__m0__time_8h.html" title="video/next_m0_time.h" alt="" coords="1043,229,1201,256"/>
+<area shape="rect" id="node48" href="$osd__element_8h.html" title="osd_element.h" alt="" coords="1887,229,2002,256"/>
+<area shape="rect" id="node49" href="$m0__irq_8h.html" title="video/m0_irq.h" alt="" coords="1226,229,1341,256"/>
+<area shape="rect" id="node43" href="$ly__counter_8h.html" title="video/ly_counter.h" alt="" coords="1298,379,1434,405"/>
+<area shape="rect" id="node44" href="$sprite__mapper_8h.html" title="video/sprite_mapper.h" alt="" coords="1341,304,1503,331"/>
+<area shape="rect" id="node45" href="$lcddef_8h.html" title="lcddef.h" alt="" coords="1144,304,1215,331"/>
+</map>

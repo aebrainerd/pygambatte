@@ -1,0 +1,405 @@
+\hypertarget{classgambatte_1_1MemPtrs}{}\section{gambatte\+:\+:Mem\+Ptrs Class Reference}
+\label{classgambatte_1_1MemPtrs}\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+
+
+{\ttfamily \#include $<$memptrs.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362}{Ram\+Flag} \{ \hyperlink{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362a0167f3624ca21d61111da8aab5f738a7}{read\+\_\+en} = 1, 
+\hyperlink{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362af42883c45047d0a06a7884eb1b0d3ba6}{write\+\_\+en} = 2, 
+\hyperlink{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362ae29916ab2099264fd76ad43dd8dddd94}{rtc\+\_\+en} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1MemPtrs_ae35e38f60a85d83c90be24af72910488}{Mem\+Ptrs} ()
+\item 
+\hyperlink{classgambatte_1_1MemPtrs_a801a970e84764ae8cdf48d991ebabd5c}{$\sim$\+Mem\+Ptrs} ()
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_a615a22d074183acc99c99d7fe2761073}{reset} (unsigned rombanks, unsigned rambanks, unsigned wrambanks)
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a72fd0391d940e7fc8ac733251b341b1f}{rmem} (unsigned area) const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a41d383f6db05d04edf7a32dd45ba3ace}{wmem} (unsigned area) const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_ae8b8dc5b98600a3e73aa70cf0608ab77}{vramdata} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a20edfea173f8c47262730b3428d730bc}{vramdataend} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_aabca959e142a0afa6dc51c57d181419f}{romdata} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_ac76f370f6bc5a41410564f1975d94677}{romdata} (unsigned area) const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_ad09b9a0330a3518a4e9c92a8aa8869af}{romdataend} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a0ec134dbb7787d80a2cae4d201833a6f}{wramdata} (unsigned area) const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a780233c9f5e89620540344db4b6a83e7}{wramdataend} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a8d64b50fee594657df07994866631cf9}{rambankdata} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_af169f7b261149d6965f2bb6806919f0d}{rambankdataend} () const
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a4d0df7283082af4c0acb7b4fb1ecbf61}{rdisabled\+Ram} () const
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1MemPtrs_acf6facd9213e2f07f21194cb087734db}{rsrambankptr} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_acd52f8d1306c19c289ae0cef9800e7c2}{wsrambankptr} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a7f0f856f9a995583e6e682c4050ab2aa}{vrambankptr} () const
+\item 
+\hyperlink{namespacegambatte_a2c5520a5fadf732ba8907450d802f51b}{Oam\+Dma\+Src} \hyperlink{classgambatte_1_1MemPtrs_a04faf27c55fc11a0fc9901e155a791cc}{oam\+Dma\+Src} () const
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_a663aea3ca0337c4605ed0a6b3690731e}{set\+Rombank0} (unsigned bank)
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_a443229e524ea04072df4689c60b375fc}{set\+Rombank} (unsigned bank)
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_a5362761de284b26ada7fbffc98a46934}{set\+Rambank} (unsigned ram\+Flags, unsigned rambank)
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_a6be5cb73470419ac270e309d00df39ce}{set\+Vrambank} (unsigned bank)
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_acceb60b6f1e0b0dfab532cd6d34b6126}{set\+Wrambank} (unsigned bank)
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_ad2b67ac189e0901d10af25403ce6e694}{set\+Oam\+Dma\+Src} (\hyperlink{namespacegambatte_a2c5520a5fadf732ba8907450d802f51b}{Oam\+Dma\+Src} \hyperlink{classgambatte_1_1MemPtrs_a04faf27c55fc11a0fc9901e155a791cc}{oam\+Dma\+Src})
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_a788e2f0d281b97c25177051422d9fa9c}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1MemPtrs_ae3d20b44cc53c66f1a7d002d70199e7e}{Mem\+Ptrs} (\hyperlink{classgambatte_1_1MemPtrs}{Mem\+Ptrs} const \&)
+\item 
+\hyperlink{classgambatte_1_1MemPtrs}{Mem\+Ptrs} \& \hyperlink{classgambatte_1_1MemPtrs_aae54b80162586cb26f31d904cd9e3bcc}{operator=} (\hyperlink{classgambatte_1_1MemPtrs}{Mem\+Ptrs} const \&)
+\item 
+void \hyperlink{classgambatte_1_1MemPtrs_a5252899528351e3b65b4dbd0ab602cd4}{disconnect\+Oam\+Dma\+Areas} ()
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a838e62acc2f6aefdacebb30ff2bcfbba}{rdisabled\+Ramw} () const
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a2d5b20be9cc367f4350b951cc28673d8}{wdisabled\+Ram} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a0c7401bcfa64bb8b2180d04381169c81}{rmem\+\_\+} \mbox{[}0x10\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_afeeb42a3c48d2f0eb588e2b3bc3ad78a}{wmem\+\_\+} \mbox{[}0x10\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a7184987957516c7f8116ab391a2546d1}{romdata\+\_\+} \mbox{[}2\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_abb906547da5c78cbfc41e158a44b297f}{wramdata\+\_\+} \mbox{[}2\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_ac970531db21355617f59475f3affeecf}{vrambankptr\+\_\+}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_aab734c5c626feeef678c8b961c49cc38}{rsrambankptr\+\_\+}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a12336067daec4b180c396003a8b74645}{wsrambankptr\+\_\+}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a86d5c1b44d933f28e3c2b21f8cedde41}{memchunk\+\_\+}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a3aad306915c66a8f3de36fced3bdab6f}{rambankdata\+\_\+}
+\item 
+unsigned char $\ast$ \hyperlink{classgambatte_1_1MemPtrs_a81f51d77dc7a063783d7c6365d327471}{wramdataend\+\_\+}
+\item 
+\hyperlink{namespacegambatte_a2c5520a5fadf732ba8907450d802f51b}{Oam\+Dma\+Src} \hyperlink{classgambatte_1_1MemPtrs_ac824bf1a5a30192fa6828e7f2d2ab8b5}{oam\+Dma\+Src\+\_\+}
+\item 
+size\+\_\+t \hyperlink{classgambatte_1_1MemPtrs_ad79951aa7a0eaf0f85b8034caa29c565}{memchunk\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362}\label{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!Ram\+Flag@{Ram\+Flag}}
+\index{Ram\+Flag@{Ram\+Flag}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{Ram\+Flag}{RamFlag}}
+{\footnotesize\ttfamily enum \hyperlink{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362}{gambatte\+::\+Mem\+Ptrs\+::\+Ram\+Flag}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{read\+\_\+en@{read\+\_\+en}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!read\+\_\+en@{read\+\_\+en}}}\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362a0167f3624ca21d61111da8aab5f738a7}\label{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362a0167f3624ca21d61111da8aab5f738a7}} 
+read\+\_\+en&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{write\+\_\+en@{write\+\_\+en}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!write\+\_\+en@{write\+\_\+en}}}\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362af42883c45047d0a06a7884eb1b0d3ba6}\label{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362af42883c45047d0a06a7884eb1b0d3ba6}} 
+write\+\_\+en&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rtc\+\_\+en@{rtc\+\_\+en}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rtc\+\_\+en@{rtc\+\_\+en}}}\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362ae29916ab2099264fd76ad43dd8dddd94}\label{classgambatte_1_1MemPtrs_ad83f0b1d75651c98df85250dcf197362ae29916ab2099264fd76ad43dd8dddd94}} 
+rtc\+\_\+en&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ae35e38f60a85d83c90be24af72910488}\label{classgambatte_1_1MemPtrs_ae35e38f60a85d83c90be24af72910488}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!Mem\+Ptrs@{Mem\+Ptrs}}
+\index{Mem\+Ptrs@{Mem\+Ptrs}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{Mem\+Ptrs()}{MemPtrs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gambatte\+::\+Mem\+Ptrs\+::\+Mem\+Ptrs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a801a970e84764ae8cdf48d991ebabd5c}\label{classgambatte_1_1MemPtrs_a801a970e84764ae8cdf48d991ebabd5c}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!````~Mem\+Ptrs@{$\sim$\+Mem\+Ptrs}}
+\index{````~Mem\+Ptrs@{$\sim$\+Mem\+Ptrs}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{$\sim$\+Mem\+Ptrs()}{~MemPtrs()}}
+{\footnotesize\ttfamily gambatte\+::\+Mem\+Ptrs\+::$\sim$\+Mem\+Ptrs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ae3d20b44cc53c66f1a7d002d70199e7e}\label{classgambatte_1_1MemPtrs_ae3d20b44cc53c66f1a7d002d70199e7e}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!Mem\+Ptrs@{Mem\+Ptrs}}
+\index{Mem\+Ptrs@{Mem\+Ptrs}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{Mem\+Ptrs()}{MemPtrs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily gambatte\+::\+Mem\+Ptrs\+::\+Mem\+Ptrs (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1MemPtrs}{Mem\+Ptrs} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a5252899528351e3b65b4dbd0ab602cd4}\label{classgambatte_1_1MemPtrs_a5252899528351e3b65b4dbd0ab602cd4}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!disconnect\+Oam\+Dma\+Areas@{disconnect\+Oam\+Dma\+Areas}}
+\index{disconnect\+Oam\+Dma\+Areas@{disconnect\+Oam\+Dma\+Areas}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{disconnect\+Oam\+Dma\+Areas()}{disconnectOamDmaAreas()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::disconnect\+Oam\+Dma\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a788e2f0d281b97c25177051422d9fa9c}\label{classgambatte_1_1MemPtrs_a788e2f0d281b97c25177051422d9fa9c}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a04faf27c55fc11a0fc9901e155a791cc}\label{classgambatte_1_1MemPtrs_a04faf27c55fc11a0fc9901e155a791cc}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!oam\+Dma\+Src@{oam\+Dma\+Src}}
+\index{oam\+Dma\+Src@{oam\+Dma\+Src}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{oam\+Dma\+Src()}{oamDmaSrc()}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a2c5520a5fadf732ba8907450d802f51b}{Oam\+Dma\+Src} gambatte\+::\+Mem\+Ptrs\+::oam\+Dma\+Src (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_aae54b80162586cb26f31d904cd9e3bcc}\label{classgambatte_1_1MemPtrs_aae54b80162586cb26f31d904cd9e3bcc}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!operator=@{operator=}}
+\index{operator=@{operator=}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1MemPtrs}{Mem\+Ptrs}\& gambatte\+::\+Mem\+Ptrs\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1MemPtrs}{Mem\+Ptrs} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a8d64b50fee594657df07994866631cf9}\label{classgambatte_1_1MemPtrs_a8d64b50fee594657df07994866631cf9}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rambankdata@{rambankdata}}
+\index{rambankdata@{rambankdata}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rambankdata()}{rambankdata()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::rambankdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_af169f7b261149d6965f2bb6806919f0d}\label{classgambatte_1_1MemPtrs_af169f7b261149d6965f2bb6806919f0d}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rambankdataend@{rambankdataend}}
+\index{rambankdataend@{rambankdataend}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rambankdataend()}{rambankdataend()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::rambankdataend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a4d0df7283082af4c0acb7b4fb1ecbf61}\label{classgambatte_1_1MemPtrs_a4d0df7283082af4c0acb7b4fb1ecbf61}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rdisabled\+Ram@{rdisabled\+Ram}}
+\index{rdisabled\+Ram@{rdisabled\+Ram}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rdisabled\+Ram()}{rdisabledRam()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Mem\+Ptrs\+::rdisabled\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a838e62acc2f6aefdacebb30ff2bcfbba}\label{classgambatte_1_1MemPtrs_a838e62acc2f6aefdacebb30ff2bcfbba}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rdisabled\+Ramw@{rdisabled\+Ramw}}
+\index{rdisabled\+Ramw@{rdisabled\+Ramw}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rdisabled\+Ramw()}{rdisabledRamw()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::rdisabled\+Ramw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a615a22d074183acc99c99d7fe2761073}\label{classgambatte_1_1MemPtrs_a615a22d074183acc99c99d7fe2761073}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!reset@{reset}}
+\index{reset@{reset}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::reset (\begin{DoxyParamCaption}\item[{unsigned}]{rombanks,  }\item[{unsigned}]{rambanks,  }\item[{unsigned}]{wrambanks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a72fd0391d940e7fc8ac733251b341b1f}\label{classgambatte_1_1MemPtrs_a72fd0391d940e7fc8ac733251b341b1f}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rmem@{rmem}}
+\index{rmem@{rmem}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rmem()}{rmem()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Mem\+Ptrs\+::rmem (\begin{DoxyParamCaption}\item[{unsigned}]{area }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_aabca959e142a0afa6dc51c57d181419f}\label{classgambatte_1_1MemPtrs_aabca959e142a0afa6dc51c57d181419f}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!romdata@{romdata}}
+\index{romdata@{romdata}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{romdata()}{romdata()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::romdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ac76f370f6bc5a41410564f1975d94677}\label{classgambatte_1_1MemPtrs_ac76f370f6bc5a41410564f1975d94677}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!romdata@{romdata}}
+\index{romdata@{romdata}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{romdata()}{romdata()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::romdata (\begin{DoxyParamCaption}\item[{unsigned}]{area }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ad09b9a0330a3518a4e9c92a8aa8869af}\label{classgambatte_1_1MemPtrs_ad09b9a0330a3518a4e9c92a8aa8869af}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!romdataend@{romdataend}}
+\index{romdataend@{romdataend}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{romdataend()}{romdataend()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::romdataend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_acf6facd9213e2f07f21194cb087734db}\label{classgambatte_1_1MemPtrs_acf6facd9213e2f07f21194cb087734db}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rsrambankptr@{rsrambankptr}}
+\index{rsrambankptr@{rsrambankptr}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rsrambankptr()}{rsrambankptr()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Mem\+Ptrs\+::rsrambankptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ad2b67ac189e0901d10af25403ce6e694}\label{classgambatte_1_1MemPtrs_ad2b67ac189e0901d10af25403ce6e694}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!set\+Oam\+Dma\+Src@{set\+Oam\+Dma\+Src}}
+\index{set\+Oam\+Dma\+Src@{set\+Oam\+Dma\+Src}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{set\+Oam\+Dma\+Src()}{setOamDmaSrc()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::set\+Oam\+Dma\+Src (\begin{DoxyParamCaption}\item[{\hyperlink{namespacegambatte_a2c5520a5fadf732ba8907450d802f51b}{Oam\+Dma\+Src}}]{oam\+Dma\+Src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a5362761de284b26ada7fbffc98a46934}\label{classgambatte_1_1MemPtrs_a5362761de284b26ada7fbffc98a46934}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!set\+Rambank@{set\+Rambank}}
+\index{set\+Rambank@{set\+Rambank}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{set\+Rambank()}{setRambank()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::set\+Rambank (\begin{DoxyParamCaption}\item[{unsigned}]{ram\+Flags,  }\item[{unsigned}]{rambank }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a443229e524ea04072df4689c60b375fc}\label{classgambatte_1_1MemPtrs_a443229e524ea04072df4689c60b375fc}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!set\+Rombank@{set\+Rombank}}
+\index{set\+Rombank@{set\+Rombank}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{set\+Rombank()}{setRombank()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::set\+Rombank (\begin{DoxyParamCaption}\item[{unsigned}]{bank }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a663aea3ca0337c4605ed0a6b3690731e}\label{classgambatte_1_1MemPtrs_a663aea3ca0337c4605ed0a6b3690731e}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!set\+Rombank0@{set\+Rombank0}}
+\index{set\+Rombank0@{set\+Rombank0}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{set\+Rombank0()}{setRombank0()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::set\+Rombank0 (\begin{DoxyParamCaption}\item[{unsigned}]{bank }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a6be5cb73470419ac270e309d00df39ce}\label{classgambatte_1_1MemPtrs_a6be5cb73470419ac270e309d00df39ce}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!set\+Vrambank@{set\+Vrambank}}
+\index{set\+Vrambank@{set\+Vrambank}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{set\+Vrambank()}{setVrambank()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::set\+Vrambank (\begin{DoxyParamCaption}\item[{unsigned}]{bank }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_acceb60b6f1e0b0dfab532cd6d34b6126}\label{classgambatte_1_1MemPtrs_acceb60b6f1e0b0dfab532cd6d34b6126}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!set\+Wrambank@{set\+Wrambank}}
+\index{set\+Wrambank@{set\+Wrambank}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{set\+Wrambank()}{setWrambank()}}
+{\footnotesize\ttfamily void gambatte\+::\+Mem\+Ptrs\+::set\+Wrambank (\begin{DoxyParamCaption}\item[{unsigned}]{bank }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a7f0f856f9a995583e6e682c4050ab2aa}\label{classgambatte_1_1MemPtrs_a7f0f856f9a995583e6e682c4050ab2aa}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!vrambankptr@{vrambankptr}}
+\index{vrambankptr@{vrambankptr}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{vrambankptr()}{vrambankptr()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::vrambankptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ae8b8dc5b98600a3e73aa70cf0608ab77}\label{classgambatte_1_1MemPtrs_ae8b8dc5b98600a3e73aa70cf0608ab77}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!vramdata@{vramdata}}
+\index{vramdata@{vramdata}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{vramdata()}{vramdata()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::vramdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a20edfea173f8c47262730b3428d730bc}\label{classgambatte_1_1MemPtrs_a20edfea173f8c47262730b3428d730bc}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!vramdataend@{vramdataend}}
+\index{vramdataend@{vramdataend}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{vramdataend()}{vramdataend()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::vramdataend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a2d5b20be9cc367f4350b951cc28673d8}\label{classgambatte_1_1MemPtrs_a2d5b20be9cc367f4350b951cc28673d8}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wdisabled\+Ram@{wdisabled\+Ram}}
+\index{wdisabled\+Ram@{wdisabled\+Ram}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wdisabled\+Ram()}{wdisabledRam()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wdisabled\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a41d383f6db05d04edf7a32dd45ba3ace}\label{classgambatte_1_1MemPtrs_a41d383f6db05d04edf7a32dd45ba3ace}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wmem@{wmem}}
+\index{wmem@{wmem}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wmem()}{wmem()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wmem (\begin{DoxyParamCaption}\item[{unsigned}]{area }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a0ec134dbb7787d80a2cae4d201833a6f}\label{classgambatte_1_1MemPtrs_a0ec134dbb7787d80a2cae4d201833a6f}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wramdata@{wramdata}}
+\index{wramdata@{wramdata}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wramdata()}{wramdata()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wramdata (\begin{DoxyParamCaption}\item[{unsigned}]{area }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a780233c9f5e89620540344db4b6a83e7}\label{classgambatte_1_1MemPtrs_a780233c9f5e89620540344db4b6a83e7}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wramdataend@{wramdataend}}
+\index{wramdataend@{wramdataend}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wramdataend()}{wramdataend()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wramdataend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_acd52f8d1306c19c289ae0cef9800e7c2}\label{classgambatte_1_1MemPtrs_acd52f8d1306c19c289ae0cef9800e7c2}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wsrambankptr@{wsrambankptr}}
+\index{wsrambankptr@{wsrambankptr}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wsrambankptr()}{wsrambankptr()}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wsrambankptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a86d5c1b44d933f28e3c2b21f8cedde41}\label{classgambatte_1_1MemPtrs_a86d5c1b44d933f28e3c2b21f8cedde41}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!memchunk\+\_\+@{memchunk\+\_\+}}
+\index{memchunk\+\_\+@{memchunk\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{memchunk\+\_\+}{memchunk\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::memchunk\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ad79951aa7a0eaf0f85b8034caa29c565}\label{classgambatte_1_1MemPtrs_ad79951aa7a0eaf0f85b8034caa29c565}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!memchunk\+\_\+size@{memchunk\+\_\+size}}
+\index{memchunk\+\_\+size@{memchunk\+\_\+size}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{memchunk\+\_\+size}{memchunk\_size}}
+{\footnotesize\ttfamily size\+\_\+t gambatte\+::\+Mem\+Ptrs\+::memchunk\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ac824bf1a5a30192fa6828e7f2d2ab8b5}\label{classgambatte_1_1MemPtrs_ac824bf1a5a30192fa6828e7f2d2ab8b5}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!oam\+Dma\+Src\+\_\+@{oam\+Dma\+Src\+\_\+}}
+\index{oam\+Dma\+Src\+\_\+@{oam\+Dma\+Src\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{oam\+Dma\+Src\+\_\+}{oamDmaSrc\_}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a2c5520a5fadf732ba8907450d802f51b}{Oam\+Dma\+Src} gambatte\+::\+Mem\+Ptrs\+::oam\+Dma\+Src\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a3aad306915c66a8f3de36fced3bdab6f}\label{classgambatte_1_1MemPtrs_a3aad306915c66a8f3de36fced3bdab6f}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rambankdata\+\_\+@{rambankdata\+\_\+}}
+\index{rambankdata\+\_\+@{rambankdata\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rambankdata\+\_\+}{rambankdata\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::rambankdata\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a0c7401bcfa64bb8b2180d04381169c81}\label{classgambatte_1_1MemPtrs_a0c7401bcfa64bb8b2180d04381169c81}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rmem\+\_\+@{rmem\+\_\+}}
+\index{rmem\+\_\+@{rmem\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rmem\+\_\+}{rmem\_}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Mem\+Ptrs\+::rmem\+\_\+\mbox{[}0x10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a7184987957516c7f8116ab391a2546d1}\label{classgambatte_1_1MemPtrs_a7184987957516c7f8116ab391a2546d1}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!romdata\+\_\+@{romdata\+\_\+}}
+\index{romdata\+\_\+@{romdata\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{romdata\+\_\+}{romdata\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::romdata\+\_\+\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_aab734c5c626feeef678c8b961c49cc38}\label{classgambatte_1_1MemPtrs_aab734c5c626feeef678c8b961c49cc38}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!rsrambankptr\+\_\+@{rsrambankptr\+\_\+}}
+\index{rsrambankptr\+\_\+@{rsrambankptr\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{rsrambankptr\+\_\+}{rsrambankptr\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::rsrambankptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_ac970531db21355617f59475f3affeecf}\label{classgambatte_1_1MemPtrs_ac970531db21355617f59475f3affeecf}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!vrambankptr\+\_\+@{vrambankptr\+\_\+}}
+\index{vrambankptr\+\_\+@{vrambankptr\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{vrambankptr\+\_\+}{vrambankptr\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::vrambankptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_afeeb42a3c48d2f0eb588e2b3bc3ad78a}\label{classgambatte_1_1MemPtrs_afeeb42a3c48d2f0eb588e2b3bc3ad78a}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wmem\+\_\+@{wmem\+\_\+}}
+\index{wmem\+\_\+@{wmem\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wmem\+\_\+}{wmem\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wmem\+\_\+\mbox{[}0x10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_abb906547da5c78cbfc41e158a44b297f}\label{classgambatte_1_1MemPtrs_abb906547da5c78cbfc41e158a44b297f}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wramdata\+\_\+@{wramdata\+\_\+}}
+\index{wramdata\+\_\+@{wramdata\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wramdata\+\_\+}{wramdata\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wramdata\+\_\+\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a81f51d77dc7a063783d7c6365d327471}\label{classgambatte_1_1MemPtrs_a81f51d77dc7a063783d7c6365d327471}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wramdataend\+\_\+@{wramdataend\+\_\+}}
+\index{wramdataend\+\_\+@{wramdataend\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wramdataend\+\_\+}{wramdataend\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wramdataend\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1MemPtrs_a12336067daec4b180c396003a8b74645}\label{classgambatte_1_1MemPtrs_a12336067daec4b180c396003a8b74645}} 
+\index{gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}!wsrambankptr\+\_\+@{wsrambankptr\+\_\+}}
+\index{wsrambankptr\+\_\+@{wsrambankptr\+\_\+}!gambatte\+::\+Mem\+Ptrs@{gambatte\+::\+Mem\+Ptrs}}
+\subsubsection{\texorpdfstring{wsrambankptr\+\_\+}{wsrambankptr\_}}
+{\footnotesize\ttfamily unsigned char$\ast$ gambatte\+::\+Mem\+Ptrs\+::wsrambankptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/mem/\hyperlink{memptrs_8h}{memptrs.\+h}\item 
+src/mem/\hyperlink{memptrs_8cpp}{memptrs.\+cpp}\end{DoxyCompactItemize}

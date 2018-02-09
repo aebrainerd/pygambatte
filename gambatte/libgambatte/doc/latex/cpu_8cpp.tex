@@ -1,0 +1,871 @@
+\hypertarget{cpu_8cpp}{}\section{src/cpu.cpp File Reference}
+\label{cpu_8cpp}\index{src/cpu.\+cpp@{src/cpu.\+cpp}}
+{\ttfamily \#include \char`\"{}cpu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}memory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}savestate.\+h\char`\"{}}\newline
+Include dependency graph for cpu.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cpu_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegambatte}{gambatte}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cpu_8cpp_a9d55ae72d8ccc4b3b286bd34d8fd1cc3}{bc}()~( b $<$$<$ 8 $\vert$ c )
+\item 
+\#define \hyperlink{cpu_8cpp_a13f9ce972d776c9c0f967a3c86673560}{de}()~( d $<$$<$ 8 $\vert$ e )
+\item 
+\#define \hyperlink{cpu_8cpp_aa3302267bcc3a9b13495e449da7d906e}{hl}()~( h $<$$<$ 8 $\vert$ l )
+\item 
+\#define \hyperlink{cpu_8cpp_a52107b665419d01dde278b223b948a2c}{R\+E\+AD}(dest,  addr)~do \{ (dest) = mem\+\_\+.\+read(addr, cycle\+Counter, false); cycle\+Counter += 4; \} while (0)
+\item 
+\#define \hyperlink{cpu_8cpp_ad85aa5513947320c1ce09f8d7e557c70}{P\+C\+\_\+\+R\+E\+AD}(dest)~do \{ (dest) = mem\+\_\+.\+read(pc, cycle\+Counter, true); pc = (pc + 1) \& 0x\+F\+F\+F\+F; cycle\+Counter += 4; \} while (0)
+\item 
+\#define \hyperlink{cpu_8cpp_ae6afbd87a8befefc6ea7b5f3ccdb9788}{F\+F\+\_\+\+R\+E\+AD}(dest,  addr)~do \{ (dest) = mem\+\_\+.\+ff\+\_\+read(addr, cycle\+Counter); cycle\+Counter += 4; \} while (0)
+\item 
+\#define \hyperlink{cpu_8cpp_a7354726f53378b845a78699e74f1244c}{W\+R\+I\+TE}(addr,  data)~do \{ mem\+\_\+.\+write(addr, data, cycle\+Counter); cycle\+Counter += 4; \} while (0)
+\item 
+\#define \hyperlink{cpu_8cpp_ab5b55d746e1bef1398f4c844a5e334eb}{F\+F\+\_\+\+W\+R\+I\+TE}(addr,  data)~do \{ mem\+\_\+.\+ff\+\_\+write(addr, data, cycle\+Counter); cycle\+Counter += 4; \} while (0)
+\item 
+\#define \hyperlink{cpu_8cpp_a9d2da34d3c2aa4707cafba06f2320462}{P\+C\+\_\+\+M\+OD}(data)~do \{ pc = data; cycle\+Counter += 4; \} while (0)
+\item 
+\#define \hyperlink{cpu_8cpp_a7d745c38e32ecd28f8caa064eb38cfc9}{P\+U\+SH}(r1,  r2)
+\item 
+\#define \hyperlink{cpu_8cpp_a2dd6fdfe1a170f3854cbcd3cde5b790f}{swap\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_a7ff27fdf75992e570c3fb1d2332e3f73}{rlc\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_a10c2b4ccc6ffe80c9ea9d8c41fbb1271}{rl\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_a12419a8e1595befbdf41b9a1a863bd0e}{rrc\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_ac67ddd1ac847d2818e6314401dca2b74}{rr\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_a9c8994809a094dab01cfb57368383bca}{sla\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_ace0c1a725f3b1f87fb3cc3137d4c7245}{sra\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_a7511da9d24e0f94f3abe6a62f88ff06a}{srl\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(bitmask,  u8)
+\item 
+\#define \hyperlink{cpu_8cpp_ad81af57e858367347bc44e6bfeea7bee}{bit0\+\_\+u8}(u8)~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x01, (u8))
+\item 
+\#define \hyperlink{cpu_8cpp_a124c321085c7d267f070d1893537b9d3}{bit1\+\_\+u8}(u8)~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x02, (u8))
+\item 
+\#define \hyperlink{cpu_8cpp_a0f9423d14593ad7e334b9943351691bc}{bit2\+\_\+u8}(u8)~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x04, (u8))
+\item 
+\#define \hyperlink{cpu_8cpp_aaa6cff9ade628d2f035a25ca824b6c45}{bit3\+\_\+u8}(u8)~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x08, (u8))
+\item 
+\#define \hyperlink{cpu_8cpp_a785c7e30b190d84f39800ec283711b31}{bit4\+\_\+u8}(u8)~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x10, (u8))
+\item 
+\#define \hyperlink{cpu_8cpp_ae0820f357fc9ea8449db635f4db4d946}{bit5\+\_\+u8}(u8)~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x20, (u8))
+\item 
+\#define \hyperlink{cpu_8cpp_ae0a45b1dfe05c60b56e138bd700853de}{bit6\+\_\+u8}(u8)~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x40, (u8))
+\item 
+\#define \hyperlink{cpu_8cpp_a801e3bf99a1ac97cf4ee37443752e2a2}{bit7\+\_\+u8}(u8)~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x80, (u8))
+\item 
+\#define \hyperlink{cpu_8cpp_acc49dbcb772c639b3108b50658a1f28a}{set0\+\_\+r}(r)~( (r) $\vert$= 0x01 )
+\item 
+\#define \hyperlink{cpu_8cpp_a0a1d7b83716dcc2e5b881322129d00b1}{set1\+\_\+r}(r)~( (r) $\vert$= 0x02 )
+\item 
+\#define \hyperlink{cpu_8cpp_a50cb4a56e8311e35e26b5f702019a1b8}{set2\+\_\+r}(r)~( (r) $\vert$= 0x04 )
+\item 
+\#define \hyperlink{cpu_8cpp_a1918745816c420a0d998b21955b35073}{set3\+\_\+r}(r)~( (r) $\vert$= 0x08 )
+\item 
+\#define \hyperlink{cpu_8cpp_a0f9c3b181d36e370347e588ef981be36}{set4\+\_\+r}(r)~( (r) $\vert$= 0x10 )
+\item 
+\#define \hyperlink{cpu_8cpp_aaabfc137dc39713b9dc1f146bae69048}{set5\+\_\+r}(r)~( (r) $\vert$= 0x20 )
+\item 
+\#define \hyperlink{cpu_8cpp_a39a24131794747edeb7309eeaa1cf697}{set6\+\_\+r}(r)~( (r) $\vert$= 0x40 )
+\item 
+\#define \hyperlink{cpu_8cpp_a98bc52e44af20a6f7de6ebe11c6710e5}{set7\+\_\+r}(r)~( (r) $\vert$= 0x80 )
+\item 
+\#define \hyperlink{cpu_8cpp_a8b7d68987c77de48cf7bd573b9a7b8d7}{setn\+\_\+mem\+\_\+hl}(n)
+\item 
+\#define \hyperlink{cpu_8cpp_ae8f410c94b42feefc5d9987e4bd8f9ee}{res0\+\_\+r}(r)~( (r) \&= 0x\+F\+E )
+\item 
+\#define \hyperlink{cpu_8cpp_ab045b7f9ad1d85b749de8add657637ac}{res1\+\_\+r}(r)~( (r) \&= 0x\+F\+D )
+\item 
+\#define \hyperlink{cpu_8cpp_a520c6719f83e353c0515fd0f05305e45}{res2\+\_\+r}(r)~( (r) \&= 0x\+F\+B )
+\item 
+\#define \hyperlink{cpu_8cpp_a169b37d6dc45b6c25ecccd0c7bc11754}{res3\+\_\+r}(r)~( (r) \&= 0x\+F7 )
+\item 
+\#define \hyperlink{cpu_8cpp_a32fbb0f8908edb79c9a0817d12e59bc3}{res4\+\_\+r}(r)~( (r) \&= 0x\+E\+F )
+\item 
+\#define \hyperlink{cpu_8cpp_a319d35bb3b01b0aa8c64da2d9b7058c3}{res5\+\_\+r}(r)~( (r) \&= 0x\+D\+F )
+\item 
+\#define \hyperlink{cpu_8cpp_aa42f783e3fed46ecfd5dfb121f87c461}{res6\+\_\+r}(r)~( (r) \&= 0x\+B\+F )
+\item 
+\#define \hyperlink{cpu_8cpp_a6ec31b03440eac0c7f72605f3791a4da}{res7\+\_\+r}(r)~( (r) \&= 0x7\+F )
+\item 
+\#define \hyperlink{cpu_8cpp_a161eafec9daf27779d0e4fa820727adf}{resn\+\_\+mem\+\_\+hl}(n)
+\item 
+\#define \hyperlink{cpu_8cpp_afbe13488e420877381e0a06a60c73c40}{ld\+\_\+rr\+\_\+nn}(r1,  r2)
+\item 
+\#define \hyperlink{cpu_8cpp_ace842453670e23ea5aeba96fa9ac9f92}{push\+\_\+rr}(r1,  r2)
+\item 
+\#define \hyperlink{cpu_8cpp_ad9a732d1519e8d2f3364fdb01c26cbe3}{pop\+\_\+rr}(r1,  r2)
+\item 
+\#define \hyperlink{cpu_8cpp_ac94f2a65c9b5c6d859d6d4eb3216cba0}{add\+\_\+a\+\_\+u8}(u8)
+\item 
+\#define \hyperlink{cpu_8cpp_a15615189a9db8e90fd0f03b4cadc9aa7}{adc\+\_\+a\+\_\+u8}(u8)
+\item 
+\#define \hyperlink{cpu_8cpp_a81a85031df801e1da20afcba1fd663b6}{sub\+\_\+a\+\_\+u8}(u8)
+\item 
+\#define \hyperlink{cpu_8cpp_a59ee192851d6469257d40c02736b9dd8}{sbc\+\_\+a\+\_\+u8}(u8)
+\item 
+\#define \hyperlink{cpu_8cpp_ad0f83e081b1fd436305ef9663b8f9cc7}{and\+\_\+a\+\_\+u8}(u8)
+\item 
+\#define \hyperlink{cpu_8cpp_ab7bde504ff0bf7223440258e72c0ff55}{or\+\_\+a\+\_\+u8}(u8)
+\item 
+\#define \hyperlink{cpu_8cpp_a1881631d4a5008096dafe52006e5e3a5}{xor\+\_\+a\+\_\+u8}(u8)
+\item 
+\#define \hyperlink{cpu_8cpp_ab8dd83b8c8e58ba92ff12b00bb43edab}{cp\+\_\+a\+\_\+u8}(u8)
+\item 
+\#define \hyperlink{cpu_8cpp_a31223d83f3672f65c45a85030893ff15}{inc\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_a41162be86caebe7bf7dc011d1444a7fe}{dec\+\_\+r}(r)
+\item 
+\#define \hyperlink{cpu_8cpp_ab9aba69847b129d879f86031486dbf5b}{add\+\_\+hl\+\_\+rr}(rh,  rl)
+\item 
+\#define \hyperlink{cpu_8cpp_a673f3b274dd213865a131f1c091121b9}{inc\+\_\+rr}(rh,  rl)
+\item 
+\#define \hyperlink{cpu_8cpp_a8a63d87a85430f7ebf7f5ec2f3d78ab1}{dec\+\_\+rr}(rh,  rl)
+\item 
+\#define \hyperlink{cpu_8cpp_abddd970512646b080e10b23bfc3da840}{sp\+\_\+plus\+\_\+n}(sumout)
+\item 
+\#define \hyperlink{cpu_8cpp_a61761bb3a9ebc9afb808b5e6e70e7bb3}{jp\+\_\+nn}()
+\item 
+\#define \hyperlink{cpu_8cpp_ab09ee490e7b721c07f8bf630dcd526c2}{jr\+\_\+disp}()
+\item 
+\#define \hyperlink{cpu_8cpp_af983e153407e41688b5681fe51556579}{call\+\_\+nn}()
+\item 
+\#define \hyperlink{cpu_8cpp_accba00d538c1c165a68b1915af2993cd}{rst\+\_\+n}(n)
+\item 
+\#define \hyperlink{cpu_8cpp_ad26698bda5057cadf111defa0215303b}{ret}()
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfaf64f53445c4545c35875e955a3fbad58}{gambatte\+::hf2\+\_\+hcf} = 0x200, 
+\hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfadeaa299d1f8db34af642304a214162ce}{gambatte\+::hf2\+\_\+subf} = 0x400, 
+\hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfadcfa3ba9b4d1e002ac71f5c8621c3b0b}{gambatte\+::hf2\+\_\+incf} = 0x800
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{cpu_8cpp_a15615189a9db8e90fd0f03b4cadc9aa7}\label{cpu_8cpp_a15615189a9db8e90fd0f03b4cadc9aa7}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!adc\+\_\+a\+\_\+u8@{adc\+\_\+a\+\_\+u8}}
+\index{adc\+\_\+a\+\_\+u8@{adc\+\_\+a\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{adc\+\_\+a\+\_\+u8}{adc\_a\_u8}}
+{\footnotesize\ttfamily \#define adc\+\_\+a\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    hf1 = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+    hf2 = (cf & 0x100) | (u8); \(\backslash\)
+    zf = cf = (cf >> 8 & 1) + (u8) + \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+    a = zf & 0xFF; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ac94f2a65c9b5c6d859d6d4eb3216cba0}\label{cpu_8cpp_ac94f2a65c9b5c6d859d6d4eb3216cba0}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!add\+\_\+a\+\_\+u8@{add\+\_\+a\+\_\+u8}}
+\index{add\+\_\+a\+\_\+u8@{add\+\_\+a\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{add\+\_\+a\+\_\+u8}{add\_a\_u8}}
+{\footnotesize\ttfamily \#define add\+\_\+a\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    hf1 = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+    hf2 = u8; \(\backslash\)
+    zf = cf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a} + hf2; \(\backslash\)
+    a = zf & 0xFF; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ab9aba69847b129d879f86031486dbf5b}\label{cpu_8cpp_ab9aba69847b129d879f86031486dbf5b}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!add\+\_\+hl\+\_\+rr@{add\+\_\+hl\+\_\+rr}}
+\index{add\+\_\+hl\+\_\+rr@{add\+\_\+hl\+\_\+rr}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{add\+\_\+hl\+\_\+rr}{add\_hl\_rr}}
+{\footnotesize\ttfamily \#define add\+\_\+hl\+\_\+rr(\begin{DoxyParamCaption}\item[{}]{rh,  }\item[{}]{rl }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    cf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda7629be069806563e36f39f1b0dfb1fb9}{l} + (rl); \(\backslash\)
+    l = cf & 0xFF; \(\backslash\)
+    hf1 = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2ddaa3de547822b6dedd0411ceb22c9713d3}{h}; \(\backslash\)
+    hf2 = (cf & 0x100) | (rh); \(\backslash\)
+    cf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2ddaa3de547822b6dedd0411ceb22c9713d3}{h} + (cf >> 8) + (rh); \(\backslash\)
+    h = cf & 0xFF; \(\backslash\)
+    cycleCounter += 4; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ad0f83e081b1fd436305ef9663b8f9cc7}\label{cpu_8cpp_ad0f83e081b1fd436305ef9663b8f9cc7}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!and\+\_\+a\+\_\+u8@{and\+\_\+a\+\_\+u8}}
+\index{and\+\_\+a\+\_\+u8@{and\+\_\+a\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{and\+\_\+a\+\_\+u8}{and\_a\_u8}}
+{\footnotesize\ttfamily \#define and\+\_\+a\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    hf2 = \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfaf64f53445c4545c35875e955a3fbad58}{hf2\_hcf}; \(\backslash\)
+    cf = 0; \(\backslash\)
+    a &= (u8); \(\backslash\)
+    zf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a9d55ae72d8ccc4b3b286bd34d8fd1cc3}\label{cpu_8cpp_a9d55ae72d8ccc4b3b286bd34d8fd1cc3}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bc@{bc}}
+\index{bc@{bc}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bc}{bc}}
+{\footnotesize\ttfamily \#define bc(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~( b $<$$<$ 8 $\vert$ c )}
+
+\mbox{\Hypertarget{cpu_8cpp_ad81af57e858367347bc44e6bfeea7bee}\label{cpu_8cpp_ad81af57e858367347bc44e6bfeea7bee}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bit0\+\_\+u8@{bit0\+\_\+u8}}
+\index{bit0\+\_\+u8@{bit0\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bit0\+\_\+u8}{bit0\_u8}}
+{\footnotesize\ttfamily \#define bit0\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x01, (u8))}
+
+\mbox{\Hypertarget{cpu_8cpp_a124c321085c7d267f070d1893537b9d3}\label{cpu_8cpp_a124c321085c7d267f070d1893537b9d3}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bit1\+\_\+u8@{bit1\+\_\+u8}}
+\index{bit1\+\_\+u8@{bit1\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bit1\+\_\+u8}{bit1\_u8}}
+{\footnotesize\ttfamily \#define bit1\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x02, (u8))}
+
+\mbox{\Hypertarget{cpu_8cpp_a0f9423d14593ad7e334b9943351691bc}\label{cpu_8cpp_a0f9423d14593ad7e334b9943351691bc}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bit2\+\_\+u8@{bit2\+\_\+u8}}
+\index{bit2\+\_\+u8@{bit2\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bit2\+\_\+u8}{bit2\_u8}}
+{\footnotesize\ttfamily \#define bit2\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x04, (u8))}
+
+\mbox{\Hypertarget{cpu_8cpp_aaa6cff9ade628d2f035a25ca824b6c45}\label{cpu_8cpp_aaa6cff9ade628d2f035a25ca824b6c45}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bit3\+\_\+u8@{bit3\+\_\+u8}}
+\index{bit3\+\_\+u8@{bit3\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bit3\+\_\+u8}{bit3\_u8}}
+{\footnotesize\ttfamily \#define bit3\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x08, (u8))}
+
+\mbox{\Hypertarget{cpu_8cpp_a785c7e30b190d84f39800ec283711b31}\label{cpu_8cpp_a785c7e30b190d84f39800ec283711b31}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bit4\+\_\+u8@{bit4\+\_\+u8}}
+\index{bit4\+\_\+u8@{bit4\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bit4\+\_\+u8}{bit4\_u8}}
+{\footnotesize\ttfamily \#define bit4\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x10, (u8))}
+
+\mbox{\Hypertarget{cpu_8cpp_ae0820f357fc9ea8449db635f4db4d946}\label{cpu_8cpp_ae0820f357fc9ea8449db635f4db4d946}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bit5\+\_\+u8@{bit5\+\_\+u8}}
+\index{bit5\+\_\+u8@{bit5\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bit5\+\_\+u8}{bit5\_u8}}
+{\footnotesize\ttfamily \#define bit5\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x20, (u8))}
+
+\mbox{\Hypertarget{cpu_8cpp_ae0a45b1dfe05c60b56e138bd700853de}\label{cpu_8cpp_ae0a45b1dfe05c60b56e138bd700853de}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bit6\+\_\+u8@{bit6\+\_\+u8}}
+\index{bit6\+\_\+u8@{bit6\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bit6\+\_\+u8}{bit6\_u8}}
+{\footnotesize\ttfamily \#define bit6\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x40, (u8))}
+
+\mbox{\Hypertarget{cpu_8cpp_a801e3bf99a1ac97cf4ee37443752e2a2}\label{cpu_8cpp_a801e3bf99a1ac97cf4ee37443752e2a2}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bit7\+\_\+u8@{bit7\+\_\+u8}}
+\index{bit7\+\_\+u8@{bit7\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bit7\+\_\+u8}{bit7\_u8}}
+{\footnotesize\ttfamily \#define bit7\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~\hyperlink{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}{bitn\+\_\+u8}(0x80, (u8))}
+
+\mbox{\Hypertarget{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}\label{cpu_8cpp_a53a6df3a91ccb70f757687254ac7414a}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!bitn\+\_\+u8@{bitn\+\_\+u8}}
+\index{bitn\+\_\+u8@{bitn\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{bitn\+\_\+u8}{bitn\_u8}}
+{\footnotesize\ttfamily \#define bitn\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{bitmask,  }\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    zf = (u8) & (bitmask); \(\backslash\)
+    hf2 = \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfaf64f53445c4545c35875e955a3fbad58}{hf2\_hcf}; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_af983e153407e41688b5681fe51556579}\label{cpu_8cpp_af983e153407e41688b5681fe51556579}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!call\+\_\+nn@{call\+\_\+nn}}
+\index{call\+\_\+nn@{call\+\_\+nn}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{call\+\_\+nn}{call\_nn}}
+{\footnotesize\ttfamily \#define call\+\_\+nn(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    PUSH(((pc + 2) >> 8) & 0xFF, (pc + 2) & 0xFF); \(\backslash\)
+    jp\_nn(); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ab8dd83b8c8e58ba92ff12b00bb43edab}\label{cpu_8cpp_ab8dd83b8c8e58ba92ff12b00bb43edab}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!cp\+\_\+a\+\_\+u8@{cp\+\_\+a\+\_\+u8}}
+\index{cp\+\_\+a\+\_\+u8@{cp\+\_\+a\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{cp\+\_\+a\+\_\+u8}{cp\_a\_u8}}
+{\footnotesize\ttfamily \#define cp\+\_\+a\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    hf1 = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+    hf2 = u8; \(\backslash\)
+    zf = cf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a} - hf2; \(\backslash\)
+    hf2 |= \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfadeaa299d1f8db34af642304a214162ce}{hf2\_subf}; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a13f9ce972d776c9c0f967a3c86673560}\label{cpu_8cpp_a13f9ce972d776c9c0f967a3c86673560}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!de@{de}}
+\index{de@{de}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{de}{de}}
+{\footnotesize\ttfamily \#define de(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~( d $<$$<$ 8 $\vert$ e )}
+
+\mbox{\Hypertarget{cpu_8cpp_a41162be86caebe7bf7dc011d1444a7fe}\label{cpu_8cpp_a41162be86caebe7bf7dc011d1444a7fe}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!dec\+\_\+r@{dec\+\_\+r}}
+\index{dec\+\_\+r@{dec\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{dec\+\_\+r}{dec\_r}}
+{\footnotesize\ttfamily \#define dec\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    hf2 = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) | \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfadcfa3ba9b4d1e002ac71f5c8621c3b0b}{hf2\_incf} | \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfadeaa299d1f8db34af642304a214162ce}{hf2\_subf}; \(\backslash\)
+    zf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) - 1; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = zf & 0xFF; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a8a63d87a85430f7ebf7f5ec2f3d78ab1}\label{cpu_8cpp_a8a63d87a85430f7ebf7f5ec2f3d78ab1}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!dec\+\_\+rr@{dec\+\_\+rr}}
+\index{dec\+\_\+rr@{dec\+\_\+rr}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{dec\+\_\+rr}{dec\_rr}}
+{\footnotesize\ttfamily \#define dec\+\_\+rr(\begin{DoxyParamCaption}\item[{}]{rh,  }\item[{}]{rl }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned \textcolor{keyword}{const} lowdec = (rl) - 1; \(\backslash\)
+    (rl) = lowdec & 0xFF; \(\backslash\)
+    (rh) = ((rh) - (lowdec >> 8 & 1)) & 0xFF; \(\backslash\)
+    cycleCounter += 4; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ae6afbd87a8befefc6ea7b5f3ccdb9788}\label{cpu_8cpp_ae6afbd87a8befefc6ea7b5f3ccdb9788}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!F\+F\+\_\+\+R\+E\+AD@{F\+F\+\_\+\+R\+E\+AD}}
+\index{F\+F\+\_\+\+R\+E\+AD@{F\+F\+\_\+\+R\+E\+AD}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+R\+E\+AD}{FF\_READ}}
+{\footnotesize\ttfamily \#define F\+F\+\_\+\+R\+E\+AD(\begin{DoxyParamCaption}\item[{}]{dest,  }\item[{}]{addr }\end{DoxyParamCaption})~do \{ (dest) = mem\+\_\+.\+ff\+\_\+read(addr, cycle\+Counter); cycle\+Counter += 4; \} while (0)}
+
+\mbox{\Hypertarget{cpu_8cpp_ab5b55d746e1bef1398f4c844a5e334eb}\label{cpu_8cpp_ab5b55d746e1bef1398f4c844a5e334eb}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!F\+F\+\_\+\+W\+R\+I\+TE@{F\+F\+\_\+\+W\+R\+I\+TE}}
+\index{F\+F\+\_\+\+W\+R\+I\+TE@{F\+F\+\_\+\+W\+R\+I\+TE}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{F\+F\+\_\+\+W\+R\+I\+TE}{FF\_WRITE}}
+{\footnotesize\ttfamily \#define F\+F\+\_\+\+W\+R\+I\+TE(\begin{DoxyParamCaption}\item[{}]{addr,  }\item[{}]{data }\end{DoxyParamCaption})~do \{ mem\+\_\+.\+ff\+\_\+write(addr, data, cycle\+Counter); cycle\+Counter += 4; \} while (0)}
+
+\mbox{\Hypertarget{cpu_8cpp_aa3302267bcc3a9b13495e449da7d906e}\label{cpu_8cpp_aa3302267bcc3a9b13495e449da7d906e}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!hl@{hl}}
+\index{hl@{hl}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{hl}{hl}}
+{\footnotesize\ttfamily \#define hl(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~( h $<$$<$ 8 $\vert$ l )}
+
+\mbox{\Hypertarget{cpu_8cpp_a31223d83f3672f65c45a85030893ff15}\label{cpu_8cpp_a31223d83f3672f65c45a85030893ff15}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!inc\+\_\+r@{inc\+\_\+r}}
+\index{inc\+\_\+r@{inc\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{inc\+\_\+r}{inc\_r}}
+{\footnotesize\ttfamily \#define inc\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    hf2 = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) | \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfadcfa3ba9b4d1e002ac71f5c8621c3b0b}{hf2\_incf}; \(\backslash\)
+    zf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) + 1; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = zf & 0xFF; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a673f3b274dd213865a131f1c091121b9}\label{cpu_8cpp_a673f3b274dd213865a131f1c091121b9}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!inc\+\_\+rr@{inc\+\_\+rr}}
+\index{inc\+\_\+rr@{inc\+\_\+rr}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{inc\+\_\+rr}{inc\_rr}}
+{\footnotesize\ttfamily \#define inc\+\_\+rr(\begin{DoxyParamCaption}\item[{}]{rh,  }\item[{}]{rl }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned \textcolor{keyword}{const} lowinc = (rl) + 1; \(\backslash\)
+    (rl) = lowinc & 0xFF; \(\backslash\)
+    (rh) = ((rh) + (lowinc >> 8)) & 0xFF; \(\backslash\)
+    cycleCounter += 4; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a61761bb3a9ebc9afb808b5e6e70e7bb3}\label{cpu_8cpp_a61761bb3a9ebc9afb808b5e6e70e7bb3}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!jp\+\_\+nn@{jp\+\_\+nn}}
+\index{jp\+\_\+nn@{jp\+\_\+nn}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{jp\+\_\+nn}{jp\_nn}}
+{\footnotesize\ttfamily \#define jp\+\_\+nn(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned imm0, imm1; \(\backslash\)
+    PC\_READ(imm0); \(\backslash\)
+    PC\_READ(imm1); \(\backslash\)
+    PC\_MOD(imm1 << 8 | imm0); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ab09ee490e7b721c07f8bf630dcd526c2}\label{cpu_8cpp_ab09ee490e7b721c07f8bf630dcd526c2}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!jr\+\_\+disp@{jr\+\_\+disp}}
+\index{jr\+\_\+disp@{jr\+\_\+disp}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{jr\+\_\+disp}{jr\_disp}}
+{\footnotesize\ttfamily \#define jr\+\_\+disp(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned disp; \(\backslash\)
+    PC\_READ(disp); \(\backslash\)
+    disp = (disp ^ 0x80) - 0x80; \(\backslash\)
+    PC\_MOD((pc + disp) & 0xFFFF); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_afbe13488e420877381e0a06a60c73c40}\label{cpu_8cpp_afbe13488e420877381e0a06a60c73c40}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!ld\+\_\+rr\+\_\+nn@{ld\+\_\+rr\+\_\+nn}}
+\index{ld\+\_\+rr\+\_\+nn@{ld\+\_\+rr\+\_\+nn}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{ld\+\_\+rr\+\_\+nn}{ld\_rr\_nn}}
+{\footnotesize\ttfamily \#define ld\+\_\+rr\+\_\+nn(\begin{DoxyParamCaption}\item[{}]{r1,  }\item[{}]{r2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    PC\_READ(r2); \(\backslash\)
+    PC\_READ(r1); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ab7bde504ff0bf7223440258e72c0ff55}\label{cpu_8cpp_ab7bde504ff0bf7223440258e72c0ff55}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!or\+\_\+a\+\_\+u8@{or\+\_\+a\+\_\+u8}}
+\index{or\+\_\+a\+\_\+u8@{or\+\_\+a\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{or\+\_\+a\+\_\+u8}{or\_a\_u8}}
+{\footnotesize\ttfamily \#define or\+\_\+a\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    cf = hf2 = 0; \(\backslash\)
+    a |= (u8); \(\backslash\)
+    zf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a9d2da34d3c2aa4707cafba06f2320462}\label{cpu_8cpp_a9d2da34d3c2aa4707cafba06f2320462}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!P\+C\+\_\+\+M\+OD@{P\+C\+\_\+\+M\+OD}}
+\index{P\+C\+\_\+\+M\+OD@{P\+C\+\_\+\+M\+OD}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{P\+C\+\_\+\+M\+OD}{PC\_MOD}}
+{\footnotesize\ttfamily \#define P\+C\+\_\+\+M\+OD(\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})~do \{ pc = data; cycle\+Counter += 4; \} while (0)}
+
+\mbox{\Hypertarget{cpu_8cpp_ad85aa5513947320c1ce09f8d7e557c70}\label{cpu_8cpp_ad85aa5513947320c1ce09f8d7e557c70}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!P\+C\+\_\+\+R\+E\+AD@{P\+C\+\_\+\+R\+E\+AD}}
+\index{P\+C\+\_\+\+R\+E\+AD@{P\+C\+\_\+\+R\+E\+AD}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{P\+C\+\_\+\+R\+E\+AD}{PC\_READ}}
+{\footnotesize\ttfamily \#define P\+C\+\_\+\+R\+E\+AD(\begin{DoxyParamCaption}\item[{}]{dest }\end{DoxyParamCaption})~do \{ (dest) = mem\+\_\+.\+read(pc, cycle\+Counter, true); pc = (pc + 1) \& 0x\+F\+F\+F\+F; cycle\+Counter += 4; \} while (0)}
+
+\mbox{\Hypertarget{cpu_8cpp_ad9a732d1519e8d2f3364fdb01c26cbe3}\label{cpu_8cpp_ad9a732d1519e8d2f3364fdb01c26cbe3}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!pop\+\_\+rr@{pop\+\_\+rr}}
+\index{pop\+\_\+rr@{pop\+\_\+rr}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{pop\+\_\+rr}{pop\_rr}}
+{\footnotesize\ttfamily \#define pop\+\_\+rr(\begin{DoxyParamCaption}\item[{}]{r1,  }\item[{}]{r2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    READ(r2, sp); \(\backslash\)
+    sp = (sp + 1) & 0xFFFF; \(\backslash\)
+    READ(r1, sp); \(\backslash\)
+    sp = (sp + 1) & 0xFFFF; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a7d745c38e32ecd28f8caa064eb38cfc9}\label{cpu_8cpp_a7d745c38e32ecd28f8caa064eb38cfc9}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!P\+U\+SH@{P\+U\+SH}}
+\index{P\+U\+SH@{P\+U\+SH}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{P\+U\+SH}{PUSH}}
+{\footnotesize\ttfamily \#define P\+U\+SH(\begin{DoxyParamCaption}\item[{}]{r1,  }\item[{}]{r2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    sp = (sp - 1) & 0xFFFF; \(\backslash\)
+    WRITE(sp, (r1)); \(\backslash\)
+    sp = (sp - 1) & 0xFFFF; \(\backslash\)
+    WRITE(sp, (r2)); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ace842453670e23ea5aeba96fa9ac9f92}\label{cpu_8cpp_ace842453670e23ea5aeba96fa9ac9f92}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!push\+\_\+rr@{push\+\_\+rr}}
+\index{push\+\_\+rr@{push\+\_\+rr}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{push\+\_\+rr}{push\_rr}}
+{\footnotesize\ttfamily \#define push\+\_\+rr(\begin{DoxyParamCaption}\item[{}]{r1,  }\item[{}]{r2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    PUSH(r1, r2); \(\backslash\)
+    cycleCounter += 4; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a52107b665419d01dde278b223b948a2c}\label{cpu_8cpp_a52107b665419d01dde278b223b948a2c}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!R\+E\+AD@{R\+E\+AD}}
+\index{R\+E\+AD@{R\+E\+AD}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{R\+E\+AD}{READ}}
+{\footnotesize\ttfamily \#define R\+E\+AD(\begin{DoxyParamCaption}\item[{}]{dest,  }\item[{}]{addr }\end{DoxyParamCaption})~do \{ (dest) = mem\+\_\+.\+read(addr, cycle\+Counter, false); cycle\+Counter += 4; \} while (0)}
+
+\mbox{\Hypertarget{cpu_8cpp_ae8f410c94b42feefc5d9987e4bd8f9ee}\label{cpu_8cpp_ae8f410c94b42feefc5d9987e4bd8f9ee}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!res0\+\_\+r@{res0\+\_\+r}}
+\index{res0\+\_\+r@{res0\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{res0\+\_\+r}{res0\_r}}
+{\footnotesize\ttfamily \#define res0\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) \&= 0x\+F\+E )}
+
+\mbox{\Hypertarget{cpu_8cpp_ab045b7f9ad1d85b749de8add657637ac}\label{cpu_8cpp_ab045b7f9ad1d85b749de8add657637ac}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!res1\+\_\+r@{res1\+\_\+r}}
+\index{res1\+\_\+r@{res1\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{res1\+\_\+r}{res1\_r}}
+{\footnotesize\ttfamily \#define res1\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) \&= 0x\+F\+D )}
+
+\mbox{\Hypertarget{cpu_8cpp_a520c6719f83e353c0515fd0f05305e45}\label{cpu_8cpp_a520c6719f83e353c0515fd0f05305e45}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!res2\+\_\+r@{res2\+\_\+r}}
+\index{res2\+\_\+r@{res2\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{res2\+\_\+r}{res2\_r}}
+{\footnotesize\ttfamily \#define res2\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) \&= 0x\+F\+B )}
+
+\mbox{\Hypertarget{cpu_8cpp_a169b37d6dc45b6c25ecccd0c7bc11754}\label{cpu_8cpp_a169b37d6dc45b6c25ecccd0c7bc11754}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!res3\+\_\+r@{res3\+\_\+r}}
+\index{res3\+\_\+r@{res3\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{res3\+\_\+r}{res3\_r}}
+{\footnotesize\ttfamily \#define res3\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) \&= 0x\+F7 )}
+
+\mbox{\Hypertarget{cpu_8cpp_a32fbb0f8908edb79c9a0817d12e59bc3}\label{cpu_8cpp_a32fbb0f8908edb79c9a0817d12e59bc3}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!res4\+\_\+r@{res4\+\_\+r}}
+\index{res4\+\_\+r@{res4\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{res4\+\_\+r}{res4\_r}}
+{\footnotesize\ttfamily \#define res4\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) \&= 0x\+E\+F )}
+
+\mbox{\Hypertarget{cpu_8cpp_a319d35bb3b01b0aa8c64da2d9b7058c3}\label{cpu_8cpp_a319d35bb3b01b0aa8c64da2d9b7058c3}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!res5\+\_\+r@{res5\+\_\+r}}
+\index{res5\+\_\+r@{res5\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{res5\+\_\+r}{res5\_r}}
+{\footnotesize\ttfamily \#define res5\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) \&= 0x\+D\+F )}
+
+\mbox{\Hypertarget{cpu_8cpp_aa42f783e3fed46ecfd5dfb121f87c461}\label{cpu_8cpp_aa42f783e3fed46ecfd5dfb121f87c461}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!res6\+\_\+r@{res6\+\_\+r}}
+\index{res6\+\_\+r@{res6\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{res6\+\_\+r}{res6\_r}}
+{\footnotesize\ttfamily \#define res6\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) \&= 0x\+B\+F )}
+
+\mbox{\Hypertarget{cpu_8cpp_a6ec31b03440eac0c7f72605f3791a4da}\label{cpu_8cpp_a6ec31b03440eac0c7f72605f3791a4da}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!res7\+\_\+r@{res7\+\_\+r}}
+\index{res7\+\_\+r@{res7\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{res7\+\_\+r}{res7\_r}}
+{\footnotesize\ttfamily \#define res7\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) \&= 0x7\+F )}
+
+\mbox{\Hypertarget{cpu_8cpp_a161eafec9daf27779d0e4fa820727adf}\label{cpu_8cpp_a161eafec9daf27779d0e4fa820727adf}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!resn\+\_\+mem\+\_\+hl@{resn\+\_\+mem\+\_\+hl}}
+\index{resn\+\_\+mem\+\_\+hl@{resn\+\_\+mem\+\_\+hl}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{resn\+\_\+mem\+\_\+hl}{resn\_mem\_hl}}
+{\footnotesize\ttfamily \#define resn\+\_\+mem\+\_\+hl(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned \textcolor{keyword}{const} \hyperlink{cpu_8cpp_aa3302267bcc3a9b13495e449da7d906e}{hl} = \hyperlink{cpu_8cpp_aa3302267bcc3a9b13495e449da7d906e}{hl}(); \(\backslash\)
+    unsigned val; \(\backslash\)
+    READ(val, hl); \(\backslash\)
+    val &= ~(1 << (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})); \(\backslash\)
+    WRITE(hl, val); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ad26698bda5057cadf111defa0215303b}\label{cpu_8cpp_ad26698bda5057cadf111defa0215303b}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!ret@{ret}}
+\index{ret@{ret}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{ret}{ret}}
+{\footnotesize\ttfamily \#define ret(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned low, high; \(\backslash\)
+    pop\_rr(high, low); \(\backslash\)
+    PC\_MOD(high << 8 | low); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a10c2b4ccc6ffe80c9ea9d8c41fbb1271}\label{cpu_8cpp_a10c2b4ccc6ffe80c9ea9d8c41fbb1271}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!rl\+\_\+r@{rl\+\_\+r}}
+\index{rl\+\_\+r@{rl\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{rl\+\_\+r}{rl\_r}}
+{\footnotesize\ttfamily \#define rl\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned \textcolor{keyword}{const} oldcf = cf >> 8 & 1; \(\backslash\)
+    cf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) << 1; \(\backslash\)
+    zf = cf | oldcf; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = zf & 0xFF; \(\backslash\)
+    hf2 = 0; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a7ff27fdf75992e570c3fb1d2332e3f73}\label{cpu_8cpp_a7ff27fdf75992e570c3fb1d2332e3f73}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!rlc\+\_\+r@{rlc\+\_\+r}}
+\index{rlc\+\_\+r@{rlc\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{rlc\+\_\+r}{rlc\_r}}
+{\footnotesize\ttfamily \#define rlc\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    cf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) << 1; \(\backslash\)
+    zf = cf | cf >> 8; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = zf & 0xFF; \(\backslash\)
+    hf2 = 0; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ac67ddd1ac847d2818e6314401dca2b74}\label{cpu_8cpp_ac67ddd1ac847d2818e6314401dca2b74}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!rr\+\_\+r@{rr\+\_\+r}}
+\index{rr\+\_\+r@{rr\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{rr\+\_\+r}{rr\_r}}
+{\footnotesize\ttfamily \#define rr\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned \textcolor{keyword}{const} oldcf = cf & 0x100; \(\backslash\)
+    cf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) << 8; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = zf = ((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) | oldcf) >> 1; \(\backslash\)
+    hf2 = 0; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a12419a8e1595befbdf41b9a1a863bd0e}\label{cpu_8cpp_a12419a8e1595befbdf41b9a1a863bd0e}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!rrc\+\_\+r@{rrc\+\_\+r}}
+\index{rrc\+\_\+r@{rrc\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{rrc\+\_\+r}{rrc\_r}}
+{\footnotesize\ttfamily \#define rrc\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    zf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}); \(\backslash\)
+    cf = zf << 8; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = (zf | cf) >> 1 & 0xFF; \(\backslash\)
+    hf2 = 0; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_accba00d538c1c165a68b1915af2993cd}\label{cpu_8cpp_accba00d538c1c165a68b1915af2993cd}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!rst\+\_\+n@{rst\+\_\+n}}
+\index{rst\+\_\+n@{rst\+\_\+n}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{rst\+\_\+n}{rst\_n}}
+{\footnotesize\ttfamily \#define rst\+\_\+n(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    PUSH(pc >> 8, pc & 0xFF); \(\backslash\)
+    PC\_MOD(\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n}); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a59ee192851d6469257d40c02736b9dd8}\label{cpu_8cpp_a59ee192851d6469257d40c02736b9dd8}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!sbc\+\_\+a\+\_\+u8@{sbc\+\_\+a\+\_\+u8}}
+\index{sbc\+\_\+a\+\_\+u8@{sbc\+\_\+a\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{sbc\+\_\+a\+\_\+u8}{sbc\_a\_u8}}
+{\footnotesize\ttfamily \#define sbc\+\_\+a\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    hf1 = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+    hf2 = \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfadeaa299d1f8db34af642304a214162ce}{hf2\_subf} | (cf & 0x100) | (u8); \(\backslash\)
+    zf = cf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a} - ((cf >> 8) & 1) - (u8); \(\backslash\)
+    a = zf & 0xFF; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_acc49dbcb772c639b3108b50658a1f28a}\label{cpu_8cpp_acc49dbcb772c639b3108b50658a1f28a}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!set0\+\_\+r@{set0\+\_\+r}}
+\index{set0\+\_\+r@{set0\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{set0\+\_\+r}{set0\_r}}
+{\footnotesize\ttfamily \#define set0\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) $\vert$= 0x01 )}
+
+\mbox{\Hypertarget{cpu_8cpp_a0a1d7b83716dcc2e5b881322129d00b1}\label{cpu_8cpp_a0a1d7b83716dcc2e5b881322129d00b1}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!set1\+\_\+r@{set1\+\_\+r}}
+\index{set1\+\_\+r@{set1\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{set1\+\_\+r}{set1\_r}}
+{\footnotesize\ttfamily \#define set1\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) $\vert$= 0x02 )}
+
+\mbox{\Hypertarget{cpu_8cpp_a50cb4a56e8311e35e26b5f702019a1b8}\label{cpu_8cpp_a50cb4a56e8311e35e26b5f702019a1b8}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!set2\+\_\+r@{set2\+\_\+r}}
+\index{set2\+\_\+r@{set2\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{set2\+\_\+r}{set2\_r}}
+{\footnotesize\ttfamily \#define set2\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) $\vert$= 0x04 )}
+
+\mbox{\Hypertarget{cpu_8cpp_a1918745816c420a0d998b21955b35073}\label{cpu_8cpp_a1918745816c420a0d998b21955b35073}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!set3\+\_\+r@{set3\+\_\+r}}
+\index{set3\+\_\+r@{set3\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{set3\+\_\+r}{set3\_r}}
+{\footnotesize\ttfamily \#define set3\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) $\vert$= 0x08 )}
+
+\mbox{\Hypertarget{cpu_8cpp_a0f9c3b181d36e370347e588ef981be36}\label{cpu_8cpp_a0f9c3b181d36e370347e588ef981be36}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!set4\+\_\+r@{set4\+\_\+r}}
+\index{set4\+\_\+r@{set4\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{set4\+\_\+r}{set4\_r}}
+{\footnotesize\ttfamily \#define set4\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) $\vert$= 0x10 )}
+
+\mbox{\Hypertarget{cpu_8cpp_aaabfc137dc39713b9dc1f146bae69048}\label{cpu_8cpp_aaabfc137dc39713b9dc1f146bae69048}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!set5\+\_\+r@{set5\+\_\+r}}
+\index{set5\+\_\+r@{set5\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{set5\+\_\+r}{set5\_r}}
+{\footnotesize\ttfamily \#define set5\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) $\vert$= 0x20 )}
+
+\mbox{\Hypertarget{cpu_8cpp_a39a24131794747edeb7309eeaa1cf697}\label{cpu_8cpp_a39a24131794747edeb7309eeaa1cf697}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!set6\+\_\+r@{set6\+\_\+r}}
+\index{set6\+\_\+r@{set6\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{set6\+\_\+r}{set6\_r}}
+{\footnotesize\ttfamily \#define set6\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) $\vert$= 0x40 )}
+
+\mbox{\Hypertarget{cpu_8cpp_a98bc52e44af20a6f7de6ebe11c6710e5}\label{cpu_8cpp_a98bc52e44af20a6f7de6ebe11c6710e5}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!set7\+\_\+r@{set7\+\_\+r}}
+\index{set7\+\_\+r@{set7\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{set7\+\_\+r}{set7\_r}}
+{\footnotesize\ttfamily \#define set7\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})~( (r) $\vert$= 0x80 )}
+
+\mbox{\Hypertarget{cpu_8cpp_a8b7d68987c77de48cf7bd573b9a7b8d7}\label{cpu_8cpp_a8b7d68987c77de48cf7bd573b9a7b8d7}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!setn\+\_\+mem\+\_\+hl@{setn\+\_\+mem\+\_\+hl}}
+\index{setn\+\_\+mem\+\_\+hl@{setn\+\_\+mem\+\_\+hl}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{setn\+\_\+mem\+\_\+hl}{setn\_mem\_hl}}
+{\footnotesize\ttfamily \#define setn\+\_\+mem\+\_\+hl(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned \textcolor{keyword}{const} \hyperlink{cpu_8cpp_aa3302267bcc3a9b13495e449da7d906e}{hl} = \hyperlink{cpu_8cpp_aa3302267bcc3a9b13495e449da7d906e}{hl}(); \(\backslash\)
+    unsigned val; \(\backslash\)
+    READ(val, hl); \(\backslash\)
+    val |= 1 << (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n}); \(\backslash\)
+    WRITE(hl, val); \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a9c8994809a094dab01cfb57368383bca}\label{cpu_8cpp_a9c8994809a094dab01cfb57368383bca}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!sla\+\_\+r@{sla\+\_\+r}}
+\index{sla\+\_\+r@{sla\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{sla\+\_\+r}{sla\_r}}
+{\footnotesize\ttfamily \#define sla\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    zf = cf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) << 1; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = zf & 0xFF; \(\backslash\)
+    hf2 = 0; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_abddd970512646b080e10b23bfc3da840}\label{cpu_8cpp_abddd970512646b080e10b23bfc3da840}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!sp\+\_\+plus\+\_\+n@{sp\+\_\+plus\+\_\+n}}
+\index{sp\+\_\+plus\+\_\+n@{sp\+\_\+plus\+\_\+n}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{sp\+\_\+plus\+\_\+n}{sp\_plus\_n}}
+{\footnotesize\ttfamily \#define sp\+\_\+plus\+\_\+n(\begin{DoxyParamCaption}\item[{}]{sumout }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    unsigned disp; \(\backslash\)
+    PC\_READ(disp); \(\backslash\)
+    disp = (disp ^ 0x80) - 0x80; \(\backslash\)
+\(\backslash\)
+    unsigned \textcolor{keyword}{const} res = sp + disp; \(\backslash\)
+    cf = sp ^ disp ^ res; \(\backslash\)
+    hf2 = cf << 5 & \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfaf64f53445c4545c35875e955a3fbad58}{hf2\_hcf}; \(\backslash\)
+    zf = 1; \(\backslash\)
+    cycleCounter += 4; \(\backslash\)
+    (sumout) = res & 0xFFFF; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_ace0c1a725f3b1f87fb3cc3137d4c7245}\label{cpu_8cpp_ace0c1a725f3b1f87fb3cc3137d4c7245}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!sra\+\_\+r@{sra\+\_\+r}}
+\index{sra\+\_\+r@{sra\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{sra\+\_\+r}{sra\_r}}
+{\footnotesize\ttfamily \#define sra\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    cf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) << 8; \(\backslash\)
+    zf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) >> 1; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = zf | ((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) & 0x80); \(\backslash\)
+    hf2 = 0; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a7511da9d24e0f94f3abe6a62f88ff06a}\label{cpu_8cpp_a7511da9d24e0f94f3abe6a62f88ff06a}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!srl\+\_\+r@{srl\+\_\+r}}
+\index{srl\+\_\+r@{srl\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{srl\+\_\+r}{srl\_r}}
+{\footnotesize\ttfamily \#define srl\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    zf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}); \(\backslash\)
+    cf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) << 8; \(\backslash\)
+    zf >>= 1; \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = zf; \(\backslash\)
+    hf2 = 0; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a81a85031df801e1da20afcba1fd663b6}\label{cpu_8cpp_a81a85031df801e1da20afcba1fd663b6}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!sub\+\_\+a\+\_\+u8@{sub\+\_\+a\+\_\+u8}}
+\index{sub\+\_\+a\+\_\+u8@{sub\+\_\+a\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{sub\+\_\+a\+\_\+u8}{sub\_a\_u8}}
+{\footnotesize\ttfamily \#define sub\+\_\+a\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    hf1 = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+    hf2 = u8; \(\backslash\)
+    zf = cf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a} - hf2; \(\backslash\)
+    a = zf & 0xFF; \(\backslash\)
+    hf2 |= \hyperlink{namespacegambatte_aff981a988feab5d1ffdb3602328e28cfadeaa299d1f8db34af642304a214162ce}{hf2\_subf}; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a2dd6fdfe1a170f3854cbcd3cde5b790f}\label{cpu_8cpp_a2dd6fdfe1a170f3854cbcd3cde5b790f}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!swap\+\_\+r@{swap\+\_\+r}}
+\index{swap\+\_\+r@{swap\+\_\+r}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{swap\+\_\+r}{swap\_r}}
+{\footnotesize\ttfamily \#define swap\+\_\+r(\begin{DoxyParamCaption}\item[{}]{r }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    cf = hf2 = 0; \(\backslash\)
+    zf = (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}); \(\backslash\)
+    (\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda5a00e851ae48f9729432780aa47941e5}{r}) = (zf << 4 | zf >> 4) & 0xFF; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\mbox{\Hypertarget{cpu_8cpp_a7354726f53378b845a78699e74f1244c}\label{cpu_8cpp_a7354726f53378b845a78699e74f1244c}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!W\+R\+I\+TE@{W\+R\+I\+TE}}
+\index{W\+R\+I\+TE@{W\+R\+I\+TE}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{W\+R\+I\+TE}{WRITE}}
+{\footnotesize\ttfamily \#define W\+R\+I\+TE(\begin{DoxyParamCaption}\item[{}]{addr,  }\item[{}]{data }\end{DoxyParamCaption})~do \{ mem\+\_\+.\+write(addr, data, cycle\+Counter); cycle\+Counter += 4; \} while (0)}
+
+\mbox{\Hypertarget{cpu_8cpp_a1881631d4a5008096dafe52006e5e3a5}\label{cpu_8cpp_a1881631d4a5008096dafe52006e5e3a5}} 
+\index{cpu.\+cpp@{cpu.\+cpp}!xor\+\_\+a\+\_\+u8@{xor\+\_\+a\+\_\+u8}}
+\index{xor\+\_\+a\+\_\+u8@{xor\+\_\+a\+\_\+u8}!cpu.\+cpp@{cpu.\+cpp}}
+\subsubsection{\texorpdfstring{xor\+\_\+a\+\_\+u8}{xor\_a\_u8}}
+{\footnotesize\ttfamily \#define xor\+\_\+a\+\_\+u8(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    cf = hf2 = 0; \(\backslash\)
+    a ^= (u8); \(\backslash\)
+    zf = \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda0203113be18cffc12093057c0de88e7c}{a}; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}

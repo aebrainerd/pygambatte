@@ -1,0 +1,6 @@
+<map id="gambatte::SaveState::SPU" name="gambatte::SaveState::SPU">
+<area shape="rect" id="node2" href="$structgambatte_1_1SaveState_1_1SPU_1_1LCounter.html" title="gambatte::SaveState\l::SPU::LCounter" alt="" coords="9,5,160,47"/>
+<area shape="rect" id="node3" href="$structgambatte_1_1SaveState_1_1SPU_1_1Env.html" title="gambatte::SaveState\l::SPU::Env" alt="" coords="9,71,160,112"/>
+<area shape="rect" id="node4" href="$classgambatte_1_1SaveState_1_1Ptr.html" title="gambatte::SaveState\l::Ptr\&lt; unsigned char \&gt;" alt="" coords="5,136,164,177"/>
+<area shape="rect" id="node5" href="$structgambatte_1_1SaveState_1_1SPU_1_1Duty.html" title="gambatte::SaveState\l::SPU::Duty" alt="" coords="9,201,160,243"/>
+</map>

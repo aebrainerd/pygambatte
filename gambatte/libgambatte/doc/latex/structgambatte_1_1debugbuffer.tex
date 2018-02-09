@@ -1,0 +1,113 @@
+\hypertarget{structgambatte_1_1debugbuffer}{}\section{gambatte\+:\+:debugbuffer Struct Reference}
+\label{structgambatte_1_1debugbuffer}\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+
+
+{\ttfamily \#include $<$gambatte.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structgambatte_1_1debugbuffer_a7d1a27d05162751eefea5cbe85cc6748}{wram}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structgambatte_1_1debugbuffer_a3b51b5020db1e332b0596f1e8b376f68}{ioamhram}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structgambatte_1_1debugbuffer_acbd34e1d405e20746ab6085e7b097cfc}{cart}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structgambatte_1_1debugbuffer_ad1fb9c5969023643db53c1a6b00baf3c}{sram}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{structgambatte_1_1debugbuffer_a11b2c1d00c09e48366852c4dfec16c82}{bus}
+\item 
+std\+::map$<$ unsigned, uint8\+\_\+t $>$ \hyperlink{structgambatte_1_1debugbuffer_a327804eae8f35be00e358fd7f83c7ea0}{wramcheat}
+\item 
+std\+::map$<$ unsigned, uint8\+\_\+t $>$ \hyperlink{structgambatte_1_1debugbuffer_aa655bfcaa74030bfc4684fcca839f0fd}{sramcheat}
+\item 
+std\+::map$<$ unsigned, uint8\+\_\+t $>$ \hyperlink{structgambatte_1_1debugbuffer_a71e6b95737006d0fbf3dbd7b00f2ff67}{cartcheat}
+\item 
+std\+::function$<$ void(unsigned, unsigned, uint8\+\_\+t, bool)$>$ \hyperlink{structgambatte_1_1debugbuffer_ae80856b21b4b6116b5d76d8429afdc3b}{read}
+\item 
+std\+::function$<$ void(unsigned, unsigned, uint8\+\_\+t)$>$ \hyperlink{structgambatte_1_1debugbuffer_a7f99fa9e2aaf67768956fa4f6dd6e8c4}{write}
+\item 
+std\+::function$<$ void(uint16\+\_\+t)$>$ \hyperlink{structgambatte_1_1debugbuffer_a9a587ada8cd1e40aa5eb3fd141a9e061}{trace}
+\item 
+bool \hyperlink{structgambatte_1_1debugbuffer_a9283e66b2b7e805d246544f3702bbddd}{trace\+\_\+cpu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_a11b2c1d00c09e48366852c4dfec16c82}\label{structgambatte_1_1debugbuffer_a11b2c1d00c09e48366852c4dfec16c82}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!bus@{bus}}
+\index{bus@{bus}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{bus}{bus}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ gambatte\+::debugbuffer\+::bus}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_acbd34e1d405e20746ab6085e7b097cfc}\label{structgambatte_1_1debugbuffer_acbd34e1d405e20746ab6085e7b097cfc}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!cart@{cart}}
+\index{cart@{cart}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{cart}{cart}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ gambatte\+::debugbuffer\+::cart}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_a71e6b95737006d0fbf3dbd7b00f2ff67}\label{structgambatte_1_1debugbuffer_a71e6b95737006d0fbf3dbd7b00f2ff67}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!cartcheat@{cartcheat}}
+\index{cartcheat@{cartcheat}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{cartcheat}{cartcheat}}
+{\footnotesize\ttfamily std\+::map$<$unsigned, uint8\+\_\+t$>$ gambatte\+::debugbuffer\+::cartcheat}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_a3b51b5020db1e332b0596f1e8b376f68}\label{structgambatte_1_1debugbuffer_a3b51b5020db1e332b0596f1e8b376f68}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!ioamhram@{ioamhram}}
+\index{ioamhram@{ioamhram}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{ioamhram}{ioamhram}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ gambatte\+::debugbuffer\+::ioamhram}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_ae80856b21b4b6116b5d76d8429afdc3b}\label{structgambatte_1_1debugbuffer_ae80856b21b4b6116b5d76d8429afdc3b}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!read@{read}}
+\index{read@{read}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{read}{read}}
+{\footnotesize\ttfamily std\+::function$<$void(unsigned, unsigned, uint8\+\_\+t, bool)$>$ gambatte\+::debugbuffer\+::read}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_ad1fb9c5969023643db53c1a6b00baf3c}\label{structgambatte_1_1debugbuffer_ad1fb9c5969023643db53c1a6b00baf3c}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!sram@{sram}}
+\index{sram@{sram}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{sram}{sram}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ gambatte\+::debugbuffer\+::sram}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_aa655bfcaa74030bfc4684fcca839f0fd}\label{structgambatte_1_1debugbuffer_aa655bfcaa74030bfc4684fcca839f0fd}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!sramcheat@{sramcheat}}
+\index{sramcheat@{sramcheat}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{sramcheat}{sramcheat}}
+{\footnotesize\ttfamily std\+::map$<$unsigned, uint8\+\_\+t$>$ gambatte\+::debugbuffer\+::sramcheat}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_a9a587ada8cd1e40aa5eb3fd141a9e061}\label{structgambatte_1_1debugbuffer_a9a587ada8cd1e40aa5eb3fd141a9e061}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!trace@{trace}}
+\index{trace@{trace}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{trace}{trace}}
+{\footnotesize\ttfamily std\+::function$<$void(uint16\+\_\+t)$>$ gambatte\+::debugbuffer\+::trace}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_a9283e66b2b7e805d246544f3702bbddd}\label{structgambatte_1_1debugbuffer_a9283e66b2b7e805d246544f3702bbddd}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!trace\+\_\+cpu@{trace\+\_\+cpu}}
+\index{trace\+\_\+cpu@{trace\+\_\+cpu}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{trace\+\_\+cpu}{trace\_cpu}}
+{\footnotesize\ttfamily bool gambatte\+::debugbuffer\+::trace\+\_\+cpu}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_a7d1a27d05162751eefea5cbe85cc6748}\label{structgambatte_1_1debugbuffer_a7d1a27d05162751eefea5cbe85cc6748}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!wram@{wram}}
+\index{wram@{wram}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{wram}{wram}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ gambatte\+::debugbuffer\+::wram}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_a327804eae8f35be00e358fd7f83c7ea0}\label{structgambatte_1_1debugbuffer_a327804eae8f35be00e358fd7f83c7ea0}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!wramcheat@{wramcheat}}
+\index{wramcheat@{wramcheat}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{wramcheat}{wramcheat}}
+{\footnotesize\ttfamily std\+::map$<$unsigned, uint8\+\_\+t$>$ gambatte\+::debugbuffer\+::wramcheat}
+
+\mbox{\Hypertarget{structgambatte_1_1debugbuffer_a7f99fa9e2aaf67768956fa4f6dd6e8c4}\label{structgambatte_1_1debugbuffer_a7f99fa9e2aaf67768956fa4f6dd6e8c4}} 
+\index{gambatte\+::debugbuffer@{gambatte\+::debugbuffer}!write@{write}}
+\index{write@{write}!gambatte\+::debugbuffer@{gambatte\+::debugbuffer}}
+\subsubsection{\texorpdfstring{write}{write}}
+{\footnotesize\ttfamily std\+::function$<$void(unsigned, unsigned, uint8\+\_\+t)$>$ gambatte\+::debugbuffer\+::write}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{gambatte_8h}{gambatte.\+h}\end{DoxyCompactItemize}

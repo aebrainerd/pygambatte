@@ -1,0 +1,40 @@
+\hypertarget{crypt_8h}{}\section{src/file/unzip/crypt.h File Reference}
+\label{crypt_8h}\index{src/file/unzip/crypt.\+h@{src/file/unzip/crypt.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{crypt_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{crypt_8h_a9f548005c00fa0754e9c23b7726bf741}{C\+R\+C32}(c,  b)~(($\ast$(pcrc\+\_\+32\+\_\+tab+(((\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int})(c) $^\wedge$ (b)) \& 0xff))) $^\wedge$ ((c) $>$$>$ 8))
+\item 
+\#define \hyperlink{crypt_8h_a2ac0d8ec3c867c44d730a188d8b0418e}{zdecode}(pkeys,  pcrc\+\_\+32\+\_\+tab,  c)~(update\+\_\+keys(pkeys,pcrc\+\_\+32\+\_\+tab,c $^\wedge$= decrypt\+\_\+byte(pkeys,pcrc\+\_\+32\+\_\+tab)))
+\item 
+\#define \hyperlink{crypt_8h_ab9d6a91abe3a1127f8b5476ba9ee9316}{zencode}(pkeys,  pcrc\+\_\+32\+\_\+tab,  c,  t)~(t=decrypt\+\_\+byte(pkeys,pcrc\+\_\+32\+\_\+tab), update\+\_\+keys(pkeys,pcrc\+\_\+32\+\_\+tab,c), t$^\wedge$(c))
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{crypt_8h_a9f548005c00fa0754e9c23b7726bf741}\label{crypt_8h_a9f548005c00fa0754e9c23b7726bf741}} 
+\index{crypt.\+h@{crypt.\+h}!C\+R\+C32@{C\+R\+C32}}
+\index{C\+R\+C32@{C\+R\+C32}!crypt.\+h@{crypt.\+h}}
+\subsubsection{\texorpdfstring{C\+R\+C32}{CRC32}}
+{\footnotesize\ttfamily \#define C\+R\+C32(\begin{DoxyParamCaption}\item[{}]{c,  }\item[{}]{b }\end{DoxyParamCaption})~(($\ast$(pcrc\+\_\+32\+\_\+tab+(((\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int})(c) $^\wedge$ (b)) \& 0xff))) $^\wedge$ ((c) $>$$>$ 8))}
+
+\mbox{\Hypertarget{crypt_8h_a2ac0d8ec3c867c44d730a188d8b0418e}\label{crypt_8h_a2ac0d8ec3c867c44d730a188d8b0418e}} 
+\index{crypt.\+h@{crypt.\+h}!zdecode@{zdecode}}
+\index{zdecode@{zdecode}!crypt.\+h@{crypt.\+h}}
+\subsubsection{\texorpdfstring{zdecode}{zdecode}}
+{\footnotesize\ttfamily \#define zdecode(\begin{DoxyParamCaption}\item[{}]{pkeys,  }\item[{}]{pcrc\+\_\+32\+\_\+tab,  }\item[{}]{c }\end{DoxyParamCaption})~(update\+\_\+keys(pkeys,pcrc\+\_\+32\+\_\+tab,c $^\wedge$= decrypt\+\_\+byte(pkeys,pcrc\+\_\+32\+\_\+tab)))}
+
+\mbox{\Hypertarget{crypt_8h_ab9d6a91abe3a1127f8b5476ba9ee9316}\label{crypt_8h_ab9d6a91abe3a1127f8b5476ba9ee9316}} 
+\index{crypt.\+h@{crypt.\+h}!zencode@{zencode}}
+\index{zencode@{zencode}!crypt.\+h@{crypt.\+h}}
+\subsubsection{\texorpdfstring{zencode}{zencode}}
+{\footnotesize\ttfamily \#define zencode(\begin{DoxyParamCaption}\item[{}]{pkeys,  }\item[{}]{pcrc\+\_\+32\+\_\+tab,  }\item[{}]{c,  }\item[{}]{t }\end{DoxyParamCaption})~(t=decrypt\+\_\+byte(pkeys,pcrc\+\_\+32\+\_\+tab), update\+\_\+keys(pkeys,pcrc\+\_\+32\+\_\+tab,c), t$^\wedge$(c))}
+

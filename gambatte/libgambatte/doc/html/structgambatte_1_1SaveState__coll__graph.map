@@ -1,0 +1,12 @@
+<map id="gambatte::SaveState" name="gambatte::SaveState">
+<area shape="rect" id="node2" href="$structgambatte_1_1SaveState_1_1RTC.html" title="gambatte::SaveState::RTC" alt="" coords="326,105,513,131"/>
+<area shape="rect" id="node3" href="$structgambatte_1_1SaveState_1_1SPU.html" title="gambatte::SaveState::SPU" alt="" coords="327,155,512,182"/>
+<area shape="rect" id="node4" href="$structgambatte_1_1SaveState_1_1SPU_1_1LCounter.html" title="gambatte::SaveState\l::SPU::LCounter" alt="" coords="9,136,160,177"/>
+<area shape="rect" id="node5" href="$structgambatte_1_1SaveState_1_1SPU_1_1Env.html" title="gambatte::SaveState\l::SPU::Env" alt="" coords="9,5,160,47"/>
+<area shape="rect" id="node6" href="$classgambatte_1_1SaveState_1_1Ptr.html" title="gambatte::SaveState\l::Ptr\&lt; unsigned char \&gt;" alt="" coords="5,260,164,301"/>
+<area shape="rect" id="node9" href="$structgambatte_1_1SaveState_1_1PPU.html" title="gambatte::SaveState::PPU" alt="" coords="327,330,512,357"/>
+<area shape="rect" id="node11" href="$structgambatte_1_1SaveState_1_1Mem.html" title="gambatte::SaveState::Mem" alt="" coords="325,267,513,294"/>
+<area shape="rect" id="node7" href="$structgambatte_1_1SaveState_1_1SPU_1_1Duty.html" title="gambatte::SaveState\l::SPU::Duty" alt="" coords="9,71,160,112"/>
+<area shape="rect" id="node8" href="$structgambatte_1_1SaveState_1_1CPU.html" title="gambatte::SaveState::CPU" alt="" coords="326,381,513,407"/>
+<area shape="rect" id="node10" href="$classgambatte_1_1SaveState_1_1Ptr.html" title="gambatte::SaveState\l::Ptr\&lt; bool \&gt;" alt="" coords="9,380,160,421"/>
+</map>

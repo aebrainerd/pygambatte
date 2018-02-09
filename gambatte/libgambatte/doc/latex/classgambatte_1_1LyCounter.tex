@@ -1,0 +1,163 @@
+\hypertarget{classgambatte_1_1LyCounter}{}\section{gambatte\+:\+:Ly\+Counter Class Reference}
+\label{classgambatte_1_1LyCounter}\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+
+
+{\ttfamily \#include $<$ly\+\_\+counter.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1LyCounter_ae00d817e2c66b471be768ed35ee3e4bf}{Ly\+Counter} ()
+\item 
+void \hyperlink{classgambatte_1_1LyCounter_a2a1aad7968d8da16c73986d6d9ddc52a}{do\+Event} ()
+\item 
+bool \hyperlink{classgambatte_1_1LyCounter_a1fa5ece09d091ac5914d797c3c3af45d}{is\+Double\+Speed} () const
+\item 
+unsigned \hyperlink{classgambatte_1_1LyCounter_a8065a4d22954b044cff67e9348d226c0}{frame\+Cycles} (unsigned cc) const
+\item 
+unsigned \hyperlink{classgambatte_1_1LyCounter_a053857da09189c2369a6883c8b2baa4e}{line\+Cycles} (unsigned cc) const
+\item 
+unsigned \hyperlink{classgambatte_1_1LyCounter_a14f9a683d417e789c53ebf835293ad8d}{line\+Time} () const
+\item 
+unsigned \hyperlink{classgambatte_1_1LyCounter_abe63480cb69ba5ced67b474884dda7d4}{ly} () const
+\item 
+void \hyperlink{classgambatte_1_1LyCounter_addf61a185ea59e84f66cc13c8e1f4a94}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+unsigned \hyperlink{classgambatte_1_1LyCounter_a645947821ce5a4ea6c717e71538cb06b}{next\+Line\+Cycle} (unsigned line\+Cycle, unsigned cycle\+Counter) const
+\item 
+unsigned \hyperlink{classgambatte_1_1LyCounter_ad4792cfaee1272e0f38ac3fa706f40eb}{next\+Frame\+Cycle} (unsigned frame\+Cycle, unsigned cycle\+Counter) const
+\item 
+void \hyperlink{classgambatte_1_1LyCounter_a9b7cef000b6dd0b36c8379b94c3bf87d}{reset} (unsigned video\+Cycles, unsigned last\+Update)
+\item 
+void \hyperlink{classgambatte_1_1LyCounter_a1bb68dd4a3ddd4dce3f29a88020d63f0}{set\+Double\+Speed} (bool ds)
+\item 
+unsigned \hyperlink{classgambatte_1_1LyCounter_adc6c7b713afb29e29a8ee8f9fea325c0}{time} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classgambatte_1_1LyCounter_a407688db8f9e99d68c88477c8e9692e9}{time\+\_\+}
+\item 
+unsigned short \hyperlink{classgambatte_1_1LyCounter_ad6af3d159fb0869f754d3b28f91855bd}{line\+Time\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1LyCounter_affac96507ddb30da083731914ba2b250}{ly\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1LyCounter_a6acfa5087f6a95fc21fb90519b6ba356}{ds\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_ae00d817e2c66b471be768ed35ee3e4bf}\label{classgambatte_1_1LyCounter_ae00d817e2c66b471be768ed35ee3e4bf}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!Ly\+Counter@{Ly\+Counter}}
+\index{Ly\+Counter@{Ly\+Counter}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{Ly\+Counter()}{LyCounter()}}
+{\footnotesize\ttfamily gambatte\+::\+Ly\+Counter\+::\+Ly\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a2a1aad7968d8da16c73986d6d9ddc52a}\label{classgambatte_1_1LyCounter_a2a1aad7968d8da16c73986d6d9ddc52a}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!do\+Event@{do\+Event}}
+\index{do\+Event@{do\+Event}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{do\+Event()}{doEvent()}}
+{\footnotesize\ttfamily void gambatte\+::\+Ly\+Counter\+::do\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a8065a4d22954b044cff67e9348d226c0}\label{classgambatte_1_1LyCounter_a8065a4d22954b044cff67e9348d226c0}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!frame\+Cycles@{frame\+Cycles}}
+\index{frame\+Cycles@{frame\+Cycles}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{frame\+Cycles()}{frameCycles()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Ly\+Counter\+::frame\+Cycles (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a1fa5ece09d091ac5914d797c3c3af45d}\label{classgambatte_1_1LyCounter_a1fa5ece09d091ac5914d797c3c3af45d}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!is\+Double\+Speed@{is\+Double\+Speed}}
+\index{is\+Double\+Speed@{is\+Double\+Speed}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{is\+Double\+Speed()}{isDoubleSpeed()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Ly\+Counter\+::is\+Double\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a053857da09189c2369a6883c8b2baa4e}\label{classgambatte_1_1LyCounter_a053857da09189c2369a6883c8b2baa4e}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!line\+Cycles@{line\+Cycles}}
+\index{line\+Cycles@{line\+Cycles}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{line\+Cycles()}{lineCycles()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Ly\+Counter\+::line\+Cycles (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a14f9a683d417e789c53ebf835293ad8d}\label{classgambatte_1_1LyCounter_a14f9a683d417e789c53ebf835293ad8d}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!line\+Time@{line\+Time}}
+\index{line\+Time@{line\+Time}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{line\+Time()}{lineTime()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Ly\+Counter\+::line\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_addf61a185ea59e84f66cc13c8e1f4a94}\label{classgambatte_1_1LyCounter_addf61a185ea59e84f66cc13c8e1f4a94}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Ly\+Counter\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_abe63480cb69ba5ced67b474884dda7d4}\label{classgambatte_1_1LyCounter_abe63480cb69ba5ced67b474884dda7d4}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!ly@{ly}}
+\index{ly@{ly}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{ly()}{ly()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Ly\+Counter\+::ly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_ad4792cfaee1272e0f38ac3fa706f40eb}\label{classgambatte_1_1LyCounter_ad4792cfaee1272e0f38ac3fa706f40eb}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!next\+Frame\+Cycle@{next\+Frame\+Cycle}}
+\index{next\+Frame\+Cycle@{next\+Frame\+Cycle}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{next\+Frame\+Cycle()}{nextFrameCycle()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Ly\+Counter\+::next\+Frame\+Cycle (\begin{DoxyParamCaption}\item[{unsigned}]{frame\+Cycle,  }\item[{unsigned}]{cycle\+Counter }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a645947821ce5a4ea6c717e71538cb06b}\label{classgambatte_1_1LyCounter_a645947821ce5a4ea6c717e71538cb06b}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!next\+Line\+Cycle@{next\+Line\+Cycle}}
+\index{next\+Line\+Cycle@{next\+Line\+Cycle}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{next\+Line\+Cycle()}{nextLineCycle()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Ly\+Counter\+::next\+Line\+Cycle (\begin{DoxyParamCaption}\item[{unsigned}]{line\+Cycle,  }\item[{unsigned}]{cycle\+Counter }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a9b7cef000b6dd0b36c8379b94c3bf87d}\label{classgambatte_1_1LyCounter_a9b7cef000b6dd0b36c8379b94c3bf87d}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!reset@{reset}}
+\index{reset@{reset}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void gambatte\+::\+Ly\+Counter\+::reset (\begin{DoxyParamCaption}\item[{unsigned}]{video\+Cycles,  }\item[{unsigned}]{last\+Update }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a1bb68dd4a3ddd4dce3f29a88020d63f0}\label{classgambatte_1_1LyCounter_a1bb68dd4a3ddd4dce3f29a88020d63f0}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!set\+Double\+Speed@{set\+Double\+Speed}}
+\index{set\+Double\+Speed@{set\+Double\+Speed}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{set\+Double\+Speed()}{setDoubleSpeed()}}
+{\footnotesize\ttfamily void gambatte\+::\+Ly\+Counter\+::set\+Double\+Speed (\begin{DoxyParamCaption}\item[{bool}]{ds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_adc6c7b713afb29e29a8ee8f9fea325c0}\label{classgambatte_1_1LyCounter_adc6c7b713afb29e29a8ee8f9fea325c0}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!time@{time}}
+\index{time@{time}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Ly\+Counter\+::time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a6acfa5087f6a95fc21fb90519b6ba356}\label{classgambatte_1_1LyCounter_a6acfa5087f6a95fc21fb90519b6ba356}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!ds\+\_\+@{ds\+\_\+}}
+\index{ds\+\_\+@{ds\+\_\+}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{ds\+\_\+}{ds\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Ly\+Counter\+::ds\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_ad6af3d159fb0869f754d3b28f91855bd}\label{classgambatte_1_1LyCounter_ad6af3d159fb0869f754d3b28f91855bd}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!line\+Time\+\_\+@{line\+Time\+\_\+}}
+\index{line\+Time\+\_\+@{line\+Time\+\_\+}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{line\+Time\+\_\+}{lineTime\_}}
+{\footnotesize\ttfamily unsigned short gambatte\+::\+Ly\+Counter\+::line\+Time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_affac96507ddb30da083731914ba2b250}\label{classgambatte_1_1LyCounter_affac96507ddb30da083731914ba2b250}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!ly\+\_\+@{ly\+\_\+}}
+\index{ly\+\_\+@{ly\+\_\+}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{ly\+\_\+}{ly\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Ly\+Counter\+::ly\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LyCounter_a407688db8f9e99d68c88477c8e9692e9}\label{classgambatte_1_1LyCounter_a407688db8f9e99d68c88477c8e9692e9}} 
+\index{gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}!time\+\_\+@{time\+\_\+}}
+\index{time\+\_\+@{time\+\_\+}!gambatte\+::\+Ly\+Counter@{gambatte\+::\+Ly\+Counter}}
+\subsubsection{\texorpdfstring{time\+\_\+}{time\_}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Ly\+Counter\+::time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/video/\hyperlink{ly__counter_8h}{ly\+\_\+counter.\+h}\item 
+src/video/\hyperlink{ly__counter_8cpp}{ly\+\_\+counter.\+cpp}\end{DoxyCompactItemize}

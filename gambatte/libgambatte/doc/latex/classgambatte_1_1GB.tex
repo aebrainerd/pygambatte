@@ -1,0 +1,631 @@
+\hypertarget{classgambatte_1_1GB}{}\section{gambatte\+:\+:GB Class Reference}
+\label{classgambatte_1_1GB}\index{gambatte\+::\+GB@{gambatte\+::\+GB}}
+
+
+{\ttfamily \#include $<$gambatte.\+h$>$}
+
+
+
+Collaboration diagram for gambatte\+:\+:GB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgambatte_1_1GB__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgambatte_1_1GB_1_1Priv}{Priv}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659}{Load\+Flag} \{ \hyperlink{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659ae801278f9c528c2ed3791d90b99f5e4f}{F\+O\+R\+C\+E\+\_\+\+D\+MG} = 1, 
+\hyperlink{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659ad8d959b062a577c537fdf1700c1f89cd}{G\+B\+A\+\_\+\+C\+GB} = 2, 
+\hyperlink{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659a5d01ba70d15c25f4d772b2096c6cdcbe}{M\+U\+L\+T\+I\+C\+A\+R\+T\+\_\+\+C\+O\+M\+P\+AT} = 4
+ \}
+\item 
+enum \hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893}{cpu\+\_\+register} \{ \newline
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a54ec6ce49af9fa8357d365214f4ca998}{R\+E\+G\+\_\+\+C\+Y\+C\+L\+E\+C\+O\+U\+N\+T\+ER}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a5d919896cca72f6dbfccce103a68b305}{R\+E\+G\+\_\+\+PC}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a52050914347a5d4fce3e8c785c4396ef}{R\+E\+G\+\_\+\+SP}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a58a2991009182bfb8f99053a42320fd1}{R\+E\+G\+\_\+\+H\+F1}, 
+\newline
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a73befef1e67e45ea94973869ab45f4b7}{R\+E\+G\+\_\+\+H\+F2}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893afa9db5119f7191e098ec7b2d85df49fb}{R\+E\+G\+\_\+\+ZF}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a8a641defd8234773a9f0ab887e9ac6f6}{R\+E\+G\+\_\+\+CF}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a51a78e8da5af0004ad7cd3dbf50042ec}{R\+E\+G\+\_\+A}, 
+\newline
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893abccee844a12cb88ddf5d10deee03a06d}{R\+E\+G\+\_\+B}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a4a54977a065083fa30ab66d5c7ecb27d}{R\+E\+G\+\_\+C}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7bc1674813b4f515d707eb4c912d51f4}{R\+E\+G\+\_\+D}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a5e13fb1dc281c2cfddbd7bab5f1e53cb}{R\+E\+G\+\_\+E}, 
+\newline
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a49ca2a10c3abb9f3a68f165b2b419458}{R\+E\+G\+\_\+F}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7b4bb61a2f52b54f0fc18d9dc0ea89b8}{R\+E\+G\+\_\+H}, 
+\hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7333f03f48c8ad665a8de88a8fd58228}{R\+E\+G\+\_\+L}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1GB_a360f22e656d5ff564eb0dea987ae71c7}{GB} ()
+\item 
+\hyperlink{classgambatte_1_1GB_a27727465be963f80f4fd96449a3d9c13}{$\sim$\+GB} ()
+\item 
+\hyperlink{namespacegambatte_a42606f494711d2e2870a5f5cdf69e468}{Load\+Res} \hyperlink{classgambatte_1_1GB_a3eb7cf83b1634dacc796971760b31fa2}{load} (std\+::string const \&romfile, unsigned flags=0)
+\item 
+\hyperlink{namespacegambatte_a42606f494711d2e2870a5f5cdf69e468}{Load\+Res} \hyperlink{classgambatte_1_1GB_a4ee8c151c978541fe20a282bdcc68969}{load} (const unsigned char $\ast$image, size\+\_\+t isize, unsigned flags=0)
+\item 
+signed \hyperlink{classgambatte_1_1GB_a10d409c2865b9c9770bf2a19f6d77dd7}{run\+For} (\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{gambatte\+::uint\+\_\+least32\+\_\+t} $\ast$video\+Buf, std\+::ptrdiff\+\_\+t pitch, \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{gambatte\+::uint\+\_\+least32\+\_\+t} $\ast$sound\+Buf, unsigned \&samples)
+\item 
+void \hyperlink{classgambatte_1_1GB_a765c0a392c9801ab094936f2978b5000}{reset} ()
+\item 
+void \hyperlink{classgambatte_1_1GB_a051afa03a39e9012d5c64ea0c6e3e852}{set\+Dmg\+Palette\+Color} (\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} pal\+Num, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} color\+Num, \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} rgb32)
+\item 
+void \hyperlink{classgambatte_1_1GB_a7b722194c9472371c28285cdbf35e70f}{set\+Input\+Getter} (\hyperlink{classgambatte_1_1InputGetter}{Input\+Getter} $\ast$get\+Input)
+\item 
+void \hyperlink{classgambatte_1_1GB_ae5d14de04bb821ccdc2bc4d4dbc649c2}{set\+Save\+Dir} (std\+::string const \&sdir)
+\item 
+bool \hyperlink{classgambatte_1_1GB_a96ffbde272ed65919f851740682cac04}{is\+Cgb} () const
+\item 
+bool \hyperlink{classgambatte_1_1GB_ae7b16fcdf62d8dcd3c17cc1c5cad223e}{is\+Loaded} () const
+\item 
+void \hyperlink{classgambatte_1_1GB_a465fec5e623d8ec44c4c00fed15ed387}{save\+Savedata} ()
+\item 
+bool \hyperlink{classgambatte_1_1GB_a4762c3580bafcdd7635988ee8b034869}{save\+State} (\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{gambatte\+::uint\+\_\+least32\+\_\+t} const $\ast$video\+Buf, std\+::ptrdiff\+\_\+t pitch)
+\item 
+bool \hyperlink{classgambatte_1_1GB_a70781b0ddbfd7d52ae6bc0db1c34be0d}{load\+State} ()
+\item 
+bool \hyperlink{classgambatte_1_1GB_a98b621fc4632d6c815c6eeb31a59d972}{save\+State} (\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{gambatte\+::uint\+\_\+least32\+\_\+t} const $\ast$video\+Buf, std\+::ptrdiff\+\_\+t pitch, std\+::string const \&filepath)
+\item 
+bool \hyperlink{classgambatte_1_1GB_a7ac605f7586d955acb408a649bc3faf1}{load\+State} (std\+::string const \&filepath)
+\item 
+void \hyperlink{classgambatte_1_1GB_af6c45af52b0ec127ddcb00a2d32d6b18}{save\+State} (std\+::vector$<$ char $>$ \&data, const std\+::vector$<$ char $>$ \&cmpdata)
+\item 
+void \hyperlink{classgambatte_1_1GB_a26dfbfcb3487893188f74bd419c8f23e}{save\+State} (std\+::vector$<$ char $>$ \&data)
+\item 
+void \hyperlink{classgambatte_1_1GB_a8745c11c1ab010ac43147d537c35fb79}{load\+State} (const std\+::vector$<$ char $>$ \&data)
+\item 
+void \hyperlink{classgambatte_1_1GB_a231371a6ef7aa0001afa45d645052569}{select\+State} (\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} n)
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} \hyperlink{classgambatte_1_1GB_a48d11dcf693f45ab861f640d8fa96dc9}{current\+State} () const
+\item 
+std\+::string const \hyperlink{classgambatte_1_1GB_ad3eeb7e32908992b471c44936f05f8ea}{rom\+Title} () const
+\item 
+class \hyperlink{classgambatte_1_1PakInfo}{Pak\+Info} const \hyperlink{classgambatte_1_1GB_a53f8602582e710cb1938ff6d1306bde9}{pak\+Info} () const
+\item 
+void \hyperlink{classgambatte_1_1GB_ab39e81dad0d44900154c8c555b39d35c}{set\+Game\+Genie} (std\+::string const \&codes)
+\item 
+void \hyperlink{classgambatte_1_1GB_a056a4e6a182ef54c54afff0516b3721c}{set\+Game\+Shark} (std\+::string const \&codes)
+\item 
+void \hyperlink{classgambatte_1_1GB_a6beebe28f631880573d8e6a91ceb675f}{set\+Rtc\+Base} (time\+\_\+t time)
+\item 
+time\+\_\+t \hyperlink{classgambatte_1_1GB_a8fd5bd2699640686ad21e211ca841c2f}{get\+Rtc\+Base} ()
+\item 
+std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ \hyperlink{classgambatte_1_1GB_a0781cb0969c57ddc0fa647b54ee373f6}{get\+Work\+Ram} ()
+\item 
+std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ \hyperlink{classgambatte_1_1GB_aef4cbcec5818d26bef8c54cedf007e17}{get\+Save\+Ram} ()
+\item 
+std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ \hyperlink{classgambatte_1_1GB_af97601bcf082aafab539a6922f36beb8}{get\+Io\+Ram} ()
+\item 
+std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ \hyperlink{classgambatte_1_1GB_af72f3d0e4a022d737bff406d3327038b}{get\+Video\+Ram} ()
+\item 
+void \hyperlink{classgambatte_1_1GB_a910300b95fe3c38e7d6c0b3f11c017c5}{set\+\_\+walltime\+\_\+fn} (time\+\_\+t($\ast$\+\_\+walltime)())
+\item 
+uint32\+\_\+t \hyperlink{classgambatte_1_1GB_a5d93be3dc403febfd05f65987fffbd96}{get\+\_\+cpureg} (enum \hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893}{cpu\+\_\+register} reg)
+\item 
+void \hyperlink{classgambatte_1_1GB_a4c4ac99f71f96e9c8a0ae7b5ad1a2245}{set\+\_\+cpureg} (enum \hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893}{cpu\+\_\+register} reg, uint32\+\_\+t val)
+\item 
+void \hyperlink{classgambatte_1_1GB_a87d311a79eef1d8a812cbd8ba82f0715}{set\+\_\+debug\+\_\+buffer} (\hyperlink{structgambatte_1_1debugbuffer}{debugbuffer} \&dbgbuf)
+\item 
+uint8\+\_\+t \hyperlink{classgambatte_1_1GB_acafddce904037bfa513b7b27f0f4ffae}{bus\+\_\+read} (unsigned addr)
+\item 
+void \hyperlink{classgambatte_1_1GB_a060622967acdfc0ff693dedc39d9d187}{bus\+\_\+write} (unsigned addr, uint8\+\_\+t val)
+\item 
+void \hyperlink{classgambatte_1_1GB_a46e4849dcde049e8667cd282864389d5}{set\+\_\+emuflags} (unsigned flags)
+\item 
+void \hyperlink{classgambatte_1_1GB_a8efc0744b106fb4163e048b8c5f0ca61}{print\+\_\+interrupt\+\_\+timing} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classgambatte_1_1GB_a2b1912a87c68f5483ed2272cafdd5648}{version} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1GB_adb4e65eec2d20a2f31c6b66e621c7859}{preload\+\_\+common} ()
+\item 
+void \hyperlink{classgambatte_1_1GB_a9e9b8ed4d0d978cfa6c09c849e704fe7}{postload\+\_\+common} (const unsigned flags)
+\item 
+\hyperlink{classgambatte_1_1GB_a8f53e9b7823f40e90a0c84a5f088b712}{GB} (\hyperlink{classgambatte_1_1GB}{GB} const \&)
+\item 
+\hyperlink{classgambatte_1_1GB}{GB} \& \hyperlink{classgambatte_1_1GB_a621e7cd52ce6278c5a521d024b995df5}{operator=} (\hyperlink{classgambatte_1_1GB}{GB} const \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgambatte_1_1GB_1_1Priv}{Priv} $\ast$const \hyperlink{classgambatte_1_1GB_a648f96b5ea58e1d6c8013c8897e63218}{p\+\_\+}
+\item 
+time\+\_\+t($\ast$ \hyperlink{classgambatte_1_1GB_a3b230d27feb2c167823bce8cfc6b02af}{walltime} )()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!cpu\+\_\+register@{cpu\+\_\+register}}
+\index{cpu\+\_\+register@{cpu\+\_\+register}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{cpu\+\_\+register}{cpu\_register}}
+{\footnotesize\ttfamily enum \hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893}{gambatte\+::\+G\+B\+::cpu\+\_\+register}}
+
+\hyperlink{classgambatte_1_1CPU}{C\+PU} registers. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+\+C\+Y\+C\+L\+E\+C\+O\+U\+N\+T\+ER@{R\+E\+G\+\_\+\+C\+Y\+C\+L\+E\+C\+O\+U\+N\+T\+ER}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+\+C\+Y\+C\+L\+E\+C\+O\+U\+N\+T\+ER@{R\+E\+G\+\_\+\+C\+Y\+C\+L\+E\+C\+O\+U\+N\+T\+ER}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a54ec6ce49af9fa8357d365214f4ca998}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a54ec6ce49af9fa8357d365214f4ca998}} 
+R\+E\+G\+\_\+\+C\+Y\+C\+L\+E\+C\+O\+U\+N\+T\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+\+PC@{R\+E\+G\+\_\+\+PC}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+\+PC@{R\+E\+G\+\_\+\+PC}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a5d919896cca72f6dbfccce103a68b305}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a5d919896cca72f6dbfccce103a68b305}} 
+R\+E\+G\+\_\+\+PC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+\+SP@{R\+E\+G\+\_\+\+SP}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+\+SP@{R\+E\+G\+\_\+\+SP}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a52050914347a5d4fce3e8c785c4396ef}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a52050914347a5d4fce3e8c785c4396ef}} 
+R\+E\+G\+\_\+\+SP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+\+H\+F1@{R\+E\+G\+\_\+\+H\+F1}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+\+H\+F1@{R\+E\+G\+\_\+\+H\+F1}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a58a2991009182bfb8f99053a42320fd1}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a58a2991009182bfb8f99053a42320fd1}} 
+R\+E\+G\+\_\+\+H\+F1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+\+H\+F2@{R\+E\+G\+\_\+\+H\+F2}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+\+H\+F2@{R\+E\+G\+\_\+\+H\+F2}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a73befef1e67e45ea94973869ab45f4b7}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a73befef1e67e45ea94973869ab45f4b7}} 
+R\+E\+G\+\_\+\+H\+F2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+\+ZF@{R\+E\+G\+\_\+\+ZF}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+\+ZF@{R\+E\+G\+\_\+\+ZF}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893afa9db5119f7191e098ec7b2d85df49fb}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893afa9db5119f7191e098ec7b2d85df49fb}} 
+R\+E\+G\+\_\+\+ZF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+\+CF@{R\+E\+G\+\_\+\+CF}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+\+CF@{R\+E\+G\+\_\+\+CF}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a8a641defd8234773a9f0ab887e9ac6f6}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a8a641defd8234773a9f0ab887e9ac6f6}} 
+R\+E\+G\+\_\+\+CF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+A@{R\+E\+G\+\_\+A}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+A@{R\+E\+G\+\_\+A}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a51a78e8da5af0004ad7cd3dbf50042ec}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a51a78e8da5af0004ad7cd3dbf50042ec}} 
+R\+E\+G\+\_\+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+B@{R\+E\+G\+\_\+B}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+B@{R\+E\+G\+\_\+B}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893abccee844a12cb88ddf5d10deee03a06d}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893abccee844a12cb88ddf5d10deee03a06d}} 
+R\+E\+G\+\_\+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+C@{R\+E\+G\+\_\+C}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+C@{R\+E\+G\+\_\+C}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a4a54977a065083fa30ab66d5c7ecb27d}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a4a54977a065083fa30ab66d5c7ecb27d}} 
+R\+E\+G\+\_\+C&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+D@{R\+E\+G\+\_\+D}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+D@{R\+E\+G\+\_\+D}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7bc1674813b4f515d707eb4c912d51f4}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7bc1674813b4f515d707eb4c912d51f4}} 
+R\+E\+G\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+E@{R\+E\+G\+\_\+E}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+E@{R\+E\+G\+\_\+E}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a5e13fb1dc281c2cfddbd7bab5f1e53cb}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a5e13fb1dc281c2cfddbd7bab5f1e53cb}} 
+R\+E\+G\+\_\+E&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+F@{R\+E\+G\+\_\+F}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+F@{R\+E\+G\+\_\+F}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a49ca2a10c3abb9f3a68f165b2b419458}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a49ca2a10c3abb9f3a68f165b2b419458}} 
+R\+E\+G\+\_\+F&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+H@{R\+E\+G\+\_\+H}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+H@{R\+E\+G\+\_\+H}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7b4bb61a2f52b54f0fc18d9dc0ea89b8}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7b4bb61a2f52b54f0fc18d9dc0ea89b8}} 
+R\+E\+G\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+G\+\_\+L@{R\+E\+G\+\_\+L}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!R\+E\+G\+\_\+L@{R\+E\+G\+\_\+L}}}\mbox{\Hypertarget{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7333f03f48c8ad665a8de88a8fd58228}\label{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893a7333f03f48c8ad665a8de88a8fd58228}} 
+R\+E\+G\+\_\+L&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659}\label{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!Load\+Flag@{Load\+Flag}}
+\index{Load\+Flag@{Load\+Flag}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{Load\+Flag}{LoadFlag}}
+{\footnotesize\ttfamily enum \hyperlink{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659}{gambatte\+::\+G\+B\+::\+Load\+Flag}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+R\+C\+E\+\_\+\+D\+MG@{F\+O\+R\+C\+E\+\_\+\+D\+MG}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!F\+O\+R\+C\+E\+\_\+\+D\+MG@{F\+O\+R\+C\+E\+\_\+\+D\+MG}}}\mbox{\Hypertarget{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659ae801278f9c528c2ed3791d90b99f5e4f}\label{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659ae801278f9c528c2ed3791d90b99f5e4f}} 
+F\+O\+R\+C\+E\+\_\+\+D\+MG&Treat the R\+OM as not having C\+GB support regardless of what its header advertises. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+B\+A\+\_\+\+C\+GB@{G\+B\+A\+\_\+\+C\+GB}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!G\+B\+A\+\_\+\+C\+GB@{G\+B\+A\+\_\+\+C\+GB}}}\mbox{\Hypertarget{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659ad8d959b062a577c537fdf1700c1f89cd}\label{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659ad8d959b062a577c537fdf1700c1f89cd}} 
+G\+B\+A\+\_\+\+C\+GB&Use G\+BA intial \hyperlink{classgambatte_1_1CPU}{C\+PU} register values when in C\+GB mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+U\+L\+T\+I\+C\+A\+R\+T\+\_\+\+C\+O\+M\+P\+AT@{M\+U\+L\+T\+I\+C\+A\+R\+T\+\_\+\+C\+O\+M\+P\+AT}!gambatte\+::\+GB@{gambatte\+::\+GB}}\index{gambatte\+::\+GB@{gambatte\+::\+GB}!M\+U\+L\+T\+I\+C\+A\+R\+T\+\_\+\+C\+O\+M\+P\+AT@{M\+U\+L\+T\+I\+C\+A\+R\+T\+\_\+\+C\+O\+M\+P\+AT}}}\mbox{\Hypertarget{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659a5d01ba70d15c25f4d772b2096c6cdcbe}\label{classgambatte_1_1GB_a75a7553f8728e3d463c95dfdaaf48659a5d01ba70d15c25f4d772b2096c6cdcbe}} 
+M\+U\+L\+T\+I\+C\+A\+R\+T\+\_\+\+C\+O\+M\+P\+AT&Use heuristics to detect and support some multicart M\+B\+Cs disguised as M\+B\+C1. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1GB_a360f22e656d5ff564eb0dea987ae71c7}\label{classgambatte_1_1GB_a360f22e656d5ff564eb0dea987ae71c7}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!GB@{GB}}
+\index{GB@{GB}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{G\+B()}{GB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily gambatte\+::\+G\+B\+::\+GB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a27727465be963f80f4fd96449a3d9c13}\label{classgambatte_1_1GB_a27727465be963f80f4fd96449a3d9c13}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!````~GB@{$\sim$\+GB}}
+\index{````~GB@{$\sim$\+GB}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{$\sim$\+G\+B()}{~GB()}}
+{\footnotesize\ttfamily gambatte\+::\+G\+B\+::$\sim$\+GB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a8f53e9b7823f40e90a0c84a5f088b712}\label{classgambatte_1_1GB_a8f53e9b7823f40e90a0c84a5f088b712}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!GB@{GB}}
+\index{GB@{GB}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{G\+B()}{GB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily gambatte\+::\+G\+B\+::\+GB (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1GB}{GB} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1GB_acafddce904037bfa513b7b27f0f4ffae}\label{classgambatte_1_1GB_acafddce904037bfa513b7b27f0f4ffae}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!bus\+\_\+read@{bus\+\_\+read}}
+\index{bus\+\_\+read@{bus\+\_\+read}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{bus\+\_\+read()}{bus\_read()}}
+{\footnotesize\ttfamily uint8\+\_\+t gambatte\+::\+G\+B\+::bus\+\_\+read (\begin{DoxyParamCaption}\item[{unsigned}]{addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a060622967acdfc0ff693dedc39d9d187}\label{classgambatte_1_1GB_a060622967acdfc0ff693dedc39d9d187}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!bus\+\_\+write@{bus\+\_\+write}}
+\index{bus\+\_\+write@{bus\+\_\+write}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{bus\+\_\+write()}{bus\_write()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::bus\+\_\+write (\begin{DoxyParamCaption}\item[{unsigned}]{addr,  }\item[{uint8\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a48d11dcf693f45ab861f640d8fa96dc9}\label{classgambatte_1_1GB_a48d11dcf693f45ab861f640d8fa96dc9}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!current\+State@{current\+State}}
+\index{current\+State@{current\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{current\+State()}{currentState()}}
+{\footnotesize\ttfamily \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} gambatte\+::\+G\+B\+::current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Current state slot selected with \hyperlink{classgambatte_1_1GB_a231371a6ef7aa0001afa45d645052569}{select\+State()}. Returns a value between 0 and 9 inclusive. \mbox{\Hypertarget{classgambatte_1_1GB_a5d93be3dc403febfd05f65987fffbd96}\label{classgambatte_1_1GB_a5d93be3dc403febfd05f65987fffbd96}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!get\+\_\+cpureg@{get\+\_\+cpureg}}
+\index{get\+\_\+cpureg@{get\+\_\+cpureg}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{get\+\_\+cpureg()}{get\_cpureg()}}
+{\footnotesize\ttfamily uint32\+\_\+t gambatte\+::\+G\+B\+::get\+\_\+cpureg (\begin{DoxyParamCaption}\item[{enum \hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893}{cpu\+\_\+register}}]{reg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_af97601bcf082aafab539a6922f36beb8}\label{classgambatte_1_1GB_af97601bcf082aafab539a6922f36beb8}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!get\+Io\+Ram@{get\+Io\+Ram}}
+\index{get\+Io\+Ram@{get\+Io\+Ram}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{get\+Io\+Ram()}{getIoRam()}}
+{\footnotesize\ttfamily std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ gambatte\+::\+G\+B\+::get\+Io\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get pointer and size to I/O R\+AM. \begin{DoxyReturn}{Returns}
+The pointer and size of I/O R\+AM. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_a8fd5bd2699640686ad21e211ca841c2f}\label{classgambatte_1_1GB_a8fd5bd2699640686ad21e211ca841c2f}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!get\+Rtc\+Base@{get\+Rtc\+Base}}
+\index{get\+Rtc\+Base@{get\+Rtc\+Base}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{get\+Rtc\+Base()}{getRtcBase()}}
+{\footnotesize\ttfamily time\+\_\+t gambatte\+::\+G\+B\+::get\+Rtc\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get R\+TC base time. \mbox{\Hypertarget{classgambatte_1_1GB_aef4cbcec5818d26bef8c54cedf007e17}\label{classgambatte_1_1GB_aef4cbcec5818d26bef8c54cedf007e17}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!get\+Save\+Ram@{get\+Save\+Ram}}
+\index{get\+Save\+Ram@{get\+Save\+Ram}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{get\+Save\+Ram()}{getSaveRam()}}
+{\footnotesize\ttfamily std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ gambatte\+::\+G\+B\+::get\+Save\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get pointer and size to Save R\+AM. \begin{DoxyReturn}{Returns}
+The pointer and size of Save R\+AM. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_af72f3d0e4a022d737bff406d3327038b}\label{classgambatte_1_1GB_af72f3d0e4a022d737bff406d3327038b}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!get\+Video\+Ram@{get\+Video\+Ram}}
+\index{get\+Video\+Ram@{get\+Video\+Ram}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{get\+Video\+Ram()}{getVideoRam()}}
+{\footnotesize\ttfamily std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ gambatte\+::\+G\+B\+::get\+Video\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get pointer and size to Video R\+AM. \begin{DoxyReturn}{Returns}
+The pointer and size of Video R\+AM. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_a0781cb0969c57ddc0fa647b54ee373f6}\label{classgambatte_1_1GB_a0781cb0969c57ddc0fa647b54ee373f6}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!get\+Work\+Ram@{get\+Work\+Ram}}
+\index{get\+Work\+Ram@{get\+Work\+Ram}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{get\+Work\+Ram()}{getWorkRam()}}
+{\footnotesize\ttfamily std\+::pair$<$ unsigned char $\ast$, size\+\_\+t $>$ gambatte\+::\+G\+B\+::get\+Work\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get pointer and size to Work R\+AM. \begin{DoxyReturn}{Returns}
+The pointer and size of Work R\+AM. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_a96ffbde272ed65919f851740682cac04}\label{classgambatte_1_1GB_a96ffbde272ed65919f851740682cac04}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!is\+Cgb@{is\+Cgb}}
+\index{is\+Cgb@{is\+Cgb}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{is\+Cgb()}{isCgb()}}
+{\footnotesize\ttfamily bool gambatte\+::\+G\+B\+::is\+Cgb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns true if the currently loaded R\+OM image is treated as having C\+GB support. \mbox{\Hypertarget{classgambatte_1_1GB_ae7b16fcdf62d8dcd3c17cc1c5cad223e}\label{classgambatte_1_1GB_ae7b16fcdf62d8dcd3c17cc1c5cad223e}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!is\+Loaded@{is\+Loaded}}
+\index{is\+Loaded@{is\+Loaded}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{is\+Loaded()}{isLoaded()}}
+{\footnotesize\ttfamily bool gambatte\+::\+G\+B\+::is\+Loaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns true if a R\+OM image is loaded. \mbox{\Hypertarget{classgambatte_1_1GB_a3eb7cf83b1634dacc796971760b31fa2}\label{classgambatte_1_1GB_a3eb7cf83b1634dacc796971760b31fa2}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!load@{load}}
+\index{load@{load}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a42606f494711d2e2870a5f5cdf69e468}{Load\+Res} gambatte\+::\+G\+B\+::load (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{romfile,  }\item[{unsigned}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a4ee8c151c978541fe20a282bdcc68969}\label{classgambatte_1_1GB_a4ee8c151c978541fe20a282bdcc68969}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!load@{load}}
+\index{load@{load}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{namespacegambatte_a42606f494711d2e2870a5f5cdf69e468}{Load\+Res} gambatte\+::\+G\+B\+::load (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{image,  }\item[{size\+\_\+t}]{isize,  }\item[{unsigned}]{flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Load R\+OM image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Raw R\+OM image data. \\
+\hline
+{\em isize} & Size of raw R\+OM image data. \\
+\hline
+{\em flags} & O\+Red combination of Load\+Flags. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, negative value on failure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_a70781b0ddbfd7d52ae6bc0db1c34be0d}\label{classgambatte_1_1GB_a70781b0ddbfd7d52ae6bc0db1c34be0d}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool gambatte\+::\+G\+B\+::load\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Loads emulator state from the state slot selected with \hyperlink{classgambatte_1_1GB_a231371a6ef7aa0001afa45d645052569}{select\+State()}. \begin{DoxyReturn}{Returns}
+success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_a7ac605f7586d955acb408a649bc3faf1}\label{classgambatte_1_1GB_a7ac605f7586d955acb408a649bc3faf1}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool gambatte\+::\+G\+B\+::load\+State (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{filepath }\end{DoxyParamCaption})}
+
+Loads emulator state from the file given by \textquotesingle{}filepath\textquotesingle{}. \begin{DoxyReturn}{Returns}
+success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_a8745c11c1ab010ac43147d537c35fb79}\label{classgambatte_1_1GB_a8745c11c1ab010ac43147d537c35fb79}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::load\+State (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ char $>$ \&}]{data }\end{DoxyParamCaption})}
+
+Load savestate from given buffer. \mbox{\Hypertarget{classgambatte_1_1GB_a621e7cd52ce6278c5a521d024b995df5}\label{classgambatte_1_1GB_a621e7cd52ce6278c5a521d024b995df5}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!operator=@{operator=}}
+\index{operator=@{operator=}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1GB}{GB}\& gambatte\+::\+G\+B\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1GB}{GB} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a53f8602582e710cb1938ff6d1306bde9}\label{classgambatte_1_1GB_a53f8602582e710cb1938ff6d1306bde9}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!pak\+Info@{pak\+Info}}
+\index{pak\+Info@{pak\+Info}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{pak\+Info()}{pakInfo()}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1PakInfo}{Pak\+Info} const gambatte\+::\+G\+B\+::pak\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Game\+Pak/\+Cartridge info. \mbox{\Hypertarget{classgambatte_1_1GB_a9e9b8ed4d0d978cfa6c09c849e704fe7}\label{classgambatte_1_1GB_a9e9b8ed4d0d978cfa6c09c849e704fe7}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!postload\+\_\+common@{postload\+\_\+common}}
+\index{postload\+\_\+common@{postload\+\_\+common}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{postload\+\_\+common()}{postload\_common()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::postload\+\_\+common (\begin{DoxyParamCaption}\item[{const unsigned}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_adb4e65eec2d20a2f31c6b66e621c7859}\label{classgambatte_1_1GB_adb4e65eec2d20a2f31c6b66e621c7859}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!preload\+\_\+common@{preload\+\_\+common}}
+\index{preload\+\_\+common@{preload\+\_\+common}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{preload\+\_\+common()}{preload\_common()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::preload\+\_\+common (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a8efc0744b106fb4163e048b8c5f0ca61}\label{classgambatte_1_1GB_a8efc0744b106fb4163e048b8c5f0ca61}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!print\+\_\+interrupt\+\_\+timing@{print\+\_\+interrupt\+\_\+timing}}
+\index{print\+\_\+interrupt\+\_\+timing@{print\+\_\+interrupt\+\_\+timing}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{print\+\_\+interrupt\+\_\+timing()}{print\_interrupt\_timing()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::print\+\_\+interrupt\+\_\+timing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a765c0a392c9801ab094936f2978b5000}\label{classgambatte_1_1GB_a765c0a392c9801ab094936f2978b5000}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!reset@{reset}}
+\index{reset@{reset}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset to initial state. Equivalent to reloading a R\+OM image, or turning a Game Boy Color off and on again. \mbox{\Hypertarget{classgambatte_1_1GB_ad3eeb7e32908992b471c44936f05f8ea}\label{classgambatte_1_1GB_ad3eeb7e32908992b471c44936f05f8ea}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!rom\+Title@{rom\+Title}}
+\index{rom\+Title@{rom\+Title}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{rom\+Title()}{romTitle()}}
+{\footnotesize\ttfamily std\+::string const gambatte\+::\+G\+B\+::rom\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+R\+OM header title of currently loaded R\+OM image. \mbox{\Hypertarget{classgambatte_1_1GB_a10d409c2865b9c9770bf2a19f6d77dd7}\label{classgambatte_1_1GB_a10d409c2865b9c9770bf2a19f6d77dd7}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!run\+For@{run\+For}}
+\index{run\+For@{run\+For}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{run\+For()}{runFor()}}
+{\footnotesize\ttfamily signed gambatte\+::\+G\+B\+::run\+For (\begin{DoxyParamCaption}\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{gambatte\+::uint\+\_\+least32\+\_\+t} $\ast$}]{video\+Buf,  }\item[{std\+::ptrdiff\+\_\+t}]{pitch,  }\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{gambatte\+::uint\+\_\+least32\+\_\+t} $\ast$}]{sound\+Buf,  }\item[{unsigned \&}]{samples }\end{DoxyParamCaption})}
+
+Emulates until at least \textquotesingle{}samples\textquotesingle{} audio samples are produced in the supplied audio buffer, or until a video frame has been drawn.
+
+There are 35112 audio (stereo) samples in a video frame. May run for up to 2064 audio samples too long.
+
+An audio sample consists of two native endian 2s complement 16-\/bit P\+CM samples, with the left sample preceding the right one. Usually casting audio\+Buf to int16\+\_\+t$\ast$ is OK. The reason for using an uint\+\_\+least32\+\_\+t$\ast$ in the interface is to avoid implementation-\/defined behavior without compromising performance. libgambatte is strictly c++98, so fixed-\/width types are not an option (and even c99/c++11 cannot guarantee their availability).
+
+Returns early when a new video frame has finished drawing in the video buffer, such that the caller may update the video output before the frame is overwritten. The return value indicates whether a new video frame has been drawn, and the exact time (in number of samples) at which it was completed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Buf} & 160x144 R\+G\+B32 (native endian) video frame buffer or 0 \\
+\hline
+{\em pitch} & distance in number of pixels (not bytes) from the start of one line to the next in video\+Buf. \\
+\hline
+{\em audio\+Buf} & buffer with space $>$= samples + 2064 \\
+\hline
+{\em samples} & in\+: number of stereo samples to produce, out\+: actual number of samples produced \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sample offset in audio\+Buf at which the video frame was completed, or -\/1 if no new video frame was completed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_a465fec5e623d8ec44c4c00fed15ed387}\label{classgambatte_1_1GB_a465fec5e623d8ec44c4c00fed15ed387}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!save\+Savedata@{save\+Savedata}}
+\index{save\+Savedata@{save\+Savedata}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{save\+Savedata()}{saveSavedata()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::save\+Savedata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Writes persistent cartridge data to disk. Done implicitly on R\+OM close. \mbox{\Hypertarget{classgambatte_1_1GB_a4762c3580bafcdd7635988ee8b034869}\label{classgambatte_1_1GB_a4762c3580bafcdd7635988ee8b034869}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily bool gambatte\+::\+G\+B\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{gambatte\+::uint\+\_\+least32\+\_\+t} const $\ast$}]{video\+Buf,  }\item[{std\+::ptrdiff\+\_\+t}]{pitch }\end{DoxyParamCaption})}
+
+Saves emulator state to the state slot selected with \hyperlink{classgambatte_1_1GB_a231371a6ef7aa0001afa45d645052569}{select\+State()}. The data will be stored in the directory given by \hyperlink{classgambatte_1_1GB_ae5d14de04bb821ccdc2bc4d4dbc649c2}{set\+Save\+Dir()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Buf} & 160x144 R\+G\+B32 (native endian) video frame buffer or 0. Used for saving a thumbnail. \\
+\hline
+{\em pitch} & distance in number of pixels (not bytes) from the start of one line to the next in video\+Buf. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_a98b621fc4632d6c815c6eeb31a59d972}\label{classgambatte_1_1GB_a98b621fc4632d6c815c6eeb31a59d972}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily bool gambatte\+::\+G\+B\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{gambatte\+::uint\+\_\+least32\+\_\+t} const $\ast$}]{video\+Buf,  }\item[{std\+::ptrdiff\+\_\+t}]{pitch,  }\item[{std\+::string const \&}]{filepath }\end{DoxyParamCaption})}
+
+Saves emulator state to the file given by \textquotesingle{}filepath\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+Buf} & 160x144 R\+G\+B32 (native endian) video frame buffer or 0. Used for saving a thumbnail. \\
+\hline
+{\em pitch} & distance in number of pixels (not bytes) from the start of one line to the next in video\+Buf. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgambatte_1_1GB_af6c45af52b0ec127ddcb00a2d32d6b18}\label{classgambatte_1_1GB_af6c45af52b0ec127ddcb00a2d32d6b18}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::save\+State (\begin{DoxyParamCaption}\item[{std\+::vector$<$ char $>$ \&}]{data,  }\item[{const std\+::vector$<$ char $>$ \&}]{cmpdata }\end{DoxyParamCaption})}
+
+Save savestate to given buffer. \mbox{\Hypertarget{classgambatte_1_1GB_a26dfbfcb3487893188f74bd419c8f23e}\label{classgambatte_1_1GB_a26dfbfcb3487893188f74bd419c8f23e}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::save\+State (\begin{DoxyParamCaption}\item[{std\+::vector$<$ char $>$ \&}]{data }\end{DoxyParamCaption})}
+
+Save savestate to given buffer. \mbox{\Hypertarget{classgambatte_1_1GB_a231371a6ef7aa0001afa45d645052569}\label{classgambatte_1_1GB_a231371a6ef7aa0001afa45d645052569}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!select\+State@{select\+State}}
+\index{select\+State@{select\+State}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{select\+State()}{selectState()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::select\+State (\begin{DoxyParamCaption}\item[{\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int}}]{n }\end{DoxyParamCaption})}
+
+Selects which state slot to save state to or load state from. There are 10 such slots, numbered from 0 to 9 (periodically extended for all n). \mbox{\Hypertarget{classgambatte_1_1GB_a4c4ac99f71f96e9c8a0ae7b5ad1a2245}\label{classgambatte_1_1GB_a4c4ac99f71f96e9c8a0ae7b5ad1a2245}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+\_\+cpureg@{set\+\_\+cpureg}}
+\index{set\+\_\+cpureg@{set\+\_\+cpureg}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+\_\+cpureg()}{set\_cpureg()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+\_\+cpureg (\begin{DoxyParamCaption}\item[{enum \hyperlink{classgambatte_1_1GB_afbfe723d7a5e73582401f77c75d13893}{cpu\+\_\+register}}]{reg,  }\item[{uint32\+\_\+t}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a87d311a79eef1d8a812cbd8ba82f0715}\label{classgambatte_1_1GB_a87d311a79eef1d8a812cbd8ba82f0715}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+\_\+debug\+\_\+buffer@{set\+\_\+debug\+\_\+buffer}}
+\index{set\+\_\+debug\+\_\+buffer@{set\+\_\+debug\+\_\+buffer}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+\_\+debug\+\_\+buffer()}{set\_debug\_buffer()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+\_\+debug\+\_\+buffer (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1debugbuffer}{debugbuffer} \&}]{dbgbuf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a46e4849dcde049e8667cd282864389d5}\label{classgambatte_1_1GB_a46e4849dcde049e8667cd282864389d5}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+\_\+emuflags@{set\+\_\+emuflags}}
+\index{set\+\_\+emuflags@{set\+\_\+emuflags}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+\_\+emuflags()}{set\_emuflags()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+\_\+emuflags (\begin{DoxyParamCaption}\item[{unsigned}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a910300b95fe3c38e7d6c0b3f11c017c5}\label{classgambatte_1_1GB_a910300b95fe3c38e7d6c0b3f11c017c5}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+\_\+walltime\+\_\+fn@{set\+\_\+walltime\+\_\+fn}}
+\index{set\+\_\+walltime\+\_\+fn@{set\+\_\+walltime\+\_\+fn}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+\_\+walltime\+\_\+fn()}{set\_walltime\_fn()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+\_\+walltime\+\_\+fn (\begin{DoxyParamCaption}\item[{time\+\_\+t($\ast$)()}]{\+\_\+walltime }\end{DoxyParamCaption})}
+
+Function to get wall time. \mbox{\Hypertarget{classgambatte_1_1GB_a051afa03a39e9012d5c64ea0c6e3e852}\label{classgambatte_1_1GB_a051afa03a39e9012d5c64ea0c6e3e852}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+Dmg\+Palette\+Color@{set\+Dmg\+Palette\+Color}}
+\index{set\+Dmg\+Palette\+Color@{set\+Dmg\+Palette\+Color}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+Dmg\+Palette\+Color()}{setDmgPaletteColor()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+Dmg\+Palette\+Color (\begin{DoxyParamCaption}\item[{\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int}}]{pal\+Num,  }\item[{\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int}}]{color\+Num,  }\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t}}]{rgb32 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pal\+Num} & 0 $<$= pal\+Num $<$ 3. One of B\+G\+\_\+\+P\+A\+L\+E\+T\+TE, S\+P1\+\_\+\+P\+A\+L\+E\+T\+TE and S\+P2\+\_\+\+P\+A\+L\+E\+T\+TE. \\
+\hline
+{\em color\+Num} & 0 $<$= color\+Num $<$ 4 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgambatte_1_1GB_ab39e81dad0d44900154c8c555b39d35c}\label{classgambatte_1_1GB_ab39e81dad0d44900154c8c555b39d35c}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+Game\+Genie@{set\+Game\+Genie}}
+\index{set\+Game\+Genie@{set\+Game\+Genie}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+Game\+Genie()}{setGameGenie()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+Game\+Genie (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{codes }\end{DoxyParamCaption})}
+
+Set Game Genie codes to apply to currently loaded R\+OM image. Cleared on R\+OM load. 
+\begin{DoxyParams}{Parameters}
+{\em codes} & Game Genie codes in format H\+H\+H-\/\+H\+H\+H-\/\+H\+HH;H\+H\+H-\/\+H\+H\+H-\/\+H\+HH;... where H is \mbox{[}0-\/9\mbox{]}$\vert$\mbox{[}A-\/F\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgambatte_1_1GB_a056a4e6a182ef54c54afff0516b3721c}\label{classgambatte_1_1GB_a056a4e6a182ef54c54afff0516b3721c}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+Game\+Shark@{set\+Game\+Shark}}
+\index{set\+Game\+Shark@{set\+Game\+Shark}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+Game\+Shark()}{setGameShark()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+Game\+Shark (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{codes }\end{DoxyParamCaption})}
+
+Set Game Shark codes to apply to currently loaded R\+OM image. Cleared on R\+OM load. 
+\begin{DoxyParams}{Parameters}
+{\em codes} & Game Shark codes in format 01\+H\+H\+H\+H\+HH;01\+H\+H\+H\+H\+HH;... where H is \mbox{[}0-\/9\mbox{]}$\vert$\mbox{[}A-\/F\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgambatte_1_1GB_a7b722194c9472371c28285cdbf35e70f}\label{classgambatte_1_1GB_a7b722194c9472371c28285cdbf35e70f}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+Input\+Getter@{set\+Input\+Getter}}
+\index{set\+Input\+Getter@{set\+Input\+Getter}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+Input\+Getter()}{setInputGetter()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+Input\+Getter (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1InputGetter}{Input\+Getter} $\ast$}]{get\+Input }\end{DoxyParamCaption})}
+
+Sets the callback used for getting input state. \mbox{\Hypertarget{classgambatte_1_1GB_a6beebe28f631880573d8e6a91ceb675f}\label{classgambatte_1_1GB_a6beebe28f631880573d8e6a91ceb675f}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+Rtc\+Base@{set\+Rtc\+Base}}
+\index{set\+Rtc\+Base@{set\+Rtc\+Base}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+Rtc\+Base()}{setRtcBase()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+Rtc\+Base (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+Set R\+TC base time. \mbox{\Hypertarget{classgambatte_1_1GB_ae5d14de04bb821ccdc2bc4d4dbc649c2}\label{classgambatte_1_1GB_ae5d14de04bb821ccdc2bc4d4dbc649c2}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!set\+Save\+Dir@{set\+Save\+Dir}}
+\index{set\+Save\+Dir@{set\+Save\+Dir}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{set\+Save\+Dir()}{setSaveDir()}}
+{\footnotesize\ttfamily void gambatte\+::\+G\+B\+::set\+Save\+Dir (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{sdir }\end{DoxyParamCaption})}
+
+Sets the directory used for storing save data. The default is the same directory as the R\+OM Image file. \mbox{\Hypertarget{classgambatte_1_1GB_a2b1912a87c68f5483ed2272cafdd5648}\label{classgambatte_1_1GB_a2b1912a87c68f5483ed2272cafdd5648}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!version@{version}}
+\index{version@{version}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily std\+::string gambatte\+::\+G\+B\+::version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get version. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1GB_a648f96b5ea58e1d6c8013c8897e63218}\label{classgambatte_1_1GB_a648f96b5ea58e1d6c8013c8897e63218}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!p\+\_\+@{p\+\_\+}}
+\index{p\+\_\+@{p\+\_\+}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{p\+\_\+}{p\_}}
+{\footnotesize\ttfamily \hyperlink{structgambatte_1_1GB_1_1Priv}{Priv}$\ast$ const gambatte\+::\+G\+B\+::p\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1GB_a3b230d27feb2c167823bce8cfc6b02af}\label{classgambatte_1_1GB_a3b230d27feb2c167823bce8cfc6b02af}} 
+\index{gambatte\+::\+GB@{gambatte\+::\+GB}!walltime@{walltime}}
+\index{walltime@{walltime}!gambatte\+::\+GB@{gambatte\+::\+GB}}
+\subsubsection{\texorpdfstring{walltime}{walltime}}
+{\footnotesize\ttfamily time\+\_\+t($\ast$ gambatte\+::\+G\+B\+::walltime) ()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{gambatte_8h}{gambatte.\+h}\item 
+src/\hyperlink{gambatte_8cpp}{gambatte.\+cpp}\end{DoxyCompactItemize}

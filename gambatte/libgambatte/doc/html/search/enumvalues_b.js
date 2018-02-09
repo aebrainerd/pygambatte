@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['l',['l',['../namespacebitmapfont.html#aa985ecc356f031589865e53b3475a2dda7629be069806563e36f39f1b0dfb1fb9',1,'bitmapfont::l()'],['../namespacebitmapfont.html#aa985ecc356f031589865e53b3475a2ddaf86d0347b1d5e077f504f9002408a20e',1,'bitmapfont::L()']]],
+  ['lcdc_5fbgen',['lcdc_bgen',['../namespacegambatte.html#aa6cf096dfec77b7acac3eb5ba3e1b534ac8d014a3c5d8ffd4b1230633f9418507',1,'gambatte']]],
+  ['lcdc_5fen',['lcdc_en',['../namespacegambatte.html#aa6cf096dfec77b7acac3eb5ba3e1b534a7220532b8e39294beda3b1508deba563',1,'gambatte']]],
+  ['lcdc_5fobj2x',['lcdc_obj2x',['../namespacegambatte.html#aa6cf096dfec77b7acac3eb5ba3e1b534a7a9bbb46c82f6db6682befbe1cb7a201',1,'gambatte']]],
+  ['lcdc_5fobjen',['lcdc_objen',['../namespacegambatte.html#aa6cf096dfec77b7acac3eb5ba3e1b534a446b7aaa5d304b80ea3ea69a2a4b95b5',1,'gambatte']]],
+  ['lcdc_5ftdsel',['lcdc_tdsel',['../namespacegambatte.html#aa6cf096dfec77b7acac3eb5ba3e1b534a31160994e4491a9de7f22b667e71380d',1,'gambatte']]],
+  ['lcdc_5fwe',['lcdc_we',['../namespacegambatte.html#aa6cf096dfec77b7acac3eb5ba3e1b534a60b65611ea83bcacfd070da54f025285',1,'gambatte']]],
+  ['lcdstat_5flycflag',['lcdstat_lycflag',['../namespacegambatte.html#ad8c2ee6ef96d1c51077bb501a46da6f5a0b229f58084b343037ca5078bab080e0',1,'gambatte']]],
+  ['lcdstat_5flycirqen',['lcdstat_lycirqen',['../namespacegambatte.html#ad8c2ee6ef96d1c51077bb501a46da6f5af9ee1ed8834c8bc1bd1b1005c58a8d1c',1,'gambatte']]],
+  ['lcdstat_5fm0irqen',['lcdstat_m0irqen',['../namespacegambatte.html#ad8c2ee6ef96d1c51077bb501a46da6f5aea62cb078c266899382346d5ce82102b',1,'gambatte']]],
+  ['lcdstat_5fm1irqen',['lcdstat_m1irqen',['../namespacegambatte.html#ad8c2ee6ef96d1c51077bb501a46da6f5a654dd3e5b0414d02025a6715bfd5c160',1,'gambatte']]],
+  ['lcdstat_5fm2irqen',['lcdstat_m2irqen',['../namespacegambatte.html#ad8c2ee6ef96d1c51077bb501a46da6f5adb7c1a27779e886f475bae032f0c4163',1,'gambatte']]],
+  ['left',['LEFT',['../classgambatte_1_1InputGetter.html#a87fe4c12a05992f649a66a6a76f6fdf7afd3797710c0edeb077ef87a83089b874',1,'gambatte::InputGetter']]],
+  ['levels',['levels',['../classMinKeeper.html#a745fcad4766af72248c4f26e8fb5b754aea945fa5cad053f00154ef3bf621ea51',1,'MinKeeper']]],
+  ['loadres_5fbad_5ffile_5for_5funknown_5fmbc',['LOADRES_BAD_FILE_OR_UNKNOWN_MBC',['../namespacegambatte.html#a42606f494711d2e2870a5f5cdf69e468a684ef4e533fecf944d399daf1b75818d',1,'gambatte']]],
+  ['loadres_5fio_5ferror',['LOADRES_IO_ERROR',['../namespacegambatte.html#a42606f494711d2e2870a5f5cdf69e468ac75330653670aa86df7eedbc8c2de454',1,'gambatte']]],
+  ['loadres_5fok',['LOADRES_OK',['../namespacegambatte.html#a42606f494711d2e2870a5f5cdf69e468a276a570eee7b06c819f588c3daa95cb8',1,'gambatte']]],
+  ['loadres_5funsupported_5fmbc_5fhuc3',['LOADRES_UNSUPPORTED_MBC_HUC3',['../namespacegambatte.html#a42606f494711d2e2870a5f5cdf69e468ad1d3fc2898a6bf03f06c65b98c606b38',1,'gambatte']]],
+  ['loadres_5funsupported_5fmbc_5fmbc4',['LOADRES_UNSUPPORTED_MBC_MBC4',['../namespacegambatte.html#a42606f494711d2e2870a5f5cdf69e468a7e3c06b63f325898a1754f3310677feb',1,'gambatte']]],
+  ['loadres_5funsupported_5fmbc_5fmmm01',['LOADRES_UNSUPPORTED_MBC_MMM01',['../namespacegambatte.html#a42606f494711d2e2870a5f5cdf69e468a96d88487d6bc39db3a891030d8a6787c',1,'gambatte']]],
+  ['loadres_5funsupported_5fmbc_5fpocket_5fcamera',['LOADRES_UNSUPPORTED_MBC_POCKET_CAMERA',['../namespacegambatte.html#a42606f494711d2e2870a5f5cdf69e468a3e7657bdf23c54bc5fe8d92ddb40c130',1,'gambatte']]],
+  ['loadres_5funsupported_5fmbc_5ftama5',['LOADRES_UNSUPPORTED_MBC_TAMA5',['../namespacegambatte.html#a42606f494711d2e2870a5f5cdf69e468a7af71927702a3419ceff85f6d626b9d3',1,'gambatte']]]
+];

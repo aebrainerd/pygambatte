@@ -1,0 +1,181 @@
+\hypertarget{classgambatte_1_1LCD_1_1EventTimes}{}\section{gambatte\+:\+:L\+CD\+:\+:Event\+Times Class Reference}
+\label{classgambatte_1_1LCD_1_1EventTimes}\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+
+
+Collaboration diagram for gambatte\+:\+:L\+CD\+:\+:Event\+Times\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgambatte_1_1LCD_1_1EventTimes__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1LCD_1_1EventTimes_a1fa6d56defc84f65eb5d1a317091afc8}{Event\+Times} (\hyperlink{classgambatte_1_1VideoInterruptRequester}{Video\+Interrupt\+Requester} mem\+Event\+Requester)
+\item 
+\hyperlink{classgambatte_1_1LCD_a30ec19ea638b75c5c8972b2a1838b0c7}{Event} \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a2822cb1d48ad650f8e5f433257991b85}{next\+Event} () const
+\item 
+unsigned \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a0812df703759f4c4864e06fa6227a314}{next\+Event\+Time} () const
+\item 
+unsigned \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a2e968a67987d0e7eb7afe188899e6699}{operator()} (\hyperlink{classgambatte_1_1LCD_a30ec19ea638b75c5c8972b2a1838b0c7}{Event} e) const
+\item 
+{\footnotesize template$<$Event e$>$ }\\void \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a0bc5bcc9b1065d2603822e6db0a5eee8}{set} (unsigned time)
+\item 
+void \hyperlink{classgambatte_1_1LCD_1_1EventTimes_afa7238ae7fc6d48fdc710e4486dab4cd}{set} (\hyperlink{classgambatte_1_1LCD_a30ec19ea638b75c5c8972b2a1838b0c7}{Event} e, unsigned time)
+\item 
+\hyperlink{classgambatte_1_1LCD_a71147bde8c21c12e3cb7c70fcab81b76}{Mem\+Event} \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a31230753beca7214709b10d6bf05aac1}{next\+Mem\+Event} () const
+\item 
+unsigned \hyperlink{classgambatte_1_1LCD_1_1EventTimes_aa9247fb79e7170125db355d380b4ec5d}{next\+Mem\+Event\+Time} () const
+\item 
+unsigned \hyperlink{classgambatte_1_1LCD_1_1EventTimes_acf5624c8f6b0971300d3e48b6580ec68}{operator()} (\hyperlink{classgambatte_1_1LCD_a71147bde8c21c12e3cb7c70fcab81b76}{Mem\+Event} e) const
+\item 
+{\footnotesize template$<$Mem\+Event e$>$ }\\void \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a4f0607965b3cf9d9a4deb8ba19eb87de}{setm} (unsigned time)
+\item 
+void \hyperlink{classgambatte_1_1LCD_1_1EventTimes_ad11bf3927c4da8329f74cb605008d8ab}{set} (\hyperlink{classgambatte_1_1LCD_a71147bde8c21c12e3cb7c70fcab81b76}{Mem\+Event} e, unsigned time)
+\item 
+void \hyperlink{classgambatte_1_1LCD_1_1EventTimes_ad519fc1fbf6802530bb41956586e3551}{flag\+Irq} (unsigned bit)
+\item 
+void \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a309beb0a36cdc41115c4c1322a6e174d}{flag\+Hdma\+Req} ()
+\item 
+void \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a8393bd80f60b2a7d339c03bbbe06d53e}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1LCD_1_1EventTimes_ab68dd9387d02b101f99adfffacb767f2}{set\+Mem\+Event} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMinKeeper}{Min\+Keeper}$<$ \hyperlink{classgambatte_1_1LCD_a3f0d3ac1c0181cd4a083153515f43ec7a424a70f3d84f9af6281b1e034596f9cb}{num\+\_\+events} $>$ \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a0a42dc4b789e866e6536313b44f9830d}{event\+Min\+\_\+}
+\item 
+\hyperlink{classMinKeeper}{Min\+Keeper}$<$ \hyperlink{classgambatte_1_1LCD_aa553646ad64f768ac0e781a5ccdde8a7a6f114e0d7de033bab11a657b9065edab}{num\+\_\+memevents} $>$ \hyperlink{classgambatte_1_1LCD_1_1EventTimes_afe898d5fd9e0c9df4d3516703059e8cb}{mem\+Event\+Min\+\_\+}
+\item 
+\hyperlink{classgambatte_1_1VideoInterruptRequester}{Video\+Interrupt\+Requester} \hyperlink{classgambatte_1_1LCD_1_1EventTimes_a3525ab9f34295420abdc8ca41de7829a}{mem\+Event\+Requester\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a1fa6d56defc84f65eb5d1a317091afc8}\label{classgambatte_1_1LCD_1_1EventTimes_a1fa6d56defc84f65eb5d1a317091afc8}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!Event\+Times@{Event\+Times}}
+\index{Event\+Times@{Event\+Times}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{Event\+Times()}{EventTimes()}}
+{\footnotesize\ttfamily gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::\+Event\+Times (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1VideoInterruptRequester}{Video\+Interrupt\+Requester}}]{mem\+Event\+Requester }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a309beb0a36cdc41115c4c1322a6e174d}\label{classgambatte_1_1LCD_1_1EventTimes_a309beb0a36cdc41115c4c1322a6e174d}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!flag\+Hdma\+Req@{flag\+Hdma\+Req}}
+\index{flag\+Hdma\+Req@{flag\+Hdma\+Req}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{flag\+Hdma\+Req()}{flagHdmaReq()}}
+{\footnotesize\ttfamily void gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::flag\+Hdma\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_ad519fc1fbf6802530bb41956586e3551}\label{classgambatte_1_1LCD_1_1EventTimes_ad519fc1fbf6802530bb41956586e3551}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!flag\+Irq@{flag\+Irq}}
+\index{flag\+Irq@{flag\+Irq}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{flag\+Irq()}{flagIrq()}}
+{\footnotesize\ttfamily void gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::flag\+Irq (\begin{DoxyParamCaption}\item[{unsigned}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a8393bd80f60b2a7d339c03bbbe06d53e}\label{classgambatte_1_1LCD_1_1EventTimes_a8393bd80f60b2a7d339c03bbbe06d53e}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a2822cb1d48ad650f8e5f433257991b85}\label{classgambatte_1_1LCD_1_1EventTimes_a2822cb1d48ad650f8e5f433257991b85}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!next\+Event@{next\+Event}}
+\index{next\+Event@{next\+Event}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{next\+Event()}{nextEvent()}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1LCD_a30ec19ea638b75c5c8972b2a1838b0c7}{Event} gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::next\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a0812df703759f4c4864e06fa6227a314}\label{classgambatte_1_1LCD_1_1EventTimes_a0812df703759f4c4864e06fa6227a314}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!next\+Event\+Time@{next\+Event\+Time}}
+\index{next\+Event\+Time@{next\+Event\+Time}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{next\+Event\+Time()}{nextEventTime()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::next\+Event\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a31230753beca7214709b10d6bf05aac1}\label{classgambatte_1_1LCD_1_1EventTimes_a31230753beca7214709b10d6bf05aac1}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!next\+Mem\+Event@{next\+Mem\+Event}}
+\index{next\+Mem\+Event@{next\+Mem\+Event}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{next\+Mem\+Event()}{nextMemEvent()}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1LCD_a71147bde8c21c12e3cb7c70fcab81b76}{Mem\+Event} gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::next\+Mem\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_aa9247fb79e7170125db355d380b4ec5d}\label{classgambatte_1_1LCD_1_1EventTimes_aa9247fb79e7170125db355d380b4ec5d}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!next\+Mem\+Event\+Time@{next\+Mem\+Event\+Time}}
+\index{next\+Mem\+Event\+Time@{next\+Mem\+Event\+Time}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{next\+Mem\+Event\+Time()}{nextMemEventTime()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::next\+Mem\+Event\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a2e968a67987d0e7eb7afe188899e6699}\label{classgambatte_1_1LCD_1_1EventTimes_a2e968a67987d0e7eb7afe188899e6699}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!operator()@{operator()}}
+\index{operator()@{operator()}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1LCD_a30ec19ea638b75c5c8972b2a1838b0c7}{Event}}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_acf5624c8f6b0971300d3e48b6580ec68}\label{classgambatte_1_1LCD_1_1EventTimes_acf5624c8f6b0971300d3e48b6580ec68}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!operator()@{operator()}}
+\index{operator()@{operator()}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1LCD_a71147bde8c21c12e3cb7c70fcab81b76}{Mem\+Event}}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a0bc5bcc9b1065d2603822e6db0a5eee8}\label{classgambatte_1_1LCD_1_1EventTimes_a0bc5bcc9b1065d2603822e6db0a5eee8}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!set@{set}}
+\index{set@{set}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$Event e$>$ \\
+void gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::set (\begin{DoxyParamCaption}\item[{unsigned}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_afa7238ae7fc6d48fdc710e4486dab4cd}\label{classgambatte_1_1LCD_1_1EventTimes_afa7238ae7fc6d48fdc710e4486dab4cd}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!set@{set}}
+\index{set@{set}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::set (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1LCD_a30ec19ea638b75c5c8972b2a1838b0c7}{Event}}]{e,  }\item[{unsigned}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_ad11bf3927c4da8329f74cb605008d8ab}\label{classgambatte_1_1LCD_1_1EventTimes_ad11bf3927c4da8329f74cb605008d8ab}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!set@{set}}
+\index{set@{set}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::set (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1LCD_a71147bde8c21c12e3cb7c70fcab81b76}{Mem\+Event}}]{e,  }\item[{unsigned}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a4f0607965b3cf9d9a4deb8ba19eb87de}\label{classgambatte_1_1LCD_1_1EventTimes_a4f0607965b3cf9d9a4deb8ba19eb87de}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!setm@{setm}}
+\index{setm@{setm}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{setm()}{setm()}}
+{\footnotesize\ttfamily template$<$Mem\+Event e$>$ \\
+void gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::setm (\begin{DoxyParamCaption}\item[{unsigned}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_ab68dd9387d02b101f99adfffacb767f2}\label{classgambatte_1_1LCD_1_1EventTimes_ab68dd9387d02b101f99adfffacb767f2}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!set\+Mem\+Event@{set\+Mem\+Event}}
+\index{set\+Mem\+Event@{set\+Mem\+Event}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{set\+Mem\+Event()}{setMemEvent()}}
+{\footnotesize\ttfamily void gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::set\+Mem\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a0a42dc4b789e866e6536313b44f9830d}\label{classgambatte_1_1LCD_1_1EventTimes_a0a42dc4b789e866e6536313b44f9830d}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!event\+Min\+\_\+@{event\+Min\+\_\+}}
+\index{event\+Min\+\_\+@{event\+Min\+\_\+}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{event\+Min\+\_\+}{eventMin\_}}
+{\footnotesize\ttfamily \hyperlink{classMinKeeper}{Min\+Keeper}$<$\hyperlink{classgambatte_1_1LCD_a3f0d3ac1c0181cd4a083153515f43ec7a424a70f3d84f9af6281b1e034596f9cb}{num\+\_\+events}$>$ gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::event\+Min\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_afe898d5fd9e0c9df4d3516703059e8cb}\label{classgambatte_1_1LCD_1_1EventTimes_afe898d5fd9e0c9df4d3516703059e8cb}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!mem\+Event\+Min\+\_\+@{mem\+Event\+Min\+\_\+}}
+\index{mem\+Event\+Min\+\_\+@{mem\+Event\+Min\+\_\+}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{mem\+Event\+Min\+\_\+}{memEventMin\_}}
+{\footnotesize\ttfamily \hyperlink{classMinKeeper}{Min\+Keeper}$<$\hyperlink{classgambatte_1_1LCD_aa553646ad64f768ac0e781a5ccdde8a7a6f114e0d7de033bab11a657b9065edab}{num\+\_\+memevents}$>$ gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::mem\+Event\+Min\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1LCD_1_1EventTimes_a3525ab9f34295420abdc8ca41de7829a}\label{classgambatte_1_1LCD_1_1EventTimes_a3525ab9f34295420abdc8ca41de7829a}} 
+\index{gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}!mem\+Event\+Requester\+\_\+@{mem\+Event\+Requester\+\_\+}}
+\index{mem\+Event\+Requester\+\_\+@{mem\+Event\+Requester\+\_\+}!gambatte\+::\+L\+C\+D\+::\+Event\+Times@{gambatte\+::\+L\+C\+D\+::\+Event\+Times}}
+\subsubsection{\texorpdfstring{mem\+Event\+Requester\+\_\+}{memEventRequester\_}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1VideoInterruptRequester}{Video\+Interrupt\+Requester} gambatte\+::\+L\+C\+D\+::\+Event\+Times\+::mem\+Event\+Requester\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{video_8h}{video.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\hypertarget{ppu_8cpp}{}\section{src/video/ppu.cpp File Reference}
+\label{ppu_8cpp}\index{src/video/ppu.\+cpp@{src/video/ppu.\+cpp}}
+{\ttfamily \#include \char`\"{}ppu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}savestate.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+Include dependency graph for ppu.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ppu_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceM2__Ly0}{M2\+\_\+\+Ly0}
+\item 
+ \hyperlink{namespaceM2__LyNon0}{M2\+\_\+\+Ly\+Non0}
+\item 
+ \hyperlink{namespaceM3Start}{M3\+Start}
+\item 
+ \hyperlink{namespaceM3Loop}{M3\+Loop}
+\item 
+ \hyperlink{namespaceM3Loop_1_1Tile}{M3\+Loop\+::\+Tile}
+\item 
+ \hyperlink{namespaceM3Loop_1_1LoadSprites}{M3\+Loop\+::\+Load\+Sprites}
+\item 
+ \hyperlink{namespaceM3Loop_1_1StartWindowDraw}{M3\+Loop\+::\+Start\+Window\+Draw}
+\item 
+ \hyperlink{namespacegambatte}{gambatte}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{P\+R\+EP}(u8)
+\item 
+\#define \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{E\+X\+P\+A\+ND}(u8)
+\item 
+\#define \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{E\+X\+P\+A\+N\+D\+\_\+\+R\+OW}(n)
+\item 
+\#define \hyperlink{ppu_8cpp_a1b2fc8c4c6e2272a9d195b616210abb2}{E\+X\+P\+A\+N\+D\+\_\+\+T\+A\+B\+LE}
+\item 
+\#define \hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{P\+R\+EP}(u8)~(u8)
+\item 
+\#define \hyperlink{ppu_8cpp_a9ee72b7e5aab37d2e6e35a4ae160279e}{D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+U\+NC}(n,  id)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum 
+\item 
+enum 
+\item 
+enum 
+\item 
+enum 
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ppu_8cpp_a9ee72b7e5aab37d2e6e35a4ae160279e}\label{ppu_8cpp_a9ee72b7e5aab37d2e6e35a4ae160279e}} 
+\index{ppu.\+cpp@{ppu.\+cpp}!D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+U\+NC@{D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+U\+NC}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+U\+NC@{D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+U\+NC}!ppu.\+cpp@{ppu.\+cpp}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+U\+NC}{DECLARE\_FUNC}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+U\+NC(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{enum} \{ ID##\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n} = \textcolor{keywordtype}{id} \}; \(\backslash\)
+    static \textcolor{keywordtype}{void} \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda1fc792c91e2a80819cdefbd184f3b503}{f}##\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n} (\hyperlink{structgambatte_1_1PPUPriv}{PPUPriv} &); \(\backslash\)
+    static \textcolor{keywordtype}{unsigned} predictCyclesUntilXpos\_f##\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n} (\hyperlink{structgambatte_1_1PPUPriv}{PPUPriv} \textcolor{keyword}{const} &, \textcolor{keywordtype}{int} targetxpos, \textcolor{keywordtype}{unsigned} cycles);
+       \(\backslash\)
+    static \hyperlink{structgambatte_1_1PPUState}{PPUState} \textcolor{keyword}{const} \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda1fc792c91e2a80819cdefbd184f3b503}{f}##\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n}##\_ = \{ \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda1fc792c91e2a80819cdefbd184f3b503}{f}##\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n}, predictCyclesUntilXpos\_f##
+      \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n}, ID##n \}
+\end{DoxyCode}
+\mbox{\Hypertarget{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}\label{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}} 
+\index{ppu.\+cpp@{ppu.\+cpp}!E\+X\+P\+A\+ND@{E\+X\+P\+A\+ND}}
+\index{E\+X\+P\+A\+ND@{E\+X\+P\+A\+ND}!ppu.\+cpp@{ppu.\+cpp}}
+\subsubsection{\texorpdfstring{E\+X\+P\+A\+ND}{EXPAND}}
+{\footnotesize\ttfamily \#define E\+X\+P\+A\+ND(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((\hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{PREP}(u8) << 7 & 0x4000) | (\hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{PREP}(u8) << 6 & 0x1000) \(\backslash\)
+                  | (\hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{PREP}(u8) << 5 & 0x0400) | (\hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{PREP}(u8) << 4 & 0x0100) \(\backslash\)
+                  | (\hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{PREP}(u8) << 3 & 0x0040) | (\hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{PREP}(u8) << 2 & 0x0010) \(\backslash\)
+                  | (\hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{PREP}(u8) << 1 & 0x0004) | (\hyperlink{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}{PREP}(u8)      & 0x0001))
+\end{DoxyCode}
+\mbox{\Hypertarget{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}\label{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}} 
+\index{ppu.\+cpp@{ppu.\+cpp}!E\+X\+P\+A\+N\+D\+\_\+\+R\+OW@{E\+X\+P\+A\+N\+D\+\_\+\+R\+OW}}
+\index{E\+X\+P\+A\+N\+D\+\_\+\+R\+OW@{E\+X\+P\+A\+N\+D\+\_\+\+R\+OW}!ppu.\+cpp@{ppu.\+cpp}}
+\subsubsection{\texorpdfstring{E\+X\+P\+A\+N\+D\+\_\+\+R\+OW}{EXPAND\_ROW}}
+{\footnotesize\ttfamily \#define E\+X\+P\+A\+N\+D\+\_\+\+R\+OW(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x0), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x1), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x2), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((
+      \hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x3), \(\backslash\)
+                      EXPAND((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x4), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x5), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x6), 
+      \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x7), \(\backslash\)
+                      EXPAND((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x8), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0x9), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0xA), 
+      \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0xB), \(\backslash\)
+                      EXPAND((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0xC), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0xD), \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0xE), 
+      \hyperlink{ppu_8cpp_a3a5985505793b7eb8c6ca687d0d6e8dc}{EXPAND}((\hyperlink{namespacebitmapfont_aa985ecc356f031589865e53b3475a2dda9337781460425862ec644a5e944cf15f}{n})|0xF)
+\end{DoxyCode}
+\mbox{\Hypertarget{ppu_8cpp_a1b2fc8c4c6e2272a9d195b616210abb2}\label{ppu_8cpp_a1b2fc8c4c6e2272a9d195b616210abb2}} 
+\index{ppu.\+cpp@{ppu.\+cpp}!E\+X\+P\+A\+N\+D\+\_\+\+T\+A\+B\+LE@{E\+X\+P\+A\+N\+D\+\_\+\+T\+A\+B\+LE}}
+\index{E\+X\+P\+A\+N\+D\+\_\+\+T\+A\+B\+LE@{E\+X\+P\+A\+N\+D\+\_\+\+T\+A\+B\+LE}!ppu.\+cpp@{ppu.\+cpp}}
+\subsubsection{\texorpdfstring{E\+X\+P\+A\+N\+D\+\_\+\+T\+A\+B\+LE}{EXPAND\_TABLE}}
+{\footnotesize\ttfamily \#define E\+X\+P\+A\+N\+D\+\_\+\+T\+A\+B\+LE}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0x00), \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0x10), \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0x20), 
+      \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0x30), \(\backslash\)
+                     EXPAND\_ROW(0x40), \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0x50), \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0x60), 
+      \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0x70), \(\backslash\)
+                     EXPAND\_ROW(0x80), \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0x90), \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0xA0), 
+      \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0xB0), \(\backslash\)
+                     EXPAND\_ROW(0xC0), \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0xD0), \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0xE0), 
+      \hyperlink{ppu_8cpp_ac846acf5fb58f9dece590073eae63c5a}{EXPAND\_ROW}(0xF0)
+\end{DoxyCode}
+\mbox{\Hypertarget{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}\label{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}} 
+\index{ppu.\+cpp@{ppu.\+cpp}!P\+R\+EP@{P\+R\+EP}}
+\index{P\+R\+EP@{P\+R\+EP}!ppu.\+cpp@{ppu.\+cpp}}
+\subsubsection{\texorpdfstring{P\+R\+EP}{PREP}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define P\+R\+EP(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((u8) << 7 & 0x80) | ((u8) << 5 & 0x40) | ((u8) << 3 & 0x20) | ((u8) << 1 & 0x10) \(\backslash\)
+                | ((u8) >> 1 & 0x08) | ((u8) >> 3 & 0x04) | ((u8) >> 5 & 0x02) | ((u8) >> 7 & 0x01))
+\end{DoxyCode}
+\mbox{\Hypertarget{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}\label{ppu_8cpp_a7529e328e025a809eb2b6d9fbfaf7427}} 
+\index{ppu.\+cpp@{ppu.\+cpp}!P\+R\+EP@{P\+R\+EP}}
+\index{P\+R\+EP@{P\+R\+EP}!ppu.\+cpp@{ppu.\+cpp}}
+\subsubsection{\texorpdfstring{P\+R\+EP}{PREP}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define P\+R\+EP(\begin{DoxyParamCaption}\item[{}]{u8 }\end{DoxyParamCaption})~(u8)}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{ppu_8cpp_a4caf8d8f829279fba122163d961608a4}\label{ppu_8cpp_a4caf8d8f829279fba122163d961608a4}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\mbox{\Hypertarget{ppu_8cpp_a96a58e29e8dbf2b5bdeb775cba46556e}\label{ppu_8cpp_a96a58e29e8dbf2b5bdeb775cba46556e}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\mbox{\Hypertarget{ppu_8cpp_ab48899087cc647f0f791ed0c459adc53}\label{ppu_8cpp_ab48899087cc647f0f791ed0c459adc53}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\mbox{\Hypertarget{ppu_8cpp_a458e651af6690959efa2afb96be7d609}\label{ppu_8cpp_a458e651af6690959efa2afb96be7d609}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{ppu_8cpp_a03857477c90384e55e1b8427ee16f53b}\label{ppu_8cpp_a03857477c90384e55e1b8427ee16f53b}} 
+\index{ppu.\+cpp@{ppu.\+cpp}!cycle@{cycle}}
+\index{cycle@{cycle}!ppu.\+cpp@{ppu.\+cpp}}
+\subsubsection{\texorpdfstring{cycle}{cycle}}
+{\footnotesize\ttfamily signed cycle}
+
+\mbox{\Hypertarget{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}\label{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}} 
+\index{ppu.\+cpp@{ppu.\+cpp}!state@{state}}
+\index{state@{state}!ppu.\+cpp@{ppu.\+cpp}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \hyperlink{structgambatte_1_1PPUState}{P\+P\+U\+State} const$\ast$ state}
+

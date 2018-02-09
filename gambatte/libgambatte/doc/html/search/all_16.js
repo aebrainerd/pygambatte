@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['v',['V',['../namespacebitmapfont.html#aa985ecc356f031589865e53b3475a2dda6c7899fb7aa44e3277eec4f955c72385',1,'bitmapfont::V()'],['../namespacebitmapfont.html#aa985ecc356f031589865e53b3475a2ddae7ec93e0df5aa8e29dd74f56639153f2',1,'bitmapfont::v()']]],
+  ['value',['value',['../structgambatte_1_1GsCode.html#abf832b3418728ddd0c32d1db180c508e',1,'gambatte::GsCode::value()'],['../classMinKeeper.html#a87ea0acfa0a9bdccfacac89794bc30ce',1,'MinKeeper::value()']]],
+  ['values_5f',['values_',['../classMinKeeper.html#a7096c3993486cb56ee56b7434282a5cc',1,'MinKeeper']]],
+  ['version',['version',['../structzlib_1_1unz__file__info__s.html#a5a9d89ca344d9abd5fef8fb2724753eb',1,'zlib::unz_file_info_s::version()'],['../structunz__file__info__s.html#a635f933b26b636d8314cef61af62fcef',1,'unz_file_info_s::version()'],['../classgambatte_1_1GB.html#a2b1912a87c68f5483ed2272cafdd5648',1,'gambatte::GB::version()']]],
+  ['version_5fneeded',['version_needed',['../structzlib_1_1unz__file__info__s.html#aecec7894c06c1796619583f064aeb64a',1,'zlib::unz_file_info_s::version_needed()'],['../structunz__file__info__s.html#a1578aca2bb7fed658f9f94c78d00288e',1,'unz_file_info_s::version_needed()']]],
+  ['video_2ecpp',['video.cpp',['../video_8cpp.html',1,'']]],
+  ['video_2eh',['video.h',['../video_8h.html',1,'']]],
+  ['videobuf_5f',['videoBuf_',['../classgambatte_1_1Memory.html#a30ce39b7ad34c1d657704d59693897f2',1,'gambatte::Memory']]],
+  ['videocycles',['videoCycles',['../structgambatte_1_1SaveState_1_1PPU.html#a3c84cd6d28569d76001f0e2ec4bc5320',1,'gambatte::SaveState::PPU']]],
+  ['videointerruptrequester',['VideoInterruptRequester',['../classgambatte_1_1VideoInterruptRequester.html',1,'gambatte::VideoInterruptRequester'],['../classgambatte_1_1VideoInterruptRequester.html#a163ac951fad7adaf1c1a632250f7e3c7',1,'gambatte::VideoInterruptRequester::VideoInterruptRequester()']]],
+  ['voidpf',['voidpf',['../namespacezlib.html#a2bc9778594c329ce309c43185bc3f9eb',1,'zlib::voidpf()'],['../ioapi_8h.html#a39ab6d73c1cd44bc17064c2dcbb3e753',1,'voidpf():&#160;ioapi.h']]],
+  ['volonoffevent',['VolOnOffEvent',['../structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent.html',1,'gambatte::EnvelopeUnit']]],
+  ['volonoffevent_5f',['volOnOffEvent_',['../classgambatte_1_1EnvelopeUnit.html#af3da8f1a21e7d450e1e8433b0add7df2',1,'gambatte::EnvelopeUnit']]],
+  ['volume',['volume',['../structgambatte_1_1SaveState_1_1SPU_1_1Env.html#a3433ecacf201c5bd40b7c3606cc39445',1,'gambatte::SaveState::SPU::Env']]],
+  ['volume_5f',['volume_',['../classgambatte_1_1EnvelopeUnit.html#a379080f901081f2b571161961fbef627',1,'gambatte::EnvelopeUnit']]],
+  ['vram',['vram',['../structgambatte_1_1SaveState_1_1Mem.html#a17be66d9d55708247cb6ea661163d433',1,'gambatte::SaveState::Mem::vram()'],['../structgambatte_1_1PPUPriv.html#a4ab22f440df8bcc60984c9058492dcde',1,'gambatte::PPUPriv::vram()']]],
+  ['vramaccessible',['vramAccessible',['../classgambatte_1_1LCD.html#a3c94a2934259825fc8e54759aed4c7e5',1,'gambatte::LCD']]],
+  ['vrambankptr',['vrambankptr',['../classgambatte_1_1Cartridge.html#a96a47d8eabc979ebad658ad97ac1bbd2',1,'gambatte::Cartridge::vrambankptr()'],['../classgambatte_1_1MemPtrs.html#a7f0f856f9a995583e6e682c4050ab2aa',1,'gambatte::MemPtrs::vrambankptr()']]],
+  ['vrambankptr_5f',['vrambankptr_',['../classgambatte_1_1MemPtrs.html#ac970531db21355617f59475f3affeecf',1,'gambatte::MemPtrs']]],
+  ['vramchange',['vramChange',['../classgambatte_1_1LCD.html#a3ccafb8445bec07467e96f7bb52c6db9',1,'gambatte::LCD']]],
+  ['vramdata',['vramdata',['../classgambatte_1_1Cartridge.html#a24ebcceeda4d42ea537439cb2a038229',1,'gambatte::Cartridge::vramdata()'],['../classgambatte_1_1MemPtrs.html#ae8b8dc5b98600a3e73aa70cf0608ab77',1,'gambatte::MemPtrs::vramdata()']]],
+  ['vramdataend',['vramdataend',['../classgambatte_1_1MemPtrs.html#a20edfea173f8c47262730b3428d730bc',1,'gambatte::MemPtrs']]]
+];

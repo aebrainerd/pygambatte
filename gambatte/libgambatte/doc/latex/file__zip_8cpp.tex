@@ -1,0 +1,106 @@
+\hypertarget{file__zip_8cpp}{}\section{src/file/file\+\_\+zip.cpp File Reference}
+\label{file__zip_8cpp}\index{src/file/file\+\_\+zip.\+cpp@{src/file/file\+\_\+zip.\+cpp}}
+{\ttfamily \#include \char`\"{}stdfile.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include \char`\"{}unzip/unzip.\+h\char`\"{}}\newline
+Include dependency graph for file\+\_\+zip.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{file__zip_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structzlib_1_1zlib__filefunc__def__s}{zlib\+::zlib\+\_\+filefunc\+\_\+def\+\_\+s}
+\item 
+struct \hyperlink{structzlib_1_1tm__unz__s}{zlib\+::tm\+\_\+unz\+\_\+s}
+\item 
+struct \hyperlink{structzlib_1_1unz__global__info__s}{zlib\+::unz\+\_\+global\+\_\+info\+\_\+s}
+\item 
+struct \hyperlink{structzlib_1_1unz__file__info__s}{zlib\+::unz\+\_\+file\+\_\+info\+\_\+s}
+\item 
+struct \hyperlink{structzlib_1_1unz__file__pos__s}{zlib\+::unz\+\_\+file\+\_\+pos\+\_\+s}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacezlib}{zlib}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef const char $\ast$ \hyperlink{namespacezlib_ac9e8acdeb11e8fa9e3f373572b6d4a9f}{zlib\+::filename}
+\item 
+typedef const char \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} \hyperlink{namespacezlib_a86cbc9a4e23f2f76a5589cb2e090ea6e}{zlib\+::mode}
+\item 
+typedef \hyperlink{ioapi_8h_a39ab6d73c1cd44bc17064c2dcbb3e753}{voidpf} \hyperlink{namespacezlib_a689061d38c26885a3b86df5f35c4d098}{zlib\+::stream}
+\item 
+typedef \hyperlink{ioapi_8h_a39ab6d73c1cd44bc17064c2dcbb3e753}{voidpf} void $\ast$ \hyperlink{namespacezlib_a500d53d2dafa1e8390dc41cc14dd5553}{zlib\+::buf}
+\item 
+typedef \hyperlink{ioapi_8h_a39ab6d73c1cd44bc17064c2dcbb3e753}{voidpf} void \hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} \hyperlink{namespacezlib_aec07beda6162c9849d5319f347c08aa7}{zlib\+::size}
+\item 
+typedef \hyperlink{ioapi_8h_a39ab6d73c1cd44bc17064c2dcbb3e753}{voidpf} \hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} \hyperlink{namespacezlib_a3cdfa90d3d1b7df7de1221e86160ba4b}{zlib\+::offset}
+\item 
+typedef \hyperlink{ioapi_8h_a39ab6d73c1cd44bc17064c2dcbb3e753}{voidpf} \hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} \hyperlink{namespacezlib_af3bbffc0677fddd7d406578a9d026a94}{zlib\+::origin}
+\item 
+typedef struct \hyperlink{structzlib_1_1zlib__filefunc__def__s}{zlib\+::zlib\+\_\+filefunc\+\_\+def\+\_\+s} \hyperlink{namespacezlib_a4ada5a935fba7f21209bc451eb7ffbc7}{zlib\+::zlib\+\_\+filefunc\+\_\+def}
+\item 
+typedef voidp \hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{zlib\+::unz\+File}
+\item 
+typedef struct \hyperlink{structzlib_1_1tm__unz__s}{zlib\+::tm\+\_\+unz\+\_\+s} \hyperlink{namespacezlib_a98fa3246f3d786aca4a6def1a4c380ab}{zlib\+::tm\+\_\+unz}
+\item 
+typedef struct \hyperlink{structzlib_1_1unz__global__info__s}{zlib\+::unz\+\_\+global\+\_\+info\+\_\+s} \hyperlink{namespacezlib_a720c995c51babbb6d5cbf3e022a4c7b4}{zlib\+::unz\+\_\+global\+\_\+info}
+\item 
+typedef struct \hyperlink{structzlib_1_1unz__file__info__s}{zlib\+::unz\+\_\+file\+\_\+info\+\_\+s} \hyperlink{namespacezlib_aaf9fc35879a68a5fe0b6a5113bd271b5}{zlib\+::unz\+\_\+file\+\_\+info}
+\item 
+typedef struct \hyperlink{structzlib_1_1unz__file__pos__s}{zlib\+::unz\+\_\+file\+\_\+pos\+\_\+s} \hyperlink{namespacezlib_aafe5edb16e400a11811c203048d2f464}{zlib\+::unz\+\_\+file\+\_\+pos}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{namespacezlib_a2bc9778594c329ce309c43185bc3f9eb}{zlib\+::voidpf} (\hyperlink{ioapi_8h_aace96475a6dd2915bc55bc542d7aa8a5}{Z\+C\+A\+L\+L\+B\+A\+CK} $\ast$open\+\_\+file\+\_\+func) \hyperlink{unzip_8h_acaae2f4f739694b4f674b57607752d3f}{OF}((voidpf opaque
+\item 
+typedef \hyperlink{namespacezlib_a3bc0123d9337acd75d286df79e6cf7da}{zlib\+::u\+Long} (\hyperlink{ioapi_8h_aace96475a6dd2915bc55bc542d7aa8a5}{Z\+C\+A\+L\+L\+B\+A\+CK} $\ast$read\+\_\+file\+\_\+func) \hyperlink{unzip_8h_acaae2f4f739694b4f674b57607752d3f}{OF}((\hyperlink{ioapi_8h_a39ab6d73c1cd44bc17064c2dcbb3e753}{voidpf} opaque
+\item 
+typedef \hyperlink{namespacezlib_a2687cf555d9f1239210afb6f2adcd9a1}{zlib\+::long} (\hyperlink{ioapi_8h_aace96475a6dd2915bc55bc542d7aa8a5}{Z\+C\+A\+L\+L\+B\+A\+CK} $\ast$tell\+\_\+file\+\_\+func) \hyperlink{unzip_8h_acaae2f4f739694b4f674b57607752d3f}{OF}((\hyperlink{ioapi_8h_a39ab6d73c1cd44bc17064c2dcbb3e753}{voidpf} opaque
+\item 
+typedef \hyperlink{namespacezlib_a0c9da18d93722fcf02a354ae2b6ec1ba}{zlib\+::int} (\hyperlink{ioapi_8h_aace96475a6dd2915bc55bc542d7aa8a5}{Z\+C\+A\+L\+L\+B\+A\+CK} $\ast$close\+\_\+file\+\_\+func) \hyperlink{unzip_8h_acaae2f4f739694b4f674b57607752d3f}{OF}((\hyperlink{ioapi_8h_a39ab6d73c1cd44bc17064c2dcbb3e753}{voidpf} opaque
+\item 
+void \hyperlink{ioapi_8c_ab44f1d585b26ce7f9447a91ada432727}{fill\+\_\+fopen\+\_\+filefunc} \hyperlink{namespacezlib_a51f7082e5a7503071ac9f75900f7b42c}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a4ada5a935fba7f21209bc451eb7ffbc7}{zlib\+\_\+filefunc\+\_\+def} $\ast$pzlib\+\_\+filefunc\+\_\+def))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_aaf81e433f9a497102e477a59d783ae18}{unz\+String\+File\+Name\+Compare} \hyperlink{namespacezlib_ab929b496106137b4db7ce431e43400d5}{zlib\+::\+OF} ((const char $\ast$file\+Name1, const char $\ast$file\+Name2, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} i\+Case\+Sensitivity))
+\item 
+\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_a614a4ee72e9055e5657d28487c2a7936}{unz\+Open} \hyperlink{namespacezlib_a4ed1c132c434df9aa80c3d20ca68f01f}{zlib\+::\+OF} ((const char $\ast$path))
+\item 
+\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_a899fa69e894354e48aab8869e13fd396}{unz\+Open2} \hyperlink{namespacezlib_a98d73ab7a866fea2ec4c8565b43df518}{zlib\+::\+OF} ((const char $\ast$path, \hyperlink{namespacezlib_a4ada5a935fba7f21209bc451eb7ffbc7}{zlib\+\_\+filefunc\+\_\+def} $\ast$pzlib\+\_\+filefunc\+\_\+def))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_af6ab0ba88ab5da62747df8f9336f1bb3}{unz\+Close} \hyperlink{namespacezlib_ac2146e287516d1f6d752ff7aadcc701a}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_af05d6e3eac6ec396d9d134ca140fec61}{unz\+Get\+Global\+Info} \hyperlink{namespacezlib_a97b37021181fc23f5ea23211508ab36a}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, \hyperlink{namespacezlib_a720c995c51babbb6d5cbf3e022a4c7b4}{unz\+\_\+global\+\_\+info} $\ast$pglobal\+\_\+info))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_adc36ff0866254ca420c9cd9d7dccfa99}{unz\+Get\+Global\+Comment} \hyperlink{namespacezlib_a188df54d20ceef29699b2d55e71a9bc1}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, char $\ast$sz\+Comment, \hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} u\+Size\+Buf))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_a22730edef5a8a98b367bb30a0d619608}{unz\+Locate\+File} \hyperlink{namespacezlib_a900bec23fa1ab35dc282e84da54ec7ff}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, const char $\ast$sz\+File\+Name, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} i\+Case\+Sensitivity))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{namespacezlib_a47437b346d579699d430dc268e4590e9}{zlib\+::unz\+Get\+File\+Pos} (\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, \hyperlink{namespacezlib_aafe5edb16e400a11811c203048d2f464}{unz\+\_\+file\+\_\+pos} $\ast$file\+\_\+pos)
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{namespacezlib_a8ba48b65e356243eb937bcbcebc7501d}{zlib\+::unz\+Go\+To\+File\+Pos} (\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, \hyperlink{namespacezlib_aafe5edb16e400a11811c203048d2f464}{unz\+\_\+file\+\_\+pos} $\ast$file\+\_\+pos)
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_ac99166540260b60340f4787af0a90029}{unz\+Get\+Current\+File\+Info} \hyperlink{namespacezlib_acabbb2d9e555a3bdda3d17747fbb39c9}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, \hyperlink{namespacezlib_aaf9fc35879a68a5fe0b6a5113bd271b5}{unz\+\_\+file\+\_\+info} $\ast$pfile\+\_\+info, char $\ast$sz\+File\+Name, \hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} file\+Name\+Buffer\+Size, void $\ast$extra\+Field, \hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} extra\+Field\+Buffer\+Size, char $\ast$sz\+Comment, \hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} comment\+Buffer\+Size))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_a0c26b010e6cf7e58cd558426f280fa98}{unz\+Open\+Current\+File\+Password} \hyperlink{namespacezlib_a3a8f0b3cfcd3f283d6ddfac51181d57b}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, const char $\ast$password))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_a5881cddc4d4941ff604508ee4a564c25}{unz\+Open\+Current\+File2} \hyperlink{namespacezlib_a1f7937ae075e2d452351ce922764083a}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} $\ast$method, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} $\ast$level, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} raw))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_a5eb86267fb9a5e4f52a123df606b2af5}{unz\+Open\+Current\+File3} \hyperlink{namespacezlib_aa57d03a223346994e89625e93942b558}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} $\ast$method, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} $\ast$level, \hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} raw, const char $\ast$password))
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{unzip_8c_a782029e380dc5ab5dab00361c9c14f58}{unz\+Read\+Current\+File} \hyperlink{namespacezlib_af095169bb155f7c3daa1f0824f3d342d}{zlib\+::\+OF} ((\hyperlink{namespacezlib_a48c1eb530e72d2132ea9cb6648f4047e}{unz\+File} file, voidp \hyperlink{namespacezlib_a500d53d2dafa1e8390dc41cc14dd5553}{buf}, unsigned len))
+\item 
+\hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} Z\+E\+X\+P\+O\+RT \hyperlink{namespacezlib_a0a1cdabde1d4c3e15a1a3fe74ad6316e}{zlib\+::unz\+Get\+Offset} (\hyperlink{unzip_8h_ad578db1d36691a2a244482a3b2360ca3}{unz\+File} file)
+\item 
+\hyperlink{ioapi_8h_a787fa3cf048117ba7123753c1e74fcd6}{int} Z\+E\+X\+P\+O\+RT \hyperlink{namespacezlib_a576a94727964ae455a95b4565eb7c543}{zlib\+::unz\+Set\+Offset} (\hyperlink{unzip_8h_ad578db1d36691a2a244482a3b2360ca3}{unz\+File} file, \hyperlink{ioapi_8h_a50e9e9d5c30e481de822ad68fe537986}{u\+Long} pos)
+\end{DoxyCompactItemize}

@@ -1,0 +1,166 @@
+\hypertarget{classgambatte_1_1Tima}{}\section{gambatte\+:\+:Tima Class Reference}
+\label{classgambatte_1_1Tima}\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+
+
+{\ttfamily \#include $<$tima.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1Tima_a335d610e3c5aeef9f80b7693d414d42e}{Tima} ()
+\item 
+void \hyperlink{classgambatte_1_1Tima_a40d563556152c52bbd838d70895e4be4}{save\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&) const
+\item 
+void \hyperlink{classgambatte_1_1Tima_a5754a2d76e158ed3cae830cb52cc58c3}{load\+State} (const \hyperlink{structgambatte_1_1SaveState}{Save\+State} \&, \hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester} tima\+Irq)
+\item 
+void \hyperlink{classgambatte_1_1Tima_ae79b79227e0c0ace7d1dd173ae525b27}{reset\+Cc} (unsigned old\+Cc, unsigned new\+Cc, \hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester} tima\+Irq)
+\item 
+void \hyperlink{classgambatte_1_1Tima_a6b9a6fd1515acfb8d0b1315da7883e51}{set\+Tima} (unsigned \hyperlink{classgambatte_1_1Tima_a73338015ebd3d2d5a00e7d2554c2f3c5}{tima}, unsigned cc, \hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester} tima\+Irq)
+\item 
+void \hyperlink{classgambatte_1_1Tima_a937b897a30ad1289069716b309555dd4}{set\+Tma} (unsigned tma, unsigned cc, \hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester} tima\+Irq)
+\item 
+void \hyperlink{classgambatte_1_1Tima_a1e9e5f8cd0e04e5f73eafbf364bef772}{set\+Tac} (unsigned tac, unsigned cc, \hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester} tima\+Irq)
+\item 
+unsigned \hyperlink{classgambatte_1_1Tima_a73338015ebd3d2d5a00e7d2554c2f3c5}{tima} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1Tima_a9bf4e6fead69bda13cab7e7565d1c414}{do\+Irq\+Event} (\hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester} tima\+Irq)
+\item 
+void \hyperlink{classgambatte_1_1Tima_af5bd0ed8cd9d288a87ee8530cd39bf39}{update\+Tima} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1Tima_a42f102eee85822ce7b484679d9d36132}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1Tima_adbbd88e7c35830157e60ee06e7f4dc05}{update\+Irq} (unsigned const cc, \hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester} tima\+Irq)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classgambatte_1_1Tima_ac448ab51bb8f7d47927f86a238513238}{last\+Update\+\_\+}
+\item 
+unsigned \hyperlink{classgambatte_1_1Tima_a7badef965f06c5b99ab6c90216b6d67b}{tmatime\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Tima_afe4fa0fb57c9c5a5a0218bdd1d440c89}{tima\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Tima_ab7d524d7391f3450e7e3a5477dead85c}{tma\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1Tima_a85c00bd12ac64c4a334de4f08032cb9f}{tac\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1Tima_a335d610e3c5aeef9f80b7693d414d42e}\label{classgambatte_1_1Tima_a335d610e3c5aeef9f80b7693d414d42e}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!Tima@{Tima}}
+\index{Tima@{Tima}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{Tima()}{Tima()}}
+{\footnotesize\ttfamily gambatte\+::\+Tima\+::\+Tima (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1Tima_a9bf4e6fead69bda13cab7e7565d1c414}\label{classgambatte_1_1Tima_a9bf4e6fead69bda13cab7e7565d1c414}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!do\+Irq\+Event@{do\+Irq\+Event}}
+\index{do\+Irq\+Event@{do\+Irq\+Event}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{do\+Irq\+Event()}{doIrqEvent()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::do\+Irq\+Event (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester}}]{tima\+Irq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a42f102eee85822ce7b484679d9d36132}\label{classgambatte_1_1Tima_a42f102eee85822ce7b484679d9d36132}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a5754a2d76e158ed3cae830cb52cc58c3}\label{classgambatte_1_1Tima_a5754a2d76e158ed3cae830cb52cc58c3}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::load\+State (\begin{DoxyParamCaption}\item[{const \hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state,  }\item[{\hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester}}]{tima\+Irq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_ae79b79227e0c0ace7d1dd173ae525b27}\label{classgambatte_1_1Tima_ae79b79227e0c0ace7d1dd173ae525b27}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!reset\+Cc@{reset\+Cc}}
+\index{reset\+Cc@{reset\+Cc}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{reset\+Cc()}{resetCc()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::reset\+Cc (\begin{DoxyParamCaption}\item[{unsigned}]{old\+Cc,  }\item[{unsigned}]{new\+Cc,  }\item[{\hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester}}]{tima\+Irq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a40d563556152c52bbd838d70895e4be4}\label{classgambatte_1_1Tima_a40d563556152c52bbd838d70895e4be4}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a1e9e5f8cd0e04e5f73eafbf364bef772}\label{classgambatte_1_1Tima_a1e9e5f8cd0e04e5f73eafbf364bef772}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!set\+Tac@{set\+Tac}}
+\index{set\+Tac@{set\+Tac}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{set\+Tac()}{setTac()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::set\+Tac (\begin{DoxyParamCaption}\item[{unsigned}]{tac,  }\item[{unsigned}]{cc,  }\item[{\hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester}}]{tima\+Irq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a6b9a6fd1515acfb8d0b1315da7883e51}\label{classgambatte_1_1Tima_a6b9a6fd1515acfb8d0b1315da7883e51}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!set\+Tima@{set\+Tima}}
+\index{set\+Tima@{set\+Tima}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{set\+Tima()}{setTima()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::set\+Tima (\begin{DoxyParamCaption}\item[{unsigned}]{tima,  }\item[{unsigned}]{cc,  }\item[{\hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester}}]{tima\+Irq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a937b897a30ad1289069716b309555dd4}\label{classgambatte_1_1Tima_a937b897a30ad1289069716b309555dd4}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!set\+Tma@{set\+Tma}}
+\index{set\+Tma@{set\+Tma}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{set\+Tma()}{setTma()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::set\+Tma (\begin{DoxyParamCaption}\item[{unsigned}]{tma,  }\item[{unsigned}]{cc,  }\item[{\hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester}}]{tima\+Irq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a73338015ebd3d2d5a00e7d2554c2f3c5}\label{classgambatte_1_1Tima_a73338015ebd3d2d5a00e7d2554c2f3c5}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!tima@{tima}}
+\index{tima@{tima}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{tima()}{tima()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Tima\+::tima (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_adbbd88e7c35830157e60ee06e7f4dc05}\label{classgambatte_1_1Tima_adbbd88e7c35830157e60ee06e7f4dc05}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!update\+Irq@{update\+Irq}}
+\index{update\+Irq@{update\+Irq}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{update\+Irq()}{updateIrq()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::update\+Irq (\begin{DoxyParamCaption}\item[{unsigned const}]{cc,  }\item[{\hyperlink{classgambatte_1_1TimaInterruptRequester}{Tima\+Interrupt\+Requester}}]{tima\+Irq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_af5bd0ed8cd9d288a87ee8530cd39bf39}\label{classgambatte_1_1Tima_af5bd0ed8cd9d288a87ee8530cd39bf39}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!update\+Tima@{update\+Tima}}
+\index{update\+Tima@{update\+Tima}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{update\+Tima()}{updateTima()}}
+{\footnotesize\ttfamily void gambatte\+::\+Tima\+::update\+Tima (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1Tima_ac448ab51bb8f7d47927f86a238513238}\label{classgambatte_1_1Tima_ac448ab51bb8f7d47927f86a238513238}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!last\+Update\+\_\+@{last\+Update\+\_\+}}
+\index{last\+Update\+\_\+@{last\+Update\+\_\+}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{last\+Update\+\_\+}{lastUpdate\_}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Tima\+::last\+Update\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a85c00bd12ac64c4a334de4f08032cb9f}\label{classgambatte_1_1Tima_a85c00bd12ac64c4a334de4f08032cb9f}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!tac\+\_\+@{tac\+\_\+}}
+\index{tac\+\_\+@{tac\+\_\+}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{tac\+\_\+}{tac\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Tima\+::tac\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_afe4fa0fb57c9c5a5a0218bdd1d440c89}\label{classgambatte_1_1Tima_afe4fa0fb57c9c5a5a0218bdd1d440c89}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!tima\+\_\+@{tima\+\_\+}}
+\index{tima\+\_\+@{tima\+\_\+}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{tima\+\_\+}{tima\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Tima\+::tima\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_ab7d524d7391f3450e7e3a5477dead85c}\label{classgambatte_1_1Tima_ab7d524d7391f3450e7e3a5477dead85c}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!tma\+\_\+@{tma\+\_\+}}
+\index{tma\+\_\+@{tma\+\_\+}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{tma\+\_\+}{tma\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Tima\+::tma\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1Tima_a7badef965f06c5b99ab6c90216b6d67b}\label{classgambatte_1_1Tima_a7badef965f06c5b99ab6c90216b6d67b}} 
+\index{gambatte\+::\+Tima@{gambatte\+::\+Tima}!tmatime\+\_\+@{tmatime\+\_\+}}
+\index{tmatime\+\_\+@{tmatime\+\_\+}!gambatte\+::\+Tima@{gambatte\+::\+Tima}}
+\subsubsection{\texorpdfstring{tmatime\+\_\+}{tmatime\_}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Tima\+::tmatime\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{tima_8h}{tima.\+h}\item 
+src/\hyperlink{tima_8cpp}{tima.\+cpp}\end{DoxyCompactItemize}

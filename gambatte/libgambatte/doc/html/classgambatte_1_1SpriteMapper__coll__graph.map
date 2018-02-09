@@ -1,0 +1,5 @@
+<map id="gambatte::SpriteMapper" name="gambatte::SpriteMapper">
+<area shape="rect" id="node2" href="$classgambatte_1_1NextM0Time.html" title="gambatte::NextM0Time" alt="" coords="5,102,172,129"/>
+<area shape="rect" id="node3" href="$classgambatte_1_1SpriteMapper_1_1OamReader.html" title="gambatte::SpriteMapper\l::OamReader" alt="" coords="196,95,368,136"/>
+<area shape="rect" id="node4" href="$classgambatte_1_1LyCounter.html" title="gambatte::LyCounter" alt="" coords="207,5,357,32"/>
+</map>

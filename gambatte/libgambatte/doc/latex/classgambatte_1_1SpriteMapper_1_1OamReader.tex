@@ -1,0 +1,241 @@
+\hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader}{}\section{gambatte\+:\+:Sprite\+Mapper\+:\+:Oam\+Reader Class Reference}
+\label{classgambatte_1_1SpriteMapper_1_1OamReader}\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+
+
+Collaboration diagram for gambatte\+:\+:Sprite\+Mapper\+:\+:Oam\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classgambatte_1_1SpriteMapper_1_1OamReader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a4c2aae2820fbaa3fb2d14c85f7ceb8de}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+\hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_ab65ab121f0685f5ef664a01bef316dbe}{Oam\+Reader} (\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&ly\+Counter, unsigned char const $\ast$\hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram})
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a2a361f2224f240eef6db7147fffbdcad}{reset} (unsigned char const $\ast$\hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram}, bool cgb)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a94194013dbb68d7b9fee10f999f80bfe}{change} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a47d768d577cc3f3a0c4c28224242f487}{change} (unsigned char const $\ast$\hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram}, unsigned cc)
+\item 
+bool \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a5b23ae57f747ce78786621a118695359}{changed} () const
+\item 
+bool \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_aa00071e80166eda7afe79d9215f1085f}{large\+Sprites} (unsigned sp\+No) const
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a9b665fd4fef3a720ea2c859b1ebe0c63}{oam} () const
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a7b4142f1bec0aa8f2e30198724628d62}{reset\+Cycle\+Counter} (unsigned old\+Cc, unsigned new\+Cc)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_aca75b2d751e52e1f234da3d97cb17f8f}{set\+Large\+Sprites\+Src} (bool src)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_aed95204d144dd7d7f2cc885bf439991d}{update} (unsigned cc)
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a3080a3d42e877551ec8dde8724223053}{sprite\+Pos\+Buf} () const
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a8d8e0989e0c2ae58034ed6c08be33bc9}{set\+State\+Ptrs} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_ac59cd90aa85b5155eb6ab14dc6f01115}{enable\+Display} (unsigned cc)
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a937011ba446debb723dbb3ae98007936}{save\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}) const
+\item 
+void \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a58347ffdbab3873820b3570cbca370b0}{load\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&ss, unsigned char const $\ast$\hyperlink{classgambatte_1_1SpriteMapper_a558ee1ff5817b79285f7cc91d627535b}{oamram})
+\item 
+bool \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_ae3864e972f2371a24a0bdbe849b4d6fa}{inactive\+Period\+After\+Display\+Enable} (unsigned cc) const
+\item 
+unsigned \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a4a3b93efd1551abe299c9274473286af}{line\+Time} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_acc0df0fc3ac6e5b0ec5535a764456220}{buf\+\_\+} \mbox{[}80\mbox{]}
+\item 
+bool \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a283726945791824e8b354e79bc8b4b2c}{szbuf\+\_\+} \mbox{[}40\mbox{]}
+\item 
+\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const  \& \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a907ad5bb63d28f834455285f6acd57a9}{ly\+Counter\+\_\+}
+\item 
+unsigned char const  $\ast$ \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_acaae688f585201999a41b5aade0726d3}{oamram\+\_\+}
+\item 
+unsigned \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_ae5502dcd770a8dd4ce083532813ea352}{lu\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_ae77a7aa0390ff2bd933e712802865767}{last\+Change\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_a4601e1179ad370e055a57c973d999c2d}{large\+Sprites\+Src\+\_\+}
+\item 
+bool \hyperlink{classgambatte_1_1SpriteMapper_1_1OamReader_abd5aa0b077b867e4bdf3971c34cb6bb7}{cgb\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_ab65ab121f0685f5ef664a01bef316dbe}\label{classgambatte_1_1SpriteMapper_1_1OamReader_ab65ab121f0685f5ef664a01bef316dbe}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!Oam\+Reader@{Oam\+Reader}}
+\index{Oam\+Reader@{Oam\+Reader}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{Oam\+Reader()}{OamReader()}}
+{\footnotesize\ttfamily gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::\+Oam\+Reader (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const \&}]{ly\+Counter,  }\item[{unsigned char const $\ast$}]{oamram }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a94194013dbb68d7b9fee10f999f80bfe}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a94194013dbb68d7b9fee10f999f80bfe}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!change@{change}}
+\index{change@{change}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{change()}{change()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::change (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a47d768d577cc3f3a0c4c28224242f487}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a47d768d577cc3f3a0c4c28224242f487}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!change@{change}}
+\index{change@{change}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{change()}{change()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::change (\begin{DoxyParamCaption}\item[{unsigned char const $\ast$}]{oamram,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a5b23ae57f747ce78786621a118695359}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a5b23ae57f747ce78786621a118695359}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!changed@{changed}}
+\index{changed@{changed}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{changed()}{changed()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_ac59cd90aa85b5155eb6ab14dc6f01115}\label{classgambatte_1_1SpriteMapper_1_1OamReader_ac59cd90aa85b5155eb6ab14dc6f01115}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!enable\+Display@{enable\+Display}}
+\index{enable\+Display@{enable\+Display}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{enable\+Display()}{enableDisplay()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::enable\+Display (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_ae3864e972f2371a24a0bdbe849b4d6fa}\label{classgambatte_1_1SpriteMapper_1_1OamReader_ae3864e972f2371a24a0bdbe849b4d6fa}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!inactive\+Period\+After\+Display\+Enable@{inactive\+Period\+After\+Display\+Enable}}
+\index{inactive\+Period\+After\+Display\+Enable@{inactive\+Period\+After\+Display\+Enable}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{inactive\+Period\+After\+Display\+Enable()}{inactivePeriodAfterDisplayEnable()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::inactive\+Period\+After\+Display\+Enable (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_aa00071e80166eda7afe79d9215f1085f}\label{classgambatte_1_1SpriteMapper_1_1OamReader_aa00071e80166eda7afe79d9215f1085f}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!large\+Sprites@{large\+Sprites}}
+\index{large\+Sprites@{large\+Sprites}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{large\+Sprites()}{largeSprites()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::large\+Sprites (\begin{DoxyParamCaption}\item[{unsigned}]{sp\+No }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a4a3b93efd1551abe299c9274473286af}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a4a3b93efd1551abe299c9274473286af}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!line\+Time@{line\+Time}}
+\index{line\+Time@{line\+Time}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{line\+Time()}{lineTime()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::line\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a4c2aae2820fbaa3fb2d14c85f7ceb8de}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a4c2aae2820fbaa3fb2d14c85f7ceb8de}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a58347ffdbab3873820b3570cbca370b0}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a58347ffdbab3873820b3570cbca370b0}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&}]{ss,  }\item[{unsigned char const $\ast$}]{oamram }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a9b665fd4fef3a720ea2c859b1ebe0c63}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a9b665fd4fef3a720ea2c859b1ebe0c63}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!oam@{oam}}
+\index{oam@{oam}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{oam()}{oam()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::oam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a2a361f2224f240eef6db7147fffbdcad}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a2a361f2224f240eef6db7147fffbdcad}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!reset@{reset}}
+\index{reset@{reset}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::reset (\begin{DoxyParamCaption}\item[{unsigned char const $\ast$}]{oamram,  }\item[{bool}]{cgb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a7b4142f1bec0aa8f2e30198724628d62}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a7b4142f1bec0aa8f2e30198724628d62}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!reset\+Cycle\+Counter@{reset\+Cycle\+Counter}}
+\index{reset\+Cycle\+Counter@{reset\+Cycle\+Counter}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{reset\+Cycle\+Counter()}{resetCycleCounter()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::reset\+Cycle\+Counter (\begin{DoxyParamCaption}\item[{unsigned}]{old\+Cc,  }\item[{unsigned}]{new\+Cc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a937011ba446debb723dbb3ae98007936}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a937011ba446debb723dbb3ae98007936}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_aca75b2d751e52e1f234da3d97cb17f8f}\label{classgambatte_1_1SpriteMapper_1_1OamReader_aca75b2d751e52e1f234da3d97cb17f8f}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!set\+Large\+Sprites\+Src@{set\+Large\+Sprites\+Src}}
+\index{set\+Large\+Sprites\+Src@{set\+Large\+Sprites\+Src}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{set\+Large\+Sprites\+Src()}{setLargeSpritesSrc()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::set\+Large\+Sprites\+Src (\begin{DoxyParamCaption}\item[{bool}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a8d8e0989e0c2ae58034ed6c08be33bc9}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a8d8e0989e0c2ae58034ed6c08be33bc9}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!set\+State\+Ptrs@{set\+State\+Ptrs}}
+\index{set\+State\+Ptrs@{set\+State\+Ptrs}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{set\+State\+Ptrs()}{setStatePtrs()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::set\+State\+Ptrs (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a3080a3d42e877551ec8dde8724223053}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a3080a3d42e877551ec8dde8724223053}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!sprite\+Pos\+Buf@{sprite\+Pos\+Buf}}
+\index{sprite\+Pos\+Buf@{sprite\+Pos\+Buf}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{sprite\+Pos\+Buf()}{spritePosBuf()}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::sprite\+Pos\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_aed95204d144dd7d7f2cc885bf439991d}\label{classgambatte_1_1SpriteMapper_1_1OamReader_aed95204d144dd7d7f2cc885bf439991d}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!update@{update}}
+\index{update@{update}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::update (\begin{DoxyParamCaption}\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_acc0df0fc3ac6e5b0ec5535a764456220}\label{classgambatte_1_1SpriteMapper_1_1OamReader_acc0df0fc3ac6e5b0ec5535a764456220}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!buf\+\_\+@{buf\+\_\+}}
+\index{buf\+\_\+@{buf\+\_\+}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{buf\+\_\+}{buf\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::buf\+\_\+\mbox{[}80\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_abd5aa0b077b867e4bdf3971c34cb6bb7}\label{classgambatte_1_1SpriteMapper_1_1OamReader_abd5aa0b077b867e4bdf3971c34cb6bb7}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!cgb\+\_\+@{cgb\+\_\+}}
+\index{cgb\+\_\+@{cgb\+\_\+}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{cgb\+\_\+}{cgb\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::cgb\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a4601e1179ad370e055a57c973d999c2d}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a4601e1179ad370e055a57c973d999c2d}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!large\+Sprites\+Src\+\_\+@{large\+Sprites\+Src\+\_\+}}
+\index{large\+Sprites\+Src\+\_\+@{large\+Sprites\+Src\+\_\+}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{large\+Sprites\+Src\+\_\+}{largeSpritesSrc\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::large\+Sprites\+Src\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_ae77a7aa0390ff2bd933e712802865767}\label{classgambatte_1_1SpriteMapper_1_1OamReader_ae77a7aa0390ff2bd933e712802865767}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!last\+Change\+\_\+@{last\+Change\+\_\+}}
+\index{last\+Change\+\_\+@{last\+Change\+\_\+}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{last\+Change\+\_\+}{lastChange\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::last\+Change\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_ae5502dcd770a8dd4ce083532813ea352}\label{classgambatte_1_1SpriteMapper_1_1OamReader_ae5502dcd770a8dd4ce083532813ea352}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!lu\+\_\+@{lu\+\_\+}}
+\index{lu\+\_\+@{lu\+\_\+}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{lu\+\_\+}{lu\_}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::lu\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a907ad5bb63d28f834455285f6acd57a9}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a907ad5bb63d28f834455285f6acd57a9}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!ly\+Counter\+\_\+@{ly\+Counter\+\_\+}}
+\index{ly\+Counter\+\_\+@{ly\+Counter\+\_\+}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{ly\+Counter\+\_\+}{lyCounter\_}}
+{\footnotesize\ttfamily \hyperlink{classgambatte_1_1LyCounter}{Ly\+Counter} const\& gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::ly\+Counter\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_acaae688f585201999a41b5aade0726d3}\label{classgambatte_1_1SpriteMapper_1_1OamReader_acaae688f585201999a41b5aade0726d3}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!oamram\+\_\+@{oamram\+\_\+}}
+\index{oamram\+\_\+@{oamram\+\_\+}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{oamram\+\_\+}{oamram\_}}
+{\footnotesize\ttfamily unsigned char const$\ast$ gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::oamram\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SpriteMapper_1_1OamReader_a283726945791824e8b354e79bc8b4b2c}\label{classgambatte_1_1SpriteMapper_1_1OamReader_a283726945791824e8b354e79bc8b4b2c}} 
+\index{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}!szbuf\+\_\+@{szbuf\+\_\+}}
+\index{szbuf\+\_\+@{szbuf\+\_\+}!gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader@{gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader}}
+\subsubsection{\texorpdfstring{szbuf\+\_\+}{szbuf\_}}
+{\footnotesize\ttfamily bool gambatte\+::\+Sprite\+Mapper\+::\+Oam\+Reader\+::szbuf\+\_\+\mbox{[}40\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/video/\hyperlink{sprite__mapper_8h}{sprite\+\_\+mapper.\+h}\item 
+src/video/\hyperlink{sprite__mapper_8cpp}{sprite\+\_\+mapper.\+cpp}\end{DoxyCompactItemize}

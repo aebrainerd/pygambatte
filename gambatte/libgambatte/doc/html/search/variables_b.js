@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['m0irq_5f',['m0Irq_',['../classgambatte_1_1LCD.html#a08457da7b34a6e02809b9afaa2615d14',1,'gambatte::LCD']]],
+  ['m0lyc',['m0lyc',['../structgambatte_1_1SaveState_1_1PPU.html#a25f14433cb1ac9997c84af8fbfb51962',1,'gambatte::SaveState::PPU']]],
+  ['m1irqstatreg_5f',['m1IrqStatReg_',['../classgambatte_1_1LCD.html#a5ceaef8bb473fa797f3257caf43f55e0',1,'gambatte::LCD']]],
+  ['m2irqstatreg_5f',['m2IrqStatReg_',['../classgambatte_1_1LCD.html#a76de56d2da31e54b5debffa1139a33c8',1,'gambatte::LCD']]],
+  ['master',['master',['../structgambatte_1_1SaveState_1_1SPU.html#affe87b653ce5fc88a9cf550ad83d9437',1,'gambatte::SaveState::SPU']]],
+  ['master_5f',['master_',['../classgambatte_1_1Channel1.html#a7a64d3265bbaac73b734104371ec3207',1,'gambatte::Channel1::master_()'],['../classgambatte_1_1Channel2.html#a90a3ad5dba4a1c3630aa702dc90b3428',1,'gambatte::Channel2::master_()'],['../classgambatte_1_1Channel3.html#aa4267f127e7aaa01a8cb8fcbd25d4f21',1,'gambatte::Channel3::master_()'],['../classgambatte_1_1Channel4_1_1Lfsr.html#a93cd98bd46a36129edf01ea052358c8b',1,'gambatte::Channel4::Lfsr::master_()'],['../classgambatte_1_1Channel4.html#a25e0e535a19cce5e84f1c3a861a0bce3',1,'gambatte::Channel4::master_()'],['../classgambatte_1_1MasterDisabler.html#ae2cb1d8720294d0f32eba06d93483a06',1,'gambatte::MasterDisabler::master_()']]],
+  ['maxlabelsize_5f',['maxLabelsize_',['../classgambatte_1_1SaverList.html#a5909f25db602678444f8344826bf7628',1,'gambatte::SaverList']]],
+  ['mbc_5f',['mbc_',['../classgambatte_1_1Cartridge.html#a94785054569a9ea1df0d3c9cea074ef8',1,'gambatte::Cartridge']]],
+  ['mem',['mem',['../structgambatte_1_1SaveState.html#a9ba524e9ca950531ef016734c2fc2532',1,'gambatte::SaveState']]],
+  ['mem_5f',['mem_',['../classgambatte_1_1CPU.html#aa862b7f29fdadacb7e9c7f5bad5378dd',1,'gambatte::CPU']]],
+  ['memchunk_5f',['memchunk_',['../classgambatte_1_1MemPtrs.html#a86d5c1b44d933f28e3c2b21f8cedde41',1,'gambatte::MemPtrs']]],
+  ['memchunk_5fsize',['memchunk_size',['../classgambatte_1_1MemPtrs.html#ad79951aa7a0eaf0f85b8034caa29c565',1,'gambatte::MemPtrs']]],
+  ['memeventmin_5f',['memEventMin_',['../classgambatte_1_1LCD_1_1EventTimes.html#afe898d5fd9e0c9df4d3516703059e8cb',1,'gambatte::LCD::EventTimes']]],
+  ['memeventrequester_5f',['memEventRequester_',['../classgambatte_1_1LCD_1_1EventTimes.html#a3525ab9f34295420abdc8ca41de7829a',1,'gambatte::LCD::EventTimes']]],
+  ['memory',['memory',['../classgambatte_1_1loadsave__load.html#aaf91faa9fd5d0ce6d4ff3d4e7749ce1d',1,'gambatte::loadsave_load::memory()'],['../classgambatte_1_1loadsave__save.html#a3a7c1e5f98ab664b302f6b6b6f647e64',1,'gambatte::loadsave_save::memory()']]],
+  ['memorycartridge',['memoryCartridge',['../classgambatte_1_1Cartridge.html#a47d15c2e350647b805b299c73513451b',1,'gambatte::Cartridge']]],
+  ['memorycartridgertcbase',['memoryCartridgeRtcBase',['../classgambatte_1_1Cartridge.html#a81cec8cae288cc425bd90ff556536630',1,'gambatte::Cartridge']]],
+  ['memorycartridgesram',['memoryCartridgeSram',['../classgambatte_1_1Cartridge.html#a78010ede72a9fd7d82b4817a98df67cc',1,'gambatte::Cartridge']]],
+  ['memptrs_5f',['memptrs_',['../classgambatte_1_1Cartridge.html#ae4e6c2c7556a809cb6719f73fe256643',1,'gambatte::Cartridge::memptrs_()'],['../cartridge_8cpp.html#ab8623f95cf8a51730df6008ad2bb2773',1,'memptrs_():&#160;cartridge.cpp']]],
+  ['mininttime',['minIntTime',['../structgambatte_1_1SaveState_1_1Mem.html#aaee943320e1021ea6b45a2286076b1fc',1,'gambatte::SaveState::Mem']]],
+  ['mininttime_5f',['minIntTime_',['../classgambatte_1_1InterruptRequester.html#a2bdaa2560a52a5c12a80c470466bc8d0',1,'gambatte::InterruptRequester']]],
+  ['minvalue_5f',['minValue_',['../classMinKeeper.html#a5701ef91dc989316dfa7992c19b03ca9',1,'MinKeeper']]]
+];

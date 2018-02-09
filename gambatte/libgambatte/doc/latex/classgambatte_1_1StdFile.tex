@@ -1,0 +1,116 @@
+\hypertarget{classgambatte_1_1StdFile}{}\section{gambatte\+:\+:Std\+File Class Reference}
+\label{classgambatte_1_1StdFile}\index{gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}}
+
+
+{\ttfamily \#include $<$stdfile.\+h$>$}
+
+
+
+Inheritance diagram for gambatte\+:\+:Std\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classgambatte_1_1StdFile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gambatte\+:\+:Std\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classgambatte_1_1StdFile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1StdFile_a9a170e2cfd76c7899f42e1e5cd4854f5}{Std\+File} (char const $\ast$\hyperlink{ioapi_8h_a7a03a664b090ce5c848ecb31cb4a2fa8}{filename})
+\item 
+virtual void \hyperlink{classgambatte_1_1StdFile_aa9f4ffbac979a4bf7607992eff78f469}{rewind} ()
+\item 
+virtual std\+::size\+\_\+t \hyperlink{classgambatte_1_1StdFile_aac486706e2f657b7396757ee9f8e7352}{size} () const
+\item 
+virtual void \hyperlink{classgambatte_1_1StdFile_a8c9c0994af30457e852ee887c1f9b38c}{read} (char $\ast$buffer, std\+::size\+\_\+t amount)
+\item 
+virtual bool \hyperlink{classgambatte_1_1StdFile_aa4f8f0f2854e3b11a71cb3d3109908eb}{fail} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ifstream \hyperlink{classgambatte_1_1StdFile_a8a29b037eee32db589450ae81acdb5b9}{stream\+\_\+}
+\item 
+std\+::size\+\_\+t \hyperlink{classgambatte_1_1StdFile_a67ba9f58b97f9265a1db204638005a4d}{fsize\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1StdFile_a9a170e2cfd76c7899f42e1e5cd4854f5}\label{classgambatte_1_1StdFile_a9a170e2cfd76c7899f42e1e5cd4854f5}} 
+\index{gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}!Std\+File@{Std\+File}}
+\index{Std\+File@{Std\+File}!gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}}
+\subsubsection{\texorpdfstring{Std\+File()}{StdFile()}}
+{\footnotesize\ttfamily gambatte\+::\+Std\+File\+::\+Std\+File (\begin{DoxyParamCaption}\item[{char const $\ast$}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1StdFile_aa4f8f0f2854e3b11a71cb3d3109908eb}\label{classgambatte_1_1StdFile_aa4f8f0f2854e3b11a71cb3d3109908eb}} 
+\index{gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}!fail@{fail}}
+\index{fail@{fail}!gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}}
+\subsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily virtual bool gambatte\+::\+Std\+File\+::fail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classgambatte_1_1File_ac4e6a7055cd91176c9fb3e9215370c51}{gambatte\+::\+File}.
+
+\mbox{\Hypertarget{classgambatte_1_1StdFile_a8c9c0994af30457e852ee887c1f9b38c}\label{classgambatte_1_1StdFile_a8c9c0994af30457e852ee887c1f9b38c}} 
+\index{gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}!read@{read}}
+\index{read@{read}!gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily virtual void gambatte\+::\+Std\+File\+::read (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{std\+::size\+\_\+t}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classgambatte_1_1File_a58a6f97f55c93d15c9aa067d2a6db123}{gambatte\+::\+File}.
+
+\mbox{\Hypertarget{classgambatte_1_1StdFile_aa9f4ffbac979a4bf7607992eff78f469}\label{classgambatte_1_1StdFile_aa9f4ffbac979a4bf7607992eff78f469}} 
+\index{gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}!rewind@{rewind}}
+\index{rewind@{rewind}!gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}}
+\subsubsection{\texorpdfstring{rewind()}{rewind()}}
+{\footnotesize\ttfamily virtual void gambatte\+::\+Std\+File\+::rewind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classgambatte_1_1File_a37e873832be84757982d7a03662dfb95}{gambatte\+::\+File}.
+
+\mbox{\Hypertarget{classgambatte_1_1StdFile_aac486706e2f657b7396757ee9f8e7352}\label{classgambatte_1_1StdFile_aac486706e2f657b7396757ee9f8e7352}} 
+\index{gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}!size@{size}}
+\index{size@{size}!gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t gambatte\+::\+Std\+File\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classgambatte_1_1File_a589f615d436595eb97cbb9b9dc36632e}{gambatte\+::\+File}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1StdFile_a67ba9f58b97f9265a1db204638005a4d}\label{classgambatte_1_1StdFile_a67ba9f58b97f9265a1db204638005a4d}} 
+\index{gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}!fsize\+\_\+@{fsize\+\_\+}}
+\index{fsize\+\_\+@{fsize\+\_\+}!gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}}
+\subsubsection{\texorpdfstring{fsize\+\_\+}{fsize\_}}
+{\footnotesize\ttfamily std\+::size\+\_\+t gambatte\+::\+Std\+File\+::fsize\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1StdFile_a8a29b037eee32db589450ae81acdb5b9}\label{classgambatte_1_1StdFile_a8a29b037eee32db589450ae81acdb5b9}} 
+\index{gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}!stream\+\_\+@{stream\+\_\+}}
+\index{stream\+\_\+@{stream\+\_\+}!gambatte\+::\+Std\+File@{gambatte\+::\+Std\+File}}
+\subsubsection{\texorpdfstring{stream\+\_\+}{stream\_}}
+{\footnotesize\ttfamily std\+::ifstream gambatte\+::\+Std\+File\+::stream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/file/\hyperlink{stdfile_8h}{stdfile.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+<map id="src/sound/duty_unit.h" name="src/sound/duty_unit.h">
+<area shape="rect" id="node2" href="$channel1_8h.html" title="src/sound/channel1.h" alt="" coords="214,80,370,107"/>
+<area shape="rect" id="node12" href="$channel2_8h.html" title="src/sound/channel2.h" alt="" coords="394,80,550,107"/>
+<area shape="rect" id="node14" href="$duty__unit_8cpp.html" title="src/sound/duty_unit.cpp" alt="" coords="574,80,743,107"/>
+<area shape="rect" id="node3" href="$sound_8h.html" title="src/sound.h" alt="" coords="335,155,430,181"/>
+<area shape="rect" id="node11" href="$channel1_8cpp.html" title="src/sound/channel1.cpp" alt="" coords="140,155,311,181"/>
+<area shape="rect" id="node4" href="$memory_8h.html" title="src/memory.h" alt="" coords="208,229,315,256"/>
+<area shape="rect" id="node9" href="$memory_8cpp.html" title="src/memory.cpp" alt="" coords="354,304,475,331"/>
+<area shape="rect" id="node10" href="$sound_8cpp.html" title="src/sound.cpp" alt="" coords="420,229,529,256"/>
+<area shape="rect" id="node5" href="$cpu_8h.html" title="src/cpu.h" alt="" coords="90,304,169,331"/>
+<area shape="rect" id="node6" href="$cpu_8cpp.html" title="src/cpu.cpp" alt="" coords="5,379,99,405"/>
+<area shape="rect" id="node8" href="$interrupter_8cpp.html" title="src/interrupter.cpp" alt="" coords="193,304,329,331"/>
+<area shape="rect" id="node7" href="$gambatte_8cpp.html" title="src/gambatte.cpp" alt="" coords="123,379,253,405"/>
+<area shape="rect" id="node13" href="$channel2_8cpp.html" title="src/sound/channel2.cpp" alt="" coords="455,155,625,181"/>
+</map>

@@ -1,0 +1,171 @@
+\hypertarget{classgambatte_1_1EnvelopeUnit}{}\section{gambatte\+:\+:Envelope\+Unit Class Reference}
+\label{classgambatte_1_1EnvelopeUnit}\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+
+
+{\ttfamily \#include $<$envelope\+\_\+unit.\+h$>$}
+
+
+
+Inheritance diagram for gambatte\+:\+:Envelope\+Unit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classgambatte_1_1EnvelopeUnit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for gambatte\+:\+:Envelope\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classgambatte_1_1EnvelopeUnit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent}{Vol\+On\+Off\+Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1EnvelopeUnit_af86bedf9a96074c5ee17121e25ceb087}{Envelope\+Unit} (\hyperlink{structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent}{Vol\+On\+Off\+Event} \&vol\+On\+Off\+Event=\hyperlink{classgambatte_1_1EnvelopeUnit_a0d3bffc1ee1ab27933ad8e602f3306b8}{null\+Event\+\_\+})
+\item 
+void \hyperlink{classgambatte_1_1EnvelopeUnit_a9273d36ce1ef6e3e11a4d2bb0d3bc367}{event} ()
+\item 
+bool \hyperlink{classgambatte_1_1EnvelopeUnit_a506dc8beed37a81428113f501192e199}{dac\+Is\+On} () const
+\item 
+unsigned \hyperlink{classgambatte_1_1EnvelopeUnit_ae41f480cc569c22ab11923bca08a4acd}{get\+Volume} () const
+\item 
+bool \hyperlink{classgambatte_1_1EnvelopeUnit_ad7c7a2f2d1c323a39e15aac8f99a5101}{nr2\+Change} (unsigned new\+Nr2)
+\item 
+bool \hyperlink{classgambatte_1_1EnvelopeUnit_abf4a0224ded8cc63701e587018d52581}{nr4\+Init} (unsigned cycle\+Counter)
+\item 
+void \hyperlink{classgambatte_1_1EnvelopeUnit_a46bdeff4254f0cd99f8031c18c08de4b}{reset} ()
+\item 
+void \hyperlink{classgambatte_1_1EnvelopeUnit_ab1dba98c6654a5497d7ea6cd3bcc923a}{save\+State} (\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1Env}{Save\+State\+::\+S\+P\+U\+::\+Env} \&estate) const
+\item 
+void \hyperlink{classgambatte_1_1EnvelopeUnit_a1c9a90a54ae035d54c9c8e48848aca36}{load\+Or\+Save} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+void \hyperlink{classgambatte_1_1EnvelopeUnit_a3377c470989ee2ef9b60d9e2af1fca50}{load\+State} (\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1Env}{Save\+State\+::\+S\+P\+U\+::\+Env} const \&estate, unsigned nr2, unsigned cc)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent}{Vol\+On\+Off\+Event} \& \hyperlink{classgambatte_1_1EnvelopeUnit_af3da8f1a21e7d450e1e8433b0add7df2}{vol\+On\+Off\+Event\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1EnvelopeUnit_a952e5d76b125e13c2d70988205eabaec}{nr2\+\_\+}
+\item 
+unsigned char \hyperlink{classgambatte_1_1EnvelopeUnit_a379080f901081f2b571161961fbef627}{volume\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent}{Vol\+On\+Off\+Event} \hyperlink{classgambatte_1_1EnvelopeUnit_a0d3bffc1ee1ab27933ad8e602f3306b8}{null\+Event\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_af86bedf9a96074c5ee17121e25ceb087}\label{classgambatte_1_1EnvelopeUnit_af86bedf9a96074c5ee17121e25ceb087}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!Envelope\+Unit@{Envelope\+Unit}}
+\index{Envelope\+Unit@{Envelope\+Unit}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{Envelope\+Unit()}{EnvelopeUnit()}}
+{\footnotesize\ttfamily gambatte\+::\+Envelope\+Unit\+::\+Envelope\+Unit (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent}{Vol\+On\+Off\+Event} \&}]{vol\+On\+Off\+Event = {\ttfamily \hyperlink{classgambatte_1_1EnvelopeUnit_a0d3bffc1ee1ab27933ad8e602f3306b8}{null\+Event\+\_\+}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_a506dc8beed37a81428113f501192e199}\label{classgambatte_1_1EnvelopeUnit_a506dc8beed37a81428113f501192e199}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!dac\+Is\+On@{dac\+Is\+On}}
+\index{dac\+Is\+On@{dac\+Is\+On}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{dac\+Is\+On()}{dacIsOn()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Envelope\+Unit\+::dac\+Is\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_a9273d36ce1ef6e3e11a4d2bb0d3bc367}\label{classgambatte_1_1EnvelopeUnit_a9273d36ce1ef6e3e11a4d2bb0d3bc367}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!event@{event}}
+\index{event@{event}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{event()}{event()}}
+{\footnotesize\ttfamily void gambatte\+::\+Envelope\+Unit\+::event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classgambatte_1_1SoundUnit_a8ad6df87fc3700d9d3bee470383197b4}{gambatte\+::\+Sound\+Unit}.
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_ae41f480cc569c22ab11923bca08a4acd}\label{classgambatte_1_1EnvelopeUnit_ae41f480cc569c22ab11923bca08a4acd}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!get\+Volume@{get\+Volume}}
+\index{get\+Volume@{get\+Volume}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{get\+Volume()}{getVolume()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Envelope\+Unit\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_a1c9a90a54ae035d54c9c8e48848aca36}\label{classgambatte_1_1EnvelopeUnit_a1c9a90a54ae035d54c9c8e48848aca36}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!load\+Or\+Save@{load\+Or\+Save}}
+\index{load\+Or\+Save@{load\+Or\+Save}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{load\+Or\+Save()}{loadOrSave()}}
+{\footnotesize\ttfamily void gambatte\+::\+Envelope\+Unit\+::load\+Or\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_a3377c470989ee2ef9b60d9e2af1fca50}\label{classgambatte_1_1EnvelopeUnit_a3377c470989ee2ef9b60d9e2af1fca50}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Envelope\+Unit\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1Env}{Save\+State\+::\+S\+P\+U\+::\+Env} const \&}]{estate,  }\item[{unsigned}]{nr2,  }\item[{unsigned}]{cc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_ad7c7a2f2d1c323a39e15aac8f99a5101}\label{classgambatte_1_1EnvelopeUnit_ad7c7a2f2d1c323a39e15aac8f99a5101}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!nr2\+Change@{nr2\+Change}}
+\index{nr2\+Change@{nr2\+Change}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{nr2\+Change()}{nr2Change()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Envelope\+Unit\+::nr2\+Change (\begin{DoxyParamCaption}\item[{unsigned}]{new\+Nr2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_abf4a0224ded8cc63701e587018d52581}\label{classgambatte_1_1EnvelopeUnit_abf4a0224ded8cc63701e587018d52581}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!nr4\+Init@{nr4\+Init}}
+\index{nr4\+Init@{nr4\+Init}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{nr4\+Init()}{nr4Init()}}
+{\footnotesize\ttfamily bool gambatte\+::\+Envelope\+Unit\+::nr4\+Init (\begin{DoxyParamCaption}\item[{unsigned}]{cycle\+Counter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_a46bdeff4254f0cd99f8031c18c08de4b}\label{classgambatte_1_1EnvelopeUnit_a46bdeff4254f0cd99f8031c18c08de4b}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!reset@{reset}}
+\index{reset@{reset}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void gambatte\+::\+Envelope\+Unit\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_ab1dba98c6654a5497d7ea6cd3bcc923a}\label{classgambatte_1_1EnvelopeUnit_ab1dba98c6654a5497d7ea6cd3bcc923a}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily void gambatte\+::\+Envelope\+Unit\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState_1_1SPU_1_1Env}{Save\+State\+::\+S\+P\+U\+::\+Env} \&}]{estate }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_a952e5d76b125e13c2d70988205eabaec}\label{classgambatte_1_1EnvelopeUnit_a952e5d76b125e13c2d70988205eabaec}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!nr2\+\_\+@{nr2\+\_\+}}
+\index{nr2\+\_\+@{nr2\+\_\+}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{nr2\+\_\+}{nr2\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Envelope\+Unit\+::nr2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_a0d3bffc1ee1ab27933ad8e602f3306b8}\label{classgambatte_1_1EnvelopeUnit_a0d3bffc1ee1ab27933ad8e602f3306b8}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!null\+Event\+\_\+@{null\+Event\+\_\+}}
+\index{null\+Event\+\_\+@{null\+Event\+\_\+}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{null\+Event\+\_\+}{nullEvent\_}}
+{\footnotesize\ttfamily \hyperlink{structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent}{Envelope\+Unit\+::\+Vol\+On\+Off\+Event} gambatte\+::\+Envelope\+Unit\+::null\+Event\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_af3da8f1a21e7d450e1e8433b0add7df2}\label{classgambatte_1_1EnvelopeUnit_af3da8f1a21e7d450e1e8433b0add7df2}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!vol\+On\+Off\+Event\+\_\+@{vol\+On\+Off\+Event\+\_\+}}
+\index{vol\+On\+Off\+Event\+\_\+@{vol\+On\+Off\+Event\+\_\+}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{vol\+On\+Off\+Event\+\_\+}{volOnOffEvent\_}}
+{\footnotesize\ttfamily \hyperlink{structgambatte_1_1EnvelopeUnit_1_1VolOnOffEvent}{Vol\+On\+Off\+Event}\& gambatte\+::\+Envelope\+Unit\+::vol\+On\+Off\+Event\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classgambatte_1_1EnvelopeUnit_a379080f901081f2b571161961fbef627}\label{classgambatte_1_1EnvelopeUnit_a379080f901081f2b571161961fbef627}} 
+\index{gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}!volume\+\_\+@{volume\+\_\+}}
+\index{volume\+\_\+@{volume\+\_\+}!gambatte\+::\+Envelope\+Unit@{gambatte\+::\+Envelope\+Unit}}
+\subsubsection{\texorpdfstring{volume\+\_\+}{volume\_}}
+{\footnotesize\ttfamily unsigned char gambatte\+::\+Envelope\+Unit\+::volume\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/sound/\hyperlink{envelope__unit_8h}{envelope\+\_\+unit.\+h}\item 
+src/sound/\hyperlink{envelope__unit_8cpp}{envelope\+\_\+unit.\+cpp}\end{DoxyCompactItemize}

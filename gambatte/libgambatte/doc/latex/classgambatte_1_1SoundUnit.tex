@@ -1,0 +1,127 @@
+\hypertarget{classgambatte_1_1SoundUnit}{}\section{gambatte\+:\+:Sound\+Unit Class Reference}
+\label{classgambatte_1_1SoundUnit}\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}
+
+
+{\ttfamily \#include $<$sound\+\_\+unit.\+h$>$}
+
+
+
+Inheritance diagram for gambatte\+:\+:Sound\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgambatte_1_1SoundUnit__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classgambatte_1_1SoundUnit_a42980887d13053bdf6dfbdbece460ff8a9b3f5f9a9fb3bac559e001d5f0d3fff8}{counter\+\_\+max} = 0x80000000u, 
+\hyperlink{classgambatte_1_1SoundUnit_a42980887d13053bdf6dfbdbece460ff8a0aa17344792e01301389d1a0fbe9a159}{counter\+\_\+disabled} = 0x\+F\+F\+F\+F\+F\+F\+F\+Fu
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classgambatte_1_1SoundUnit_a4eee8be8027fbbc20a13bfe27b68f74a}{$\sim$\+Sound\+Unit} ()
+\item 
+virtual void \hyperlink{classgambatte_1_1SoundUnit_a8ad6df87fc3700d9d3bee470383197b4}{event} ()=0
+\item 
+void \hyperlink{classgambatte_1_1SoundUnit_a3f33fea3fbb7987029b74cbc64d7668f}{load\+Or\+Save2} (\hyperlink{classgambatte_1_1loadsave}{loadsave} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state})
+\item 
+virtual void \hyperlink{classgambatte_1_1SoundUnit_a3baa270f75463b24cd79fe5970103d4f}{reset\+Counters} (unsigned)
+\item 
+unsigned \hyperlink{classgambatte_1_1SoundUnit_acad13952e5b24b3bc05b9aa42c8b9249}{counter} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1SoundUnit_ab5bdb53bbf42d92d6d47db012aec1577}{Sound\+Unit} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{classgambatte_1_1SoundUnit_a06297f078dca7d403648ce3455a790be}{counter\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SoundUnit_a42980887d13053bdf6dfbdbece460ff8}\label{classgambatte_1_1SoundUnit_a42980887d13053bdf6dfbdbece460ff8}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{counter\+\_\+max@{counter\+\_\+max}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!counter\+\_\+max@{counter\+\_\+max}}}\mbox{\Hypertarget{classgambatte_1_1SoundUnit_a42980887d13053bdf6dfbdbece460ff8a9b3f5f9a9fb3bac559e001d5f0d3fff8}\label{classgambatte_1_1SoundUnit_a42980887d13053bdf6dfbdbece460ff8a9b3f5f9a9fb3bac559e001d5f0d3fff8}} 
+counter\+\_\+max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{counter\+\_\+disabled@{counter\+\_\+disabled}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!counter\+\_\+disabled@{counter\+\_\+disabled}}}\mbox{\Hypertarget{classgambatte_1_1SoundUnit_a42980887d13053bdf6dfbdbece460ff8a0aa17344792e01301389d1a0fbe9a159}\label{classgambatte_1_1SoundUnit_a42980887d13053bdf6dfbdbece460ff8a0aa17344792e01301389d1a0fbe9a159}} 
+counter\+\_\+disabled&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SoundUnit_a4eee8be8027fbbc20a13bfe27b68f74a}\label{classgambatte_1_1SoundUnit_a4eee8be8027fbbc20a13bfe27b68f74a}} 
+\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!````~Sound\+Unit@{$\sim$\+Sound\+Unit}}
+\index{````~Sound\+Unit@{$\sim$\+Sound\+Unit}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}
+\subsubsection{\texorpdfstring{$\sim$\+Sound\+Unit()}{~SoundUnit()}}
+{\footnotesize\ttfamily virtual gambatte\+::\+Sound\+Unit\+::$\sim$\+Sound\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SoundUnit_ab5bdb53bbf42d92d6d47db012aec1577}\label{classgambatte_1_1SoundUnit_ab5bdb53bbf42d92d6d47db012aec1577}} 
+\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!Sound\+Unit@{Sound\+Unit}}
+\index{Sound\+Unit@{Sound\+Unit}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}
+\subsubsection{\texorpdfstring{Sound\+Unit()}{SoundUnit()}}
+{\footnotesize\ttfamily gambatte\+::\+Sound\+Unit\+::\+Sound\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SoundUnit_acad13952e5b24b3bc05b9aa42c8b9249}\label{classgambatte_1_1SoundUnit_acad13952e5b24b3bc05b9aa42c8b9249}} 
+\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!counter@{counter}}
+\index{counter@{counter}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}
+\subsubsection{\texorpdfstring{counter()}{counter()}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Sound\+Unit\+::counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SoundUnit_a8ad6df87fc3700d9d3bee470383197b4}\label{classgambatte_1_1SoundUnit_a8ad6df87fc3700d9d3bee470383197b4}} 
+\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!event@{event}}
+\index{event@{event}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}
+\subsubsection{\texorpdfstring{event()}{event()}}
+{\footnotesize\ttfamily virtual void gambatte\+::\+Sound\+Unit\+::event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classgambatte_1_1Channel1_1_1SweepUnit_a17c182372fc3f4aaf845ab89cf20201d}{gambatte\+::\+Channel1\+::\+Sweep\+Unit}, \hyperlink{classgambatte_1_1Channel4_1_1Lfsr_a019ab6fad6c598fdc6f061b70df93fdc}{gambatte\+::\+Channel4\+::\+Lfsr}, \hyperlink{classgambatte_1_1EnvelopeUnit_a9273d36ce1ef6e3e11a4d2bb0d3bc367}{gambatte\+::\+Envelope\+Unit}, \hyperlink{classgambatte_1_1LengthCounter_ab0d3eda374d487f8a0b79ea447cca91a}{gambatte\+::\+Length\+Counter}, and \hyperlink{classgambatte_1_1DutyUnit_a2f051bb4772d30c58f2e88b85e947e61}{gambatte\+::\+Duty\+Unit}.
+
+\mbox{\Hypertarget{classgambatte_1_1SoundUnit_a3f33fea3fbb7987029b74cbc64d7668f}\label{classgambatte_1_1SoundUnit_a3f33fea3fbb7987029b74cbc64d7668f}} 
+\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!load\+Or\+Save2@{load\+Or\+Save2}}
+\index{load\+Or\+Save2@{load\+Or\+Save2}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}
+\subsubsection{\texorpdfstring{load\+Or\+Save2()}{loadOrSave2()}}
+{\footnotesize\ttfamily void gambatte\+::\+Sound\+Unit\+::load\+Or\+Save2 (\begin{DoxyParamCaption}\item[{\hyperlink{classgambatte_1_1loadsave}{loadsave} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgambatte_1_1SoundUnit_a3baa270f75463b24cd79fe5970103d4f}\label{classgambatte_1_1SoundUnit_a3baa270f75463b24cd79fe5970103d4f}} 
+\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!reset\+Counters@{reset\+Counters}}
+\index{reset\+Counters@{reset\+Counters}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}
+\subsubsection{\texorpdfstring{reset\+Counters()}{resetCounters()}}
+{\footnotesize\ttfamily virtual void gambatte\+::\+Sound\+Unit\+::reset\+Counters (\begin{DoxyParamCaption}\item[{unsigned}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classgambatte_1_1Channel4_1_1Lfsr_acdeb93a45132b45567f97878ed6306b9}{gambatte\+::\+Channel4\+::\+Lfsr}, and \hyperlink{classgambatte_1_1DutyUnit_a69b982611026639129fda42e637e7b12}{gambatte\+::\+Duty\+Unit}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgambatte_1_1SoundUnit_a06297f078dca7d403648ce3455a790be}\label{classgambatte_1_1SoundUnit_a06297f078dca7d403648ce3455a790be}} 
+\index{gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}!counter\+\_\+@{counter\+\_\+}}
+\index{counter\+\_\+@{counter\+\_\+}!gambatte\+::\+Sound\+Unit@{gambatte\+::\+Sound\+Unit}}
+\subsubsection{\texorpdfstring{counter\+\_\+}{counter\_}}
+{\footnotesize\ttfamily unsigned gambatte\+::\+Sound\+Unit\+::counter\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/sound/\hyperlink{sound__unit_8h}{sound\+\_\+unit.\+h}\end{DoxyCompactItemize}

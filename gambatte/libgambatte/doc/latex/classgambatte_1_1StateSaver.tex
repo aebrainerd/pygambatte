@@ -1,0 +1,106 @@
+\hypertarget{classgambatte_1_1StateSaver}{}\section{gambatte\+:\+:State\+Saver Class Reference}
+\label{classgambatte_1_1StateSaver}\index{gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}}
+
+
+{\ttfamily \#include $<$statesaver.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classgambatte_1_1StateSaver_ae198109f1afd0eeae59a056efb659a62a796008c573f248ed2df587a64bd2c56a}{ss\+\_\+shift} = 2
+ \}
+\item 
+enum \{ \hyperlink{classgambatte_1_1StateSaver_a7a727a444a7f39b775b6fa00a4d8b7b7a57157847503e09dbb1b5c83a7fe98ace}{ss\+\_\+div} = 1 $<$$<$ 2
+ \}
+\item 
+enum \{ \hyperlink{classgambatte_1_1StateSaver_a37f3c4400dc9ae31ee260a16dc580a63ac4459ac125ae22c280a7bb1b45b0878a}{ss\+\_\+width} = 160 $>$$>$ ss\+\_\+shift
+ \}
+\item 
+enum \{ \hyperlink{classgambatte_1_1StateSaver_a46feccb5e5ac95e30777dd3442559095a850759c51b83eb9eeb127cd21d3ca232}{ss\+\_\+height} = 144 $>$$>$ ss\+\_\+shift
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classgambatte_1_1StateSaver_abbc44cde3c1406a300656c57574453e8}{save\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}, \hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} const $\ast$video\+Buf, std\+::ptrdiff\+\_\+t pitch, std\+::string const \&\hyperlink{ioapi_8h_a7a03a664b090ce5c848ecb31cb4a2fa8}{filename})
+\item 
+static bool \hyperlink{classgambatte_1_1StateSaver_a0abf1c65ad9d738043fcc8ef819d4bef}{load\+State} (\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&\hyperlink{ppu_8cpp_a2f2eca6997ee7baf8901725ae074d45b}{state}, std\+::string const \&\hyperlink{ioapi_8h_a7a03a664b090ce5c848ecb31cb4a2fa8}{filename})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgambatte_1_1StateSaver_a90d9649f1f12948209b6b7b00567b765}{State\+Saver} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classgambatte_1_1StateSaver_ae198109f1afd0eeae59a056efb659a62}\label{classgambatte_1_1StateSaver_ae198109f1afd0eeae59a056efb659a62}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ss\+\_\+shift@{ss\+\_\+shift}!gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}}\index{gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}!ss\+\_\+shift@{ss\+\_\+shift}}}\mbox{\Hypertarget{classgambatte_1_1StateSaver_ae198109f1afd0eeae59a056efb659a62a796008c573f248ed2df587a64bd2c56a}\label{classgambatte_1_1StateSaver_ae198109f1afd0eeae59a056efb659a62a796008c573f248ed2df587a64bd2c56a}} 
+ss\+\_\+shift&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classgambatte_1_1StateSaver_a7a727a444a7f39b775b6fa00a4d8b7b7}\label{classgambatte_1_1StateSaver_a7a727a444a7f39b775b6fa00a4d8b7b7}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ss\+\_\+div@{ss\+\_\+div}!gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}}\index{gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}!ss\+\_\+div@{ss\+\_\+div}}}\mbox{\Hypertarget{classgambatte_1_1StateSaver_a7a727a444a7f39b775b6fa00a4d8b7b7a57157847503e09dbb1b5c83a7fe98ace}\label{classgambatte_1_1StateSaver_a7a727a444a7f39b775b6fa00a4d8b7b7a57157847503e09dbb1b5c83a7fe98ace}} 
+ss\+\_\+div&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classgambatte_1_1StateSaver_a37f3c4400dc9ae31ee260a16dc580a63}\label{classgambatte_1_1StateSaver_a37f3c4400dc9ae31ee260a16dc580a63}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ss\+\_\+width@{ss\+\_\+width}!gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}}\index{gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}!ss\+\_\+width@{ss\+\_\+width}}}\mbox{\Hypertarget{classgambatte_1_1StateSaver_a37f3c4400dc9ae31ee260a16dc580a63ac4459ac125ae22c280a7bb1b45b0878a}\label{classgambatte_1_1StateSaver_a37f3c4400dc9ae31ee260a16dc580a63ac4459ac125ae22c280a7bb1b45b0878a}} 
+ss\+\_\+width&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classgambatte_1_1StateSaver_a46feccb5e5ac95e30777dd3442559095}\label{classgambatte_1_1StateSaver_a46feccb5e5ac95e30777dd3442559095}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ss\+\_\+height@{ss\+\_\+height}!gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}}\index{gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}!ss\+\_\+height@{ss\+\_\+height}}}\mbox{\Hypertarget{classgambatte_1_1StateSaver_a46feccb5e5ac95e30777dd3442559095a850759c51b83eb9eeb127cd21d3ca232}\label{classgambatte_1_1StateSaver_a46feccb5e5ac95e30777dd3442559095a850759c51b83eb9eeb127cd21d3ca232}} 
+ss\+\_\+height&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgambatte_1_1StateSaver_a90d9649f1f12948209b6b7b00567b765}\label{classgambatte_1_1StateSaver_a90d9649f1f12948209b6b7b00567b765}} 
+\index{gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}!State\+Saver@{State\+Saver}}
+\index{State\+Saver@{State\+Saver}!gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}}
+\subsubsection{\texorpdfstring{State\+Saver()}{StateSaver()}}
+{\footnotesize\ttfamily gambatte\+::\+State\+Saver\+::\+State\+Saver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgambatte_1_1StateSaver_a0abf1c65ad9d738043fcc8ef819d4bef}\label{classgambatte_1_1StateSaver_a0abf1c65ad9d738043fcc8ef819d4bef}} 
+\index{gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}!load\+State@{load\+State}}
+\index{load\+State@{load\+State}!gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}}
+\subsubsection{\texorpdfstring{load\+State()}{loadState()}}
+{\footnotesize\ttfamily bool gambatte\+::\+State\+Saver\+::load\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} \&}]{state,  }\item[{std\+::string const \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classgambatte_1_1StateSaver_abbc44cde3c1406a300656c57574453e8}\label{classgambatte_1_1StateSaver_abbc44cde3c1406a300656c57574453e8}} 
+\index{gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!gambatte\+::\+State\+Saver@{gambatte\+::\+State\+Saver}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily bool gambatte\+::\+State\+Saver\+::save\+State (\begin{DoxyParamCaption}\item[{\hyperlink{structgambatte_1_1SaveState}{Save\+State} const \&}]{state,  }\item[{\hyperlink{namespacegambatte_a0639f09fccfbbd5a8e0796318768e370}{uint\+\_\+least32\+\_\+t} const $\ast$}]{video\+Buf,  }\item[{std\+::ptrdiff\+\_\+t}]{pitch,  }\item[{std\+::string const \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{statesaver_8h}{statesaver.\+h}\item 
+src/\hyperlink{statesaver_8cpp}{statesaver.\+cpp}\end{DoxyCompactItemize}

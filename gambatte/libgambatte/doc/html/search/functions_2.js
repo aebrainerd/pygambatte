@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['calcfreq',['calcFreq',['../classgambatte_1_1Channel1_1_1SweepUnit.html#ad5b8441b3bc35077ace9f661f4128a4d',1,'gambatte::Channel1::SweepUnit']]],
+  ['call',['call',['../classMinKeeper_1_1UpdateValueLut.html#ab8897ae5eca6cab87607eea12e90f3c5',1,'MinKeeper::UpdateValueLut']]],
+  ['cartridge',['Cartridge',['../classgambatte_1_1Cartridge.html#a02a7810564cf878e8a669b36818f760b',1,'gambatte::Cartridge']]],
+  ['cgb',['cgb',['../classgambatte_1_1PPU.html#a2753f1ba5217fe22bc0d518b63784825',1,'gambatte::PPU']]],
+  ['cgbbgcolorchange',['cgbBgColorChange',['../classgambatte_1_1LCD.html#a27150bfc8eab3ebf11dbba1282732517',1,'gambatte::LCD']]],
+  ['cgbbgcolorread',['cgbBgColorRead',['../classgambatte_1_1LCD.html#ae59d87cfa4dbe74cb59678fc2ebe2cc6',1,'gambatte::LCD']]],
+  ['cgbpaccessible',['cgbpAccessible',['../classgambatte_1_1LCD.html#a7cea49c5aa2b2c1bec6e512900d20874',1,'gambatte::LCD']]],
+  ['cgbspcolorchange',['cgbSpColorChange',['../classgambatte_1_1LCD.html#ac8f3835b4821fbb87c35e2dd2d3b7498',1,'gambatte::LCD']]],
+  ['cgbspcolorread',['cgbSpColorRead',['../classgambatte_1_1LCD.html#a2fee3de77d90fa6d4316583385d4ee58',1,'gambatte::LCD']]],
+  ['ch3masterdisabler',['Ch3MasterDisabler',['../classgambatte_1_1Channel3_1_1Ch3MasterDisabler.html#a315e8dbc0510e40c248b922c16143196',1,'gambatte::Channel3::Ch3MasterDisabler']]],
+  ['ch4masterdisabler',['Ch4MasterDisabler',['../classgambatte_1_1Channel4_1_1Ch4MasterDisabler.html#a53fe34a1bce0596c36dc917b4e967116',1,'gambatte::Channel4::Ch4MasterDisabler']]],
+  ['change',['change',['../classgambatte_1_1SpriteMapper_1_1OamReader.html#a94194013dbb68d7b9fee10f999f80bfe',1,'gambatte::SpriteMapper::OamReader::change(unsigned cc)'],['../classgambatte_1_1SpriteMapper_1_1OamReader.html#a47d768d577cc3f3a0c4c28224242f487',1,'gambatte::SpriteMapper::OamReader::change(unsigned char const *oamram, unsigned cc)']]],
+  ['changed',['changed',['../classgambatte_1_1SpriteMapper_1_1OamReader.html#a5b23ae57f747ce78786621a118695359',1,'gambatte::SpriteMapper::OamReader']]],
+  ['channel1',['Channel1',['../classgambatte_1_1Channel1.html#af9772f188a3ea499d5ba9d39dbea0545',1,'gambatte::Channel1']]],
+  ['channel2',['Channel2',['../classgambatte_1_1Channel2.html#a9439edf10073a5eac15556cd503d0182',1,'gambatte::Channel2']]],
+  ['channel3',['Channel3',['../classgambatte_1_1Channel3.html#a9c7d0995ebc9f8d6ff78e97136723588',1,'gambatte::Channel3']]],
+  ['channel4',['Channel4',['../classgambatte_1_1Channel4.html#a54ef50ebeae47194401f0ef3b9a42779',1,'gambatte::Channel4']]],
+  ['clearmap',['clearMap',['../classgambatte_1_1SpriteMapper.html#a65e513f3c368d2ba0dac2a9625edc57a',1,'gambatte::SpriteMapper']]],
+  ['clearmemorysaveddata',['clearMemorySavedData',['../classgambatte_1_1Cartridge.html#a14b11de7681f428ffd03178998e76506',1,'gambatte::Cartridge']]],
+  ['counter',['counter',['../classgambatte_1_1SoundUnit.html#acad13952e5b24b3bc05b9aa42c8b9249',1,'gambatte::SoundUnit']]],
+  ['cpu',['CPU',['../classgambatte_1_1CPU.html#ad2f22383ec6a786778ceb7f834871714',1,'gambatte::CPU']]],
+  ['currentstate',['currentState',['../classgambatte_1_1GB.html#a48d11dcf693f45ab861f640d8fa96dc9',1,'gambatte::GB']]],
+  ['cyclessinceblit',['cyclesSinceBlit',['../classgambatte_1_1Memory.html#a8cdf9d89d7c6fd3acba8ba0e83b09044',1,'gambatte::Memory']]]
+];

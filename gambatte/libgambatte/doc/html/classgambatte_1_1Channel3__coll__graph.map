@@ -1,0 +1,6 @@
+<map id="gambatte::Channel3" name="gambatte::Channel3">
+<area shape="rect" id="node2" href="$classgambatte_1_1Channel3_1_1Ch3MasterDisabler.html" title="gambatte::Channel3\l::Ch3MasterDisabler" alt="" coords="21,95,171,136"/>
+<area shape="rect" id="node3" href="$classgambatte_1_1MasterDisabler.html" title="gambatte::MasterDisabler" alt="" coords="5,5,187,32"/>
+<area shape="rect" id="node4" href="$classgambatte_1_1LengthCounter.html" title="gambatte::LengthCounter" alt="" coords="195,102,375,129"/>
+<area shape="rect" id="node5" href="$classgambatte_1_1SoundUnit.html" title="gambatte::SoundUnit" alt="" coords="211,5,362,32"/>
+</map>

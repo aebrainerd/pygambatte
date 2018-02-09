@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['oamdmapos',['oamDmaPos',['../structgambatte_1_1SaveState_1_1Mem.html#ad812f46789a25f4e39ae31dd0cdc1236',1,'gambatte::SaveState::Mem']]],
+  ['oamdmapos_5f',['oamDmaPos_',['../classgambatte_1_1Memory.html#a954f692f5ae3d0002e377d059a206403',1,'gambatte::Memory']]],
+  ['oamdmasrc_5f',['oamDmaSrc_',['../classgambatte_1_1MemPtrs.html#ac824bf1a5a30192fa6828e7f2d2ab8b5',1,'gambatte::MemPtrs']]],
+  ['oampos',['oampos',['../structgambatte_1_1PPUPriv_1_1Sprite.html#ac20457cc822cd213068bc2264fccf2d0',1,'gambatte::PPUPriv::Sprite']]],
+  ['oamram_5f',['oamram_',['../classgambatte_1_1SpriteMapper_1_1OamReader.html#acaae688f585201999a41b5aade0726d3',1,'gambatte::SpriteMapper::OamReader']]],
+  ['oamreader_5f',['oamReader_',['../classgambatte_1_1SpriteMapper.html#a66612bed9813c478ed12879b6c8afd4a',1,'gambatte::SpriteMapper']]],
+  ['oamreaderbuf',['oamReaderBuf',['../structgambatte_1_1SaveState_1_1PPU.html#a07a06820413808bfc11ebb06d1ef2052',1,'gambatte::SaveState::PPU']]],
+  ['oamreaderszbuf',['oamReaderSzbuf',['../structgambatte_1_1SaveState_1_1PPU.html#a1f41bd53d646bd6c5ed0bae3169c28fb',1,'gambatte::SaveState::PPU']]],
+  ['objpdata',['objpData',['../structgambatte_1_1SaveState_1_1PPU.html#accaae5e4c05b6af8897b50767084d99c',1,'gambatte::SaveState::PPU']]],
+  ['objpdata_5f',['objpData_',['../classgambatte_1_1LCD.html#aa54d4e84e493df961b5e481bdc608d74',1,'gambatte::LCD']]],
+  ['offset_5fcentral_5fdir',['offset_central_dir',['../structunz__s.html#ac6c37ef70549769fa59bca623565d78f',1,'unz_s']]],
+  ['offset_5fcurfile',['offset_curfile',['../structunz__file__info__internal__s.html#a23d3a1c3584888bdf066d7bfed95f62e',1,'unz_file_info_internal_s']]],
+  ['offset_5flocal_5fextrafield',['offset_local_extrafield',['../structfile__in__zip__read__info__s.html#a8e3a240c367e7d6d199859b1b311128c',1,'file_in_zip_read_info_s']]],
+  ['oldwy',['oldWy',['../structgambatte_1_1SaveState_1_1PPU.html#a46bc471457cfdef2e53a362fb9929bf5',1,'gambatte::SaveState::PPU']]],
+  ['opacity_5f',['opacity_',['../classgambatte_1_1OsdElement.html#a8e0c08fc4f238f49f1be0ab1e1c8c3ae',1,'gambatte::OsdElement']]],
+  ['opaque',['opaque',['../structzlib_1_1zlib__filefunc__def__s.html#a7939d028329be9b332d7f6f9da9165f6',1,'zlib::zlib_filefunc_def_s::opaque()'],['../structzlib__filefunc__def__s.html#a494b6d634b61bdc7fc7caed8e4fbe3f4',1,'zlib_filefunc_def_s::opaque()']]],
+  ['osdelement_5f',['osdElement_',['../classgambatte_1_1LCD.html#ad599f47c700666bb90eb82de65ddf001',1,'gambatte::LCD']]]
+];

@@ -1,0 +1,12424 @@
+# code for _ZN8gambatte2GB18setDmgPa
+b *0x0000000000021760
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpenCurrentFilePasswor
+b *0x0000000000044a50
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGoToNextFile
+b *0x0000000000043940
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4TimaC1Ev
+b *0x0000000000030710
+commands
+silent
+bt 1
+c
+end
+
+# code for unzReadCurrentFile
+b *0x0000000000043d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD14cgbpAcc
+b *0x0000000000033280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9loadStat
+b *0x0000000000031130
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB14preload_
+b *0x00000000000216a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046140
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory5write
+b *0x00000000000205d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit11ki
+b *0x000000000003c030
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD10enableH
+b *0x0000000000032f90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024960
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PakInfoC1Ebj
+b *0x00000000000389d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte10StateSaver9
+b *0x000000000002fe10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG5resetEv
+b *0x00000000000281a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel36upd
+b *0x000000000003b080
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel1C2Ev
+b *0x0000000000039c30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory11star
+b *0x0000000000025730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel417Ch
+b *0x0000000000022870
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c590
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x000000000001fe00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000047a20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc10loadOrS
+b *0x0000000000039340
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10set_cpur
+b *0x0000000000022090
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000046000
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorISt4pairIPcmE
+b *0x000000000004af90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000046f90
+commands
+silent
+bt 1
+c
+end
+
+# code for _init
+b *0x00000000000113f8
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b490
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD15refresh
+b *0x0000000000030d80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12setGameG
+b *0x0000000000021e70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD14vramAcc
+b *0x00000000000331f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10setSaveD
+b *0x00000000000214f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10getWorkR
+b *0x0000000000021eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045dc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq9regCh
+b *0x000000000003c6e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD12lycRegC
+b *0x0000000000034810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317Ch
+b *0x0000000000022810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18DutyMasterD
+b *0x0000000000022820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB14setInput
+b *0x00000000000214e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10g
+b *0x0000000000036960
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD10loadOrS
+b *0x0000000000034c20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPUC2EPPFlvE
+b *0x0000000000013780
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PakInfoC2Ebj
+b *0x00000000000389d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9CartridgeC1E
+b *0x0000000000036980
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10s
+b *0x0000000000036070
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10l
+b *0x0000000000037920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b2c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000047dc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte22newSaveStat
+b *0x0000000000028c70
+commands
+silent
+bt 1
+c
+end
+
+# code for fill_fopen_filefunc
+b *0x0000000000044cd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel46set
+b *0x000000000003b690
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26set
+b *0x000000000003a650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel36set
+b *0x000000000003ad10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039dd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory9loadS
+b *0x00000000000253a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG11setSoVo
+b *0x0000000000028400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory18setD
+b *0x0000000000027fd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory11upda
+b *0x00000000000252e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4TimaC2Ev
+b *0x0000000000030710
+commands
+silent
+bt 1
+c
+end
+
+# code for fread_file_func
+b *0x0000000000044c00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000049cb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000046500
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000481e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003bd40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory18nont
+b *0x0000000000025990
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000490d0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpen2
+b *0x0000000000043560
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000047fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000048a40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB8bus_readE
+b *0x00000000000221b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000485f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12setGameS
+b *0x0000000000021e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel417Ch
+b *0x0000000000022800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c580
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c520
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000048820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000483e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrsD1Ev
+b *0x0000000000038380
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG12setStat
+b *0x00000000000281d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD11oamWrit
+b *0x00000000000334a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFile4read
+b *0x0000000000042b50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x00000000000200a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000048ea0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10getRtcBa
+b *0x0000000000021ea0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045da0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7StdFile4siz
+b *0x0000000000042b20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000048c70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel35set
+b *0x000000000003adb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory7loadR
+b *0x0000000000027f70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU10loadOrS
+b *0x00000000000139f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge14a
+b *0x0000000000037a30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9nr1
+b *0x000000000003bec0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c1a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039ac0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrsC1Ev
+b *0x00000000000382c0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpenCurrentFile2
+b *0x0000000000044a60
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpenCurrentFile3
+b *0x0000000000044350
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU7setLcdcE
+b *0x0000000000040cf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNKSt5ctypeIcE8do_widenE
+b *0x00000000000227f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory7loadR
+b *0x0000000000027f30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD18setDmgP
+b *0x0000000000034bf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10getSaveR
+b *0x0000000000021ed0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel2C1Ev
+b *0x000000000003a4f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq10resc
+b *0x000000000003c8e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041f30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG10fillBuf
+b *0x0000000000028330
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel49loa
+b *0x000000000003b800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12EnvelopeUn
+b *0x000000000003c1e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel28set
+b *0x000000000003a4d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU5resetEPK
+b *0x0000000000040b00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit5res
+b *0x000000000003bf60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPUC1EPPFlvE
+b *0x0000000000013780
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpen
+b *0x0000000000043930
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003bd30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7PakInfo3mbc
+b *0x0000000000038a40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004a860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x00000000000459a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045ad0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG15generat
+b *0x00000000000282c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel417Ch
+b *0x0000000000022800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc9loadStat
+b *0x00000000000392e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c580
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PPUPriv10loa
+b *0x0000000000040ea0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b290
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU9loadStat
+b *0x00000000000402d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9Cartridge12
+b *0x0000000000035ef0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000044d50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs21dis
+b *0x00000000000383a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045180
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GBD1Ev
+b *0x0000000000021230
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x00000000000456b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit7set
+b *0x000000000003be20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel18set
+b *0x0000000000039bf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte9C
+b *0x00000000000381c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrsD2Ev
+b *0x0000000000038380
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c210
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x000000000003a4c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000044d30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD18doCgbSp
+b *0x0000000000033370
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045da0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000044e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitD0Ev
+b *0x000000000003c100
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounter7do
+b *0x000000000003c5a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045570
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GBC1Ev
+b *0x00000000000211d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte18InterruptR
+b *0x0000000000024600
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel45res
+b *0x000000000003b750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq9loadS
+b *0x000000000003c8a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x00000000000452d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022890
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrsC2Ev
+b *0x00000000000382c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel15set
+b *0x0000000000039e60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041cc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit13re
+b *0x000000000003c040
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023d50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD18setDmgP
+b *0x0000000000034be0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b4b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel2C2Ev
+b *0x000000000003a4f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b3f0
+commands
+silent
+bt 1
+c
+end
+
+# code for fclose_file_func
+b *0x0000000000044cb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge20c
+b *0x0000000000037150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD10lcdcCha
+b *0x0000000000033920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFileD0Ev
+b *0x0000000000042c00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003bd30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory10upda
+b *0x0000000000025070
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG9saveStat
+b *0x00000000000281e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3Rtc9saveSta
+b *0x0000000000039280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit5eve
+b *0x000000000003bd50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCDC1EPKhS2_
+b *0x0000000000030e80
+commands
+silent
+bt 1
+c
+end
+
+# code for ferror_file_func
+b *0x0000000000044cc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte4Tima9saveSt
+b *0x0000000000030730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9loadState
+b *0x00000000000218b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c1f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc4setSEj
+b *0x0000000000038f10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b290
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046130
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU7resetCcE
+b *0x0000000000040b20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GBD2Ev
+b *0x0000000000021230
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc4setHEj
+b *0x0000000000038df0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PPUPrivC2ERN
+b *0x000000000003ffc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004a150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000049f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi8EE11upda
+b *0x000000000001ff00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory12setS
+b *0x0000000000024e30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7StdFile4fai
+b *0x0000000000042b30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x000000000003a4b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima7setTima
+b *0x0000000000030950
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x00000000000399f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046180
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory10setE
+b *0x0000000000024e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU9loadStat
+b *0x0000000000013950
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7PakInfo8ram
+b *0x0000000000038d60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima6setTmaE
+b *0x00000000000309f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317up
+b *0x000000000003af40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitD1Ev
+b *0x000000000003c0f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GBC2Ev
+b *0x00000000000211d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x00000000000227a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c1d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3LCD9saveSta
+b *0x0000000000030d20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD19m0TimeO
+b *0x0000000000032d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022850
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCDC2EPKhS2_
+b *0x0000000000030e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory12upda
+b *0x0000000000025790
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte14MasterDisab
+b *0x0000000000022760
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte6LycIrq9save
+b *0x000000000003c8d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9loadState
+b *0x0000000000021770
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitC1Ev
+b *0x000000000003bd80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26upd
+b *0x000000000003a840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel25res
+b *0x000000000003a700
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x000000000001fe60
+commands
+silent
+bt 1
+c
+end
+
+# code for unzStringFileNameCompare
+b *0x0000000000043430
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFileD1Ev
+b *0x0000000000042b60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU11speedCh
+b *0x0000000000040bc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x00000000000421d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima10doIrqE
+b *0x0000000000030890
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs5rese
+b *0x00000000000385f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000497c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046190
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFile6rewi
+b *0x0000000000042b40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU12setStat
+b *0x0000000000013850
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000248e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB12current
+b *0x0000000000021d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6MemoryC2ERKN
+b *0x0000000000024bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PPUPrivC1ERN
+b *0x000000000003ffc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12set_emuf
+b *0x0000000000022480
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022970
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounterC1E
+b *0x000000000003c670
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003bcd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc5setDhEj
+b *0x0000000000038f80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x000000000003a4b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041ce0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB22print_in
+b *0x0000000000022490
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG5mapSoEj
+b *0x0000000000028420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel3C1Ev
+b *0x000000000003ac40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000042040
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel110lo
+b *0x000000000003a1b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitD2Ev
+b *0x000000000003c0f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004aad0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima9loadSta
+b *0x0000000000030740
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi8EE11upda
+b *0x000000000001ffa0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022850
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB5resetEv
+b *0x00000000000213a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046170
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD11disable
+b *0x0000000000033110
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte15newFileInst
+b *0x0000000000042ae0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12saveSave
+b *0x0000000000021670
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetLocalExtrafield
+b *0x0000000000044190
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitC2Ev
+b *0x000000000003bd80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c110
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c270
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024620
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory16nont
+b *0x0000000000027280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte15newFileInst
+b *0x00000000000425f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory12upda
+b *0x0000000000024f70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9sav
+b *0x000000000003bf90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFileD2Ev
+b *0x0000000000042b60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge9lo
+b *0x0000000000035eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel210lo
+b *0x000000000003a9e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6MemoryC1ERKN
+b *0x0000000000024bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit7set
+b *0x000000000003be90
+commands
+silent
+bt 1
+c
+end
+
+# code for ftell_file_func
+b *0x0000000000044c40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c390
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b460
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039b70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x000000000001fff0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b440
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44ini
+b *0x000000000003b790
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte10StateSaver9
+b *0x00000000000302d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045bf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounterC2E
+b *0x000000000003c670
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSGC1Ev
+b *0x00000000000280e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs12set
+b *0x0000000000038730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel3C2Ev
+b *0x000000000003ac40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory5event
+b *0x0000000000027660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041ed0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12SpriteMapp
+b *0x0000000000042120
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PakInfoC1Ev
+b *0x00000000000389b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000461a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit10se
+b *0x000000000003be50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN10bitmapfont5printEPjl
+b *0x0000000000013650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7PakInfo16he
+b *0x0000000000038a30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorISt4pairIPcmE
+b *0x000000000004b0b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU6updateEj
+b *0x0000000000040e40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel312se
+b *0x000000000003ae00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8loadsaveD0Ev
+b *0x0000000000045e70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024850
+commands
+silent
+bt 1
+c
+end
+
+# code for unzSetOffset
+b *0x0000000000044b50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory9saveS
+b *0x0000000000025c50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10get_cpur
+b *0x0000000000021f60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9bus_write
+b *0x00000000000221d0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetGlobalInfo
+b *0x00000000000434b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9saveState
+b *0x00000000000219e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG4initEb
+b *0x0000000000028150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel48set
+b *0x000000000003b520
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7PakInfo8rom
+b *0x0000000000038d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB15set_wall
+b *0x0000000000021f20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9loa
+b *0x000000000003bfd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB5isCgbEv
+b *0x0000000000021650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022930
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte9C
+b *0x00000000000381c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge12s
+b *0x0000000000037d00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045e90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD13setDmgP
+b *0x0000000000030ca0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041c40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN10bitmapfont4utoaEjPc
+b *0x0000000000013700
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9loadState
+b *0x0000000000022700
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3PPU9saveSta
+b *0x0000000000040160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039b00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte8Channel39sa
+b *0x000000000003ae20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000248a0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetCurrentFileInfo
+b *0x00000000000434d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs10set
+b *0x00000000000384e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18DutyMasterD
+b *0x0000000000022920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317Ch
+b *0x00000000000227b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039a60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9LyCounter13
+b *0x000000000003c5c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSGC2Ev
+b *0x00000000000280e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x00000000000399f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel25set
+b *0x000000000003a6e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19loa
+b *0x0000000000039f50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory4readE
+b *0x0000000000020100
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte13LengthCoun
+b *0x000000000003c510
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD6updateEj
+b *0x0000000000031ae0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB15postload
+b *0x0000000000021500
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PakInfoC2Ev
+b *0x00000000000389b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SaverListD1E
+b *0x00000000000306f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory15oamD
+b *0x0000000000025340
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel34ini
+b *0x000000000003ade0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c320
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000246a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima4timaEj
+b *0x0000000000030870
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8loadsaveD1Ev
+b *0x0000000000045d90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB16set_debu
+b *0x00000000000221a0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzClose
+b *0x0000000000044310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SaverListC1E
+b *0x000000000002ba30
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGoToFirstFile
+b *0x0000000000043500
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000044fc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN10bitmapfont8getWidthE
+b *0x0000000000013610
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte14MasterDisab
+b *0x0000000000022860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9Cartridge7p
+b *0x0000000000036840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004a5f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004a3a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge12l
+b *0x0000000000036110
+commands
+silent
+bt 1
+c
+end
+
+# code for unzCloseCurrentFile
+b *0x0000000000044260
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte8Channel19Sw
+b *0x0000000000039b80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel4C1Ev
+b *0x000000000003b540
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x0000000000022880
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge11g
+b *0x0000000000036920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c3d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000468a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB8getIoRamE
+b *0x0000000000021ef0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD27lycRegC
+b *0x0000000000032dc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9saveState
+b *0x0000000000022640
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel49sav
+b *0x000000000003b7a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge12s
+b *0x0000000000036a50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB11selectSt
+b *0x0000000000021c40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16upd
+b *0x000000000003a000
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetGlobalComment
+b *0x0000000000044a70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel35res
+b *0x000000000003adc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000042060
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrqC1Ev
+b *0x000000000003c6c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel46upd
+b *0x000000000003b880
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima10update
+b *0x00000000000307c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SaverListD2E
+b *0x00000000000306f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte23newStateSav
+b *0x0000000000028bf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel45set
+b *0x000000000003b730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9upd
+b *0x000000000003bdc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9oamChang
+b *0x0000000000033710
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB11getVideo
+b *0x0000000000021f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000244f0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetFilePos
+b *0x0000000000043cd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c540
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8loadsaveD2Ev
+b *0x0000000000045d90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorISt4pairIPcmE
+b *0x000000000004af90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9Cartridge9s
+b *0x0000000000035e70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima7resetCc
+b *0x00000000000308e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045e50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10g
+b *0x0000000000036940
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039d00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel36set
+b *0x000000000003acc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9to_stringB5c
+b *0x0000000000024a20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs11set
+b *0x00000000000385b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SaverListC2E
+b *0x000000000002ba30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB7versionB5
+b *0x0000000000021f30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD11oamRead
+b *0x00000000000333d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x00000000000228d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel417Ch
+b *0x00000000000227d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000047310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte6G
+b *0x0000000000024280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounter5re
+b *0x000000000003c610
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG18accumul
+b *0x0000000000028230
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte14MasterDisab
+b *0x0000000000022750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel310lo
+b *0x000000000003afa0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel24ini
+b *0x000000000003a730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte10NextM0Time1
+b *0x000000000003c970
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU7processE
+b *0x0000000000013ae0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB4loadERKNS
+b *0x00000000000216b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041cc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel4C2Ev
+b *0x000000000003b540
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x0000000000022790
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD11speedCh
+b *0x0000000000032800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD17mode3Cy
+b *0x00000000000318b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit10lo
+b *0x000000000003c080
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq7doEve
+b *0x000000000003c7f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c390
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi8EE11upda
+b *0x000000000001ff50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc4setMEj
+b *0x0000000000038e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c1a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc5setDlEj
+b *0x0000000000038d80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounter14s
+b *0x000000000003c650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory9endOa
+b *0x0000000000025750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrqC2Ev
+b *0x000000000003c6c0
+commands
+silent
+bt 1
+c
+end
+
+# code for fseek_file_func
+b *0x0000000000044c50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel410lo
+b *0x000000000003ba30
+commands
+silent
+bt 1
+c
+end
+
+# code for unztell
+b *0x0000000000044130
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039a20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG12resetCo
+b *0x0000000000028300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge7lo
+b *0x00000000000377e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs10loa
+b *0x00000000000387d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel15res
+b *0x0000000000039e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima6setTacE
+b *0x0000000000030a50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000244f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG10loadOrS
+b *0x0000000000028570
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9saveState
+b *0x0000000000021b10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte9C
+b *0x0000000000038080
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045de0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima10loadOr
+b *0x0000000000030b70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel46set
+b *0x000000000003b600
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs11set
+b *0x00000000000384b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26set
+b *0x000000000003a5a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039d20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte6G
+b *0x0000000000024370
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte6Memory12oam
+b *0x0000000000025660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b4e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel29sav
+b *0x000000000003a740
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD12updateS
+b *0x0000000000032420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory19nont
+b *0x0000000000026300
+commands
+silent
+bt 1
+c
+end
+
+# code for fopen_file_func
+b *0x0000000000044bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024950
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x00000000000241a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022830
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU9saveStat
+b *0x0000000000013860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte14MasterDisab
+b *0x0000000000022750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9scxChang
+b *0x00000000000336a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9scyChang
+b *0x00000000000336e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory15nont
+b *0x0000000000025d30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD8wxChange
+b *0x0000000000033560
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD8wyChange
+b *0x0000000000033590
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10g
+b *0x0000000000036900
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x0000000000022790
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9oamChang
+b *0x0000000000033810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory13upda
+b *0x0000000000025020
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045e90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD13lcdstat
+b *0x00000000000341a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9LyCounter14
+b *0x000000000003c5e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD7resetCcE
+b *0x00000000000326e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3PSG9getStat
+b *0x0000000000028540
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3RtcC2EPPFlvE
+b *0x0000000000039030
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorISt4pairIPcmE
+b *0x000000000004b0b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10setRtcBa
+b *0x0000000000021e90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel29loa
+b *0x000000000003a7a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046120
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel14ini
+b *0x0000000000039ec0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc7doLatchE
+b *0x0000000000039080
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi8EE11upda
+b *0x0000000000020050
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte24newStateLoa
+b *0x0000000000028b60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc12doSwapA
+b *0x00000000000391a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge12s
+b *0x0000000000035e20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x00000000000228c0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpenCurrentFile
+b *0x0000000000044a40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19sav
+b *0x0000000000039ed0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3PPU21predic
+b *0x0000000000040cb0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzLocateFile
+b *0x00000000000439e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18DutyMasterD
+b *0x00000000000228b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit13re
+b *0x000000000003bdf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317Ch
+b *0x00000000000228a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c360
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045de0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel36set
+b *0x000000000003acf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB7pakInfoE
+b *0x0000000000021e40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039d60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel46set
+b *0x000000000003b630
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26set
+b *0x000000000003a5e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq8lcdRe
+b *0x000000000003c960
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGoToFilePos
+b *0x0000000000043d10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU6runForEj
+b *0x000000000001fd80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000044d40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB17get_cycl
+b *0x0000000000022570
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022830
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory10load
+b *0x0000000000027fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel39loa
+b *0x000000000003ae90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041fa0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD7getStatE
+b *0x0000000000034a80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000247c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c2c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory15fill
+b *0x0000000000027fb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x000000000001fec0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi2EE11upda
+b *0x000000000001fde0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x00000000000228e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB4loadEPKhm
+b *0x0000000000021700
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte6G
+b *0x0000000000024280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000492d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000249c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9nr3
+b *0x000000000003bef0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory11post
+b *0x0000000000027e60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9nr4
+b *0x000000000003bf10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD5resetEPK
+b *0x0000000000030e50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB8romTitle
+b *0x0000000000021d80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel1C1Ev
+b *0x0000000000039c30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge7lo
+b *0x0000000000037860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9CartridgeC2E
+b *0x0000000000036980
+commands
+silent
+bt 1
+c
+end
+
+# code for unzeof
+b *0x0000000000044160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12setInitStat
+b *0x00000000000229b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD18doCgbBg
+b *0x0000000000033310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory14decE
+b *0x00000000000252a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c500
+commands
+silent
+bt 1
+c
+end
+
+# code for _fini
+b *0x000000000004b0e8
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SoundUnit13r
+b *0x0000000000022770
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9saveState
+b *0x0000000000022580
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge7lo
+b *0x0000000000037180
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte19numRambanks
+b *0x0000000000038980
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs10set
+b *0x0000000000038510
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000046c30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory13rese
+b *0x0000000000025860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317Ch
+b *0x0000000000022810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18DutyMasterD
+b *0x0000000000022820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB6runForEPj
+b *0x0000000000021310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG9loadStat
+b *0x00000000000284b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIhSaIhEE17_M_
+b *0x0000000000037f40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB8isLoaded
+b *0x0000000000021660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004ad30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000476a0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetOffset
+b *0x0000000000044b10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3RtcC1EPPFlvE
+b *0x0000000000039030
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD12setStat
+b *0x0000000000030ce0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory4stopE
+b *0x00000000000250a0
+commands
+silent
+bt 1
+c
+end
+
+# code for fwrite_file_func
+b *0x0000000000044c20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039db0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26set
+b *0x000000000003a630
+commands
+silent
+bt 1
+c
+end
+
+# code for deregister_tm_clones
+b *0x0000000000013510
+commands
+silent
+bt 1
+c
+end
+
+# code for register_tm_clones
+b *0x0000000000013550
+commands
+silent
+bt 1
+c
+end
+
+# code for __do_global_dtors_aux
+b *0x00000000000135a0
+commands
+silent
+bt 1
+c
+end
+
+# code for frame_dummy
+b *0x00000000000135e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_cpu.cpp
+b *0x0000000000012f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_116defaul
+b *0x0000000000020880
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt7__cxx1112basic_stri
+b *0x0000000000020890
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt7__cxx1112basic_stri
+b *0x0000000000020890
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZL9statePathRKNSt7__cxx1
+b *0x0000000000020940
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12saveSave
+b *0x0000000000021670
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_gambatte.c
+b *0x0000000000012fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_interrupte
+b *0x00000000000130c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_interruptr
+b *0x00000000000131a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_memory.cpp
+b *0x0000000000013220
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119Shaded
+b *0x0000000000028610
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119SaveSt
+b *0x0000000000028630
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119SaveSt
+b *0x0000000000028650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119SaveSt
+b *0x0000000000028650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119SaveSt
+b *0x0000000000028660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119Shaded
+b *0x0000000000028670
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119Shaded
+b *0x0000000000028670
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119Shaded
+b *0x00000000000286a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119Shaded
+b *0x00000000000286d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119Shaded
+b *0x00000000000286d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119SaveSt
+b *0x0000000000028880
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_119SaveSt
+b *0x0000000000028880
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_state_osd_
+b *0x0000000000013300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L11addPx
+b *0x0000000000028cd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L5get24E
+b *0x0000000000028d30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028db0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028df0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028e30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028e70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028ef0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028f30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028f70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028fb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000028fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029010
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029040
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029070
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000290a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000290e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029120
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000291a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000291e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029220
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029260
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000292a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000292e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029320
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029360
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000293a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000293e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029460
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000294a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000294e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029520
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029560
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000295a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000295e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029620
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000296a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000296e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029720
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029760
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000297a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000297e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000298a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000298e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029960
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029990
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000299c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x00000000000299f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029a20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029a50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029a80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029ab0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029ae0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029b10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L5put24E
+b *0x0000000000029b40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029b80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029be0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029c10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029c40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029c70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029ca0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029cd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029d00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029d30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x0000000000029d60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZSt25__unguarded_linear_
+b *0x0000000000029d90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZSt13__adjust_heapIN9__g
+b *0x0000000000029e10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZSt16__insertion_sortIN9
+b *0x000000000002a030
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a0f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L4readER
+b *0x000000000002a160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a1b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a1c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a1d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a1e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a1f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a210
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a230
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a250
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a270
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a290
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a2b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L4readER
+b *0x000000000002a2d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a390
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a3a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a3b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a3c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a3d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a3e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a440
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a460
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a480
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a4a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a4c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a4e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a500
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a520
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a530
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a540
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a550
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a560
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a570
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a580
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a590
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a5a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a5c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a5e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a600
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a620
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a640
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a680
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a6a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a6c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a6e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a700
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a720
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a740
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a760
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a780
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a7a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a7c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a7e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a7f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a830
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a850
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a870
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a880
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a8a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a8c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a8e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a900
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a940
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a960
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a980
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a9a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a9c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002a9e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aa00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aa20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aa40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aa60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aa80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aaa0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aac0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aae0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ab00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ab20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ab40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ab60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ab80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aba0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002abc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002abe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ac00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ac20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ac40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ac60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ac80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aca0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002acc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ace0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ad00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ad20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ad40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ad60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ad80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ada0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002adc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ade0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ae00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ae20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ae40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ae60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002ae80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aea0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L5writeE
+b *0x000000000002aef0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002af30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002af40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002af50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002af60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002af70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002af80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002af90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002afa0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002afb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002afc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002afd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002afe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002aff0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b000
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b010
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L5put32E
+b *0x000000000002b020
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b070
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b0a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b0d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b100
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b130
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b190
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b1c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b1f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b220
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b250
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b2b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b2e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b340
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b370
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b3a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b3d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b430
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b460
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b490
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b4c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b4f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZZN8gambatte9SaverListC4
+b *0x000000000002b520
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN12_GLOBAL__
+b *0x000000000002b550
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZSt16__introsort_loopIN9
+b *0x000000000002b650
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_statesaver
+b *0x0000000000013330
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_tima.cpp
+b *0x0000000000013360
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatteL10gbcToRgb32
+b *0x0000000000030bd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatteL16doCgbColor
+b *0x0000000000030c20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatteL16mode2IrqSc
+b *0x0000000000030c50
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_video.cpp
+b *0x00000000000133e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034dc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000034de0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034df0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000034e00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034e20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000034e40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034e90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000034ed0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034f10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000034f20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034f50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034f70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000034f90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12_GLOBAL__N
+b *0x0000000000034fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035000
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatteL10hasBattery
+b *0x0000000000035040
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000350f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035100
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035100
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035110
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035120
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035130
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035140
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035170
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035180
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000351a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035200
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt7__cxx1112basic_stri
+b *0x0000000000035250
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt7__cxx1112basic_stri
+b *0x0000000000035250
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035470
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000354b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035530
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x00000000000355d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035930
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035a00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035ab0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12_GLOBAL__N_
+b *0x0000000000035c40
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_envelope_u
+b *0x00000000000134c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatteL8scheduleEjj
+b *0x000000000003c6a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L17loadT
+b *0x000000000003c990
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_1L17loadT
+b *0x000000000003ca20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3LoopL
+b *0x000000000003cab0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3LoopL
+b *0x000000000003d220
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3LoopL
+b *0x000000000003da40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3LoopL
+b *0x000000000003dd70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3LoopL
+b *0x000000000003dde0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003deb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17M3Start
+b *0x000000000003df10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17M3Start
+b *0x000000000003e1c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M2_Ly0L
+b *0x000000000003e220
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_19M2_LyNo
+b *0x000000000003e270
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_19M2_LyNo
+b *0x000000000003e2d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003e320
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003ea30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3LoopL
+b *0x000000000003e840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17M3Start
+b *0x000000000003e6e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17M3Start
+b *0x000000000003e760
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_19M2_LyNo
+b *0x000000000003e7b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_19M2_LyNo
+b *0x000000000003e800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_19M2_LyNo
+b *0x000000000003e970
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_19M2_LyNo
+b *0x000000000003e990
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17M3Start
+b *0x000000000003e9b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17M3Start
+b *0x000000000003e9f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003eb10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003eb50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003eb70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003eb90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003ebb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003ebd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003ebf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003ec30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003ec70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003ec90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003ecb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003ecd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003ecf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003ed10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003ed30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003eda0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003edb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003edc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003edd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003ede0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003edf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003ee00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f350
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f290
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003f470
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003f4f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003f580
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f600
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f610
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f640
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f6b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M2_Ly0L
+b *0x000000000003f6c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f6f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f7a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003f840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003f890
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003fa10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop4
+b *0x000000000003fb90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003fca0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003fdf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16M3Loop1
+b *0x000000000003fe70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK12_GLOBAL__N_17ZipFil
+b *0x0000000000042220
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK12_GLOBAL__N_17ZipFil
+b *0x0000000000042230
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK12_GLOBAL__N_16GzFile
+b *0x0000000000042250
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK12_GLOBAL__N_16GzFile
+b *0x0000000000042260
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_110Memory
+b *0x0000000000042270
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_110Memory
+b *0x0000000000042270
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_110Memory
+b *0x0000000000042280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK12_GLOBAL__N_110Memor
+b *0x0000000000042290
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK12_GLOBAL__N_110Memor
+b *0x00000000000422a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_110Memory
+b *0x00000000000422b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17ZipFile
+b *0x00000000000422c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17ZipFile
+b *0x0000000000042300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17ZipFile
+b *0x0000000000042300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17ZipFile
+b *0x0000000000042310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17ZipFile
+b *0x0000000000042330
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17ZipFile
+b *0x0000000000042370
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16GzFileD
+b *0x00000000000423a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16GzFileD
+b *0x00000000000423a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16GzFileD
+b *0x00000000000423d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_110Memory
+b *0x0000000000042400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_17ZipFile
+b *0x0000000000042440
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16GzFile4
+b *0x0000000000042570
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN12_GLOBAL__N_16GzFile6
+b *0x00000000000425b0
+commands
+silent
+bt 1
+c
+end
+
+# code for update_keys
+b *0x0000000000042cb0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzlocal_getByte
+b *0x0000000000042d00
+commands
+silent
+bt 1
+c
+end
+
+# code for unzlocal_getShort
+b *0x0000000000042d60
+commands
+silent
+bt 1
+c
+end
+
+# code for unzlocal_getLong
+b *0x0000000000042de0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzlocal_GetCurrentFileIn
+b *0x0000000000042eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _GLOBAL__sub_I_loadsave.c
+b *0x00000000000134e0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetGlobalComment
+b *0x0000000000044a70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD18doCgbBg
+b *0x0000000000033310
+commands
+silent
+bt 1
+c
+end
+
+# code for fseek_file_func
+b *0x0000000000044c50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB8isLoaded
+b *0x0000000000021660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte13LengthCoun
+b *0x000000000003c510
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317Ch
+b *0x0000000000022810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9scxChang
+b *0x00000000000336a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory5event
+b *0x0000000000027660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039ac0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045de0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzReadCurrentFile
+b *0x0000000000043d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc10loadOrS
+b *0x0000000000039340
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SaverListD2E
+b *0x00000000000306f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD17mode3Cy
+b *0x00000000000318b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9loadState
+b *0x0000000000021770
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel25res
+b *0x000000000003a700
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9loadState
+b *0x0000000000022700
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b4e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima7resetCc
+b *0x00000000000308e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9nr3
+b *0x000000000003bef0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB17get_cycl
+b *0x0000000000022570
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD7resetCcE
+b *0x00000000000326e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB16set_debu
+b *0x00000000000221a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte18InterruptR
+b *0x0000000000024600
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel36set
+b *0x000000000003acf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12setGameS
+b *0x0000000000021e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3LCD9saveSta
+b *0x0000000000030d20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit5eve
+b *0x000000000003bd50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB7pakInfoE
+b *0x0000000000021e40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB5resetEv
+b *0x00000000000213a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte23newStateSav
+b *0x0000000000028bf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory4stopE
+b *0x00000000000250a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000048a40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000481e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000483e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge14a
+b *0x0000000000037a30
+commands
+silent
+bt 1
+c
+end
+
+# code for ferror_file_func
+b *0x0000000000044cc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19loa
+b *0x0000000000039f50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel28set
+b *0x000000000003a4d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitD0Ev
+b *0x000000000003c100
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory11post
+b *0x0000000000027e60
+commands
+silent
+bt 1
+c
+end
+
+# code for fread_file_func
+b *0x0000000000044c00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4TimaC1Ev
+b *0x0000000000030710
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit11ki
+b *0x000000000003c030
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB18setDmgPa
+b *0x0000000000021760
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory12upda
+b *0x0000000000024f70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorISt4pairIPcmE
+b *0x000000000004af90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte10NextM0Time1
+b *0x000000000003c970
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB8getIoRamE
+b *0x0000000000021ef0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq9regCh
+b *0x000000000003c6e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrsD2Ev
+b *0x0000000000038380
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PPUPriv10loa
+b *0x0000000000040ea0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003bd40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD6updateEj
+b *0x0000000000031ae0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022830
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpen2
+b *0x0000000000043560
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9nr1
+b *0x000000000003bec0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000046c30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel15set
+b *0x0000000000039e60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x0000000000022880
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit7set
+b *0x000000000003be20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG11setSoVo
+b *0x0000000000028400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte22newSaveStat
+b *0x0000000000028c70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x00000000000227a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel18set
+b *0x0000000000039bf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7PakInfo8ram
+b *0x0000000000038d60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c540
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel110lo
+b *0x000000000003a1b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9loadStat
+b *0x0000000000031130
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB4loadEPKhm
+b *0x0000000000021700
+commands
+silent
+bt 1
+c
+end
+
+# code for fclose_file_func
+b *0x0000000000044cb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge7lo
+b *0x00000000000377e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c2c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x000000000003a4b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12saveSave
+b *0x0000000000021670
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc4setHEj
+b *0x0000000000038df0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory11star
+b *0x0000000000025730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel312se
+b *0x000000000003ae00
+commands
+silent
+bt 1
+c
+end
+
+# code for unzSetOffset
+b *0x0000000000044b50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB12current
+b *0x0000000000021d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7StdFile4fai
+b *0x0000000000042b30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6MemoryC1ERKN
+b *0x0000000000024bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs5rese
+b *0x00000000000385f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000042040
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10getSaveR
+b *0x0000000000021ed0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte8Channel39sa
+b *0x000000000003ae20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3PSG9getStat
+b *0x0000000000028540
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG4initEb
+b *0x0000000000028150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3RtcC2EPPFlvE
+b *0x0000000000039030
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039db0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs12set
+b *0x0000000000038730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounterC1E
+b *0x000000000003c670
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023d50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c270
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi8EE11upda
+b *0x000000000001ffa0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039a60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000044d30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10getRtcBa
+b *0x0000000000021ea0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000048820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD18setDmgP
+b *0x0000000000034be0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x0000000000022790
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024620
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045de0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10l
+b *0x0000000000037920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c1f0
+commands
+silent
+bt 1
+c
+end
+
+# code for fill_fopen_filefunc
+b *0x0000000000044cd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD8wxChange
+b *0x0000000000033560
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU7processE
+b *0x0000000000013ae0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFile6rewi
+b *0x0000000000042b40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB8bus_readE
+b *0x00000000000221b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte14MasterDisab
+b *0x0000000000022860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD27lycRegC
+b *0x0000000000032dc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD19m0TimeO
+b *0x0000000000032d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte4Tima9saveSt
+b *0x0000000000030730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory15fill
+b *0x0000000000027fb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSGC2Ev
+b *0x00000000000280e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitC2Ev
+b *0x000000000003bd80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000044e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9oamChang
+b *0x0000000000033810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9sav
+b *0x000000000003bf90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel46set
+b *0x000000000003b600
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq8lcdRe
+b *0x000000000003c960
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel2C1Ev
+b *0x000000000003a4f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD10enableH
+b *0x0000000000032f90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004ad30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD13setDmgP
+b *0x0000000000030ca0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN10bitmapfont5printEPjl
+b *0x0000000000013650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi8EE11upda
+b *0x0000000000020050
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b460
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit10se
+b *0x000000000003be50
+commands
+silent
+bt 1
+c
+end
+
+# code for unzLocateFile
+b *0x00000000000439e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte6LycIrq9save
+b *0x000000000003c8d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima6setTmaE
+b *0x00000000000309f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD11oamWrit
+b *0x00000000000334a0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetGlobalInfo
+b *0x00000000000434b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory13upda
+b *0x0000000000025020
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD10loadOrS
+b *0x0000000000034c20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB15set_wall
+b *0x0000000000021f20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9Cartridge7p
+b *0x0000000000036840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel45set
+b *0x000000000003b730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB6runForEPj
+b *0x0000000000021310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x00000000000228e0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetLocalExtrafield
+b *0x0000000000044190
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGoToFirstFile
+b *0x0000000000043500
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041cc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000046f90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD18doCgbSp
+b *0x0000000000033370
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD13lcdstat
+b *0x00000000000341a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc4setMEj
+b *0x0000000000038e80
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpenCurrentFilePasswor
+b *0x0000000000044a50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046170
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004a860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b4b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounterC2E
+b *0x000000000003c670
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SaverListC2E
+b *0x000000000002ba30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022970
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039b00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrqC1Ev
+b *0x000000000003c6c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9CartridgeC2E
+b *0x0000000000036980
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCDC1EPKhS2_
+b *0x0000000000030e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD14cgbpAcc
+b *0x0000000000033280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge12s
+b *0x0000000000036a50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10setRtcBa
+b *0x0000000000021e90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PakInfoC2Ev
+b *0x00000000000389b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PPUPrivC2ERN
+b *0x000000000003ffc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022850
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel48set
+b *0x000000000003b520
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge20c
+b *0x0000000000037150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs10set
+b *0x00000000000384e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x000000000003a4b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPUC2EPPFlvE
+b *0x0000000000013780
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004a150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18DutyMasterD
+b *0x0000000000022920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317Ch
+b *0x0000000000022810
+commands
+silent
+bt 1
+c
+end
+
+# code for _fini
+b *0x000000000004b0e8
+commands
+silent
+bt 1
+c
+end
+
+# code for unzeof
+b *0x0000000000044160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10g
+b *0x0000000000036900
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte9C
+b *0x00000000000381c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6MemoryC2ERKN
+b *0x0000000000024bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041ed0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x00000000000200a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045ad0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpenCurrentFile3
+b *0x0000000000044350
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004aad0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB7versionB5
+b *0x0000000000021f30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima10update
+b *0x00000000000307c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs10loa
+b *0x00000000000387d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x00000000000456b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12setGameG
+b *0x0000000000021e70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GBD2Ev
+b *0x0000000000021230
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022890
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB22print_in
+b *0x0000000000022490
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory7loadR
+b *0x0000000000027f70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000049f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9loadState
+b *0x00000000000218b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PPUPrivC1ERN
+b *0x000000000003ffc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel46set
+b *0x000000000003b690
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9LyCounter13
+b *0x000000000003c5c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18DutyMasterD
+b *0x00000000000228b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFile4read
+b *0x0000000000042b50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge12l
+b *0x0000000000036110
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x00000000000399f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD5resetEPK
+b *0x0000000000030e50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel3C2Ev
+b *0x000000000003ac40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD14vramAcc
+b *0x00000000000331f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc5setDlEj
+b *0x0000000000038d80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000044fc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNKSt5ctypeIcE8do_widenE
+b *0x00000000000227f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq9loadS
+b *0x000000000003c8a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SaverListC1E
+b *0x000000000002ba30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9LyCounter14
+b *0x000000000003c5e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG5mapSoEj
+b *0x0000000000028420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi2EE11upda
+b *0x000000000001fde0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc9loadStat
+b *0x00000000000392e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory19nont
+b *0x0000000000026300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c590
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19sav
+b *0x0000000000039ed0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26set
+b *0x000000000003a650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel29loa
+b *0x000000000003a7a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG15generat
+b *0x00000000000282c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit10lo
+b *0x000000000003c080
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB11selectSt
+b *0x0000000000021c40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x000000000001fec0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039b70
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetFilePos
+b *0x0000000000043cd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046120
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit13re
+b *0x000000000003bdf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10getWorkR
+b *0x0000000000021eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel36set
+b *0x000000000003ad10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039d00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrsD1Ev
+b *0x0000000000038380
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041cc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel410lo
+b *0x000000000003ba30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3PPU21predic
+b *0x0000000000040cb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory12setS
+b *0x0000000000024e30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU5resetEPK
+b *0x0000000000040b00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel310lo
+b *0x000000000003afa0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c320
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge11g
+b *0x0000000000036920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge7lo
+b *0x0000000000037180
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc12doSwapA
+b *0x00000000000391a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge12s
+b *0x0000000000037d00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory14decE
+b *0x00000000000252a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory18setD
+b *0x0000000000027fd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317Ch
+b *0x00000000000227b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel1C2Ev
+b *0x0000000000039c30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel35res
+b *0x000000000003adc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel15res
+b *0x0000000000039e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x00000000000459a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039dd0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpenCurrentFile2
+b *0x0000000000044a60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq7doEve
+b *0x000000000003c7f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel417Ch
+b *0x0000000000022800
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpen
+b *0x0000000000043930
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046130
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c1d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c110
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel29sav
+b *0x000000000003a740
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045180
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB11getVideo
+b *0x0000000000021f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004a5f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory15nont
+b *0x0000000000025d30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x00000000000452d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12setInitStat
+b *0x00000000000229b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB4loadERKNS
+b *0x00000000000216b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9saveState
+b *0x00000000000219e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9loa
+b *0x000000000003bfd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045da0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3RtcC1EPPFlvE
+b *0x0000000000039030
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317Ch
+b *0x00000000000228a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel417Ch
+b *0x0000000000022800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounter7do
+b *0x000000000003c5a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel45res
+b *0x000000000003b750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16upd
+b *0x000000000003a000
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000047dc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9saveState
+b *0x0000000000021b10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs11set
+b *0x00000000000384b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD10lcdcCha
+b *0x0000000000033920
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB5isCgbEv
+b *0x0000000000021650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory16nont
+b *0x0000000000027280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory9loadS
+b *0x00000000000253a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000249c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc5setDhEj
+b *0x0000000000038f80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFileD2Ev
+b *0x0000000000042b60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b290
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit5res
+b *0x000000000003bf60
+commands
+silent
+bt 1
+c
+end
+
+# code for _init
+b *0x00000000000113f8
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitD2Ev
+b *0x000000000003c0f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD11disable
+b *0x0000000000033110
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel2C2Ev
+b *0x000000000003a4f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD18setDmgP
+b *0x0000000000034bf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc7doLatchE
+b *0x0000000000039080
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18DutyMasterD
+b *0x0000000000022820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel1C1Ev
+b *0x0000000000039c30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorISt4pairIPcmE
+b *0x000000000004af90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000497c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel36set
+b *0x000000000003acc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046190
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel39loa
+b *0x000000000003ae90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000248e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitC1Ev
+b *0x000000000003bd80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000048ea0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SoundUnit13r
+b *0x0000000000022770
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte19numRambanks
+b *0x0000000000038980
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB12set_emuf
+b *0x0000000000022480
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG9loadStat
+b *0x00000000000284b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory5write
+b *0x00000000000205d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c580
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGoToFilePos
+b *0x0000000000043d10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022930
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN10bitmapfont8getWidthE
+b *0x0000000000013610
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000244f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel24ini
+b *0x000000000003a730
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU12setStat
+b *0x0000000000013850
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD15refresh
+b *0x0000000000030d80
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetCurrentFileInfo
+b *0x00000000000434d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x00000000000228d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022850
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18DutyMasterD
+b *0x0000000000022820
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9CartridgeC1E
+b *0x0000000000036980
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000246a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000247c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit13re
+b *0x000000000003c040
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel4C1Ev
+b *0x000000000003b540
+commands
+silent
+bt 1
+c
+end
+
+# code for fwrite_file_func
+b *0x0000000000044c20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG12setStat
+b *0x00000000000281d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000044d50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x000000000001fe00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26set
+b *0x000000000003a5a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD12setStat
+b *0x0000000000030ce0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c520
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte6G
+b *0x0000000000024280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG9saveStat
+b *0x00000000000281e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory10load
+b *0x0000000000027fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU9loadStat
+b *0x00000000000402d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x0000000000023400
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte15newFileInst
+b *0x00000000000425f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel210lo
+b *0x000000000003a9e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12SpriteMapp
+b *0x0000000000042120
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrqC2Ev
+b *0x000000000003c6c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU6runForEj
+b *0x000000000001fd80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6LycIrq10resc
+b *0x000000000003c8e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorISt4pairIPcmE
+b *0x000000000004b0b0
+commands
+silent
+bt 1
+c
+end
+
+# code for ftell_file_func
+b *0x0000000000044c40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7StdFile4siz
+b *0x0000000000042b20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024950
+commands
+silent
+bt 1
+c
+end
+
+# code for unzClose
+b *0x0000000000044310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7PakInfo8rom
+b *0x0000000000038d70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039d20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD8wyChange
+b *0x0000000000033590
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000248a0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzStringFileNameCompare
+b *0x0000000000043430
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3Rtc4setSEj
+b *0x0000000000038f10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte2GB8romTitle
+b *0x0000000000021d80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima10loadOr
+b *0x0000000000030b70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounter14s
+b *0x000000000003c650
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000492d0
+commands
+silent
+bt 1
+c
+end
+
+# code for fopen_file_func
+b *0x0000000000044bb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000042060
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b290
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima7setTima
+b *0x0000000000030950
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory9endOa
+b *0x0000000000025750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit7set
+b *0x000000000003be90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10setSaveD
+b *0x00000000000214f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD12lycRegC
+b *0x0000000000034810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x000000000001fff0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000047fe0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045dc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFileD0Ev
+b *0x0000000000042c00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima10doIrqE
+b *0x0000000000030890
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD11oamRead
+b *0x00000000000333d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel417Ch
+b *0x00000000000227d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c210
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3PPU9saveSta
+b *0x0000000000040160
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory9saveS
+b *0x0000000000025c50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c500
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8loadsaveD0Ev
+b *0x0000000000045e70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44ini
+b *0x000000000003b790
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x00000000000399f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte9C
+b *0x0000000000038080
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045e90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel3C1Ev
+b *0x000000000003ac40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIhSaIhEE17_M_
+b *0x0000000000037f40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9Cartridge12
+b *0x0000000000035ef0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c1a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x00000000000228c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c3d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge12s
+b *0x0000000000035e20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046150
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnitD1Ev
+b *0x000000000003c0f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrsC1Ev
+b *0x00000000000382c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte14MasterDisab
+b *0x0000000000022750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel317up
+b *0x000000000003af40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB14setInput
+b *0x00000000000214e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory7loadR
+b *0x0000000000027f30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000047a20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs21dis
+b *0x00000000000383a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG18accumul
+b *0x0000000000028230
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSGC1Ev
+b *0x00000000000280e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB14preload_
+b *0x00000000000216a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory10setE
+b *0x0000000000024e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU10loadOrS
+b *0x00000000000139f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7PakInfo16he
+b *0x0000000000038a30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory12upda
+b *0x0000000000025790
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory13rese
+b *0x0000000000025860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c390
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024850
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9saveState
+b *0x0000000000022640
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000476a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003bd30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte9C
+b *0x00000000000381c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18StaticOutpu
+b *0x0000000000022830
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte6G
+b *0x0000000000024280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8loadsaveD2Ev
+b *0x0000000000045d90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte8Channel19Sw
+b *0x0000000000039b80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041c40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorIN8gambatte6G
+b *0x0000000000024370
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGetOffset
+b *0x0000000000044b10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima4timaEj
+b *0x0000000000030870
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9to_stringB5c
+b *0x0000000000024a20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041f30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte3Rtc9saveSta
+b *0x0000000000039280
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCDC2EPKhS2_
+b *0x0000000000030e80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10g
+b *0x0000000000036960
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel49sav
+b *0x000000000003b7a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000468a0
+commands
+silent
+bt 1
+c
+end
+
+# code for unztell
+b *0x0000000000044130
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9SaverListD1E
+b *0x00000000000306f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte15newFileInst
+b *0x0000000000042ae0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN10bitmapfont4utoaEjPc
+b *0x0000000000013700
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory11upda
+b *0x00000000000252e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9oamChang
+b *0x0000000000033710
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU11speedCh
+b *0x0000000000040bc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte24newStateLoa
+b *0x0000000000028b60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b3f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045e90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG12resetCo
+b *0x0000000000028300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000461a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory4readE
+b *0x0000000000020100
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU7setLcdcE
+b *0x0000000000040cf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU7resetCcE
+b *0x0000000000040b20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel417Ch
+b *0x0000000000022870
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10set_cpur
+b *0x0000000000022090
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000046500
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte7PakInfo3mbc
+b *0x0000000000038a40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b2c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x00000000000421d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000049cb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte9Cartridge9s
+b *0x0000000000035e70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB15postload
+b *0x0000000000021500
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046180
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10s
+b *0x0000000000036070
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel16set
+b *0x0000000000039d60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG5resetEv
+b *0x00000000000281a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel49loa
+b *0x000000000003b800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26set
+b *0x000000000003a630
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PakInfoC2Ebj
+b *0x00000000000389d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c390
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x000000000003a4c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel46set
+b *0x000000000003b630
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GBC1Ev
+b *0x00000000000211d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045e50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel36upd
+b *0x000000000003b080
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi9EE11upda
+b *0x000000000001fe60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG10loadOrS
+b *0x0000000000028570
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge7lo
+b *0x0000000000037860
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041fa0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte14MasterDisab
+b *0x0000000000022760
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12SpriteMappe
+b *0x0000000000041ce0
+commands
+silent
+bt 1
+c
+end
+
+# code for unzOpenCurrentFile
+b *0x0000000000044a40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNSt6vectorISt4pairIPcmE
+b *0x000000000004b0b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b490
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024810
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel34ini
+b *0x000000000003ade0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPUC1EPPFlvE
+b *0x0000000000013780
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GBD1Ev
+b *0x0000000000021230
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000047310
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD7getStatE
+b *0x0000000000034a80
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x000000000004a3a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045da0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte10StateSaver9
+b *0x00000000000302d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x0000000000022790
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4TimaC2Ev
+b *0x0000000000030710
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel46upd
+b *0x000000000003b880
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x0000000000024960
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory15oamD
+b *0x0000000000025340
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26upd
+b *0x000000000003a840
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte14MasterDisab
+b *0x0000000000022750
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD9scyChang
+b *0x00000000000336e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045bf0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte12EnvelopeUn
+b *0x000000000003c1e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima6setTacE
+b *0x0000000000030a50
+commands
+silent
+bt 1
+c
+end
+
+# code for unzGoToNextFile
+b *0x0000000000043940
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c1a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel4C2Ev
+b *0x000000000003b540
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GBC2Ev
+b *0x00000000000211d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003b440
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel19Swe
+b *0x0000000000039a20
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory18nont
+b *0x0000000000025990
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi8EE11upda
+b *0x000000000001ff00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000485f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge10g
+b *0x0000000000036940
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte4Tima9loadSta
+b *0x0000000000030740
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x00000000000490d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9Cartridge9lo
+b *0x0000000000035eb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs10set
+b *0x0000000000038510
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrs11set
+b *0x00000000000385b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000048c70
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9saveState
+b *0x0000000000022580
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU9loadStat
+b *0x0000000000013950
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD11speedCh
+b *0x0000000000032800
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c580
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7MemPtrsC2Ev
+b *0x00000000000382c0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003bcd0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9nr4
+b *0x000000000003bf10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000044d40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte9LyCounter5re
+b *0x000000000003c610
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel44Lfs
+b *0x000000000003bd30
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte12EnvelopeUni
+b *0x000000000003c300
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN9MinKeeperILi8EE11upda
+b *0x000000000001ff50
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte6Memory10upda
+b *0x0000000000025070
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000046000
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB10get_cpur
+b *0x0000000000021f60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel25set
+b *0x000000000003a6e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_sa
+b *0x0000000000045f00
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte18InterruptRe
+b *0x00000000000244f0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13LengthCount
+b *0x000000000003c360
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3LCD12updateS
+b *0x0000000000032420
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7StdFileD1Ev
+b *0x0000000000042b60
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8DutyUnit9upd
+b *0x000000000003bdc0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8loadsaveD1Ev
+b *0x0000000000045d90
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte10StateSaver9
+b *0x000000000002fe10
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PPU6updateEj
+b *0x0000000000040e40
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZNK8gambatte6Memory12oam
+b *0x0000000000025660
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PakInfoC1Ev
+b *0x00000000000389b0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel26set
+b *0x000000000003a5e0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3PSG10fillBuf
+b *0x0000000000028330
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte3CPU9saveStat
+b *0x0000000000013860
+commands
+silent
+bt 1
+c
+end
+
+# code for unzCloseCurrentFile
+b *0x0000000000044260
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel35set
+b *0x000000000003adb0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte2GB9bus_write
+b *0x00000000000221d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte7PakInfoC1Ebj
+b *0x00000000000389d0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte8Channel14ini
+b *0x0000000000039ec0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte11Interrupter
+b *0x00000000000241a0
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000046140
+commands
+silent
+bt 1
+c
+end
+
+# code for _ZN8gambatte13loadsave_lo
+b *0x0000000000045570
+commands
+silent
+bt 1
+c
+end
+

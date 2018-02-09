@@ -1,0 +1,8 @@
+<map id="include/gambatte.h" name="include/gambatte.h">
+<area shape="rect" id="node2" href="$memory_8h.html" title="src/memory.h" alt="" coords="169,80,276,107"/>
+<area shape="rect" id="node5" href="$gambatte_8cpp.html" title="src/gambatte.cpp" alt="" coords="266,229,395,256"/>
+<area shape="rect" id="node3" href="$cpu_8h.html" title="src/cpu.h" alt="" coords="51,155,130,181"/>
+<area shape="rect" id="node4" href="$cpu_8cpp.html" title="src/cpu.cpp" alt="" coords="5,229,99,256"/>
+<area shape="rect" id="node6" href="$interrupter_8cpp.html" title="src/interrupter.cpp" alt="" coords="155,155,291,181"/>
+<area shape="rect" id="node7" href="$memory_8cpp.html" title="src/memory.cpp" alt="" coords="315,155,437,181"/>
+</map>
